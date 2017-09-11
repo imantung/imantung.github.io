@@ -11,4 +11,4 @@ Unicode text can optionally start with a byte order mark (BOM) to signal the end
 
 In case of DBeaver, we can uncheck `Insert BOM` option when generate csv.
 
-![dbeaver pom settings]({{ site.url }}/assets/dbeaver_and_bom.jpg)
+![dbeaver pom settings]({{ site.url }}/assets/dbeaver_bom.jpg)
