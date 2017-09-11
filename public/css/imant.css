@@ -1,0 +1,10 @@
+
+ul.post-list{
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+ul.post-list h4{
+  margin-top: 0;
+  margin-bottom: 10px;
+}
