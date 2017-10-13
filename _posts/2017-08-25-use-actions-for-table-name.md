@@ -8,13 +8,13 @@ Someone have told me that naming is actually one biggest problem in IT world and
 
 This is one of my rails story. I have entity (table/model/active record/whatever you called it) named as `Suspension`. This name not longer good in my perfective, so I changed to `Action` and this is happen when create.
 
-```
+```ruby
 undefined method `permit' for "create":String
 ```
 
 This is typically what params from rails generated form.
 
-```
+```ruby
 {
   "utf8"=>"✓",
   "authenticity_token"=>"some token",

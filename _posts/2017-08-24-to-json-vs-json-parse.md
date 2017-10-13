@@ -5,7 +5,7 @@ date: 2017-08-24 06:32:20 +0700
 tags: ["ruby"]
 ---
 One thing about ruby that I love (or hate) that we can literally read it aloud on conversation language and programmatically still working.
-```
+```ruby
 3.times do
   # something
 end
@@ -13,7 +13,7 @@ end
 
 However for handling json type, we should noted that `"quoted text"` actually valid json format therefore we can't casually write `s.to_json` to convert text to json object but instead use `JSON.parse()`
 
-```
+```ruby
 s = '{"hello": "world"}'
 
 # Wrong
