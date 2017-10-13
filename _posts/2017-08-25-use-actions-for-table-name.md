@@ -12,7 +12,7 @@ This is one of my rails story. I have entity (table/model/active record/whatever
 undefined method `permit' for "create":String
 ```
 
-Rails already `action` in its param. This is typically what params from rails generated form.
+This is typically what params from rails generated form.
 
 ```
 {
@@ -24,11 +24,12 @@ Rails already `action` in its param. This is typically what params from rails ge
 }
 ```
 
-Then I renamed it to `Callback` and that's right, rails already have class Callback. I do missed java with all its exports.
+Then I renamed it to `Callback` and again, rails already have class Callback. I do missed java with all its exports.
 ```
 undefined method `new' for ActiveSupport::Callbacks::Callback:Class
 ```
 
-It's not so easy rename the scaffold (model + controller + view + spec + everything), you must renamed it manually. I do not recommended this, but maybe worthed it to check https://github.com/jcrisp/rails_refactor
+It's not so easy rename the scaffold (model + controller + view + spec + everything), you must renamed it manually.
+Actually there is some tool called [RailsRefactor](https://github.com/jcrisp/rails_refactor), but I don't know how it's work and feel insecure if something change my code without my knowing.
 
-This list of reserved word for rails may give the insight http://reservedwords.herokuapp.com/words?utf8=%E2%9C%93&q%5Bword_or_notes_cont%5D=
+You may want to check [this list](http://reservedwords.herokuapp.com/) first
