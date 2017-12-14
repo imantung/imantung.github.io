@@ -17,7 +17,7 @@ There are [6 architectural constraints](http://www.restapitutorial.com/lessons/w
 - Layered System - Client connect to server through architectural ayer (software/hardware)
 - Code on Demand (Optional) - Client allow to downloading and executing code in the form of applets or scripts
 
-Based on constraint, Leonard Richardson analyzed dozen of web api and make [Richardson Maturity Model](https://restfulapi.net/richardson-maturity-model/)
+Based on this constraint, Leonard Richardson analyzed dozen of web api and divided them in four categories called [Richardson Maturity Model](https://restfulapi.net/richardson-maturity-model/)
 - Level 0 - Single URI and Single verb
 - Level 1 - Many URI and Single verb
 - Level 2 - This is RESTful
