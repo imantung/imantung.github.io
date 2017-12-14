@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Memory in Go"
-date: 2017-12-13 20:14:18 +0700
-tags: ["postgres"]
+date: 2017-12-12 20:14:18 +0700
+tags: ["go", "memory allocation", "garbage collector", "pointer"]
 ---
 
 
