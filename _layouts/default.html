@@ -4,7 +4,6 @@
   {% include head.html %}
 
   <body>
-
     {% include sidebar.html %}
 
     <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
@@ -14,10 +13,11 @@
         <div class="container">
           <label for="sidebar-checkbox" class="sidebar-toggle"></label>
 
-          <h3 class="masthead-title">
+          <h1 class="masthead-title">
             <a href="/" title="Home">{{ site.title }}</a>
             <small>{{ site.tagline }}</small>
-          </h3>
+          </h1>
+          {{ site.description }}
         </div>
       </div>
 
