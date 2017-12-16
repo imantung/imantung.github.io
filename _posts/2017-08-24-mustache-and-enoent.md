@@ -12,7 +12,7 @@ Failure/Error: request_body = Mustache.render(body,data)
      No such file or directory - ./mustache.mustache
 ```
 
-This error lead me to 2 hour for finding the solution. So the problem is because I change the variable type from string to JSON. It's seem that Mustache(1.0.5) can't render json type, so we need to generate json string first.
+This error lead me to 2 hour for finding the solution. So the problem is because I change the variable type from string to JSON. It's seem that [Mustache](https://github.com/mustache/mustache)(1.0.5) can't render json type, so we need to generate json string first.
 
 ```ruby
 request_body = Mustache.render(JSON.generate(body),data)

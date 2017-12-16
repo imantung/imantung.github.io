@@ -5,9 +5,9 @@ date: 2017-09-14 06:49:48 +0700
 tags: ["java", "mac"]
 ---
 
-I run some jar file on my user laptop and found that her java is not up2date on terminal. So I download latest update via mac system preference but the terminal version didn't change. Downloading JRE from oracle also same effect. Why `$JAVA_HOME` is not automatically set? I guess we need download JDK instead of JRE. 
+I try run some jar file on my user laptop and found that terminal java version is different. Downloading [JRE](http://www.oracle.com/technetwork/java/javase/downloads/index.html) is not helping because it's not set environment variable `$JAVA_HOME`
 
-Alternatively we can setup `$JAVA_HOME` manually with this instructions.
+This instruction may help to set `$JAVA_HOME` as mac java version without download [JDK](https://en.wikipedia.org/wiki/Java_Development_Kit).
 
 1. Go to `System Preference > Java`
 2. Check or update your java version on `Update` tab

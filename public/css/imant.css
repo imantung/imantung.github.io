@@ -60,3 +60,10 @@
   margin-top: 0;
   margin-bottom: 0;
 }
+
+/** ****/
+
+.highlight{
+  padding: 12px 25px;
+  background-color: #e6f2ff;
+}

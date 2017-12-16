@@ -7,7 +7,7 @@ tags: ["restful"]
 
 Sometimes I got opportunities to interview new candidate and I always asking "What is RESTful? What different between between RESTful and Non-RESTFul?" Surprisingly not many can explain it even though they already used it on their previous company.
 
-RESTful is one of style or architectural design for Web API. It's stand of [Representational State Transfer](). Today RESTful become best practice and almost web API design to be RESTful. However people who doesn't follow the development sometimes misjudge that all web API is RESTful api.
+RESTful is one of style or architectural design for Web API. It's stand of [Representational State Transfer](). Today RESTful become best practice and almost web API design to be RESTful. However people who doesn't understand often misjudge that all web API is RESTful api.
 
 There are [6 architectural constraints](http://www.restapitutorial.com/lessons/whatisrest.html) for Web API to be called RESTful:
 1. Uniform Interface - Naming (URI) and verb (http method)
