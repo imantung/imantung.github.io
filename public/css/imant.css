@@ -1,18 +1,4 @@
-.post-list{
-  list-style: none;
-  padding-left: 0;
-}
-
-.post-list li{
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.post-list h4{
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
+/*** page ******/
 .page-footer{
   margin-top: 25px;
   margin-bottom: 20px;
@@ -38,4 +24,35 @@
   padding-bottom: 5px;
   padding-right: 6px;
   padding-left: 6px;
+}
+
+/*** home ******/
+
+.home h2{
+  margin: 0;
+}
+
+/*** post ******/
+
+.post-header{
+  margin-bottom: 40px;
+}
+
+.post-title{
+  margin: 0;
+}
+
+.post-list{
+  list-style: none;
+  padding-left: 0;
+}
+
+.post-list li{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.post-list h4{
+  margin-top: 0;
+  margin-bottom: 0;
 }
