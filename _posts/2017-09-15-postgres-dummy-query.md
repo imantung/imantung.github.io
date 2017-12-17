@@ -6,7 +6,7 @@ tags: ["postgres"]
 ---
 
 
-What I meant by `dummy query` is the query doesn't lookup to any table. This kind of query is may useful for unit testing. 
+What I meant by `dummy query` is the query doesn't need table. This kind of query is may useful for unit testing. 
 
 
 
@@ -29,7 +29,7 @@ SELECT id FROM regexp_split_to_table('1,2,3,4,5,7,8,9', ',') AS id
 ```
 
 
-Query 4: To expect more seconds for query. `pg_sleep` usually used at blind sql injection too. 
+Query 4: To expect more seconds for query. `pg_sleep` usually used at [blind sql injection](https://www.owasp.org/index.php/Blind_SQL_Injection) too. 
 ```sql
 SELECT 1 as id, pg_sleep(10)
 ```
