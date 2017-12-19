@@ -64,4 +64,5 @@
 pre.highlight{
   padding: 15px 30px;
   background-color: #e6f2ff;
+  overflow-x: scroll;
 }
