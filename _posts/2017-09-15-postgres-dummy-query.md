@@ -6,7 +6,7 @@ tags: ["postgres"]
 ---
 
 
-What I meant by `dummy query` is the query doesn't need table. This kind of query is may useful for unit testing. 
+What I meant by `dummy query` is the query that doesn't need table. This kind of query is may useful for unit testing. 
 
 
 

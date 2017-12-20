@@ -7,7 +7,7 @@ tags: ["java", "mac"]
 
 I try run some jar file on my user laptop and found that terminal java version is different. Downloading [JRE](http://www.oracle.com/technetwork/java/javase/downloads/index.html) is not helping because it's not set environment variable `$JAVA_HOME`
 
-This instruction may help to set `$JAVA_HOME` as mac java version without download [JDK](https://en.wikipedia.org/wiki/Java_Development_Kit).
+This instruction may help to set `$JAVA_HOME` without downloading [JDK](https://en.wikipedia.org/wiki/Java_Development_Kit).
 
 1. Go to `System Preference > Java`
 2. Check or update your java version on `Update` tab
