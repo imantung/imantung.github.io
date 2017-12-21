@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "Update JAVA on Mac Terminal"
+title: "$JAVA_HOME without JDK"
 date: 2017-09-14 06:49:48 +0700
 tags: ["java", "mac"]
 ---
 
-I try run some jar file on my user laptop and found that terminal java version is different. Downloading [JRE](http://www.oracle.com/technetwork/java/javase/downloads/index.html) is not helping because it's not set environment variable `$JAVA_HOME`
+I try run some jar file on my user laptop and found that terminal java version is different with mac OS version. Downloading [JRE](http://www.oracle.com/technetwork/java/javase/downloads/index.html) is not helping because it's not set environment variable `$JAVA_HOME`
 
 This instruction may help to set `$JAVA_HOME` without downloading [JDK](https://en.wikipedia.org/wiki/Java_Development_Kit).
 
