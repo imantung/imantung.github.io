@@ -7,7 +7,7 @@ tags: ["interpreter"]
 
 > “If you don’t know how compilers work, then you don’t know how computers work. If you’re not 100% sure whether you know how compilers work, then you don’t know how they work.” — Steve Yegge
 
-Like a fews week ago I did research about interpreter for some [DSL](https://en.wikipedia.org/wiki/Domain-specific_language) project. Then things happened, and I got crashed away from the project. 
+Like a fews week ago I did research about interpreter for some [DSL](https://en.wikipedia.org/wiki/Domain-specific_language) project. However things happened, and I got crashed away from the project.
 
 <img src="{{ site.url }}/assets/tree-walk-interpreter.jpg" alt="interpreter" style="width: 100%; max-width: 400px;"/>
 
