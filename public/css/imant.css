@@ -59,10 +59,25 @@
   margin-bottom: 0;
 }
 
-/** ****/
+/** code highlight ****/
 
 pre.highlight{
   padding: 15px 30px;
   background-color: #e6f2ff;
   overflow-x: scroll;
+}
+
+/** blockquote *****/
+
+
+blockquote{
+  border-left: solid 4px #C8C8C8;
+  margin: 20px 0 30px 0;
+  padding: 10px 30px;
+  color: #909090;
+}
+
+blockquote p{
+  margin: 0;
+  padding: 0;
 }
