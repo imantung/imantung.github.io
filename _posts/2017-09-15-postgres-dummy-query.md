@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "Dummy Query for Postgres"
+description: "example of dummy query in sql"
 date: 2017-09-15 08:14:18 +0700
-tags: ["postgres"]
+tags: ["query","postgres"]
 comments: true
 ---
 

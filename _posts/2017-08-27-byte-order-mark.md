@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "DBeaver and Byte Order Mark"
+description: "introduction on byte order mark or bom"
 date: 2017-08-27 19:40:52 +0700
 tags: ["data"]
 comments: true

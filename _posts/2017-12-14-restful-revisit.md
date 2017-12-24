@@ -2,6 +2,7 @@
 layout: post
 title: "RESTful Revisit"
 date: 2017-12-14 16:19:28 +0700
+description: "basic concept of restful"
 tags: ["restful"]
 comments: true
 ---

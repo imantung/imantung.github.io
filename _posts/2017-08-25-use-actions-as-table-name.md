@@ -2,6 +2,7 @@
 layout: post
 title: "Use 'Actions' as Table Name"
 date: 2017-08-25 12:14:16 +0700
+description: "mistake on using action as name on ruby on rails"
 tags: ["ruby"]
 comments: true
 ---

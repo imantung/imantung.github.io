@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "$JAVA_HOME without JDK"
+description: "update java_home environment variable without jdk"
 date: 2017-09-14 06:49:48 +0700
 tags: ["java", "mac"]
 comments: true
