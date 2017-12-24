@@ -12,6 +12,16 @@ layout: default
     {{ content }}  
   </div>
   
+  <div class="post-tags">
+    Tags: 
+    {% for tag in page.tags %}
+      <span class="w3-tag w3-blue w3-tiny w3-round-small" style="padding: 1px 6px;">{{tag}}</span>
+    {% endfor %}
+  </div>
+  
+  <div class="post-comments">
+    
+  </div>
   {% include disqus.html %}
 
 </article>
