@@ -3,6 +3,7 @@ layout: post
 title: "Mustache & ENOENT"
 date: 2017-08-24 05:34:20 +0700
 tags: ["ruby"]
+comments: true
 ---
 
 ```ruby

@@ -3,6 +3,7 @@ layout: post
 title: "Dummy Query for Postgres"
 date: 2017-09-15 08:14:18 +0700
 tags: ["postgres"]
+comments: true
 ---
 
 

@@ -3,6 +3,7 @@ layout: post
 title: "RESTful Revisit"
 date: 2017-12-14 16:19:28 +0700
 tags: ["restful"]
+comments: true
 ---
 
 Sometimes I got opportunities to interview new candidate and I always asking "What is RESTful? What different between between RESTful and Non-RESTFul?" Surprisingly not many can explain it even though they already used it on their previous company.

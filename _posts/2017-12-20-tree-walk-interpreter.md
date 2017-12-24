@@ -3,6 +3,7 @@ layout: post
 title: "Tree Walk Interpreter"
 date: 2017-12-20 16:19:28 +0700
 tags: ["interpreter"]
+comments: true
 ---
 
 > “If you don’t know how compilers work, then you don’t know how computers work. If you’re not 100% sure whether you know how compilers work, then you don’t know how they work.” — Steve Yegge
