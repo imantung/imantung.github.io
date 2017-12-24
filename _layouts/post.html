@@ -7,21 +7,20 @@ layout: default
     <h2 class="post-title">{{ page.title }}</h2>
     <div class="post-date">{{ page.date | date_to_string }}</div>  
   </div>
-  
+
   <div class="post-content">
-    {{ content }}  
+    {{ content }}
   </div>
-  
+
   <div class="post-tags">
-    Tags: 
+    Tags:
     {% for tag in page.tags %}
       <span class="w3-tag w3-blue w3-tiny w3-round-small" style="padding: 1px 6px;">{{tag}}</span>
     {% endfor %}
   </div>
-  
+
   <div class="post-comments">
-    
+    {% include disqus.html %}
   </div>
-  {% include disqus.html %}
 
 </article>
