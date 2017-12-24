@@ -29,6 +29,11 @@ theme: minima
 plugins:
   - jekyll-feed
 
+# addon
+nav_list:
+  - ['Home', '/', 'fa-home']
+  - ['About', '/about/', 'fa-info']
+
 disqus:
   shortname: imantung-github-io
 
