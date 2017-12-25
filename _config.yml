@@ -37,6 +37,9 @@ nav_list:
 disqus:
   shortname: imantung-github-io
 
+google_analytics: UA-111578438-1
+
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
