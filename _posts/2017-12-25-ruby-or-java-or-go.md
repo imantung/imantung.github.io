@@ -7,7 +7,7 @@ tags: ["java", "golang", "ruby", "microservices"]
 comments: true
 ---
 
-In our company, we are adopt [microservices](http://microservices.io/) architectural which is each product/service can have different language and technology stack. And these are 3 most chosen language: [Ruby](http://rubyonrails.org/), [Java](https://www.java.com/en/), [Golang](golang.org).
+In our company, we adopt [microservices](http://microservices.io/) architectural which is each product/service can have different language and technology stack. And these are 3 most chosen language: [Ruby](http://rubyonrails.org/), [Java](https://www.java.com/en/), [Golang](golang.org).
 
 Which one is better for microservices? None. I always believe that choice of language and architecture design decision is subjective based on knowledge, experience and preference of developer. Even [design pattern](https://en.wikipedia.org/wiki/Software_design_pattern) almost felt like propaganda for me. Every programming language have pro-contra and it's not only single person decision. Golang maybe powerful, but will you choose it if only yourself that able writing go code in whole company? We must consider people, learning curve, team culture and project needs before choose the language.
 
