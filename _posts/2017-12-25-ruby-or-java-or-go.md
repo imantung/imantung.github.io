@@ -21,7 +21,7 @@ The reason for me to using [Ruby](https://www.ruby-lang.org/en/) because of [Rub
 
 However the language itself is [relative slow](https://stackoverflow.com/questions/2529852/why-do-people-say-that-ruby-is-slow), not mentions it's [doesn't support real multithreading](https://stackoverflow.com/questions/56087/does-ruby-have-real-multithreading) too. Using [JRuby](http://jruby.org/) is better option than [Ruby MRI](https://en.wikipedia.org/wiki/Ruby_MRI). The rails itself design to develop web application based on best practice (rails conventions), so it may tricky if you need to make custom configuration or something different with the conventions.
 
-Ruby on Rails is great choice for developing simple portal or [RESTFul](https://en.wikipedia.org/wiki/Representational_state_transfer) services in a short time.
+Ruby on Rails is great choice for developing simple portal or [RESTFul](/restful-revisit) services in a short time.
 
 ## Java
 
@@ -43,7 +43,7 @@ Coding in golang is quite simple and kinda felt like writing some [scripting lan
 
 Concurrency is one big plus of golang, it's using [parallelism instead of multithread](https://blog.golang.org/concurrency-is-not-parallelism). The lightweight thread in golang called [goroutine](https://tour.golang.org/concurrency/1). Every goroutine is isolated with another goroutine and only can communicate via [channel](https://tour.golang.org/concurrency/2). So no more [lock](https://en.wikipedia.org/wiki/Lock_(computer_science)) for [synchronization](https://en.wikipedia.org/wiki/Synchronization_(computer_science)). Golang even doesn't provide [pool](https://en.wikipedia.org/wiki/Thread_pool) by default, maybe because goroutine is super cheap, [1000 goroutine is comparable with 10 regular thread.](http://tleyden.github.io/blog/2014/10/30/goroutines-vs-threads/)
 
-[Garbage collection](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)) and [pointer](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)) also nice. We can say that golang have better garbage collection compare with other so far. Check my presentation regarding [memory on go](https://www.slideshare.net/ImanTunggono/memory-in-go-82654871). 
+[Garbage collection](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)) and [pointer](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)) also nice. We can say that golang have better garbage collection compare with other so far. Check my post regarding [memory on go](/memory-in-go). 
 
 I like [Reflection](https://en.wikipedia.org/wiki/Reflection_(computer_programming)) library in golang too, it's much easier compare to java. However [collection](https://en.wikipedia.org/wiki/Collection_(abstract_data_type)) library is not so good.
 
