@@ -32,6 +32,7 @@ permalink: /:title/
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 # addon
 nav_list:
