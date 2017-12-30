@@ -9,7 +9,7 @@
 
         <nav class="w3-bar w3-border w3-light-grey page-nav">
           {% for nav_item in site.nav_list %}
-            <a class="w3-mobile w3-bar-item w3-button {% if page.url == (nav_item[1]) %} w3-text-indigo{% endif %}" href="{{ nav_item[1] }}">
+            <a class="w3-mobile w3-bar-item w3-button {% if page.url == nav_item[1] %} w3-text-indigo{% endif %}" href="{{ nav_item[1] }}">
               <i class="fa {{ nav_item[2] }}" aria-hidden="true"></i> {{ nav_item[0] }}
             </a>
           {% endfor %}
