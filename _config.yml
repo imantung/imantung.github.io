@@ -18,9 +18,13 @@ title: imantung.github.io
 email: iman.tung@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Mistakes, Commentary, Glossary, Code Snippet, Tutorial
+tagline: Mistakes, Commentary, Glossary, Code Snippet, Tutorial
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://imantung.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  imantung
+
+#social
+linkedin_link: https://www.linkedin.com/in/iman-tunggono/
 
 # Build settings
 markdown: kramdown

@@ -4,16 +4,50 @@
   {% include head.html %}
 
   <body>
+    <div class="w3-container">
+      <div class="w3-content">
 
-    {% include navigation.html %}
+        <nav class="w3-bar w3-border w3-light-grey page-nav">
+          {% for nav_item in site.nav_list %}
+            <a class="w3-mobile w3-bar-item w3-button {% if page.url == (nav_item[1]) %} w3-text-indigo{% endif %}" href="{{ nav_item[1] }}">
+              <i class="fa {{ nav_item[2] }}" aria-hidden="true"></i> {{ nav_item[0] }}
+            </a>
+          {% endfor %}
+
+          <a href="https://github.com/{{github_username}}" class="w3-mobile w3-bar-item w3-button w3-right">
+            <i class="fa fa-github"></i>
+          </a>
+          <a href="{{linkedin_link}}" class="w3-mobile w3-bar-item w3-button w3-right">
+            <i class="fa fa-linkedin"></i>
+          </a>
+
+          <a href="mailto:{{site.email}}" class="w3-mobile w3-bar-item w3-button w3-right">
+            <i class="fa fa-envelope"></i>
+          </a>
+        </nav>
+
+
+      </div>
+    </div>
 
     <div class="w3-container page-content">
-      <div class="w3-content" style="max-width: 1000px;">
+      <div class="w3-content">
         {{ content }}
       </div>
     </div>
 
-    {% include footer.html %}
+    <hr style="margin: 0;">
+
+    <div class="w3-container">
+      <footer class="w3-content page-footer">
+        <span class="page-copyright">
+          &copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.
+        </span>
+      </footer>
+      
+    </div>
+    
+    
 
   </body>
 </html>
