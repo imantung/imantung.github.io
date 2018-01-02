@@ -7,7 +7,7 @@ tags: ["java", "golang", "ruby", "microservices"]
 comments: true
 ---
 
-In our company, we adopt [microservices](http://microservices.io/) architectural and it's allowed us to decide our own programming language and technology stack. And these are 3 most chosen language: [Ruby](http://rubyonrails.org/), [Java](https://www.java.com/en/), [Golang](golang.org).
+In our company, we adopt [microservices](http://microservices.io/) architectural and it's allowed us to decide our own programming language and technology stack. And these are 3 most chosen language: [Ruby](https://www.ruby-lang.org/), [Java](https://www.java.com/en/), [Golang](golang.org).
 
 Which one is better for microservices? None. I always believe that choice of language and architecture design decision is subjective based on knowledge, experience and preference of developer. Even [design pattern](https://en.wikipedia.org/wiki/Software_design_pattern) almost felt like propaganda for me. Every programming language have pro-contra and it's not only single person decision. Golang maybe powerful, but will you choose it if only yourself that able writing go code in whole company? We must consider people, learning curve, team culture and project needs before choose the language.
 
@@ -29,7 +29,7 @@ Ruby on Rails is great choice for developing simple portal or [RESTFul](/restful
 
 Java is [object oriented](https://en.wikipedia.org/wiki/Object-oriented_programming) and mature programming language. Most developer already familiar about this beast and I don't wanna say much. Regardless its bad and good, Java is still industry standard of how programming language should be. Maybe it's most supported language in open source community especially on [apache community](https://www.apache.org/). In search of java-killer-language, another programming language is born yet running on top of [JVM](https://en.wikipedia.org/wiki/Java_virtual_machine) like [Scala](https://www.scala-lang.org/), [Kotlin](https://kotlinlang.org/), [Clojure](https://clojure.org/), etc.
 
-I was working with java for mobile apps, automation tool and some services but I still doesn't have preference library/framework for backend service. I have short experience with [Spring](https://spring.io/) [Hibernate](http://hibernate.org/) and not fans of it. [Spark Framework](http://hibernate.org/) seem promising but java itself have too many configurable and [boilerplate](https://en.wikipedia.org/wiki/Boilerplate_text) that slow the development process. You also need to [tunning the JVM](https://docs.oracle.com/cd/E13222_01/wls/docs81/perform/JVMTuning.html) for best performance. So development wise, I want to avoid using java beside it may have good performance.
+I was working with java for mobile apps, automation tool and some services but I still doesn't have preference library/framework for backend service. I have short experience with [Spring](https://spring.io/) [Hibernate](http://hibernate.org/) and not fans of it. [Spark Framework](http://sparkjava.com/) and [Play Framework](https://www.playframework.com/) seem promising however java itself have too many configurable and [boilerplate](https://en.wikipedia.org/wiki/Boilerplate_text) that slow the development process. You also need to [tunning the JVM](https://docs.oracle.com/cd/E13222_01/wls/docs81/perform/JVMTuning.html) for best performance. So development wise, I want to avoid using java beside it may have good performance.
 
 Java probably best option for project that required some apache software or have some open source dependency. Java also good start to learn programming since it's straight forward, conceptual and less magical then most popular programming language today.
 
@@ -49,4 +49,4 @@ I like [Reflection](https://en.wikipedia.org/wiki/Reflection_(computer_programmi
 
 Because golang relative young, discussion is still happening around best practice on golang. The choice of library is not as many as other popular language.
 
-I prefer Golang for any possible project because of brute strength, simple and popularity. Its popularity is guarantee the support from community and job security :-p.
+I prefer Golang for any possible project because of brute strength and simplicity.
