@@ -31,7 +31,7 @@ SELECT id FROM regexp_split_to_table('1,2,3,4,5,7,8,9', ',') AS id
 ```
 
 
-Query 4: To expect more seconds for query. `pg_sleep` usually used at [blind sql injection](https://www.owasp.org/index.php/Blind_SQL_Injection) too. 
+Query 4: To expect more seconds for query. `pg_sleep` usually used at [blind sql injection](https://www.owasp.org/index.php/Blind_SQL_Injection). 
 ```sql
 SELECT 1 as id, pg_sleep(10)
 ```
