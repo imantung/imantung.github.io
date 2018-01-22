@@ -3,26 +3,16 @@ layout: default
 title: home
 ---
 
-<div class="home">
-
-  <h2>Home</h2>
-
-  {{ content }}
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li class="w3-row">
-          <div class="w3-col" style="width: 150px;">{{ post.date | date_to_string }}</div>
-          <div class="w3-rest">
-            <a href="{{ post.url }}">{{ post.title }}</a></h4>
-            {% for tag in post.tags %}
-              <span class="w3-tag w3-blue w3-tiny w3-round-small" style="padding: 1px 6px;">{{tag}}</span>
-            {% endfor %}
-          </div>
-      </li>
-    {% endfor %}
-  </ul>
+<div class="w3-panel w3-light-gray w3-round-large home">
 
 
+  <h1>Welcome!</h1>
+
+  <p>Hi there. My name is Iman Tunggono and right now I am working on one of the biggest startups in South East Asia where a lot of things come every day to learn. The purpose of this website is simply as my exercise to write down what I have learned and leave some trace of my work that I can follow back when needed.</p>
+
+
+  <a href="https://github.com/{{site.github_username}}" class=""><i class="fa fa-github"></i></a>
+  &nbsp;<a href="{{site.linkedin_link}}" class=""><i class="fa fa-linkedin"></i></a>
+  &nbsp;<a href="mailto:{{site.email}}" class=""><i class="fa fa-envelope"></i></a>
 
 </div>

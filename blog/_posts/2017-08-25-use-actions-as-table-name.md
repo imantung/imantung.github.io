@@ -33,4 +33,4 @@ undefined method `new' for ActiveSupport::Callbacks::Callback:Class
 
 It's not so easy rename the scaffold, you must renamed model, controller, view, spec and everything manually. Actually there is some tool called [RailsRefactor](https://github.com/jcrisp/rails_refactor), but I don't know how it's work and feel insecure if something change my code without my knowing.
 
-Check [rails reserved word list](http://reservedwords.herokuapp.com/) 
+Check [rails reserved word list](http://reservedwords.herokuapp.com/)

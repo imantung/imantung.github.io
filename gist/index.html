@@ -1,0 +1,15 @@
+---
+layout: default
+title: Gist
+---
+
+
+<h1>Gist</h1>
+
+<div class="w3-row w3-center" style="margin-top: 50px;">
+  {% for post in site.categories.gist %}
+  <a class="w3-col s6 m4 l3 w3-border" style="padding: 40px; 5px;" href="{{ post.url }}">
+    <h5>{{ post.title }}</h5>
+  </a>
+  {% endfor %}
+</div>

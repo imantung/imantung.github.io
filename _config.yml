@@ -17,7 +17,7 @@ author: iman tung
 title: imantung.github.io
 email: iman.tung@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Mistakes, Commentary, Glossary, Code Snippet, Tutorial
+  Profesional website of Iman Tunggono
 tagline: Mistakes, Commentary, Glossary, Code Snippet, Tutorial
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://imantung.github.io" # the base hostname & protocol for your site, e.g. http://example.com
@@ -36,8 +36,9 @@ plugins:
 
 # addon
 nav_list:
-  - ['Home', '/', 'fa-home']
-  - ['About', '/about/', 'fa-info']
+  - ['', '/', 'fa-home']
+  - ['Blog', '/blog/', 'fa-pencil']
+  - ['Gist', '/gist/', 'fa-file-text']
 
 disqus:
   shortname: imantung-github-io
