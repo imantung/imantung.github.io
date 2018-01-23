@@ -1,0 +1,50 @@
+/*** page ******/
+.page-footer{
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.page-content{
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+
+.page-links a{
+  padding-top: 1px;
+  padding-bottom: 5px;
+  padding-right: 6px;
+  padding-left: 6px;
+}
+
+.page-nav{
+  margin-top: 20px;
+}
+.page-nav a{
+  text-decoration: none;
+}
+
+/*** home ******/
+
+.home{
+  padding: 20px 40px;
+}
+
+/** code highlight ****/
+
+
+
+/** blockquote *****/
+
+
+blockquote{
+  border-left: solid 4px #C8C8C8;
+  margin: 20px 0 30px 0;
+  padding: 10px 20px;
+  color: #909090;
+}
+
+blockquote p{
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,57 @@
+
+
+.post-header{
+  margin-bottom: 40px;
+}
+
+.post-title{
+  margin-bottom: 0;
+}
+
+.post-list{
+  list-style: none;
+  padding-left: 0;
+}
+
+.post-list li{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.post-list h4{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.post-tags{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.post-content p{
+  line-height: 1.85;
+}
+
+.post-nav {
+  font-size: 14px;
+  display: block;
+  width: auto;
+  overflow: hidden;
+}
+
+.post-nav a {
+  display: block;
+  width: 50%;
+  float: left;
+  margin: 1em 0;
+}
+
+.post-nav .next {
+  text-align: right;
+}
+
+.post-content pre.highlight{
+  padding: 10px 15px;
+  background-color: #e6f2ff;
+  overflow-x: scroll;
+}

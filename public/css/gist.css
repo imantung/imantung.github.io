@@ -1,0 +1,15 @@
+.gist-content{
+  font-size: 14px;
+}
+
+.gist-content{
+  padding: 10px 35px;
+  border: thin solid #D3D3D3;
+}
+
+
+.gist-content pre.highlight{
+  padding: 12px 25px;
+  background-color: #e6f2ff;
+  overflow-x: scroll;
+}
