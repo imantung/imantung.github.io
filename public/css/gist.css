@@ -7,8 +7,15 @@
   border: thin solid #D3D3D3;
 }
 
+.gist-content>p{
+  line-height: 1.85;
+  -webkit-margin-before: 1.5em;
+  -webkit-margin-after: 0;
+}
+
 
 .gist-content pre.highlight{
+  -webkit-margin-before: 0;
   padding: 12px 25px;
   background-color: #e6f2ff;
   overflow-x: scroll;
