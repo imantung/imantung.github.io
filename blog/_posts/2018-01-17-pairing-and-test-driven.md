@@ -19,12 +19,12 @@ Pair programming is popularized by [Extreme Programming (XP)](https://en.wikiped
 
 On pairing programming, the one who owns the keyboard called "driver" while other is act as "observer" or "navigator", then they switch the role. Personally, I don’t like to strictly follow this rule. In my opinion, a pairing should be a simple and fun collaboration regardless who take in charge, which one that’s more senior, who became drivers or navigator. What the important are people take care of task and his partner.
 
+However, pair programming may not ideal for any situation and condition. For example, working on a project like [proof of concept](https://en.wikipedia.org/wiki/Proof_of_concept) that required a lot of research may be better performed by solo. Without sufficient numbers of developer and encouragement from management, it will be hard to actually practice it in real life.
+
 Some variation of pair programming
 - Ping pong programming --> is pair programming combine with TDD; 1 programmer make the test while others is make the code implementation and vice-versa.
 - Cross Functional Pairing --> usually hardware and software engineer to make embedded system
 - Mob programming --> whole team (more than 2 people) writing code together.
-
-However, pair programming may not ideal for any situation and condition. For example, working on a project like [proof of concept](https://en.wikipedia.org/wiki/Proof_of_concept) that required a lot of research may be better performed by solo. Without sufficient numbers of developer and encouragement from management, it will be hard to actually practice it in real life.
 
 ## Test Driven Development
 
