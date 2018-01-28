@@ -18,10 +18,22 @@
   padding-bottom: 5px;
 }
 
-.post-list h4{
-  margin-top: 0;
-  margin-bottom: 0;
+.post-item >*{
+  display: inline-block;
+
 }
+.post-item{
+  border-bottom: thin solid #E8E8E8;
+}
+
+.post-item-date{
+  margin-right: 25px;
+}
+
+.post-item-title{
+  margin-right: 10px;
+}
+
 
 .post-tags{
     margin-top: 40px;
