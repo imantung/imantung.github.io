@@ -20,3 +20,17 @@
   background-color: #e6f2ff;
   overflow-x: scroll;
 }
+
+.gist-item{
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 40px;
+  width: 80px;
+}
+
+.gist-item img{
+  width: 85%;
+  margin-bottom: 5px;
+}
