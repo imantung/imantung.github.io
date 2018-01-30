@@ -2,7 +2,7 @@
   font-size: 14px;
 }
 
-.gist-content{
+.gist{
   padding: 10px 35px;
   border: thin solid #D3D3D3;
 }
@@ -13,12 +13,15 @@
   -webkit-margin-after: 0;
 }
 
-
 .gist-content pre.highlight{
   -webkit-margin-before: 0;
-  padding: 12px 25px;
-  background-color: #e6f2ff;
+  padding: 0 20px 5px 20px;
   overflow-x: scroll;
+}
+
+.gist-content>ul,.gist-content>ol{
+  -webkit-margin-before: 0;
+  padding-left: 25px;
 }
 
 .gist-item{
