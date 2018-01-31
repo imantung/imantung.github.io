@@ -21,20 +21,34 @@
 }
 
 .gist-content>ul,.gist-content>ol{
-  -webkit-margin-before: 0;
-  padding-left: 25px;
+  -webkit-margin-before: 5px;
+  padding-left: 30px;
+}
+
+.gist-content li{
+  margin-bottom: 5px;
+}
+
+.gist-list{
+  margin-top: 20px;
 }
 
 .gist-item{
-  display: inline-block;
-  font-size: 14px;
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-bottom: 40px;
-  width: 80px;
-}
+  display: inline-table;
+  width: 180px;
+  margin-bottom: 20px;
 
-.gist-item img{
-  width: 85%;
-  margin-bottom: 5px;
+}
+.gist-item-icon{
+  display: table-cell;
+  width: 35%;
+}
+.gist-item-title{
+  display: table-cell;
+  font-size: 12px;
+  padding-left: 10px;
+  vertical-align: middle;
+}
+.gist-item-icon img{
+  width: 100%;
 }

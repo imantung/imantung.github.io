@@ -16,11 +16,14 @@ title: Gist
 </div>
 
 
-<div class="" style="margin-top: 50px;">
+<div class="gist-list">
   {% for post in site.categories.gist %}
-  <a class="w3-center gist-item" href="{{ post.url }}">
-    <img src="assets/file512.png" alt="" >
-    {{ post.title }}
+
+  <a class="gist-item" href="{{ post.url }}">
+    <div class="gist-item-icon"><img src="assets/file512.png" alt="" ></div>
+    <div class="gist-item-title">{{ post.title }}</div>
   </a>
+
+
   {% endfor %}
 </div>
