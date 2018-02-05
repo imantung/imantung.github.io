@@ -8,7 +8,7 @@
       <div class="w3-content">
         <nav class="page-nav">
           {% for nav_item in site.nav_list %}
-            <a class="{% if page.url == nav_item[1] %} w3-text-indigo{% endif %} {% if forloop.index > 1 %} w3-border-left {% endif %}" style="display: inline-block; padding: 8px 20px; " href="{{ nav_item[1] }}">
+            <a class="w3-mobile {% if page.url == nav_item[1] %} w3-text-indigo{% endif %} {% if forloop.index > 1 %} w3-border-left {% endif %}" style="display: inline-block; padding: 8px 20px; " href="{{ nav_item[1] }}">
               <i class="fa {{ nav_item[2] }}" aria-hidden="true"></i> {{ nav_item[0] }}
             </a>
           {% endfor %}
