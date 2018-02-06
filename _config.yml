@@ -17,7 +17,7 @@ author: iman tung
 title: imantung.github.io
 email: iman.tung@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Profesional website of Iman Tunggono
+  Some profesional blog
 tagline: Mistakes, Commentary, Glossary, Code Snippet, Tutorial
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://imantung.github.io" # the base hostname & protocol for your site, e.g. http://example.com
