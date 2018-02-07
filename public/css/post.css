@@ -11,26 +11,18 @@
 .post-list{
   list-style: none;
   margin: 0;
-  padding: 0 15px;
+  padding-left: 0;
 }
 
 .post-list li{
   margin: 0;
-  padding-top: 15px;
-  padding-bottom: 20px;
+  padding: 25px 20px;
   border-bottom: thin solid #E8E8E8;
 }
 
-.post-item .post-item-col1{
-  display: table-cell;
-  width: 120px;
-}
-
-.post-item .post-item-col2{
-  display: table-cell;
-}
 
 .post-item h4, .post-item h3{
+
   margin: 0;
 }
 
