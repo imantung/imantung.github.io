@@ -3,7 +3,7 @@
 }
 
 .gist{
-  padding: 10px 35px;
+  padding: 10px 35px 30px 35px;
   border: thin solid #D3D3D3;
 }
 
@@ -18,6 +18,13 @@
   padding: 5px 10px;
   background-color: #F1F1F1;
   overflow-x: scroll;
+}
+
+.gist-content code.highlighter-rouge{
+  border: thin solid  #e6e6e6;
+  background-color: #F1F1F1;
+  color: #333333;
+  padding: 1px 4px;
 }
 
 .gist-content>ul,.gist-content>ol{
