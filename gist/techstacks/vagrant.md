@@ -1,5 +1,6 @@
 ---
 layout: gist
+title: Vagrant
 ---
 
 - configuration and provisioning tool using which you can create VMs or container

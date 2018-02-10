@@ -38,7 +38,7 @@ plugins:
 nav_list:
   - ['', '/', 'fa-home']
   - ['Blog', '/blog/', 'fa-pencil']
-  - ['Gist', '/gist/', 'fa-file-text']
+  - ['Gists', '/gists/', 'fa-file-text']
   - ['Quotes', '/quotes/', 'fa-font']
 
 disqus:

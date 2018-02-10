@@ -1,5 +1,6 @@
 ---
 layout: gist
+title: DevOps
 ---
 
 [Is DevOps a Title?](https://devops.com/is-devops-a-title/)

@@ -1,5 +1,6 @@
 ---
 layout: gist
+title: Kafka
 ---
 
 [How to choose partition number](https://www.confluent.io/blog/how-to-choose-the-number-of-topicspartitions-in-a-kafka-cluster/)

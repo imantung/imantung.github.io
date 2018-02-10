@@ -1,0 +1,38 @@
+---
+layout: default
+title: Gist
+categories: [
+  ['Tech Stacks', 'gist/techstacks'],
+  ['Concepts', 'gist/concepts'],
+  ['Others', 'gist/others']]
+---
+
+
+<div class="page-info w3-light-gray w3-round-large w3-row">
+  <div class="page-info-title w3-quarter">
+    <h1>Gist</h1>
+  </div>
+
+  <div class="page-info-description w3-threequarter">
+    I hear and I forget, I see and I remember. I do and I understand. &mdash;Chinese Proverb<br />
+    I do and I understand, but I still forget. &mdash;me
+  </div>
+</div>
+
+<div class="gists-landing">
+  {% for category in page.categories %}
+  <div class="gist-category">
+    <h3>{{category[0]}} </h3>
+    <div class="gist-list">
+    {% for page in site.pages %}
+      {% if page.path contains category[1] %}
+      <div class="gist-item">
+        <div class="gist-item-icon"><img src="/public/file512.png" alt="" ></div>
+        <div class="gist-item-title"><a href="{{page.url}}">{{page.title}}</a></div>
+      </div>
+      {% endif %}
+    {% endfor %}
+    </div>
+  </div>
+  {% endfor%}
+</div>

@@ -1,5 +1,6 @@
 ---
 layout: gist
+title: Zen of Python
 ---
 
 1. Beautiful is better than ugly.

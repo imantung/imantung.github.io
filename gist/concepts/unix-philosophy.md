@@ -1,5 +1,6 @@
 ---
 layout: gist
+title: Unix Philosophy
 ---
 
 Unix Philosophy:

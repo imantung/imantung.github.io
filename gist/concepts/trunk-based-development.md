@@ -1,5 +1,6 @@
 ---
 layout: gist
+title: Trunk Based Development
 ---
 
 [trunkbaseddevelopment.com](https://trunkbaseddevelopment.com/)

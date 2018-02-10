@@ -1,5 +1,6 @@
 ---
 layout: gist
+title: Ruby
 ---
 
 ### rbenv

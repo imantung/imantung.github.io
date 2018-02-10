@@ -1,5 +1,6 @@
 ---
 layout: gist
+title: Docker
 ---
 
 - Automates the deployment as container
