@@ -10,27 +10,28 @@
 
 .post-list{
   list-style: none;
-  margin: 0;
+  margin-top: 30px;
   padding-left: 0;
 }
 
 .post-list li{
   margin: 0;
-  padding: 25px 20px;
+  padding: 20px 20px;
   border-bottom: thin solid #E8E8E8;
 }
 
 
 .post-item h4, .post-item h3{
-
   margin: 0;
 }
 
 .post-item-preview{
-  font-size: 0.85em;
-  margin-top: 10px;
+  font-size: 0.95em;
+  margin: 15px 0;
 }
 
+.post-item-tags{
+}
 
 .post-tags{
   margin-top: 40px;

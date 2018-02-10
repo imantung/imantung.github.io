@@ -21,7 +21,10 @@
   margin-top: 20px;
 }
 .page-nav a{
+  display: inline-block;
   text-decoration: none;
+
+  padding: 6px 15px;
 }
 
 /*** home ******/
