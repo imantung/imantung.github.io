@@ -28,10 +28,10 @@ Chef Server --> a hub for a configuration data
 - `ChefSupermarket` community cookbook that free to use
 
 Nodes --> machines that are managed/configurated by Chef
-- `ChefClient`
+- `ChefClient` run the automation on node
 - `Ohai` collect system configuration data
 
-[Knife Cheatsheet](https://github.com/chef/quick-reference/blob/master/qr_knife_web.png)
+
 
 ### Chef-Repo
 
@@ -61,9 +61,18 @@ Directory structure
 1. Install [Chef DK](https://downloads.chef.io/chefdk)
 2. Create or Clone chef repo `git clone CHEF_REPO`
 3. ssh to chef server
-4. (If not exist) create organization `chef-server-ctl org-create ORG_NAME ORG_FULL_NAME -f FILE_NAME`. This step will generate `ORG_NAME.pem`
-5. Create user `chef-server-ctl user-create USER_NAME FIRST_NAME LAST_NAME EMAIL PASSWORD -f FILE_NAME`. This step will generate `USERNAME.pem`
-6. Add user to organization `sudo chef-server-ctl org-user-add ORG_NAME USER_NAME`
+4. (If not exist) Create organization . This step will generate `ORG_NAME.pem`
+```sh
+chef-server-ctl org-create ORG_NAME ORG_FULL_NAME -f FILE_NAME
+```
+5. Create user. This step will generate `USERNAME.pem`
+```sh
+chef-server-ctl user-create USER_NAME FIRST_NAME LAST_NAME EMAIL PASSWORD -f FILE_NAME
+```
+6. Add user to organization
+```sh
+sudo chef-server-ctl org-user-add ORG_NAME USER_NAME
+```
 7. Exit from chef serve (back to your workstation)
 8. Change directory to chef repo `cd CHEF_REPO`
 9. Create .chef directory `mkdir .chef`
@@ -87,25 +96,51 @@ cookbook_path            ["#{current_dir}/../cookbooks"]
 
 ### Setup Node
 
-Manual
-```
-ssh NODE -l USERNAME
-sudo chef-client
-```
+1. Change directory to chef repo.
+2. Install `chef-client` to target system by bootstrapping.
+    ```sh
+    # plain
+    knife bootstrap FQDN_or_IP_ADDRESS
 
-Using `knife ssh`
+    # with some option
+    knife bootstrap FQDN_or_IP_ADDRESS -i PEM_FILE  -E ENVIRONMENT -N NOTE -r RECIPE --bootstrap-version VERSION -x USER --sudo
+    ```
+3. Run `chef-client` on each machine. Shortcut way to using `knife ssh`
+    ```sh
+    # run chef-client on NODE
+    knife ssh 'name:NODE' 'sudo chef-client'
+
+    # run chef-client on all NODE
+    knife ssh 'name:*' 'sudo chef-client'
+
+    # run chef-client  on all of the web servers running Ubuntu on the Amazon EC2 platform
+    knife ssh "role:web" "sudo chef-client" -x ubuntu -a ec2.public_hostname
+
+    # upgrade all nodes
+    knife ssh name:* "sudo aptitude upgrade -y"
+    ```
+
+[chef-client Document](https://docs.chef.io/ctl_chef_client.html)
+
+Undo bootstrapping
 ```sh
-# run chef-client on NODE
-knife ssh 'name:NODE' 'sudo chef-client'
-
-# run chef-client on all NODE
-knife ssh 'name:*' 'sudo chef-client'
-
-# run chef-client  on all of the web servers running Ubuntu on the Amazon EC2 platform
-knife ssh "role:web" "sudo chef-client" -x ubuntu -a ec2.public_hostname
-
-# upgrade all nodes
-knife ssh name:* "sudo aptitude upgrade -y"
+knife node delete --yes NODENAME
+knife client delete --yes NODENAME
 ```
 
-### Cookbook
+### Cookbooks
+
+Structure
+- `Attributes` details of node
+- `Recipes` 
+- `metadata.rb` 
+
+ 
+Some knife command 
+```sh
+# upload cookbook
+knife cookbook upload NAME
+
+# list of cookbook
+knife cookbook list
+```
