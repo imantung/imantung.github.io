@@ -26,7 +26,7 @@ cd vagrant_getting_started
 # initiate vagrant
 vagrant init
 
-# config vagrant
+# edit vagrantfile (see example below)
 vim Vargrantfile
 
 # create environment
@@ -41,6 +41,10 @@ vagrant ssh
 # check all vagrant environment
 vagrant global-status
 
+# suspends the machine
+vagrant suspend
+
+# stops and deletes all traces of the vagrant machine
 vagrant destroy
 ```
 
