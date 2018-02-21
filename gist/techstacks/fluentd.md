@@ -42,26 +42,92 @@ pkill -f fluentd
 ```
 
 
-
-
-# Config
+### Config
 
 [Official Document](https://docs.fluentd.org/v1.0/articles/config-file#(1)-%E2%80%9Csource%E2%80%9D:-where-all-the-data-come-from)
 
-Location
+Location if install using td-agent
 ```sh
-# if install using td-agent
 sudo vi /etc/td-agent/td-agent.conf
+```
 
-# if install using gem 
+Location if install using td-agent
+```sh
 sudo fluentd --setup /etc/fluent
 sudo vi /etc/fluent/fluent.conf
 ```
 
-List of Directives
+Config directive
 1. `source`: where all the data come from
 2. `match`: Tell fluentd what to do!
 3. `filter`: Event processing pipeline
 4. Set system wide configuration: the `system` directive
 5. Group filter and output: the `label` directive
 6. Re-use your config: the `@include` directive
+
+Types of plugins
+1. [Input](https://docs.fluentd.org/v0.12/articles/input-plugin-overview) in `source`
+2. [Parser](https://docs.fluentd.org/v0.12/articles/parser-plugin-overview) in `source`
+3. [Output](https://docs.fluentd.org/v0.12/articles/output-plugin-overview) in `match`
+4. [Formatter](https://docs.fluentd.org/v0.12/articles/formatter-plugin-overview) in `match`
+5. [Filter](https://docs.fluentd.org/v0.12/articles/filter-plugin-overview) in `filter`
+6. [Buffer](https://docs.fluentd.org/v0.12/articles/buffer-plugin-overview) used by output plugins
+
+### Input Plugins
+
+- `in_tail` similar with `tail -F`
+  ```
+  <source>
+    @type tail
+    path /var/log/httpd-access.log
+    pos_file /var/log/td-agent/httpd-access.log.pos
+    tag apache.access
+    format apache2
+  </source>
+  ```
+- `in_forward`  listens to a TCP socket to receive the event stream or UDP socket to receive heartbeat. (assume only used within private network)
+  ```
+  <source>
+    @type forward
+    port 24224
+    bind 0.0.0.0
+  </source>
+  ```
+- `in_secure_forward` SSL with authentication
+- `in_udp` accept UDP payload
+- `in_tcp`accept TCP payload
+- `in_http` accept HTTP payload
+- `in_unix` retrieve records from the Unix Domain Socket
+- `in_syslog` retrieve records via the syslog protocol on UDP or TCP
+- `in_exec` executes external programs to receive or pull event logs
+- `in_scribe` facebook scribe
+- `in_multiprocess` use multiple CPU cores by spawning multiple child processes (able to handle very big transaction per day)
+- `in_dummy` generate dummy event
+  ```
+  <source>
+    @type dummy
+    dummy {"hello":"world"}
+  </source>
+  ```
+  
+### Output Plugins
+
+Non-buffered --> immediately
+- `out_copy` copies events to multiple outputs
+- `out_null` write nothing
+- `out_roundrobin` distributes events to multiple outputs using a round-robin algorithm
+- `out_stdout`
+
+Buffered --> queued ([parameter](https://docs.fluentd.org/v0.12/articles/output-plugin-overview#buffered-output-parameters))
+- `out_exec_filter` (1) executes an external program using an event as input and (2) reads a new event from the program output
+- `out_forward` forwards events to other fluentd nodes
+- `out_secure_forward` SSL with authentication
+- `out_mongo` into mongo
+- `out_mongo_replset` using mongo ReplicaSet
+- `out_splunk` send data to a Splunk HTTP Event Collector 
+
+Time Sliced --> queued with time as key ([parameters](https://docs.fluentd.org/v0.12/articles/output-plugin-overview#time-sliced-output-parameters))
+- `out_exec` passes events to an external program.
+- `out_file` into file
+- `out_s3` into amazon s3
+- `out_webhdfs` into HDFS
