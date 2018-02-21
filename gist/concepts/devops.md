@@ -7,7 +7,7 @@ title: DevOps
 
 [What is ‘Site Reliability Engineering’?](https://landing.google.com/sre/interview/ben-treynor.html)
 
-Scaling
+### Scaling
 - Vertical Scaling = add resource (CPU/RAM)
 - Horizontal Scaling = add machine
 
@@ -22,3 +22,4 @@ Scaling
 - [logstash](https://www.elastic.co/products/logstash): collect, parse, transform logs
 - [kibana](https://www.elastic.co/products/kibana): browser-based analytics and search interface for Elasticsearch
 - [ELK](https://www.elastic.co/elk-stack): Elasticsearch, Logstash, Kibana
+- [rsyslog](http://www.rsyslog.com/) to forwarding log messages in an IP network
