@@ -21,3 +21,12 @@ ZSH_THEME=""af-magic
 [iTerm2](https://www.iterm2.com/)
 
 [Solarized Dark iTerm Color Setting](https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Solarized%20Dark%20-%20Patched.itermcolors)
+
+
+### High Sierra 
+
+brew problem
+```
+sudo chown -R $(whoami) $(brew --prefix)/*
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
