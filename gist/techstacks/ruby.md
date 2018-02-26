@@ -99,3 +99,13 @@ JRUBY_OPTS=--dev rspec
 # alias for bundle exec
 alias be="bundle exec "
 ```
+
+### Parse RSS 
+
+```rb
+require 'rubygems'
+require 'rss'
+require 'open-uri'
+
+@rss = RSS::Parser.parse('https://medium.com/feed/gojekengineering')
+```
