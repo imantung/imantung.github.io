@@ -7,9 +7,19 @@ title: DevOps
 
 [What is ‘Site Reliability Engineering’?](https://landing.google.com/sre/interview/ben-treynor.html)
 
-### Scaling
-- Vertical Scaling = add resource (CPU/RAM)
-- Horizontal Scaling = add machine
+`Vertical Scaling` = add resource (CPU/RAM)
+
+`Horizontal Scaling` = add machine
+
+`ELK Stack` = Elasticsearch + Logstash + Kibana
+
+`TIG Stack` = Telegraf + InfluxDB + Grafana
+
+Model of cloud service:
+- `IASS` = Infrastructure as a Service 
+- `PASS` = Platform as a Service 
+- `SASS` = Software as a Service
+
 
 ### Tools
 - [Dockers](/docker.md): containerization
@@ -21,5 +31,4 @@ title: DevOps
 - [statd](https://github.com/coreos/etcd): stats aggregation
 - [logstash](https://www.elastic.co/products/logstash): collect, parse, transform logs
 - [kibana](https://www.elastic.co/products/kibana): browser-based analytics and search interface for Elasticsearch
-- [ELK](https://www.elastic.co/elk-stack): Elasticsearch, Logstash, Kibana
 - [rsyslog](http://www.rsyslog.com/) to forwarding log messages in an IP network
