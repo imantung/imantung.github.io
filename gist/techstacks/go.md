@@ -5,4 +5,5 @@ title: go
 
 ### Libraries
 
-Command Line Interface: (https://github.com/urfave/cli)
+- Command Line Interface: github.com/urfave/cli
+- Logging: github.com/Sirupsen/logrus
