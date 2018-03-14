@@ -27,7 +27,7 @@ cd vagrant_getting_started
 vagrant init
 
 # edit vagrantfile (see example below)
-vim Vargrantfile
+vim Vagrantfile
 
 # create environment
 vagrant up
