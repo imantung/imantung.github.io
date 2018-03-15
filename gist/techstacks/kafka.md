@@ -9,6 +9,13 @@ title: Kafka
 
 ISR = In Sync Replication
 
+### Server Properties
+
+Allowed kafka to be access from outside
+```
+advertised.host.name=0.0.0.0
+```
+
 ### Kafka Manager
 
 ```sh

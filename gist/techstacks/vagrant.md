@@ -16,21 +16,27 @@ https://www.vagrantup.com/
 ### Get Started
 
 ```sh
-# check version
-vagrant --version
-
 # create some folder
 mkdir vagrant_getting_started
 cd vagrant_getting_started
-
-# initiate vagrant
 vagrant init
+vim Vagrantfile # edit config; change config.vm.box = "hashicorp/precise64"
+vagrant up
+```
 
-# edit vagrantfile (see example below)
-vim Vagrantfile
+
+### Vagrant command
+
+```sh
+# check version
+vagrant --version
+
+# create empty vagrant file
+vagrant init
 
 # create environment
 vagrant up
+vagrant up [id]
 
 # check vagrant
 vagrant status
@@ -43,14 +49,38 @@ vagrant global-status
 
 # suspends the machine
 vagrant suspend
+vagrant suspend [id]
 
 # stops and deletes all traces of the vagrant machine
 vagrant destroy
+vagrant destroy [id]
+
+# boxes
+vagrant box list
+vagrant box add hashicorp/precise64
 ```
 
-`Vagrantfile` example
+
+### Vagrantfile
+
+List of all available vagrant box ([here](https://app.vagrantup.com/boxes/search))
+```
+hashicorp/precise64
+ubuntu/trusty64
+```
+
+
+With provisioning and port forwarding
 ```ruby
-Vagrant.configure("2") do |config|
-  config.vm.box = "hashicorp/precise64"
+Vagrant.configure(2) do |config|
+  config.vm.box = "ubuntu/trusty64"
+  config.vm.provision :shell, path: "bootstrap.sh"
+  config.vm.network :forwarded_port, host: 9200, guest: 9200
+  config.vm.provider "virtualbox" do |v|
+    v.memory = 2048
+    v.cpus = 1
+    v.name = "ES-2.x"
+  end
 end
+
 ```

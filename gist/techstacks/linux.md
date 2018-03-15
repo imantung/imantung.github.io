@@ -4,8 +4,25 @@ title: Linux
 ---
 
 
-(Filesystem Hierarchy Standard)[http://refspecs.linuxfoundation.org/FHS_2.3/fhs-2.3.html]
+[Filesystem Hierarchy Standard](http://refspecs.linuxfoundation.org/FHS_2.3/fhs-2.3.html)
 
+Get PID
+```sh
+ps ax | grep [NAME] | grep -v grep | awk '{print $1}'
+```
+
+Write file 
+```sh
+#!/bin/sh
+FILE="/path/to/file"
+
+/bin/cat <<EOM >$FILE
+text1
+text2
+text3
+text4
+EOM
+```
 
 Install java (Ubuntu)
 ```sh
