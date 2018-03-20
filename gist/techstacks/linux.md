@@ -6,6 +6,17 @@ title: Linux
 
 [Filesystem Hierarchy Standard](http://refspecs.linuxfoundation.org/FHS_2.3/fhs-2.3.html)
 
+`/dev/null` = null device =  device file that discards all data written to it but reports that the write operation succeeded
+
+Run on background:
+```sh
+nohup ./myprogram > myprogram.log 2>&1 &
+```
+`nohup` --> no hang up  
+`2>&1`--> stderr also goes to the stdout  
+`&` --> run on background  
+  
+
 Get PID
 ```sh
 ps ax | grep [NAME] | grep -v grep | awk '{print $1}'
