@@ -9,6 +9,11 @@ title: Kafka
 
 ISR = In Sync Replication
 
+Get kafka PID
+```sh
+ps ax | grep -i 'kafka' | grep java | grep -v grep | grep -v zookeeper | awk '{print $1}'
+```
+
 ### Server Properties
 
 Allowed kafka to be access from outside

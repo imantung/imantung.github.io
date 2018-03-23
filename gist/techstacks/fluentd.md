@@ -28,19 +28,21 @@ Directories
 
 ### Fluent-gem
 
-```
-#install
+Install
+```sh
 gem install fluentd --no-ri --no-rdoc
-
-# run
 fluentd --setup ./fluent
-fluentd -c ./fluent/fluent.conf -vv &
-echo '{"json":"message"}' | fluent-cat debug.test
+```
 
-#stop
+Start
+```sh
+fluentd -c ./fluent/fluent.conf -vv &
+```
+
+Stop
+```sh
 pkill -f fluentd
 ```
-
 
 ### Config
 
@@ -55,6 +57,24 @@ Location if install using td-agent
 ```sh
 sudo fluentd --setup /etc/fluent
 sudo vi /etc/fluent/fluent.conf
+```
+
+Config: 
+```xml
+<source>
+  @type tail
+  tag "mylog"
+  path /Users/imantung/mylog
+  pos_file  /Users/imantung/mylog.pos
+  
+  <parse>
+    @type none
+  </parse>
+</source>
+
+<match barito>
+  @type stdout
+</match>
 ```
 
 Config directive

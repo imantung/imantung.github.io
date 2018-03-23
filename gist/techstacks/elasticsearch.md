@@ -3,8 +3,11 @@ layout: gist
 title: Elasticsearch
 ---
 
-https://github.com/elastic/elasticsearch
+[Repo](https://github.com/elastic/elasticsearch)
 
+[A web front end for an elastic search cluster](https://github.com/mobz/elasticsearch-head) (chrome plugin is available)
+
+---
 
 Install Homebrew
 ```sh
@@ -29,8 +32,14 @@ cat elasticsearch-6.2.2/config/elasticsearch.yml
 elasticsearch-6.2.2/bin/elasticsearch
 ```
 
+---
 
 Check status
 ```sh
 curl http://localhost:9200/
+```
+
+Delete All
+```sh
+curl -X DELETE 'http://localhost:9200/_all'
 ```

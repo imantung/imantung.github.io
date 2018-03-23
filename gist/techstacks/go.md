@@ -3,6 +3,17 @@ layout: gist
 title: go
 ---
 
+### Vendoring
+
+```sh
+brew install glide
+
+glide create # create glide.yaml 
+glide install # start pulling
+glide up # update version
+
+```
+
 ### Libraries
 
 - Command Line Interface: github.com/urfave/cli
