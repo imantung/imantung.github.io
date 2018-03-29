@@ -43,6 +43,12 @@ Dependencies conflict
 3. Rerun `bundle install`
 ```
 
+Install gem from project source 
+```sh
+gem build GEMNAME.gemspec
+gem install gemname-version.gem
+```
+
 ### rails
 
 ```sh
@@ -108,4 +114,12 @@ require 'rss'
 require 'open-uri'
 
 @rss = RSS::Parser.parse('https://medium.com/feed/gojekengineering')
+```
+
+
+### Snipet
+
+Change key name
+```rb
+hash[:new_key] = hash.delete :old_key
 ```

@@ -3,6 +3,20 @@ layout: gist
 title: go
 ---
 
+### IO
+
+Reader from strings package for reader unit testing or debug
+```go
+strings.NewReader("some string\n")
+```
+
+Buffer from bytes package for writer unit testing or debug or concatenate string
+```go
+buff := bytes.Buffer{}
+buff.ReadString("some string")
+```
+
+
 ### Vendoring
 
 ```sh
