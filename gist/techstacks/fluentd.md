@@ -151,3 +151,34 @@ Time Sliced --> queued with time as key ([parameters](https://docs.fluentd.org/v
 - `out_file` into file
 - `out_s3` into amazon s3
 - `out_webhdfs` into HDFS
+
+
+### Writing custom plugin
+
+[Plugin Development](https://docs.fluentd.org/v0.12/articles/plugin-development)
+
+Override method:
+- `class SomeInput < Input`
+    - `Fluent::Plugin.register_input('NAME', self)`
+    - `def configure(conf)`
+    - `def start`
+    - `def shutdown`
+- `class SomeOutput < BufferedOutput`
+    - `Fluent::Plugin.register_output('NAME', self)`
+    - `def configure(conf)`
+    - `def start`
+    - `def shutdown`
+    - `def format(tag, time, record)`
+    - `def write(chunk)`
+- `class SomeOutput < Output`
+    - `Fluent::Plugin.register_output('NAME', self)`
+    - `def configure(conf)`
+    - `def start`
+    - `def shutdown`
+    - `def emit(tag, es, chain)`
+- `class PassThruFilter < Filter`
+    - `Fluent::Plugin.register_filter('passthru', self)`
+    - `def configure(conf)`
+    - `def start`
+    - `def shutdown`
+    - `def filter(tag, time, record)`

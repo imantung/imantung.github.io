@@ -43,10 +43,11 @@ Dependencies conflict
 3. Rerun `bundle install`
 ```
 
-Install gem from project source 
+Gem development
 ```sh
 gem build GEMNAME.gemspec
-gem install gemname-version.gem
+gem install gemname-version.gem 
+gem push gemname-version.gem # update to https://rubygems.org/
 ```
 
 ### rails
