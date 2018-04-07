@@ -10,20 +10,18 @@ title: Mac
 
 [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 ```sh
-sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
 Change zsh themes at `~/.zhsrc`
 ```
-ZSH_THEME=""af-magic
+ZSH_THEME="af-magic"
 ```
 
 [iTerm2](https://www.iterm2.com/)
 
-[Solarized Dark iTerm Color Setting](https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Solarized%20Dark%20-%20Patched.itermcolors)
 
-
-### High Sierra 
+### High Sierra
 
 brew problem
 ```
