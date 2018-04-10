@@ -25,21 +25,53 @@ Life Cycle:
 
 ## Go 
 
+[Go Reference](https://docs.travis-ci.com/user/languages/go/)
+
 ```yml
 language: go
 
 go:
-  - tip
-  
-branches:
-  only:
-    - master
+  - 1.9
 
 notifications:
   email: false
 
+install:
+  - # skip
+
 script:
   - go test ./...
+  - GOOS=linux GOARCH=arm go build -o barito-flow-linux
+  - GOOS=darwin GOARCH=amd64 go build -o barito-flow-darwin
+
+deploy:
+  provider: releases
+  skip_cleanup: true
+  api_key: $GITHUB_TOKEN
+  file:
+    - barito-flow-linux
+    - barito-flow-darwin
+  on:
+    tags: true
+    repo: BaritoLog/barito-flow
+    all_branches: true
 ```
 
-`tip`: latest version
+
+
+Using go latest version 
+```
+go:
+  - tip
+```
+
+
+
+### Github
+
+Got problem: 
+```
+Skipping a deployment with the releases provider because this is not a tagged commit
+```
+
+[Workaround](https://github.com/travis-ci/travis-ci/issues/5026) --> remove the `branches`
