@@ -1,28 +1,25 @@
 ---
 layout: gist
-title: psql
+title: Postgres
 ---
 
-### Cheat Sheet
+### PSql
 
+Connect to spesific database
+```sh
+psql -d DATABASE
+psql -d postgres
 ```
 
-# show all database
-\list
-\l
-
-# connect to database 
-\connect DATABASE
-\c DATABASE
-
-# show table
-\dt 
-
-# show table + indices
-\d+
-
+Psql
+```
+\l            #list
+\c DATABASE   # connect db
+\dt           # show table
+\d+           # show table + indices
 ```
 
+### Query
 
 Get columns through query
 ```sql
