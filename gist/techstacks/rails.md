@@ -5,8 +5,6 @@ title: Rails
 
 ### Application
 
-[Reserved Word](http://reservedwords.herokuapp.com/)
-
 ```sh
 rails new my_app --database=postgresql # create app
 rails s # start
@@ -19,10 +17,10 @@ Scaffold
 rails g scaffold product name:string price:decimal{7,2}
 ```
 
+Check on [Heroku Reserved Words](http://reservedwords.herokuapp.com/) before naming
+
 ### Migration
 ```sh
-rails g migration add_email_to_users email:string
-
 rake db:drop
 rake db:create
 rake db:migrate
@@ -30,6 +28,10 @@ rake db:rollback
 RAILS_ENV=test rake db:drop
 ```
 
+Add column
+```sh
+rails g migration add_email_to_users email:string
+```
 
 Common Migration datatype
 ```
