@@ -33,6 +33,11 @@ echo 'vendor/ruby' >> .gitignore
 bundle package
 ```
 
+If install is missing. [solution](https://stackoverflow.com/questions/17618113/the-command-rbenv-install-is-missing)
+```sh
+git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
+```
+
 
 ### ruby & bundle
 

@@ -14,12 +14,41 @@ Get kafka PID
 ps ax | grep -i 'kafka' | grep java | grep -v grep | grep -v zookeeper | awk '{print $1}'
 ```
 
+Create topic
+```sh
+bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test
+```
+
+Delete topic
+```sh
+kafka-topics.sh --delete --zookeeper localhost:2181 --topic test
+```
+
+List of topics
+```sh
+bin/kafka-topics.sh --list --zookeeper localhost:2181
+```
+
+
+
+
 ### Server Properties
 
 Allowed kafka to be access from outside
-```
+```properties
 advertised.host.name=0.0.0.0
 ```
+
+Get error `dial tcp: lookup YOUR_NETWORK_NAME: no such host` if consumer service using `localhost` or `127.0.0.1` as host. 
+```properties
+listeners=PLAINTEXT://:9092 
+``` 
+
+Allow to delete topic
+```properties
+delete.topic.enable=true
+```
+
 
 ### Kafka Manager
 
