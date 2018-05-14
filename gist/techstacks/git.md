@@ -3,17 +3,22 @@ layout: gist
 title: Git
 ---
 
+Get latest commit ID
+```sh
+git log --format=%h -1
+```
+
 ### Tags
 
 Git uses two main types of tags: lightweight and annotated.
 
 Annotated Tags:
-```
+```sh
 git tag -a v2.1.0 -m "xyz feature is released in this tag."
 ```
 
 Lightweight Tags
-```
+```sh
 git tag v2.1.0
 ```
 

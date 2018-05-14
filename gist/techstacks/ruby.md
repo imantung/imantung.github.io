@@ -10,7 +10,8 @@ brew install rbenv
 echo 'eval "$(rbenv init -)"' >> ~/.zshrc
 rbenv install --list
 rbenv install 2.4.3
-rbenv global 2.4.3
+rbenv local 2.4.3 # set ruby for this project
+rbenv global 2.4.3 # set ruby for global
 source ~/.zshrc
 
 ruby -v
@@ -38,6 +39,11 @@ If install is missing. [solution](https://stackoverflow.com/questions/17618113/t
 git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
 ```
 
+Put gem executable at `/bin` folder
+```sh
+bundle install --binstubs
+```
+
 
 ### ruby & bundle
 
@@ -55,16 +61,6 @@ gem install gemname-version.gem
 gem push gemname-version.gem # update to https://rubygems.org/
 ```
 
-### Hack
-
-```sh
-# make compile faster for jruby
-JRUBY_OPTS=--dev rspec
-
-# alias for bundle exec
-alias be="bundle exec "
-```
-
 ### Parse RSS 
 
 ```rb
@@ -76,9 +72,33 @@ require 'open-uri'
 ```
 
 
-### Snipet
+### Code Snippet
 
 Change key name
 ```rb
 hash[:new_key] = hash.delete :old_key
+```
+
+## Class
+
+```rb
+class Example
+  attr_reader :name, :age
+
+  def initialize args
+    args.each do |k,v|
+      instance_variable_set("@#{k}", v) unless v.nil?
+    end
+  end
+end
+```
+
+### Hack
+
+```sh
+# make compile faster for jruby
+JRUBY_OPTS=--dev rspec
+
+# alias for bundle exec
+alias be="bundle exec "
 ```

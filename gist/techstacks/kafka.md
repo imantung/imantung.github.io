@@ -7,7 +7,11 @@ title: Kafka
 
 [Replication Tool](https://cwiki.apache.org/confluence/display/KAFKA/Replication+tools)
 
-ISR = In Sync Replication
+[Kafka Authorizer](https://cwiki.apache.org/confluence/display/KAFKA/Kafka+Authorization+Command+Line+Interface)
+
+`ISR` = In Sync Replication
+
+### Commands
 
 Get kafka PID
 ```sh
@@ -21,16 +25,13 @@ bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 -
 
 Delete topic
 ```sh
-kafka-topics.sh --delete --zookeeper localhost:2181 --topic test
+bin/kafka-topics.sh --delete --zookeeper localhost:2181 --topic test
 ```
 
 List of topics
 ```sh
 bin/kafka-topics.sh --list --zookeeper localhost:2181
 ```
-
-
-
 
 ### Server Properties
 

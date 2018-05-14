@@ -27,35 +27,52 @@ vagrant up
 
 ### Vagrant command
 
+
+check version
 ```sh
-# check version
 vagrant --version
+```
 
-# create empty vagrant file
+create empty vagrant file
+```sh
 vagrant init
+```
 
-# create environment
+create environment
+```sh
 vagrant up
 vagrant up [id]
+```
 
-# check vagrant
+check vagrant
+```sh
 vagrant status
+```
 
-# log in to vm
+log in to vm
+```sh
 vagrant ssh
+```
 
-# check all vagrant environment
+check all vagrant environment
+```sh
 vagrant global-status
+```
 
-# suspends the machine
+suspends the machine
+```sh
 vagrant suspend
 vagrant suspend [id]
+```
 
-# stops and deletes all traces of the vagrant machine
+stops and deletes all traces of the vagrant machine
+```sh
 vagrant destroy
 vagrant destroy [id]
+```
 
-# boxes
+boxes
+```sh
 vagrant box list
 vagrant box add hashicorp/precise64
 ```

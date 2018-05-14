@@ -9,6 +9,8 @@ title: Chef
 
 [Why Configuration Manager?](https://www.upguard.com/articles/the-7-configuration-management-tools-you-need-to-know)
 
+[Chef Server vs Chef Zero vs Chef Solo](http://blog.differentpla.net/blog/2014/11/13/which-chef)
+
 ### Quotes
 
 > Turn your infrastructure into code
@@ -31,6 +33,7 @@ Nodes --> machines that are managed/configurated by Chef
 - `ChefClient` run the automation on node
 - `Ohai` collect system configuration data
 
+`Berkshelf`: dependency manager
 
 
 ### Chef-Repo
@@ -135,9 +138,13 @@ Structure
 - `Recipes` 
 - `metadata.rb` 
 
+Test your cookbook using [kitchen-test](https://docs.chef.io/kitchen.html)
  
 Some knife command 
 ```sh
+# new cookbook
+chef generate cookbook NAME
+
 # upload cookbook
 knife cookbook upload NAME
 

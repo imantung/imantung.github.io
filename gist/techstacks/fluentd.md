@@ -36,7 +36,8 @@ fluentd --setup ./fluent
 
 Start
 ```sh
-fluentd -c ./fluent/fluent.conf -vv &
+fluentd -c ./fluent/fluent.conf -vv & # run in background and verbose
+fluentd -c ./fluent/fluent.conf -p PROJECT_NAME/lib/fluent/plugin # run using PROJECT_NAME plugins
 ```
 
 Stop

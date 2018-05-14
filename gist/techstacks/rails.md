@@ -34,7 +34,7 @@ rails g migration add_email_to_users email:string
 ```
 
 Common Migration datatype
-```
+```sh
 :binary
 :boolean
 :date
@@ -73,10 +73,26 @@ group = FactoryBot.build(:application_group, name: '')
 expect(template).to_not be_valid
 ```
 
+### Rake Task
 
-### Misc
+Create rake task with argument
+```sh
+task :task1 => [:environment] do
+  puts ENV['path']
+end
 
-1. If `RAILS_ENV` already defined at `application.yml`
+task :task2 => [:environment] do
+  puts ARGV[1]
+end
+
+task :task3, [:message] => :environment do |t, args|
+  args.with_defaults(:path => "default")
+  puts args.path
+end
 ```
-WARNING: Skipping key "RAILS_ENV". Already set in ENV.
+
+```sh
+rake task1 path="your path"
+rake task2 "your_path"
+rake "task3[your_path]"
 ```
