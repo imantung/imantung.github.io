@@ -20,6 +20,15 @@ ZSH_THEME="af-magic"
 
 [iTerm2](https://www.iterm2.com/)
 
+### apache
+
+```sh
+sudo apachectl start
+sudo apachectl stop
+
+cd /Library/WebServer/Documents # root folder
+```
+
 
 ### High Sierra
 

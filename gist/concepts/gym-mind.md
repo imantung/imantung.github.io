@@ -54,3 +54,41 @@ Best practice to challenge people:
 3. Use helpful languages 
 
 Goal is dynamic; be flexing.  
+
+### Make it Happen 
+
+RACI --> Tool for assigning responsibility
+- R = Responsible = The doer
+- A = Accountable = The buck stops here
+- C = Consulted = The contributor
+- I = Informed = The recipient
+
+Method delivery using SCRUM
+
+### Inspire
+
+9 influencing style: 
+1. Reason
+2. *Inspire*
+3. Ask
+4. Feel good
+5. Deal
+6. Favor
+7. Silent allies
+8. Authority
+9. Force
+
+How to being inspired
+1. Being self-inspired (by reading booking, watch movie, talk to people, etc) 
+2. Get Positive Energy
+3. Using a good language
+  - Engaging
+  - Unexpected
+  - Optimistic
+  - Decisive
+4. Style or strategy
+  - Future focused
+  - Positive Framing
+  - Build a vision
+  - Have an opinion
+5. Have a purpose

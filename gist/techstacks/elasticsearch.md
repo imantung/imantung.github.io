@@ -32,7 +32,23 @@ cat elasticsearch-6.2.2/config/elasticsearch.yml
 elasticsearch-6.2.2/bin/elasticsearch
 ```
 
----
+### Overview
+
+Terminology
+
+|MySQL|Elasticsearch|
+|---|---|
+|Database|Index|
+|Table|Type|
+|Row|Document|
+|Column|Field|
+|Schema|Mapping|
+|Index|Everything is indexed|
+|SQL|Query DSL|
+|SELECT * FROM table|GET http://... |
+|UPDATE table SET |PUT http://... |
+
+### API
 
 Check status
 ```sh
