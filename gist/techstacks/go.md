@@ -3,52 +3,48 @@ layout: gist
 title: go
 ---
 
-### IO
-
-Reader from strings package for reader unit testing or debug
+Implements of `io.Reader`
 ```go
 strings.NewReader("some string\n")
 ```
 
-Buffer from bytes package for writer unit testing or debug or concatenate string
+Implements of `io.Writer`
 ```go
 buff := bytes.Buffer{}
 buff.WriteString("some string")
 ```
 
-### Test
-
-Using http recorder
+Use `-ldflag` to override main variable
 ```go
-func TestHealthCheckHandler(t *testing.T) {
-    // create request
-    req, err := http.NewRequest("GET", "/health-check", nil)
-    if err != nil {
-        t.Fatal(err)
-    }
-    
-    // create recorder
-    rr := httptest.NewRecorder()
-    handler := http.HandlerFunc(HealthCheckHandler)
+package main
 
-    // serve
-    handler.ServeHTTP(rr, req)
+import "fmt"
 
-    // Check the status code is what we expect.
-    if status := rr.Code; status != http.StatusOK {
-        t.Errorf("handler returned wrong status code: got %v want %v",
-            status, http.StatusOK)
-    }
+var (
+    version string
+    date    string
+)
 
-    // Check the response body is what we expect.
-    expected := `{"alive": true}`
-    if rr.Body.String() != expected {
-        t.Errorf("handler returned unexpected body: got %v want %v",
-            rr.Body.String(), expected)
-    }
+func main() {
+    fmt.Printf("version=%s, date=%s", version, date)
 }
 ```
+```sh
+go build -ldflags "-X main.version=0.0.1 -X main.date=%date:~10,4%-%date:~4,2%-%date:~7,2%T%time:~0,2%:%time:~3,2%:%time:~6,2%"
+```
 
+### Mocking
+
+Install [GoMock](https://github.com/golang/mock)
+```sh
+go get github.com/golang/mock/gomock
+go install github.com/golang/mock/mockgen
+```
+
+Mocking
+```sh
+mockgen -source=flow/kafka_admin.go -destination=flow/mock_kafka_admin.go -package=flow
+```
 
 ### Vendoring
 
@@ -65,6 +61,8 @@ glide up # update version
 
 - Command Line Interface: github.com/urfave/cli
 - Logging: github.com/Sirupsen/logrus
+- Monkey Patching: github.com/bouk/monkey
+- Mock: github.com/golang/mock
 
 
 ### GOOS/GOARCH

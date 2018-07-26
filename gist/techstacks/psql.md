@@ -9,6 +9,9 @@ Connect to spesific database
 ```sh
 psql -d DATABASE
 psql -d postgres
+
+# template1 is a database created by postgres itself, and is present on all installations
+psql -d template1
 ```
 
 Psql

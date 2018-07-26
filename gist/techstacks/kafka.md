@@ -11,11 +11,18 @@ title: Kafka
 
 `ISR` = In Sync Replication
 
+
+
 ### Commands
 
 Get kafka PID
 ```sh
 ps ax | grep -i 'kafka' | grep java | grep -v grep | grep -v zookeeper | awk '{print $1}'
+```
+
+Remove all data on topics
+```sh
+rm -rf /tmp/kafka-logs/newTopic-*
 ```
 
 Create topic
@@ -32,6 +39,8 @@ List of topics
 ```sh
 bin/kafka-topics.sh --list --zookeeper localhost:2181
 ```
+
+
 
 ### Server Properties
 

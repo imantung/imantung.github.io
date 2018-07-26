@@ -43,3 +43,16 @@ echo debconf shared/accepted-oracle-license-v1-1 select true | sudo debconf-set-
 echo debconf shared/accepted-oracle-license-v1-1 seen true | sudo debconf-set-selections
 sudo aptitude -y install oracle-java8-installer
 ```
+
+
+### Screen
+
+```sh
+screen -R [name]
+screen -ls 
+screen -x [name]
+
+```
+
+`ctrl + a + d` to exit
+`ctrl + a + k` to kill

@@ -61,6 +61,11 @@ gem install gemname-version.gem
 gem push gemname-version.gem # update to https://rubygems.org/
 ```
 
+Add gem owner 
+```sh
+gem owner EMAIL GEMNAME
+```
+
 ### Parse RSS 
 
 ```rb
