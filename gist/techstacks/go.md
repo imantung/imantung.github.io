@@ -1,17 +1,23 @@
 ---
 layout: gist
-title: go
+title: Go
 ---
 
 Implements of `io.Reader`
 ```go
 strings.NewReader("some string\n")
+bytes.NewReader([]byte{})
 ```
 
 Implements of `io.Writer`
 ```go
 buff := bytes.Buffer{}
 buff.WriteString("some string")
+```
+
+Reader to ReaderClose
+```go
+ioutil.NopCloser(reader)
 ```
 
 Use `-ldflag` to override main variable
@@ -48,13 +54,22 @@ mockgen -source=flow/kafka_admin.go -destination=flow/mock_kafka_admin.go -packa
 
 ### Vendoring
 
+Using [glide](https://glide.sh/)
 ```sh
 brew install glide
 
 glide create # create glide.yaml 
 glide install # start pulling
 glide up # update version
+```
 
+Using [dep](https://golang.github.io/dep/)
+```sh
+brew install dep
+
+dep init
+dep ensure
+dep ensure -add github.com/foo/bar github.com/baz/quux
 ```
 
 ### Libraries
@@ -68,7 +83,8 @@ glide up # update version
 ### GOOS/GOARCH
 
 | $GOOS	| $GOARCH |
-android|arm|
+
+|android|arm|
 |darwin|386|
 |darwin|amd64|
 |darwin|arm|

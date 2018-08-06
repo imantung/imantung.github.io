@@ -52,3 +52,17 @@ Clean up local tags
 ```
 git tag -l | xargs git tag -d
 ```
+
+
+### Config
+
+convert `git:` to `http:` from cli
+```sh
+git config --global url.https://github.com/.insteadOf git://github.com/
+```
+
+convert `https:` to `git:` from config file
+```
+[url "git@source.golabs.io:"]
+  insteadOf = https://source.golabs.io/
+```

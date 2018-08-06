@@ -8,6 +8,7 @@ title: Rails
 ```sh
 rails new my_app --database=postgresql # create app
 rails s # start
+rails s -p 1234 # start with port 1234
 rails c # console 
 rake -T # list task
 ```

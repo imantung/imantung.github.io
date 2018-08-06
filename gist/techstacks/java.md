@@ -17,6 +17,14 @@ rm jre-8u112-macosx-x64.dmg
 
 ### Gradle
 
+`groupId`: unique identification across all projects.
+eg. org.apache.maven, org.apache.commons
+
+`artifactId`: name of the jar without version. 
+eg. maven, commons-math
+
+`version`: project version
+
 Fat Jar
 ```
 task fatJar(type: Jar) {

@@ -9,8 +9,13 @@ title: Kafka
 
 [Kafka Authorizer](https://cwiki.apache.org/confluence/display/KAFKA/Kafka+Authorization+Command+Line+Interface)
 
-`ISR` = In Sync Replication
+[Don't use consumer groups the wrong ways](https://dzone.com/articles/dont-use-apache-kafka-consumer-groups-the-wrong-wa)
 
+- Same consumer group = Competing Consumer pattern
+- Different consumer group = Publish Subscribe pattern
+
+
+`ISR` = In Sync Replication
 
 
 ### Commands
