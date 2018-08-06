@@ -7,6 +7,14 @@ title: DevOps
 
 [What is ‘Site Reliability Engineering’?](https://landing.google.com/sre/interview/ben-treynor.html)
 
+1. Code — code development and review, **source code management** tools, code merging
+2. Build — **continuous integration** tools, build status
+3. Test — **continuous testing** tools that provide feedback on business risks
+4. Package — **artifact repository**, application pre-deployment staging
+5. Release — chang  e management, release approvals, **release automation**
+6. Configure — infrastructure configuration and management, **Infrastructure as Code** tools
+7. Monitor — **applications performance monitoring**, end–user experience
+
 `Vertical Scaling` = add resource (CPU/RAM)
 
 `Horizontal Scaling` = add machine
@@ -23,6 +31,8 @@ Model of cloud service:
 ### High Availability
 
 HA = High Availability = No Downtime, Always available
+
+SPOF = Single Point of Failure = If it fails, will stop the entire system from working
 
 RPO = Recovery Point Objective = How much data can we loose
 
