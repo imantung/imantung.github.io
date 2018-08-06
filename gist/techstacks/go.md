@@ -83,7 +83,7 @@ dep ensure -add github.com/foo/bar github.com/baz/quux
 ### GOOS/GOARCH
 
 | $GOOS	| $GOARCH |
-
+|---|---|
 |android|arm|
 |darwin|386|
 |darwin|amd64|
