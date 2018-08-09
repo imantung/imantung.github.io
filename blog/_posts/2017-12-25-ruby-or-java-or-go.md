@@ -50,3 +50,6 @@ I like [Reflection](https://en.wikipedia.org/wiki/Reflection_(computer_programmi
 Because golang relative young, discussion is still happening around best practice on golang. The choice of library is not as many as other popular languages.
 
 I prefer Golang for any possible project because of brute strength and simplicity.
+
+
+This article have be repost on [medium](https://blog.gojekengineering.com/ruby-java-golang-59713bdd9fc4)
