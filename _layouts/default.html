@@ -9,7 +9,8 @@
         <nav class="page-nav">
           {% for nav_item in site.nav_list %}
             <a class="{% if page.url == nav_item[1] %} w3-text-indigo{% endif %} {% if forloop.index > 1 %} w3-border-left {% endif %}" href="{{ nav_item[1] }}">
-              <i class="fa {{ nav_item[2] }}" aria-hidden="true"></i> {{ nav_item[0] }}
+              <i class="fa {{ nav_item[2] }}" aria-hidden="true"></i> 
+              <span class="w3-hide-small">{{ nav_item[0] }}</span>
             </a>
           {% endfor %}
         </nav>
@@ -26,8 +27,16 @@
 
     <div class="w3-container">
       <footer class="w3-content page-footer">
-        <div class="page-copyright">
-          &copy; {{ site.time | date: '%Y' }} <a href="/">{{ site.title }}</a>. All rights reserved.
+        <div class="page-copyright w3-row">
+          <div class="w3-half w3-left-align">
+            &copy; {{ site.time | date: '%Y' }} <a href="/">{{ site.title }}</a>. All rights reserved.  
+          </div>
+          
+          <div class="w3-half w3-right-align">
+            <a href="https://github.com/{{site.github_username}}" class=""><i class="fa fa-github"></i></a>&nbsp;
+            <a href="{{site.linkedin_link}}" class=""><i class="fa fa-linkedin"></i></a>&nbsp;
+            <a href="mailto:{{site.email}}" class=""><i class="fa fa-envelope"></i></a>  
+          </div>
         </div>
       </footer>
     </div>
