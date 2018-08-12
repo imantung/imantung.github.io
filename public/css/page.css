@@ -2,7 +2,7 @@
 
 .page-footer{
   margin-top: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
 }
 
 .page-content{
@@ -52,13 +52,13 @@ blockquote p{
 }
 
 .page-info{
-  padding-top: 0;
-  padding-bottom: 24px;
+  padding-top: 18px;
+  padding-bottom: 18px;
   padding-right: 18px;
   padding-left: 18px;
 }
 .page-info>*{
-  padding-top: 24px;
+  /* padding-top: 24px; */
 }
 .page-info h1, .page-info h2{
   margin: 0;
@@ -67,5 +67,5 @@ blockquote p{
 .page-info-description{
   font-size: 13px;
   font-style: italic;
-  text-align: right;
+  text-align: center;
 }

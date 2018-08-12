@@ -50,14 +50,15 @@
 
 
 .gist-category{
+  border: thin solid #C0C0C0;
+  margin: 40px 0;
+  padding: 20px;
 }
 
 .gist-category h3{
   margin: 0;
   padding-bottom: 10px;
-  padding-top: 60px;
   padding-left: 10px;
-  border-bottom: thin solid #d1d1e0;
 }
 
 .gist-item{
