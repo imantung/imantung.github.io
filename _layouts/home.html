@@ -3,8 +3,25 @@ layout: default
 title: home
 ---
 
-<div class="welcome w3-light-gray w3-round-large">
+<div class="">
   <h1>Welcome!</h1>
 
-  <p>Hi there. My name is Iman Tunggono and right now I am working on one of the biggest startups in South East Asia where a lot of things come every day to learn. The purpose of this website is simply as my exercise to write down what I have learned and leave some trace of my work that I can follow back when needed.</p>
+  <p id="demo"></p>
 </div>
+
+<script>
+var i = 0;
+var txt = 'Hi there.. My name is Iman Tunggono and right now I am working on one of the biggest startups in South East Asia where a lot of things come every day to learn. The purpose of this website is simply as my exercise to write down what I have learned and leave some trace of my work that I can follow back when needed.';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    var c = txt.charAt(i)
+    document.getElementById("demo").innerHTML += c;
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+typeWriter()
+</script>
