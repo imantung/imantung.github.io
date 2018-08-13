@@ -4,24 +4,55 @@ title: home
 ---
 
 <div class="">
-  <h1>Welcome!</h1>
+  <h1>
+    Hi there! 
+    <a id="home-play" href="#">
+      <i class="fa fa-play-circle" aria-hidden="true"></i>
+    </a>
+  </h1>
 
   <p id="demo"></p>
 </div>
 
 <script>
 var i = 0;
-var txt = 'Hi there.. My name is Iman Tunggono and right now I am working on one of the biggest startups in South East Asia where a lot of things come every day to learn. The purpose of this website is simply as my exercise to write down what I have learned and leave some trace of my work that I can follow back when needed.';
-var speed = 50;
+var txt = "Welcome to my messy blog. A place where I will put my thought, notes and many other random things. I am a coder for a living, working on a big startup company, that's why this blog contains some heavy tech stuff. Writing word is always one of my deepest desire. Now everything became too much for my head, so I start to write. :)";
+var normalSpeed = 75;
+var dotSpeed = 280;
+var commaSpeed = 150;
+var isPlay = false;
 
 function typeWriter() {
-  if (i < txt.length) {
+  if (i < txt.length && isPlay) {
     var c = txt.charAt(i)
+    var delay;
+    if(c == '.'){
+      delay = dotSpeed;
+    } else if(c == ","){
+      delay = commaSpeed;
+    } else{
+      delay = normalSpeed;
+    }
     document.getElementById("demo").innerHTML += c;
     i++;
-    setTimeout(typeWriter, speed);
+    
+    setTimeout(typeWriter, delay);
   }
 }
 
-typeWriter()
+$('#home-play').click(() => {
+  isPlay = !isPlay
+  if(isPlay){
+    $('#home-play i').removeClass('fa-play-circle')
+    $('#home-play i').addClass('fa-pause-circle')  
+    typeWriter()  
+  } else{
+    $('#home-play i').removeClass('fa-pause-circle')  
+    $('#home-play i').addClass('fa-play-circle')
+  }
+  
+  return false
+})
+
+
 </script>
