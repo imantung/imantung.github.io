@@ -1,6 +1,6 @@
 ---
 layout: gist
-title: Node
+title: NodeJS
 ---
 
 ## Package Manager
@@ -20,5 +20,11 @@ n 0.10.33  # install/use v0.10.33
 n latest # install/use the latest version
 n stable # install/use the latest stable version
 ``` 
+
+
+Downgrade the npm (make sure your node is compatable with npm)
+```sh
+npm install -g npm@3.10.10
+```
 
 Another alternative is using [NVM](https://github.com/creationix/nvm) --> never tried
