@@ -84,6 +84,10 @@ Change key name
 hash[:new_key] = hash.delete :old_key
 ```
 
+Compare array of string
+
+WithInDifferentAccess
+
 ## Class
 
 ```rb

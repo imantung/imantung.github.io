@@ -21,7 +21,6 @@ Psql
 \dt           # show table
 \d+           # show table + indices
 ```
-
 ### Query
 
 Get columns through query
@@ -30,4 +29,10 @@ SELECT *
 FROM information_schema.columns
 WHERE table_schema = 'your_schema'
   AND table_name   = 'your_table'
+```
+
+Json 
+```sql
+SELECT * FROM table_name
+WHERE json_field @> '[{"field":"value"}]'
 ```

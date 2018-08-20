@@ -3,6 +3,10 @@ layout: gist
 title: Project Management
 ---
 
+MVP = Minimum Viable Product
+
+Yak Shaving = The seemingly endless series of small tasks that have to be completed before the next step in a project can move forward
+
 
 ### INVEST Principle
 
