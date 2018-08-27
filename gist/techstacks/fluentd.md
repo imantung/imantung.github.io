@@ -1,6 +1,6 @@
 ---
 layout: gist
-title: fluentd
+title: FluentD
 ---
 
 - Unified Logging with JSON
@@ -26,22 +26,17 @@ Directories
 /var/log/td-agent
 ```
 
-### Fluent-gem
-
-Install
+Fluent-gem
 ```sh
+# install fluent-gem
 gem install fluentd --no-ri --no-rdoc
 fluentd --setup ./fluent
-```
 
-Start
-```sh
+# start
 fluentd -c ./fluent/fluent.conf -vv & # run in background and verbose
 fluentd -c ./fluent/fluent.conf -p PROJECT_NAME/lib/fluent/plugin # run using PROJECT_NAME plugins
-```
 
-Stop
-```sh
+# stop
 pkill -f fluentd
 ```
 
@@ -49,13 +44,12 @@ pkill -f fluentd
 
 [Official Document](https://docs.fluentd.org/v1.0/articles/config-file#(1)-%E2%80%9Csource%E2%80%9D:-where-all-the-data-come-from)
 
-Location if install using td-agent
+Location 
 ```sh
+# td-agent
 sudo vi /etc/td-agent/td-agent.conf
-```
 
-Location if install using td-agent
-```sh
+# gem
 sudo fluentd --setup /etc/fluent
 sudo vi /etc/fluent/fluent.conf
 ```
