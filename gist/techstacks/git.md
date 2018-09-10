@@ -3,8 +3,8 @@ layout: gist
 title: Git
 ---
 
-remote: remote repository
-origin: local repository
+remote: remote location of repository
+origin: default name of the repository
 master: main branch of repository
 
 project setup
