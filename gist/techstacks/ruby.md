@@ -84,12 +84,9 @@ Change key name
 hash[:new_key] = hash.delete :old_key
 ```
 
-Compare array of string
+Compare array of string: `WithInDifferentAccess`
 
-WithInDifferentAccess
-
-## Class
-
+Class
 ```rb
 class Example
   attr_reader :name, :age
@@ -100,6 +97,12 @@ class Example
     end
   end
 end
+```
+
+Array 
+```rb
+arr_of_stirng = ["foo", "bar"]
+arr_of_string_2 = %w(foo bar) # shortcut to write array without \"
 ```
 
 ### Hack

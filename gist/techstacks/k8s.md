@@ -3,6 +3,10 @@ layout: gist
 title: Kubernets
 ---
 
+An container-orchestration
+
+Gimmick: "platform for automating deployment, scaling, and operations of application containers across clusters of hosts."
+
 `kubectl` : the cli tool
 
 Others tool:

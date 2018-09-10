@@ -3,55 +3,68 @@ layout: gist
 title: Git
 ---
 
+remote: remote repository
+origin: local repository
+master: main branch of repository
+
+project setup
+```sh
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin [git_url]
+git push -u origin master
+```
+
+Remote 
+```sh
+git remote -v
+git remote set-url origin [git_url]
+```
+
 Get latest commit ID
 ```sh
 git log --format=%h -1
 ```
 
-### Tags
-
-Git uses two main types of tags: lightweight and annotated.
-
-Annotated Tags:
+Find who modified this line ([git blame](https://git-scm.com/docs/git-blame))
 ```sh
+# blame at line 40 of file foo
+git blame -L 40,+1 foo
+
+# blame at line 40 - 60 of file foo
+git blame -L 40,+21 foo
+git blame -L 40,60 foo
+```
+
+Tagging:
+```sh
+# Annotated Tags
 git tag -a v2.1.0 -m "xyz feature is released in this tag."
-```
 
-Lightweight Tags
-```sh
+# Lightweight Tags
 git tag v2.1.0
-```
 
-Push Tags
-```
+# Push tags
 git push origin --tags
-```
 
-Delete the tag from the remote repository:
-```
+# Delete the tag from the remote repository
 git push --delete origin TAGNAME
-```
 
-Delete the tag locally:
-```
+# Delete the tag locally
 git tag -d TAGNAME
-```
 
-Delete all local tags and get the list of remote tags:
-```
+# Delete all local tags and get the list of remote tags
 git tag -l | xargs git tag -d
 git fetch
-```
 
-Remove all remote tags
-```
+# Remove all remote tags
 git tag -l | xargs -n 1 git push --delete origin
-```
 
-Clean up local tags
-```
+# Clean up local tags
 git tag -l | xargs git tag -d
 ```
+
 
 
 ### Config
