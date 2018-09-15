@@ -56,3 +56,16 @@ screen -x [name]
 
 `ctrl + a + d` to exit
 `ctrl + a + k` to kill
+
+
+### Curl
+
+```sh
+curl [host]
+
+# send HEAD request
+curl -I [host]
+
+# verbose 
+curl -v [host]
+```

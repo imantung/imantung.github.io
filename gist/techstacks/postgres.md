@@ -3,9 +3,9 @@ layout: gist
 title: Postgres
 ---
 
-### PSql
+### PSQL
 
-Connect to spesific database
+Connect
 ```sh
 psql -d DATABASE
 psql -d postgres
@@ -14,7 +14,7 @@ psql -d postgres
 psql -d template1
 ```
 
-Psql
+Psql command
 ```
 \l            #list
 \c DATABASE   # connect db
@@ -22,6 +22,11 @@ Psql
 \d+           # show table + indices
 ```
 ### Query
+
+Create DB
+```sql
+CREATE DATABASE [name] 
+```
 
 Get columns through query
 ```sql
@@ -35,4 +40,21 @@ Json
 ```sql
 SELECT * FROM table_name
 WHERE json_field @> '[{"field":"value"}]'
+```
+
+### Extensions
+
+[list of PostgreSQL extensions officially supported here](https://www.postgresql.org/docs/current/static/contrib.html)
+[find 3rd party extensions](https://pgxn.org/)
+
+```sql
+-- list of installed extension
+SELECT * FROM pg_extension
+
+-- create
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+
+-- drop
+DELETE EXTENSION IF EXISTS "uuid-ossp";
+
 ```
