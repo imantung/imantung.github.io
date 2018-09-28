@@ -13,7 +13,7 @@ git init
 git add README.md
 git commit -m "first commit"
 git remote add origin [git_url]
-git push -u origin master
+git push -u origin master 
 ```
 
 Remote 
@@ -69,13 +69,43 @@ git tag -l | xargs git tag -d
 
 ### Config
 
-convert `git:` to `http:` from cli
+InsteadOf
 ```sh
+# convert git: to http:
 git config --global url.https://github.com/.insteadOf git://github.com/
+
+# convert http: to git:
+git config --global url.git@source.golabs.io.insteadOf https://source.golabs.io
 ```
 
-convert `https:` to `git:` from config file
+InsteadOf in configu
 ```
 [url "git@source.golabs.io:"]
   insteadOf = https://source.golabs.io/
 ```
+
+
+### Fork repository
+
+```sh
+# Configuring a remote for a fork
+git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
+
+# View remote
+git remote -v
+
+# sync
+git fetch upstream
+git merge upstream/master
+```
+
+
+### Source Tree
+
+Install source tree command line (if failed installed from the ui)
+```sh
+alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
+```
+
+Enable force push
+- Version 2.7.6: setting > advance

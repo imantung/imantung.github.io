@@ -63,3 +63,20 @@ kubectl cp /tmp/foo <some-namespace>/<some-pod>:/tmp/bar
 # Copy /tmp/foo local file to /tmp/bar in a remote pod in namespace
 kubectl cp <some-namespace>/<some-pod>:/tmp/foo /tmp/bar 
 ```
+
+## Helm 
+
+The Package Manager for K8s
+```sh
+brew install kubernetes-helm
+```
+
+Cheatsheet
+```sh
+#  initialize the local CLI and also install Tiller 
+helm init 
+
+# update charts/ based on the contents of requirements.yaml
+helm dependency update
+
+```
