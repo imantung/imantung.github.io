@@ -1,6 +1,6 @@
 ---
 layout: gist
-title: LXC
+title: LxC
 ---
 
 ```sh

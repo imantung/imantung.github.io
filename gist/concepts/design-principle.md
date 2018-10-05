@@ -50,7 +50,7 @@ title: Design Principle
 + Subject Oriented Programming
   - separate concerns to be addressed as separate software constructs, each on an equal footing with the others
   - advocates the organization of the classes that describe objects into “subjects”, which may be composed to form larger subjects
-+ Aspected Oriented Programmin / [cross-cutting concern](https://en.wikipedia.org/wiki/Cross-cutting_concern)
++ Aspected Oriented Programming / [cross-cutting concern](https://en.wikipedia.org/wiki/Cross-cutting_concern)
 
 ---  
 
@@ -65,3 +65,10 @@ title: Design Principle
 - Classes within a released component should share common closure. 
 - That is, if one needs to be changed, they all are likely to need to be changed. 
 - What affects one, affects all. 
+
+--- 
+
+[Fault-Tolerant Telecommunication System Patterns
+](https://sites.google.com/a/gertrudandcope.com/info/Publications/Patterns/PLoP95-telecom)
+
+---

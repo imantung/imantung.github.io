@@ -10,8 +10,8 @@ Gimmick: "platform for automating deployment, scaling, and operations of applica
 `kubectl` : the cli tool
 
 Others tool:
-- [kubectx](https://github.com/ahmetb/kubectx)
-- [stern](https://github.com/wercker/stern)
+- [kubectx](https://github.com/ahmetb/kubectx): change context
+- [stern](https://github.com/wercker/stern): tail logs from multi pods
 - [kube-fzf](https://github.com/arunvelsriram/kube-fzf)
 
 Install
@@ -64,6 +64,8 @@ kubectl cp /tmp/foo <some-namespace>/<some-pod>:/tmp/bar
 kubectl cp <some-namespace>/<some-pod>:/tmp/foo /tmp/bar 
 ```
 
+[Debug Crashloopbackoff](https://sysdig.com/blog/debug-kubernetes-crashloopbackoff/)
+
 ## Helm 
 
 The Package Manager for K8s
@@ -78,5 +80,4 @@ helm init
 
 # update charts/ based on the contents of requirements.yaml
 helm dependency update
-
 ```

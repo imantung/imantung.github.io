@@ -3,10 +3,6 @@ layout: gist
 title: Project Management
 ---
 
-MVP: Minimum Viable Product
-
-Yak Shaving: The seemingly endless series of small tasks that have to be completed before the next step in a project can move forward
-
 INVEST Principle: Principle of good PBI (Product Backlog Item)
 
 **I** – Independent – The PBI should be self-contained, in a way that there is no inherent dependency on another PBI.  
@@ -16,6 +12,8 @@ INVEST Principle: Principle of good PBI (Product Backlog Item)
 **S** – Small - PBIs should not be so big as to become impossible to plan/task/prioritize with a certain level of accuracy.  
 **T** – Testable - The PBI or its related description must provide the necessary information to make test development possible.  
 
+---
+
 SMART Criteria: Giving criteria to guide in the setting of objectives
 
 **S** – Specific – target a specific area for improvement.  
@@ -23,3 +21,13 @@ SMART Criteria: Giving criteria to guide in the setting of objectives
 **A** – Assignable – specify who will do it.  
 **R** – Realistic – state the results that can be achieved realistically, given available resources.  
 **T** – Time-related – specify when the result(s) can be achieved.  
+
+---
+
+DARCI stakeholder framework: Define who needs to be involved in your project and how they will be involved
+
+**D** - Decider
+**A** - Accountable
+**R** - Responsible
+**C** - Consulted
+**I** - Informed

@@ -35,3 +35,49 @@ Service Component
   - Analytics Impact
   - App Impact
 ```
+
+Product Fitness Assessment (PFA) template
+```
+1. Exactly what problem will this solve? (value proposition)
+
+2. For whom do we solve that problem? (target market)
+
+3. How big is the opportunity? (market size)
+
+4. What alternatives are out there? (competitive landscape)
+
+6. Why now? (market window)
+
+7. How will we get this product to market? (go-to-market strategy)
+
+8. How will we measure success/make money from this product? (metrics/revenue strategy)
+
+9. What factors are critical to success? (solution requirements)
+
+10. What are the fundamental reasons why this product would fail? (key assumptions being made)
+```
+
+Discussion Log template
+```
+Attendees:
+Note Taker:
+Action Items:
+  1. 
+  2.
+Agenda:
+  1.
+  2.
+Discussion Note
+  1.
+  2.
+```
+
+Restropective template
+```
+What Went Well
+  -
+  -
+What Didn’t Go Well
+  - 
+  -
+```
