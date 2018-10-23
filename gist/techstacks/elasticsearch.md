@@ -59,3 +59,7 @@ Delete All
 ```sh
 curl -X DELETE 'http://localhost:9200/_all'
 ```
+
+### Plugins
+
+Elastic LTR ([Learning to Rank](https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/)): train and use ranking models   

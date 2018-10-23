@@ -28,24 +28,12 @@ Model of cloud service:
 - `PASS` = Platform as a Service 
 - `SASS` = Software as a Service
 
-### High Availability
 
-HA = High Availability = No Downtime, Always available
+### Monitoring
 
-SPOF = Single Point of Failure = If it fails, will stop the entire system from working
+APM = Application Performance Monitoring
 
-RPO = Recovery Point Objective = How much data can we loose
-
-RTO = Recovery Time Objective = How long it take to Recovery
-
-MTBF = Mean-Time-Between-Failures = Time between failures
-
-
-### Instrumentation
-
-
-[Logging vs Instrumentation](https://peter.bourgon.org/blog/2016/02/07/logging-v-instrumentation.html)
-
+[Newrelic APM Courses](https://learn.newrelic.com/courses/intro_apm)
 
 ### Tools
 - [Dockers](/docker.md): containerization

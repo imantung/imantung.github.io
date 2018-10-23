@@ -12,7 +12,9 @@ Gimmick: "platform for automating deployment, scaling, and operations of applica
 Others tool:
 - [kubectx](https://github.com/ahmetb/kubectx): change context
 - [stern](https://github.com/wercker/stern): tail logs from multi pods
-- [kube-fzf](https://github.com/arunvelsriram/kube-fzf)
+- [kube-fzf](https://github.com/arunvelsriram/kube-fzf) command-line fuzzy searching of Kubernetes Pods
+- [codefresh](https://codefresh.io/) Continuous Delivery Platform for k8s
+- [stevedore](https://github.com/codefresh-io/Stevedore) Create clusters in Codefresh
 
 Install
 ```sh
@@ -80,4 +82,5 @@ helm init
 
 # update charts/ based on the contents of requirements.yaml
 helm dependency update
+helm dep update
 ```

@@ -74,10 +74,13 @@ Discussion Note
 
 Restropective template
 ```
-What Went Well
-  -
-  -
-What Didn’t Go Well
-  - 
-  -
+What worked Well?
+
+What could be improved?
+
+What will we commit to doing in the next iteration?
+
+Actionable commitment?
+
+
 ```
