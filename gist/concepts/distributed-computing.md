@@ -3,11 +3,13 @@ layout: gist
 title: Distributed Computing
 ---
 
-### Consistency Model
+[CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem): states that it is impossible for a distributed data store to simultaneously provide more than two out of the following three guarantees: Consistency, Availability, Partition Tolerance
 
-Eventually Consistent
+[ACID Properties](https://en.wikipedia.org/wiki/ACID_(computer_science)): set of properties of database transactions intended to guarantee validity even in the event of errors, power failures, etc
 
-Strong Consistent
+Eventually Consistency
+
+Strong Consistency
 
 ### High Availability
 

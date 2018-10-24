@@ -21,6 +21,23 @@ Psql command
 \dt           # show table
 \d+           # show table + indices
 ```
+
+
+#### Configuration
+
+```sql
+SHOW all; 
+SHOW config_file;
+
+SET configuration_parameter TO DEFAULT;
+```
+
+```sql
+SELECT * FROM pg_settings;
+UPDATE pg_settings SET setting = reset_val WHERE name = 'configuration_parameter';
+```
+
+
 ### Query
 
 Create DB

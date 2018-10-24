@@ -5,7 +5,12 @@ title: Elasticsearch
 
 [Repo](https://github.com/elastic/elasticsearch)
 
-[A web front end for an elastic search cluster](https://github.com/mobz/elasticsearch-head) (chrome plugin is available)
+[A web frontend for an elastic search cluster](https://github.com/mobz/elasticsearch-head) (chrome plugin is available)
+
+[A Heap of Trouble](https://www.elastic.co/blog/a-heap-of-trouble)
+
+[Cluster in Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/modules-node.html#coordinating-node)
+
 
 ---
 

@@ -7,14 +7,17 @@ An container-orchestration
 
 Gimmick: "platform for automating deployment, scaling, and operations of application containers across clusters of hosts."
 
-`kubectl` : the cli tool
-
-Others tool:
+Tools/Utilities:
 - [kubectx](https://github.com/ahmetb/kubectx): change context
 - [stern](https://github.com/wercker/stern): tail logs from multi pods
 - [kube-fzf](https://github.com/arunvelsriram/kube-fzf) command-line fuzzy searching of Kubernetes Pods
 - [codefresh](https://codefresh.io/) Continuous Delivery Platform for k8s
 - [stevedore](https://github.com/codefresh-io/Stevedore) Create clusters in Codefresh
+
+
+[Memory Request vs Memory Limit](https://jackiechen.org/2017/12/12/the-myth-of-memory-requests-and-limits-in-kubernetes/)
+
+[Deployment vs StatefulSets](https://stackoverflow.com/questions/41583672/kubernetes-deployments-vs-statefulsets)
 
 Install
 ```sh
