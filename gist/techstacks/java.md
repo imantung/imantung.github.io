@@ -3,8 +3,16 @@ layout: gist
 title: Java
 ---
 
+- [JVM Options](https://www.oracle.com/technetwork/articles/java/vmoptions-jsp-140102.html)
+- [JVM Enhancements](https://docs.oracle.com/javase/7/docs/technotes/guides/vm/performance-enhancements-7.html)
+
+Options: 
+- begin with `-X` are non-standard (not guaranteed to be supported on all VM implementations), and are subject to change without notice 
+- specified with `-XX `are not stable and are subject to change without notice
+
 ### Installation 
 
+Linux
 ```sh
 cd ~/Downloads
 curl -v -j -k -L -H "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u112-b15/jre-8u112-macosx-x64.dmg > jre-8u112-macosx-x64.dmg
