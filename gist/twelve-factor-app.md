@@ -1,6 +1,6 @@
 ---
 layout: gist
-title: 12 Factor App
+title: Twelve Factor App
 ---
 
 1. Codebase: One codebase tracked in revision control, many deploys

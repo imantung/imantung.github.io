@@ -35,14 +35,12 @@ text4
 EOM
 ```
 
-Install java (Ubuntu)
-```sh
-sudo add-apt-repository -y ppa:webupd8team/java
-sudo apt-get update
-echo debconf shared/accepted-oracle-license-v1-1 select true | sudo debconf-set-selections
-echo debconf shared/accepted-oracle-license-v1-1 seen true | sudo debconf-set-selections
-sudo aptitude -y install oracle-java8-installer
-```
+Note on environment variable:
+- Each process has its own separate set of environment variables
+- It inherits a duplicate environment of its parent process, except for explicit changes made by the parent when it creates the child
+- All environment variables must live together in a single environment block, which itself has a limit of `32767` characters. But that count is the sum over all environment variable names and values
+- The value is truncated at `2047` characters 
+
 
 
 ### Screen

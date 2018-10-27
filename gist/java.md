@@ -14,7 +14,6 @@ Non standard option
 
 ### Installation 
 
-Linux
 ```sh
 cd ~/Downloads
 curl -v -j -k -L -H "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u112-b15/jre-8u112-macosx-x64.dmg > jre-8u112-macosx-x64.dmg
@@ -22,6 +21,15 @@ hdiutil attach jre-8u112-macosx-x64.dmg
 sudo installer -pkg /Volumes/Java\ 8\ Update\ 112/Java\ 8\ Update\ 112.app/Contents/Resources/JavaAppletPlugin.pkg -target /
 diskutil umount /Volumes/Java\ 8\ Update\ 112 
 rm jre-8u112-macosx-x64.dmg
+```
+
+Install java (Ubuntu)
+```sh
+sudo add-apt-repository -y ppa:webupd8team/java
+sudo apt-get update
+echo debconf shared/accepted-oracle-license-v1-1 select true | sudo debconf-set-selections
+echo debconf shared/accepted-oracle-license-v1-1 seen true | sudo debconf-set-selections
+sudo aptitude -y install oracle-java8-installer
 ```
 
 

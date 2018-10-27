@@ -3,8 +3,7 @@ layout: gist
 title: Project Management
 ---
 
-INVEST Principle: Principle of good PBI (Product Backlog Item)
-
+INVEST Principle: Principle of good PBI (Product Backlog Item)  
 **I** – Independent – The PBI should be self-contained, in a way that there is no inherent dependency on another PBI.  
 **N** – Negotiable – PBIs are not explicit contracts and should leave space for discussion.  
 **V** – Valuable – A PBI must deliver value to the stakeholders.  
@@ -14,8 +13,7 @@ INVEST Principle: Principle of good PBI (Product Backlog Item)
 
 ---
 
-SMART Criteria: Giving criteria to guide in the setting of objectives
-
+SMART Criteria: Giving criteria to guide in the setting of objectives  
 **S** – Specific – target a specific area for improvement.  
 **M** – Measurable – quantify or at least suggest an indicator of progress.  
 **A** – Assignable – specify who will do it.  
@@ -24,10 +22,9 @@ SMART Criteria: Giving criteria to guide in the setting of objectives
 
 ---
 
-DARCI stakeholder framework: Define who needs to be involved in your project and how they will be involved
-
-**D** - Decider
-**A** - Accountable
-**R** - Responsible
-**C** - Consulted
-**I** - Informed
+DARCI stakeholder framework: Define who needs to be involved in your project and how they will be involved  
+**D** - Decider  
+**A** - Accountable   
+**R** - Responsible  
+**C** - Consulted  
+**I** - Informed  
