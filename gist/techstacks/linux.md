@@ -69,3 +69,13 @@ curl -I [host]
 # verbose 
 curl -v [host]
 ```
+
+### ULimit
+
+[doc](https://ss64.com/bash/ulimit.html)
+
+```sh
+ulimit -n # current
+ulimit -u unlimited # set to unlimited
+ulimit -a # show all
+```

@@ -12,6 +12,7 @@ title: Elasticsearch
 - [Disabled Swapping](https://www.elastic.co/guide/en/elasticsearch/reference/6.2/setup-configuration-memory.html)
 - [Metrics to watch](https://www.oreilly.com/ideas/10-elasticsearch-metrics-to-watch)
 - [Zen Discovery](https://www.elastic.co/guide/en/elasticsearch/reference/current/modules-discovery-zen.html#unicast)
+- [Important configuration change](https://www.elastic.co/guide/en/elasticsearch/guide/1.x/_important_configuration_changes.html)
 
 Nodes:
 - Master-eligible node `node.master: true`
@@ -119,6 +120,7 @@ elasticsearch-6.2.2/bin/elasticsearch
 ```
 DELETE /_all
 
+GET /[index]/_settings
 POST /[index]/[type]/_search
 
 GET /_nodes/stats?human&pretty

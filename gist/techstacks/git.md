@@ -3,6 +3,8 @@ layout: gist
 title: Git
 ---
 
+[Start using git in command line](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html)
+
 remote: remote location of repository
 origin: default name of the repository
 master: main branch of repository

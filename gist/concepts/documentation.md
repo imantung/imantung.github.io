@@ -7,6 +7,8 @@ title: Documentation
 
 [Pattern Forms](https://www.martinfowler.com/articles/writingPatterns.html)
 
+[RFC2119](https://tools.ietf.org/html/rfc2119): description use of MUST, MUST NOT, SHOULD, MAY, etc in internet documentation
+
 Root Cause Analyst (RCA) template
 ```
 Overview:
