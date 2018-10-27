@@ -1,15 +1,7 @@
 ---
 layout: default
 title: Gist
-categories: [
-  ['Tech Stacks', 'gist/techstacks'],
-  ['Concepts', 'gist/concepts'],
-  ['Others', 'gist/others']]
 ---
-
-
-
-  
 
 <div class="page-info-description">
   I hear and I forget, I see and I remember. I do and I understand. &mdash;Chinese Proverb<br />
@@ -18,19 +10,28 @@ categories: [
 
 
 <div class="gists-landing">
-  {% for category in page.categories %}
+  
   <div class="gist-category">
-    <h3>{{category[0]}} </h3>
-    <div class="gist-list">
-    {% for page in site.pages %}
-      {% if page.path contains category[1] %}
-      <div class="gist-item">
-        <div class="gist-item-icon"><img src="/public/file512.png" alt="" ></div>
-        <div class="gist-item-title"><a href="{{page.url}}">{{page.title}}</a></div>
+    
+    <div class="gist-list w3-row">
+      <div>
+        <ul>
+      {% assign tmp = "" %}
+      {% assign sortedPages = site.pages | where_exp: "page", "page.layout == 'gist'" |  sort: 'title' %}
+      {% for page in sortedPages %}
+        {% assign firstLetter = page.title | slice: 0 | upcase %}
+        {% if firstLetter != tmp %}
+        </ul>
       </div>
-      {% endif %}
-    {% endfor %}
+      <div style="padding: 0 20px 30px 20px; " class="w3-quarter w3-container">
+        <h4 class="w3-center">{{ firstLetter }}</h4>
+        <ul class="w3-ul w3-hoverable w3-small">
+        {% endif %}
+          <li><a href="{{page.url}}">{{page.title}}</a></li>  
+        {% assign tmp = firstLetter %}
+      {% endfor %}
+      </ul>
     </div>
   </div>
-  {% endfor%}
+  
 </div>
