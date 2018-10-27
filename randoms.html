@@ -1,0 +1,23 @@
+---
+layout: default
+title: Gist
+---
+
+
+<div class="gists-landing">
+  
+  <div class="gist-category">
+    
+    <div class="gist-list w3-row">
+      <div>
+      {% assign sortedPages = site.pages | where_exp: "page", "page.layout == 'random'" |  sort: 'title' %}
+      <ul>
+      {% for page in sortedPages %}
+          <li><a href="{{page.url}}">{{page.title}}</a></li>
+      {% endfor %}  
+      </ul>
+      
+    </div>
+  </div>
+  
+</div>

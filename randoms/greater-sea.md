@@ -1,5 +1,5 @@
 ---
-layout: gist
+layout: random
 title: Greater Sea
 ---
 

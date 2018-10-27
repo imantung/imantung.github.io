@@ -1,5 +1,5 @@
 ---
-layout: gist
+layout: random
 title: On Seeing the 100% Perfect Girl One Beautiful April Morning
 ---
 
