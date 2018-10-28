@@ -37,9 +37,8 @@ plugins:
 # addon
 nav_list:
   - ['', '/', 'fa-home']
-  - ['Blog', '/blog/', 'fa-pencil']
   - ['Gists', '/gists/', 'fa-file-text']
-  - ['Randoms', '/randoms/', 'fa-globe']
+  - ['Randoms', '/randoms/', 'fa-hand-spock-o']
   - ['Quotes', '/quotes/', 'fa-font']
 
 disqus:

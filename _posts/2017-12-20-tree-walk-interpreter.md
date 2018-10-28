@@ -12,7 +12,7 @@ comments: true
 Like a fews week ago I did research about interpreter for some [DSL](https://en.wikipedia.org/wiki/Domain-specific_language) project. However things happened, and I got crashed away from the project.
 
 
-![Tree Walk Interpreter](/blog/assets/tree-walk-interpreter.jpg){:style="width: 100%; max-width: 420px;"}
+![Tree Walk Interpreter](/assets/tree-walk-interpreter.jpg){:style="width: 100%; max-width: 420px;"}
 
 This approach called [Tree-Walking Interpreter](https://en.wikipedia.org/wiki/Interpreter_&#40;computing&#41;#Abstract_syntax_tree_interpreters), which is the simplest way to make interpreter
 1. Free text/grammar: literally what you type

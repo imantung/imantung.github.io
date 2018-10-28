@@ -15,7 +15,7 @@ This instruction may help to set `$JAVA_HOME` without downloading [JDK](https://
 2. Check or update your java version on `Update` tab
 3. On `Java` tab, click button `View` to see java installation location.
 
-    ![java update location](/blog/assets/java_update_location.jpg){:style="width: 100%; max-width: 480px;"}
+    ![java update location](/assets/java_update_location.jpg){:style="width: 100%; max-width: 480px;"}
 4. Copy the `path` and remove `bin/java`
 ```bash
 /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home
