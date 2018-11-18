@@ -41,6 +41,10 @@ nav_list:
   - ['Randoms', '/randoms/', 'fa-hand-spock-o']
   - ['Quotes', '/quotes/', 'fa-font']
 
+sass:
+  style: compact
+  sass_dir: _sass
+
 disqus:
   shortname: imantung-github-io
 
