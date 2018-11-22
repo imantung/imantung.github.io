@@ -10,14 +10,28 @@ Gimmick: "platform for automating deployment, scaling, and operations of applica
 Tools/Utilities:
 - [kubectx](https://github.com/ahmetb/kubectx): change context
 - [stern](https://github.com/wercker/stern): tail logs from multi pods
-- [kube-fzf](https://github.com/arunvelsriram/kube-fzf) command-line fuzzy searching of Kubernetes Pods
-- [codefresh](https://codefresh.io/) Continuous Delivery Platform for k8s
-- [stevedore](https://github.com/codefresh-io/Stevedore) Create clusters in Codefresh
 
+[The Illustrated Children's Guide to Kubernetes](https://www.youtube.com/watch?v=4ht22ReBjno)
 
 [Memory Request vs Memory Limit](https://jackiechen.org/2017/12/12/the-myth-of-memory-requests-and-limits-in-kubernetes/)
 
 [Deployment vs StatefulSets](https://stackoverflow.com/questions/41583672/kubernetes-deployments-vs-statefulsets)
+
+Kube Probe (check using `kubectl get pod POD_NAME -o json`)
+- `readiness probe`: to know when to restart a Container
+- `liveness probe`: to know when a Container is ready to start accepting traffic
+
+[Debug Crashloopbackoff](https://sysdig.com/blog/debug-kubernetes-crashloopbackoff/)
+
+Resources type (show the list using `kubectl api-resources`)
+- nodes
+- pods
+- services 
+- secrets
+- ingresses
+
+
+## kubectl
 
 Install
 ```sh
@@ -39,6 +53,9 @@ kubectl get pod --all-namespaces --show-all -l "job-name=<job-name>"
 kubectl logs -f -n <namespace> <pod-name>
 kubectl exec -it <pod-name> bash # it = interactive shell
 kubectl port-forward <pod-name> 8080:8080
+
+kubectl describe pod POD_NAME
+kubectl got pod POD_NAME -o json
 ```
 
 Deployment
@@ -69,7 +86,12 @@ kubectl cp /tmp/foo <some-namespace>/<some-pod>:/tmp/bar
 kubectl cp <some-namespace>/<some-pod>:/tmp/foo /tmp/bar 
 ```
 
-[Debug Crashloopbackoff](https://sysdig.com/blog/debug-kubernetes-crashloopbackoff/)
+Check permission
+```sh
+kubectl auth can-i create deployments --namespace prod
+```
+
+
 
 ## Helm 
 
