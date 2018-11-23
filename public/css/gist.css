@@ -63,18 +63,18 @@
 
 .gist-item{
   display: inline-table;
-  max-width: 180px;
-  margin-top: 20px;
-
+  max-width: 170px;
+  margin: 10px 0 20px 0;
+  /* border: thin solid red; */
 }
 .gist-item-icon{
   display: table-cell;
-  width: 35%;
+  width: 25%;
 }
 .gist-item-title{
   display: table-cell;
-  font-size: 12px;
-  padding-left: 10px;
+  font-size: 0.8em;
+  padding-left: 5px;
   vertical-align: middle;
 }
 .gist-item-icon img{

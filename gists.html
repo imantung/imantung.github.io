@@ -24,10 +24,18 @@ title: Gist
         </ul>
       </div>
       <div style="padding: 0 20px 30px 20px; ">
-        <h2 class="w3-center">{{ firstLetter }}</h2>
-        <ul class="w3-ul w3-hoverable">
+        <div class="">
+          {{ firstLetter }}
+        </div>
         {% endif %}
-          <li><a href="{{page.url}}">{{page.title}}</a></li>  
+        <div class="gist-item">	      {% assign tmp = "" %}
+          <div class="gist-item-icon">
+            <img src="/public/file512.png" alt="" >
+          </div>
+          <div class="gist-item-title">
+            <a href="{{page.url}}">{{page.title}}</a>
+          </div>
+        </div>
         {% assign tmp = firstLetter %}
       {% endfor %}
       </ul>
