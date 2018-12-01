@@ -3,19 +3,19 @@ layout: gist
 title: Kubernets
 ---
 
-An container-orchestration
+> "platform for automating deployment, scaling, and operations of application containers across clusters of hosts."
 
-Gimmick: "platform for automating deployment, scaling, and operations of application containers across clusters of hosts."
+[k8s 101: pods, nodes, container, clusters](https://medium.com/google-cloud/kubernetes-101-pods-nodes-containers-and-clusters-c1509e409e16)
 
 Tools/Utilities:
+- [Minikube](https://kubernetes.io/docs/setup/minikube/): local kubernetes
 - [kubectx](https://github.com/ahmetb/kubectx): change context
 - [stern](https://github.com/wercker/stern): tail logs from multi pods
+- [Click](https://github.com/databricks/click): Command Line interactive
 
 [The Illustrated Children's Guide to Kubernetes](https://www.youtube.com/watch?v=4ht22ReBjno)
 
 [Memory Request vs Memory Limit](https://jackiechen.org/2017/12/12/the-myth-of-memory-requests-and-limits-in-kubernetes/)
-
-[Deployment vs StatefulSets](https://stackoverflow.com/questions/41583672/kubernetes-deployments-vs-statefulsets)
 
 Kube Probe (check using `kubectl get pod POD_NAME -o json`)
 - `readiness probe`: to know when to restart a Container
@@ -29,6 +29,8 @@ Resources type (show the list using `kubectl api-resources`)
 - services 
 - secrets
 - ingresses
+
+[Deployment vs StatefulSets](https://stackoverflow.com/questions/41583672/kubernetes-deployments-vs-statefulsets)
 
 
 ## kubectl

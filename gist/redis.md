@@ -3,7 +3,12 @@ layout: gist
 title: Redis
 ---
 
-default port: 6379
+default port: `6379`
+
+[Twemproxy](https://github.com/twitter/twemproxy): proxy for memcached and redis
+
+
+### Cheatsheet
 
 ```sh
 # install 

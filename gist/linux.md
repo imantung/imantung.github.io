@@ -41,7 +41,16 @@ Note on environment variable:
 - All environment variables must live together in a single environment block, which itself has a limit of `32767` characters. But that count is the sum over all environment variable names and values
 - The value is truncated at `2047` characters 
 
+Check IPs connecting to a machine
+```sh
+sudo netstat -ant | sed '1d' | awk '{print $5}' | cut -f1 -d':' | sort | uniq
+```
 
+Network Time Protocol (NTP) is a protocol used to synchronize computer system clock automatically over a networks.
+```sh
+sudo apt-get remove ntp ntpdate
+sudo apt-get install ntp ntpdate
+```
 
 ### Screen
 

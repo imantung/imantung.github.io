@@ -3,22 +3,6 @@ layout: gist
 title: Go
 ---
 
-Implements of `io.Reader`
-```go
-strings.NewReader("some string\n")
-bytes.NewReader([]byte{})
-```
-
-Implements of `io.Writer`
-```go
-buff := bytes.Buffer{}
-buff.WriteString("some string")
-```
-
-Reader to ReaderClose
-```go
-ioutil.NopCloser(reader)
-```
 
 Use `-ldflag` to override main variable
 ```go
@@ -37,6 +21,27 @@ func main() {
 ```
 ```sh
 go build -ldflags "-X main.version=0.0.1 -X main.date=%date:~10,4%-%date:~4,2%-%date:~7,2%T%time:~0,2%:%time:~3,2%:%time:~6,2%"
+```
+
+pprof
+
+### IO
+
+Implements of `io.Reader`
+```go
+strings.NewReader("some string\n")
+bytes.NewReader([]byte{})
+```
+
+Implements of `io.Writer`
+```go
+buff := bytes.Buffer{}
+buff.WriteString("some string")
+```
+
+Reader to ReaderClose
+```go
+ioutil.NopCloser(reader)
 ```
 
 ### Mocking
@@ -78,6 +83,7 @@ dep ensure -add github.com/foo/bar github.com/baz/quux
 - Logging: github.com/Sirupsen/logrus
 - Monkey Patching: github.com/bouk/monkey
 - Mock: github.com/golang/mock
+- Auth with ACL: github.com/casbin/casbin
 
 
 ### GOOS/GOARCH

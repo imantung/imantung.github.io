@@ -11,6 +11,15 @@ Non standard option
 - option begin with `-X` are non-standard (not guaranteed to be supported on all VM implementations), and are subject to change without notice 
 - option specified with `-XX `are not stable and are subject to change without notice
 
+List of currently running java process 
+```sh
+jps -l
+```
+
+Check heap of java process
+```sh
+jmap -heap PID
+```
 
 ### Installation 
 

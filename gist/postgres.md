@@ -3,6 +3,12 @@ layout: gist
 title: Postgres
 ---
 
+stolon
+
+stream replication
+
+[Gist](https://gist.github.com/rgreenjr/3637525)
+
 ### PSQL
 
 Connect
@@ -57,6 +63,38 @@ Json
 ```sql
 SELECT * FROM table_name
 WHERE json_field @> '[{"field":"value"}]'
+```
+
+### Replication
+
+Check replication status 
+```sql
+SELECT client_addr, state, sent_location, write_location, flush_location, replay_location 
+FROM pg_stat_replication;
+```
+
+Check replication delay
+```sql
+select now() - pg_last_xact_replay_timestamp() AS replication_delay;
+```
+
+Replication script (run on slave)
+```sh
+#!/bin/bash
+
+MASTER_DB_IP=$1
+
+[[ -z "${MASTER_DB_IP}" ]] &&
+echo "[error] parameters are missing
+Eg: ./replication.sh <master_db_ip>" && exit 123
+
+sudo service postgresql stop
+sudo cp /var/lib/postgresql/9.5/main/recovery.conf /tmp
+sudo -u postgres rm -rf /var/lib/postgresql/9.5/main
+sudo -u postgres pg_basebackup -h $MASTER_DB_IP -D /var/lib/postgresql/9.5/main -U rep -v -P
+sudo mv /tmp/recovery.conf /var/lib/postgresql/9.5/main/
+sudo chown postgres:postgres /var/lib/postgresql/9.5/main/recovery.conf
+sudo service postgresql start
 ```
 
 ### Extensions

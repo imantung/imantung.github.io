@@ -5,6 +5,8 @@ title: Git
 
 [Start using git in command line](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html)
 
+[How to not be afraid of git anymore](https://medium.freecodecamp.org/how-not-to-be-afraid-of-git-anymore-fe1da7415286)
+
 remote: remote location of repository
 origin: default name of the repository
 master: main branch of repository
