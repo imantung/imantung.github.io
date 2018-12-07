@@ -7,7 +7,7 @@ title: Business Model Canvas
 
 [Wiki](https://en.wikipedia.org/wiki/Business_Model_Canvas)
 
-[Premium Service Guide](https://strategyzer.com/)
+[Premium Guide](https://strategyzer.com/)
 
 [Some Tutorial](https://www.alexandercowan.com/business-model-canvas-templates/)
 
@@ -18,7 +18,6 @@ title: Business Model Canvas
 - It's about SATISFYING a customer need
 - and WHO are your customer?
 - Technology is part of Value Proposition
-- 
 
 ### 2. Customer Segments
 
@@ -27,7 +26,7 @@ title: Business Model Canvas
 - WHY would they buy?
 - Define customer archetype
 
-### 3. Channels
+### 3. Distribution Channels
 
 - How does the product get from our company to the customer
 - Physical channels or web/mobile channels?
