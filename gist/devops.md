@@ -7,6 +7,8 @@ title: DevOps
 
 [What is ‘Site Reliability Engineering’?](https://landing.google.com/sre/interview/ben-treynor.html)
 
+[SRE Book by Google](https://landing.google.com/sre/sre-book/toc/)
+
 `Vertical Scaling` = add resource (CPU/RAM)
 
 `Horizontal Scaling` = add machine

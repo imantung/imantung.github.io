@@ -9,14 +9,18 @@ title: Distributed Computing
 
 [Eventually Consistency](https://en.wikipedia.org/wiki/Eventual_consistency) / BASE (Basically Available, Soft state, Eventual consistency) / 
 
-### High Availability
+High Availability (HA) = No Downtime, Always available
 
-HA = High Availability = No Downtime, Always available
+Single Point of Failure (SPOF) = If it fails, will stop the entire system from working
 
-SPOF = Single Point of Failure = If it fails, will stop the entire system from working
+Recovery Point Objective (RPO) = How much data can we loose
 
-RPO = Recovery Point Objective = How much data can we loose
+Recovery Time Objective (RTO) = How long it take to Recovery
 
-RTO = Recovery Time Objective = How long it take to Recovery
+Mean-Time-Between-Failures (MTBF) = Time between failures
 
-MTBF = Mean-Time-Between-Failures = Time between failures
+Kong
+
+Envoy
+
+HAProxy
