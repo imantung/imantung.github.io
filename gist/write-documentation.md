@@ -10,3 +10,7 @@ title: Write Documentation
 [RFC2119](https://tools.ietf.org/html/rfc2119): description use of MUST, MUST NOT, SHOULD, MAY, etc in internet documentation
 
 [Readme Driven Development](http://tom.preston-werner.com/2010/08/23/readme-driven-development.html)
+
+[Readme Template by PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
+
+[Code of conduct by 18F](https://github.com/18F/code-of-conduct)
