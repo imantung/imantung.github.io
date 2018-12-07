@@ -19,6 +19,10 @@ title: Networking
 `UDP` = User Diagram Protocol
   - TCP without error checking
 
+TLS
+
+SSL
+
 
 TCP/IP Model Layers
 - Application Layer -> provides applications the ability to access the services of the other layers and defines the protocols that applications use to exchange data
@@ -38,4 +42,4 @@ OSI Model Layers
 
 
 
-<img src="{{site.baseurl}}/gist/concepts/networking/osi_tcp_layer.gif">
+<img src="{{site.baseurl}}/gist/networking/osi_tcp_layer.gif">

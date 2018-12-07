@@ -7,6 +7,8 @@ title: Kubernets
 
 [k8s 101: pods, nodes, container, clusters](https://medium.com/google-cloud/kubernetes-101-pods-nodes-containers-and-clusters-c1509e409e16)
 
+https://medium.com/google-cloud/kubernetes-nodeport-vs-loadbalancer-vs-ingress-when-should-i-use-what-922f010849e0
+
 Tools/Utilities:
 - [Minikube](https://kubernetes.io/docs/setup/minikube/): local kubernetes
 - [kubectx](https://github.com/ahmetb/kubectx): change context
@@ -17,18 +19,11 @@ Tools/Utilities:
 
 [Memory Request vs Memory Limit](https://jackiechen.org/2017/12/12/the-myth-of-memory-requests-and-limits-in-kubernetes/)
 
-Kube Probe (check using `kubectl get pod POD_NAME -o json`)
+[Best practice for health check](https://cloud.google.com/blog/products/gcp/kubernetes-best-practices-setting-up-health-checks-with-readiness-and-liveness-probes)
 - `readiness probe`: to know when to restart a Container
 - `liveness probe`: to know when a Container is ready to start accepting traffic
 
 [Debug Crashloopbackoff](https://sysdig.com/blog/debug-kubernetes-crashloopbackoff/)
-
-Resources type (show the list using `kubectl api-resources`)
-- nodes
-- pods
-- services 
-- secrets
-- ingresses
 
 [Deployment vs StatefulSets](https://stackoverflow.com/questions/41583672/kubernetes-deployments-vs-statefulsets)
 
