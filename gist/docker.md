@@ -93,6 +93,4 @@ docker build [directory contains Dockerfile]
 
 # remove image
 docker rmi [image name]
-
-
 ```

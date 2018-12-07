@@ -7,13 +7,7 @@ title: Kubernets
 
 [k8s 101: pods, nodes, container, clusters](https://medium.com/google-cloud/kubernetes-101-pods-nodes-containers-and-clusters-c1509e409e16)
 
-https://medium.com/google-cloud/kubernetes-nodeport-vs-loadbalancer-vs-ingress-when-should-i-use-what-922f010849e0
-
-Tools/Utilities:
-- [Minikube](https://kubernetes.io/docs/setup/minikube/): local kubernetes
-- [kubectx](https://github.com/ahmetb/kubectx): change context
-- [stern](https://github.com/wercker/stern): tail logs from multi pods
-- [Click](https://github.com/databricks/click): Command Line interactive
+[NodePort VS LoadBalancer vS Ingress](https://medium.com/google-cloud/kubernetes-nodeport-vs-loadbalancer-vs-ingress-when-should-i-use-what-922f010849e0)
 
 [The Illustrated Children's Guide to Kubernetes](https://www.youtube.com/watch?v=4ht22ReBjno)
 
@@ -25,8 +19,11 @@ Tools/Utilities:
 
 [Debug Crashloopbackoff](https://sysdig.com/blog/debug-kubernetes-crashloopbackoff/)
 
-[Deployment vs StatefulSets](https://stackoverflow.com/questions/41583672/kubernetes-deployments-vs-statefulsets)
-
+### Tools/Utilities
+- [Minikube](https://kubernetes.io/docs/setup/minikube/): local kubernetes
+- [kubectx](https://github.com/ahmetb/kubectx): change context
+- [stern](https://github.com/wercker/stern): tail logs from multi pods
+- [Click](https://github.com/databricks/click): Command Line interactive
 
 ## kubectl
 
@@ -87,8 +84,6 @@ Check permission
 ```sh
 kubectl auth can-i create deployments --namespace prod
 ```
-
-
 
 ## Helm 
 

@@ -44,9 +44,6 @@ Put gem executable at `/bin` folder
 bundle install --binstubs
 ```
 
-
-### ruby & bundle
-
 Dependencies conflict
 ```
 1. Remove `Gemfile.lock`
@@ -54,17 +51,17 @@ Dependencies conflict
 3. Rerun `bundle install`
 ```
 
-Gem development
+### Gem development
+
 ```sh
 gem build GEMNAME.gemspec
 gem install gemname-version.gem 
 gem push gemname-version.gem # update to https://rubygems.org/
-```
 
-Add gem owner 
-```sh
+# add gem owner
 gem owner EMAIL GEMNAME
 ```
+
 
 ### Parse RSS 
 
@@ -75,41 +72,6 @@ require 'open-uri'
 
 @rss = RSS::Parser.parse('https://medium.com/feed/gojekengineering')
 ```
-
-### Regex
-
-To test a String against a Regex, you can do any of five things:
-
-1. Use String#match:
-  ```rb
-  ' '.match /\s{1,}/    # => #<MatchData:0x118ca58>
-  'f'.match /\s{1,}/    # => nil
-  ```
-2. Use Regex#match:
-  ```rb
-  /\s{1,}/.match ' '    # => <MatchData:0x11857e4>
-  /\s{1,}/.match 'f'    # => nil
-  ```
-3: Use String#=~:
-  ```rb
-  ' ' =~ /\s{1,}/       # => 0
-  'f' =~ /\s{1,}/       # => nil
-  ```
-4: Use Regex#=~:
-  ```rb
-  /\s{1,}/ =~ ' '       # => 0
-  /\s{1,}/ =~ 'f'       # => nil
-  ```
-5: Use Regex#=== (this is what is used in case statements):
-  ```rb
-  /\s{1,}/ === ' '      # => true
-  /\s{1,}/ === 'f'      # => false
-  ```
-  Note: String#=== doesn't do what you want:
-  ```rb
-  ' ' === /\s{1,}/      # => false
-  'f' === /\s{1,}/      # => false
-  ```
 
 
 ### Code Snippet
@@ -149,20 +111,3 @@ JRUBY_OPTS=--dev rspec
 # alias for bundle exec
 alias be="bundle exec "
 ```
-
-### Slim template
-
-
-[Slim Lang](http://slim-lang.com/)
-
-[Docs](http://www.rubydoc.info/gems/slim/frames)
-
-Line Indicator:
-- `|` Verbatim Text (support HTML)
-- `'` Verbatim Text + single trailing white space
-- `<` beginning of regular html tag
-- `-` Control Code
-- `=` Output
-- `==` Output without HTML escaping
-- `/` Comment
-- `/!` Html comment

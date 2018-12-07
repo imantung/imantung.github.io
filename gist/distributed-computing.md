@@ -3,11 +3,20 @@ layout: gist
 title: Distributed Computing
 ---
 
-[CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem): states that it is impossible for a distributed data store to simultaneously provide more than two out of the following three guarantees: Consistency, Availability, Partition Tolerance
+<!-- FIXME -->
+
+[CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem): states that it is impossible for a distributed data store to simultaneously provide more than two out of the following three guarantees: 
+- Consistency
+- Availability
+- Partition Tolerance
 
 [ACID Properties](https://en.wikipedia.org/wiki/ACID_(computer_science)): set of properties of database transactions intended to guarantee validity even in the event of errors, power failures, etc
+- Atomic
+- Consistency
+- Isolation
+- Durability
 
-[Eventually Consistency](https://en.wikipedia.org/wiki/Eventual_consistency) / BASE (Basically Available, Soft state, Eventual consistency) / 
+BASE: Basically Available, Soft state, [Eventually consistency](https://en.wikipedia.org/wiki/Eventual_consistency)
 
 High Availability (HA) = No Downtime, Always available
 

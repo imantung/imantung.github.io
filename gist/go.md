@@ -3,6 +3,7 @@ layout: gist
 title: Go
 ---
 
+<!-- FIXME -->
 
 Use `-ldflag` to override main variable
 ```go
@@ -76,14 +77,6 @@ dep init
 dep ensure
 dep ensure -add github.com/foo/bar github.com/baz/quux
 ```
-
-### Libraries
-
-- Command Line Interface: github.com/urfave/cli
-- Logging: github.com/Sirupsen/logrus
-- Monkey Patching: github.com/bouk/monkey
-- Mock: github.com/golang/mock
-- Auth with ACL: github.com/casbin/casbin
 
 
 ### GOOS/GOARCH
