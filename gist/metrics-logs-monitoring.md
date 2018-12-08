@@ -17,12 +17,12 @@ APM = Application Performance Monitoring
 - (Request) Duration - distributions of the amount of time each request takes.
 
 [USE Method](http://www.brendangregg.com/usemethod.html)
-- resource: all physical server functional components (CPUs, disks, busses, ...) 
-- utilization: the average time that the resource was busy servicing work
+- Utilization: the average time that the resource was busy servicing work
   - as a percent over a time interval. eg, "one disk is running at 90% utilization".
-- saturation: the degree to which the resource has extra work which it can't service, often queued
+- Saturation: the degree to which the resource has extra work which it can't service, often queued
   - as a queue length. eg, "the CPUs have an average run queue length of four".
-- errors: the count of error events
+- Errors: the count of error events
+- resource: all physical server functional components (CPUs, disks, busses, ...) 
 
 [4 Golden Signal](https://landing.google.com/sre/sre-book/chapters/monitoring-distributed-systems/)
 - Latency:  The time it takes to service a request.
