@@ -1,9 +1,9 @@
 ---
 layout: gist
-title: Root Cause Analyst
+title: Root Cause Analysis
 ---
 
-Root Cause Analyst (RCA) template
+Template #1
 ```
 Overview:
 What happened:
@@ -12,4 +12,22 @@ Root causes:
 Impact:
 Action items:
 Customer Care Tickets created: 0
+```
+
+Template #2
+```
+Occurance Time:
+Detection Time:
+Recovery Time:
+Recovery Duration:
+Resolve Time:
+
+Problem Detail:
+Why did it occur?:
+Why was it overlooked?:
+Action for Recovery:
+To prevent recurrence:
+Action Item:
+Action Item Status:
+Change Log: (name, reason, data)
 ```

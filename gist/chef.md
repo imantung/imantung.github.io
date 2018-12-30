@@ -3,7 +3,7 @@ layout: gist
 title: Chef
 ---
 
-- Configuration manager (CM)
+> Turn your infrastructure into code
 
 [Official Web](https://www.chef.io/)
 
@@ -11,9 +11,6 @@ title: Chef
 
 [Chef Server vs Chef Zero vs Chef Solo](http://blog.differentpla.net/blog/2014/11/13/which-chef)
 
-### Quotes
-
-> Turn your infrastructure into code
 
 ### Basic Concept
 

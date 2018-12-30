@@ -5,6 +5,9 @@ title: Project Management
 
 [Invest in good stories and smart task](https://xp123.com/articles/invest-in-good-stories-and-smart-tasks/)
 
+[command center](https://en.wikipedia.org/wiki/Command_center)  a.k.a [war room](https://www.slideshare.net/rmurray/the-art-of-warroom)
+
+
 ### INVEST Principle
 
 Principle of good PBI (Product Backlog Item)  

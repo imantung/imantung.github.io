@@ -22,9 +22,9 @@ High Availability (HA) = No Downtime, Always available
 
 Single Point of Failure (SPOF) = If it fails, will stop the entire system from working
 
-Recovery Point Objective (RPO) = How much data can we loose
-
-Recovery Time Objective (RTO) = How long it take to Recovery
+[Defining failure](https://blog.fosketts.net/2011/07/06/defining-failure-mttr-mttf-mtbf/)
+- Recovery Point Objective (RPO) = How much data can we loose
+- Recovery Time Objective (RTO) = How long it take to Recovery
 
 Mean-Time-Between-Failures (MTBF) = Time between failures
 

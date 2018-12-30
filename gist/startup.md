@@ -3,21 +3,20 @@ layout: gist
 title: Startup
 ---
 
-[How to allocate stock to founder](https://www.cooleygo.com/how-to-allocate-stock-to-founders-early-team-members/)
-
-[209a Valuation](https://carta.com/blog/what-is-a-409a-valuation/): appraisal of the fair market value (FMV) of a private company
-
-[The single biggest reason why startups succeed](https://www.youtube.com/watch?v=bNpx7gpSqbY)
+[TED Talk: The single biggest reason why startups succeed](https://www.youtube.com/watch?v=bNpx7gpSqbY)
 
 [Customer Acquisition Cost](https://neilpatel.com/blog/customer-acquisition-cost/)
 
-[TED Talk:  Don't waste time on  a startup business plan](https://www.forbes.com/sites/allbusiness/2018/09/17/dont-waste-time-on-a-startup-business-plan-do-these-5-things-instead/#7ae3cb6d37a6)
+[Don't waste time on  a startup business plan](https://www.forbes.com/sites/allbusiness/2018/09/17/dont-waste-time-on-a-startup-business-plan-do-these-5-things-instead/#7ae3cb6d37a6)
+
+[How to name a startup using SMART Checklist](https://growth.org/blog/how-to-name-a-startup-the-s-m-a-r-t-checklist)
 
 Startup of one
 
 Gig Economy
 
-### Bootstrap Checklist
+
+### Startup Bootstrap Checklist
 
 1. Finalize and agree on the Idea (Create Product Fitness Analyst) 
 2. Create business plan/timeline/budget/north star metric 
@@ -29,6 +28,7 @@ Gig Economy
 
 
 ### Product Fitness Assessment (PFA) 
+
 1. Exactly what problem will this solve? (value proposition)
 2. For whom do we solve that problem? (target market)
 3. How big is the opportunity? (market size)
@@ -38,3 +38,4 @@ Gig Economy
 8. How will we measure success/make money from this product? (metrics/revenue strategy)
 9. What factors are critical to success? (solution requirements)
 10. What are the fundamental reasons why this product would fail? (key assumptions being made)
+]

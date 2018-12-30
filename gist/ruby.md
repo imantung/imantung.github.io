@@ -3,6 +3,8 @@ layout: gist
 title: Ruby
 ---
 
+[rack](https://rack.github.io/): webserver interface
+
 ### rbenv
 
 ```sh
@@ -102,7 +104,7 @@ arr_of_stirng = ["foo", "bar"]
 arr_of_string_2 = %w(foo bar) # shortcut to write array without \"
 ```
 
-### Hack
+### Tips and trick
 
 ```sh
 # make compile faster for jruby
