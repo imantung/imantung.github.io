@@ -28,6 +28,9 @@ Single Point of Failure (SPOF) = If it fails, will stop the entire system from w
 
 Mean-Time-Between-Failures (MTBF) = Time between failures
 
+
+[Hystrix](https://github.com/Netflix/Hystrix): latency and fault tolerance library
+
 Kong
 
 Envoy

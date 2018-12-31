@@ -10,7 +10,10 @@ What happened:
 Resolution:
 Root causes:
 Impact:
+What Went Well?
+Concerning Issue
 Action items:
+Key Comms
 Customer Care Tickets created: 0
 ```
 

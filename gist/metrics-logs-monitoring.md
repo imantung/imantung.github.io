@@ -5,7 +5,9 @@ title: Metrics & Log Monitoring
 
 APM = Application Performance Monitoring
 
-[Newrelic APM Courses](https://learn.newrelic.com/courses/intro_apm)
+APM Vendor:
+- [Datadog](https://www.datadoghq.com/)
+- [Newrelic](https://newrelic.com/) --> [courses](https://learn.newrelic.com/courses/intro_apm)
 
 [Logging vs Instrumentation](https://peter.bourgon.org/blog/2016/02/07/logging-v-instrumentation.html)
 - Logging: actionable logs
@@ -30,13 +32,11 @@ APM = Application Performance Monitoring
 - Errors: The rate of failed requests.
 - Saturation: A measure of how “full” a service is, often measured by latency.
 
-
 `ELK Stack` (now called Elastic Stack)
 - Elasticsearch: data
 - Logstash
 - Kibana: Visualization
 - Beat
-
 
 `TIG Stack`
 - Telegraf

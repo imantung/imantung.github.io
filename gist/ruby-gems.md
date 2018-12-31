@@ -1,6 +1,6 @@
 ---
 layout: gist
-title: Ruby Gem
+title: Ruby Gems
 ---
 
 - [puma](https://github.com/puma/puma): A Ruby/Rack web server built for concurrency 

@@ -55,3 +55,5 @@ npm install -g npm@3.10.10
 ```
 
 Another alternative is using [NVM](https://github.com/creationix/nvm) --> never tried
+
+[setting up a minimal node with webpack and babel](https://dev.to/aurelkurtula/setting-up-a-minimal-node-environment-with-webpack-and-babel--1j04)
