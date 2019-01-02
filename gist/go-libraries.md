@@ -3,8 +3,16 @@ layout: gist
 title: Go Libraries
 ---
 
-- Command Line Interface: [github.com/urfave/cli](https://github.com/urfave/cli)
-- Logging: [github.com/Sirupsen/logrus](https://github.com/urfave/cli)
-- Monkey Patching: [github.com/bouk/monkey](https://github.com/urfave/cli)
-- Mock: [github.com/golang/mock](https://github.com/urfave/cli)
-- Auth with ACL: [github.com/casbin/casbin](http://github.com/urfave/cli)
+- `github.com/urfave/cli`: Command Line Interface
+- `github.com/Sirupsen/logrus`: Logging
+- `github.com/bouk/monkey`: Monkey Patching
+- `github.com/golang/mock`: Mock
+- `github.com/casbin/casbin`: Auth with ACL
+- `github.com/codegangsta/negroni`: HTTP Middleware
+- `github.com/gorilla/mux`: http mux
+- `github.com/spf13/viper`: config
+- `github.com/stretchr/testify`: assertion 
+- `github.com/Shopify/sarama`: Kafka
+- `github.com/onsi/ginkgo`: BDD Framework
+- `github.com/gocraft/work`: background process using redis (similar with ruby sidekiq)
+- `github.com/yhat/scrape`: web scrapping

@@ -38,7 +38,6 @@ plugins:
 nav_list:
   - ['Blog', '/', 'fa-home']
   - ['Gists', '/gists/', 'fa-file-text']
-  - ['Randoms', '/randoms/', 'fa-hand-spock-o']
   - ['Quotes', '/quotes/', 'fa-font']
 
 sass:

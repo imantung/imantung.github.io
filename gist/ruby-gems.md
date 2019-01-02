@@ -19,6 +19,7 @@ title: Ruby Gems
 - [devise](https://github.com/plataformatec/devise): authorization
 - [lograge](https://github.com/roidrage/lograge): tame Rails' default policy to log everything.
 - [jbuilder](https://github.com/rails/jbuilder): generate JSON objects with a Builder-style DSL
+- [sidekiq](https://github.com/mperham/sidekiq): background process
 
 ### Test/Spec
 
