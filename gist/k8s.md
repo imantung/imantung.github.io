@@ -1,6 +1,6 @@
 ---
 layout: gist
-title: Kubernets
+title: Kubernetes
 ---
 
 > "platform for automating deployment, scaling, and operations of application containers across clusters of hosts."

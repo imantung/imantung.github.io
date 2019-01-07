@@ -16,3 +16,4 @@ title: Go Libraries
 - `github.com/onsi/ginkgo`: BDD Framework
 - `github.com/gocraft/work`: background process using redis (similar with ruby sidekiq)
 - `github.com/yhat/scrape`: web scrapping
+- `github.com/labstack/echo`: High performance, minimalist Go web framework  <-- TODO: look interesting
