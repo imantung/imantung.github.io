@@ -3,6 +3,8 @@ layout: gist
 title: Go Libraries
 ---
 
+### Libraries
+
 - `github.com/urfave/cli`: Command Line Interface
 - `github.com/Sirupsen/logrus`: Logging
 - `github.com/bouk/monkey`: Monkey Patching
@@ -17,3 +19,8 @@ title: Go Libraries
 - `github.com/gocraft/work`: background process using redis (similar with ruby sidekiq)
 - `github.com/yhat/scrape`: web scrapping
 - `github.com/labstack/echo`: High performance, minimalist Go web framework  <-- TODO: look interesting
+- `github.com/nlopes/slack`: slack api
+
+### Sample Project
+
+[Slack Interactive (with button)](https://github.com/tcnksm/go-slack-interactive)

@@ -35,11 +35,7 @@ text4
 EOM
 ```
 
-Note on environment variable:
-- Each process has its own separate set of environment variables
-- It inherits a duplicate environment of its parent process, except for explicit changes made by the parent when it creates the child
-- All environment variables must live together in a single environment block, which itself has a limit of `32767` characters. But that count is the sum over all environment variable names and values
-- The value is truncated at `2047` characters 
+
 
 Check IPs connecting to a machine
 ```sh
@@ -51,6 +47,18 @@ Network Time Protocol (NTP) is a protocol used to synchronize computer system cl
 sudo apt-get remove ntp ntpdate
 sudo apt-get install ntp ntpdate
 ```
+
+### Environment Variable
+
+Overview:
+- Each process has its own separate set of environment variables
+- It inherits a duplicate environment of its parent process, except for explicit changes made by the parent when it creates the child
+- All environment variables must live together in a single environment block, which itself has a limit of `32767` characters. But that count is the sum over all environment variable names and values
+- The value is truncated at `2047` characters 
+
+Directory-based/local environment tool:
+- [direnv](https://direnv.net/)
+- [autoenv](https://github.com/kennethreitz/autoenv)
 
 ### Screen
 
