@@ -11,6 +11,8 @@ title: Startup
 
 [How to name a startup using SMART Checklist](https://growth.org/blog/how-to-name-a-startup-the-s-m-a-r-t-checklist)
 
+[How to Get Users and Grow](https://www.youtube.com/watch?v=URiIsrdplbo&feature=youtu.be)
+
 Startup of one
 
 Gig Economy

@@ -1,5 +1,5 @@
 ---
-layout: random
+layout: gist
 title: Paradoxical Commandments
 ---
 
