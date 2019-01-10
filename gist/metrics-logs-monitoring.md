@@ -7,7 +7,7 @@ APM = Application Performance Monitoring
 
 APM Vendor:
 - [Datadog](https://www.datadoghq.com/)
-- [Newrelic](https://newrelic.com/) --> [courses](https://learn.newrelic.com/courses/intro_apm)
+- [Newrelic](https://newrelic.com/) 
 
 [Logging vs Instrumentation](https://peter.bourgon.org/blog/2016/02/07/logging-v-instrumentation.html)
 - Logging: actionable logs

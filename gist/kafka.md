@@ -17,6 +17,10 @@ title: Kafka
 
 `ISR` = In Sync Replication
 
+Kafka Consumer Lag = Latest Offset - Consumer Offset
+
+[Burrow](https://github.com/linkedin/Burrow): Kafka Consumer Lag Checking
+
 
 ### Commands
 
@@ -67,6 +71,7 @@ delete.topic.enable=true
 
 ### Kafka Manager
 
+Install 
 ```sh
 git clone https://github.com/yahoo/kafka-manager.git
 cd kafka-manager
