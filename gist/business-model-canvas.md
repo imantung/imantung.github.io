@@ -3,13 +3,18 @@ layout: gist
 title: Business Model Canvas
 ---
 
+<img src="{{site.baseurl}}/gist/business-model-canvas/businesss_model_canvas.jpg" style="max-width: 100%;">
+
+
 [9 Steps to Creating a Successful Business Model - Startup Tips](https://www.youtube.com/watch?v=IP0cUBWTgpY)
 
 [Wiki](https://en.wikipedia.org/wiki/Business_Model_Canvas)
 
-[Premium Guide](https://strategyzer.com/)
+[Premium Service Tutorial](https://strategyzer.com/)
 
 [Some Tutorial](https://www.alexandercowan.com/business-model-canvas-templates/)
+
+[WeWork Example](https://www.youtube.com/watch?v=vguI3rbb05o)
 
 ### 1. Value Proposition
 

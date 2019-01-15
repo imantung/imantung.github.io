@@ -3,6 +3,11 @@ layout: gist
 title: Startup Valuation & Equity
 ---
 
+
+### Early Stage Investor
+
+[what to expect from 3 type of early stage investors](https://entrepreneurshandbook.co/what-to-expect-from-3-types-of-early-stage-investors-214e970690e7)
+
 ### Valuation
 
 [Pre-money valuation vs Post-money valuation](https://www.investopedia.com/ask/answers/difference-between-premoney-and-postmoney/)
@@ -28,9 +33,9 @@ Vesting Cliff
 
 [fund cheatsheet](https://slicingpie.com/wp-content/uploads/2017/02/Slicing-Pie-Grunt-Fund-Cheat-Sheet.pdf)
 
-[excel template](https://slicingpie.com/the-grunt-fund-calculator/)
+[Excel Template](https://slicingpie.com/the-grunt-fund-calculator/)
 
-[sample from y-productive](https://www.y-productive.com/blog/dynamic-equity-split-or-everyone-is-a-co-founder-in-y-productive)
+[Sample from y-productive](https://www.y-productive.com/blog/dynamic-equity-split-or-everyone-is-a-co-founder-in-y-productive)
 
 How it works:
 1. Assign a leader

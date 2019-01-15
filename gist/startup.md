@@ -17,11 +17,13 @@ Startup of one
 
 Gig Economy
 
+[Unicorn](https://www.investopedia.com/terms/u/unicorn.asp) = valuation of more than $100 billion
+
 
 ### Startup Bootstrap Checklist
 
-1. Finalize and agree on the Idea (Create Product Fitness Analyst) 
-2. Create business plan/timeline/budget/north star metric 
+1. Finalize and agree on the Idea (use Product Fitness Analyst or Validation canvas) 
+2. Create business plan (use lean-canvas)
 3. Agree on responsibility, compensation & equity share 
 4. Choose name and create company profile 
 5. Company legal 
