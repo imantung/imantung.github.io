@@ -37,7 +37,7 @@ plugins:
 # addon
 nav_list:
   - ['Blog', '/', 'fa-home']
-  - ['Gists', '/gists/', 'fa-file-text']
+  - ['Gists', '/gists/', 'fa-sticky-note']
   - ['Quotes', '/quotes/', 'fa-font']
 
 sass:

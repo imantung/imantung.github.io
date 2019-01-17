@@ -1,6 +1,5 @@
 {% if page.comments %} 
-<button id="show_disqus" class="w3-button w3-block w3-blue w3-padding-large">Show comments</button>
-<div id="disqus_thread" style="display: none;"></div>
+<div id="disqus_thread"></div>
 <script>
   var disqus_config = function () {
     this.page.url = '{{ page.url | absolute_url }}';

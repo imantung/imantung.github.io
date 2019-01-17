@@ -1,12 +1,6 @@
 
 
 .gist-content{
-  font-size: 14px;
-}
-
-.gist{
-  padding: 10px 35px 30px 35px;
-  border: thin solid #D3D3D3;
 }
 
 .gist-content>p{
@@ -47,32 +41,34 @@
   padding: 2px 10px;
 }
 
-.gist-category{
-  border: thin solid #C0C0C0;
-  margin: 40px 0;
-  padding: 20px;
-}
-
-.gist-category h3{
+/* .gist-category h3{
   margin: 0;
   padding-bottom: 10px;
   padding-left: 10px;
+} */
+
+.gist-first-letter{
+  margin: 1.75em 0 .25em 0; 
+  border: thin solid black;
+  font-size: 1.3em;
+  font-weight: 500;
+  text-align: center;
 }
 
 .gist-item{
   display: inline-table;
-  max-width: 170px;
-  margin: 10px 0 20px 0;
-  /* border: thin solid red; */
+  max-width: 175px;
+  margin: 0;
 }
 .gist-item-icon{
   display: table-cell;
   width: 25%;
+  font-size: 2.5em;
+  padding: 0 0.25em;
 }
 .gist-item-title{
   display: table-cell;
   font-size: 0.85em;
-  padding-left: 5px;
   vertical-align: middle;
 }
 .gist-item-icon img{

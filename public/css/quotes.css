@@ -2,7 +2,7 @@
 }
 
 .quotes-item{
-  padding: 15px 20px 12px 20px;
+  padding: 0.5em 0 2em 0;
 }
 
 .quotes-item-author::before{
@@ -10,7 +10,7 @@
 }
 
 .quotes-item-author{
-  margin-top: 10px;
+  margin-top: 0.8em;
   text-align: right;
   font-size: 0.8em;
 }

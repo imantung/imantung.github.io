@@ -4,12 +4,13 @@ title: quotes
 permalink: /quotes/
 ---
 
-<div class="quotes">
+<div class="quotes my-5">
   {% for quote in site.data.quotes %}
-  <div class="w3-panel w3-card quotes-item">
+  <div class="quotes-item">
     
     <div class="quotes-item-text">
-      <img src="/public/quote512.png" alt="" style="width: 32px; height: 32px;" >
+      <!-- <img src="/public/quote512.png" alt="" style="width: 32px; height: 32px;" > -->
+      <i class="fas fa-quote-right"></i>
       {{ quote.text }}
     </div>
     <div class="quotes-item-author">

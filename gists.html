@@ -3,35 +3,32 @@ layout: default
 title: Gist
 ---
 
-<div class="gists-landing">
-  <div class="gist-category">
-    <div class="gist-list w3-row">
-      <div>
-        <ul>
-      {% assign tmp = "" %}
-      {% assign sortedPages = site.pages | where_exp: "page", "page.layout == 'gist'" |  sort: 'title' %}
-      {% for page in sortedPages %}
-        {% assign firstLetter = page.title | slice: 0 | upcase %}
-        {% if firstLetter != tmp %}
-        </ul>
-      </div>
-      <div style="padding: 0 20px 30px 20px; ">
-        <div class="">
-          {{ firstLetter }}
-        </div>
-        {% endif %}
-        {% assign tmp = "" %}
-        <div class="gist-item">	      
-          <div class="gist-item-icon">
-            <img src="/public/file512.png" alt="" >
-          </div>
-          <div class="gist-item-title">
-            <a href="{{page.url}}">{{page.title}}</a>
-          </div>
-        </div>
-        {% assign tmp = firstLetter %}
-      {% endfor %}
-    </div>
+
+<div class="gist-list">
+  <div>
+    <ul>
+  {% assign tmp = "" %}
+  {% assign sortedPages = site.pages | where_exp: "page", "page.layout == 'gist'" |  sort: 'title' %}
+  {% for page in sortedPages %}
+    {% assign firstLetter = page.title | slice: 0 | upcase %}
+    {% if firstLetter != tmp %}
+    </ul>
   </div>
-  
+  <div class="gist-group">
+    <div class="gist-first-letter">
+      {{ firstLetter }}
+    </div>
+    {% endif %}
+    {% assign tmp = "" %}
+    <div class="gist-item">
+      <div class="gist-item-icon">
+        <i class="far fa-sticky-note"></i>
+      </div>
+      <div class="gist-item-title">
+        <a href="{{page.url}}">{{page.title}}</a>
+      </div>
+    </div>
+    {% assign tmp = firstLetter %}
+  {% endfor %}
+</div>
 </div>

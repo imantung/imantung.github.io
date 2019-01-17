@@ -1,7 +1,7 @@
 
 
 .post-header{
-  margin-bottom: 40px;
+  margin-bottom: 1em;
 }
 
 .post-title{
@@ -10,10 +10,8 @@
 
 .post-list{
   list-style: none;
-  margin: 30px 0;
-  padding: 40px 35px;
-  border: thin solid #C0C0C0;
-  
+  margin: 0;
+  padding: 0;
 }
 
 .post-list li{
@@ -28,15 +26,21 @@
 
 .post-item-preview{
   font-size: 0.95em;
-  margin: 15px 0;
+  margin: 0.5em 0;
 }
 
 .post-item-tags{
 }
 
 .post-tags{
-  margin-top: 40px;
-  margin-bottom: 20px;
+
+}
+
+.post-tags a{
+  font-size: 0.75em;
+  padding: 0.1em 0.5em;
+  border: thin solid #6495ED;
+  border-radius: 0.4em;
 }
 
 .post-content>p{
@@ -51,25 +55,7 @@
 
 .post-content pre.highlight{
   -webkit-margin-before: 0;
-  padding: 10px 15px;
+  padding: 0.75em 1.25em;
   background-color: #e6f2ff;
   overflow-x: scroll;
-}
-
-.post-nav {
-  font-size: 14px;
-  display: block;
-  width: auto;
-  overflow: hidden;
-}
-
-.post-nav a {
-  display: block;
-  width: 50%;
-  float: left;
-  margin: 1em 0;
-}
-
-.post-nav .next {
-  text-align: right;
 }
