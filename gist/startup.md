@@ -19,6 +19,14 @@ Gig Economy
 
 [Unicorn](https://www.investopedia.com/terms/u/unicorn.asp) = valuation of more than $100 billion
 
+[The 8 laws of branding](https://www.entrepreneur.com/video/303531)
+
+### Metrics
+
+CAC = Customer Acquisition Cost
+
+LTF = Life Time Value = value that a customer will contribute to your company over their entire “lifetime” (usually 12-24 months)
+
 
 ### Startup Bootstrap Checklist
 
@@ -42,4 +50,3 @@ Gig Economy
 8. How will we measure success/make money from this product? (metrics/revenue strategy)
 9. What factors are critical to success? (solution requirements)
 10. What are the fundamental reasons why this product would fail? (key assumptions being made)
-]
