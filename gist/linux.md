@@ -35,8 +35,6 @@ text4
 EOM
 ```
 
-
-
 Check IPs connecting to a machine
 ```sh
 sudo netstat -ant | sed '1d' | awk '{print $5}' | cut -f1 -d':' | sort | uniq
@@ -47,6 +45,13 @@ Network Time Protocol (NTP) is a protocol used to synchronize computer system cl
 sudo apt-get remove ntp ntpdate
 sudo apt-get install ntp ntpdate
 ```
+
+
+### Logs
+
+[Logrotate](https://serversforhackers.com/c/managing-logs-with-logrotate)
+
+[Remove journal log and abrt log](https://unix.stackexchange.com/questions/130786/can-i-remove-files-in-var-log-journal-and-var-cache-abrt-di-usr)
 
 ### Environment Variable
 
@@ -59,6 +64,7 @@ Overview:
 Directory-based/local environment tool:
 - [direnv](https://direnv.net/)
 - [autoenv](https://github.com/kennethreitz/autoenv)
+
 
 ### Screen
 

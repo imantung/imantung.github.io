@@ -7,6 +7,10 @@ title: Data Engineering
 
 [Data Janitor 101](https://www.slideshare.net/soobrosa/data-janitor-101)
 
+[Metabase](https://www.metabase.com/)
+
+[Airflow](https://airflow.apache.org/): 
+
 ## Stream Processing
 
 1. Simple Event Processing  
