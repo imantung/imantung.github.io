@@ -16,6 +16,8 @@ title: Business Model Canvas
 
 [WeWork Example](https://www.youtube.com/watch?v=vguI3rbb05o)
 
+[Business Model Map](https://medium.com/swlh/a-new-methodology-for-business-model-mapping-6a122f140579)
+
 ### 1. Value Proposition
 
 - It's NOT about your IDEA or PRODUCT
