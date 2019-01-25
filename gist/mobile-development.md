@@ -10,3 +10,9 @@ title: Mobile Development
 ### Android
 
 [Automatically accept all sdk license](https://stackoverflow.com/questions/38096225/automatically-accept-all-sdk-licences)
+```sh
+yes | sdkmanager --licenses
+
+# macOS
+yes | sudo ~/Library/Android/sdk/tools/bin/sdkmanager --licenses
+```

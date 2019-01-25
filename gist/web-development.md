@@ -3,7 +3,10 @@ layout: gist
 title: Web API
 ---
 
-<!-- FIXME -->
+
+[Ngrok](https://ngrok.com/): public urls for explosing local
+
+### Standard
 
 jsend
 
@@ -13,6 +16,19 @@ OpenAPI Specification
 
 [GraphQL](https://graphql.org/): query language for API, get many request in single request
 
-[Ngrok](https://ngrok.com/): public urls for explosing local 
 
-WooCommerce
+### Framework/Library
+
+[WooCommerce](https://woocommerce.com/): e-commerce with wordpress
+
+[GroceryCRUD](https://www.grocerycrud.com/): generate CRUD
+
+### Communication
+
+[Introduction to comet (reverse ajax)](https://www.ibm.com/developerworks/library/wa-reverseajax1/index.html)
+
+[Realtime and Websocket](https://www.slideshare.net/peterlubbers/html5-real-time-and-websocket/88-Types_of_Proxy_Servers_httpwwwinfoqcomarticlesWebSocketsProxyServers)
+
+[Websocket demo](https://www.websocket.org/index.html)
+
+[socket.io](https://socket.io/): a web-socket library
