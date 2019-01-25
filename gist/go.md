@@ -3,7 +3,13 @@ layout: gist
 title: Go
 ---
 
-<!-- FIXME -->
+
+[good article about http service](https://medium.com/statuscode/how-i-write-go-http-services-after-seven-years-37c208122831)
+
+pprof
+
+
+### LDFLAG
 
 Use `-ldflag` to override main variable
 ```go
@@ -23,8 +29,6 @@ func main() {
 ```sh
 go build -ldflags "-X main.version=0.0.1 -X main.date=%date:~10,4%-%date:~4,2%-%date:~7,2%T%time:~0,2%:%time:~3,2%:%time:~6,2%"
 ```
-
-pprof
 
 ### IO
 

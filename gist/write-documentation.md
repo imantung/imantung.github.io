@@ -14,3 +14,5 @@ title: Write Documentation
 [Readme Template by PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
 
 [Code of conduct by 18F](https://github.com/18F/code-of-conduct)
+
+[Documenting API](https://idratherbewriting.com/learnapidoc/)

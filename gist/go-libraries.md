@@ -20,6 +20,7 @@ title: Go Libraries
 - `github.com/yhat/scrape`: web scrapping
 - `github.com/labstack/echo`: High performance, minimalist Go web framework  <-- TODO: look interesting
 - `github.com/nlopes/slack`: slack api
+- `github.com/jessevdk/go-flags`: parsing command line arguments
 
 ### Sample Project
 
