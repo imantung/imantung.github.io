@@ -3,6 +3,9 @@ layout: gist
 title: Web API
 ---
 
+`LAMP`: Linux Apache MySql Php
+
+`LYME`/`LYCE`: Linux, Yaws, Mnesia/CouchDB, Erlang  
 
 [Ngrok](https://ngrok.com/): public urls for explosing local
 
@@ -16,6 +19,7 @@ OpenAPI Specification
 
 [GraphQL](https://graphql.org/): query language for API, get many request in single request
 
+[XMPP](https://xmpp.org/): open standard for messaging and presence
 
 ### Framework/Library
 
