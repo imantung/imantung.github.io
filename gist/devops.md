@@ -28,4 +28,9 @@ DevOps Overview:
 7. Monitor — **applications performance monitoring**, end–user experience
 
 
-https://www.rundeck.com/open-source
+[rundeck](https://www.rundeck.com/open-source)
+
+
+canary
+
+green blue deployment

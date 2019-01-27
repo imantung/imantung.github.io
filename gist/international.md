@@ -15,3 +15,5 @@ multibyte character and wide character
 [timezone best practices](https://stackoverflow.com/questions/2532729/daylight-saving-time-and-time-zone-best-practices)
 
 [Lokalise](https://lokalise.co/): Translation Management 
+
+[poeditor](https://poeditor.com/): localization management platform
