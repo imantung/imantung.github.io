@@ -24,6 +24,7 @@ title: Kubernetes
 - [kubectx](https://github.com/ahmetb/kubectx): change context
 - [stern](https://github.com/wercker/stern): tail logs from multi pods
 - [Click](https://github.com/databricks/click): Command Line interactive
+- [kops](https://github.com/kubernetes/kops): kubectl for clusters
 
 ## kubectl
 
