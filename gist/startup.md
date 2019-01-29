@@ -15,7 +15,9 @@ Startup of One
 
 Gig Economy
 
-[Unicorn](https://www.investopedia.com/terms/u/unicorn.asp) = valuation of more than $100 billion
+[Unicorn](https://www.investopedia.com/terms/u/unicorn.asp): valuation of more than $1 billion
+
+[Decacorn](http://lexicon.ft.com/Term?term=decacorn): valuation of more than $10 billion
 
 [The 8 laws of branding](https://www.entrepreneur.com/video/303531)
 
@@ -31,7 +33,7 @@ Gig Economy
 LTF = Life Time Value = value that a customer will contribute to your company over their entire “lifetime” (usually 12-24 months)
 
 
-### Product Fitness Assessment (PFA) 
+### Product Fitness Assessment (PFA)
 
 1. Exactly what problem will this solve? (value proposition)
 2. For whom do we solve that problem? (target market)
@@ -48,10 +50,10 @@ LTF = Life Time Value = value that a customer will contribute to your company ov
 1. Seeding
   - From FFF (Fool, Friend, Family), Angle Investor, Incubator
   - Between $500,000 and $2 million
-2. Series A: 
+2. Series A:
   - Developing a business model, even if they haven’t proven it yet
   - Investment between $2 million - $15 million
-3. Series B: 
+3. Series B:
   - Market fit and needs help expanding
   - Investment between $7 million and $10 million
   - Company valuation between $30 million and $60 million
@@ -63,8 +65,8 @@ LTF = Life Time Value = value that a customer will contribute to your company ov
   - Many companies finish raising money with their Series C
   - Discovered a new opportunity for expansion before IPO or hasn’t hit the expectations laid
 6. Series E:
-  - They’ve failed to meet expectations; 
-  - they want to stay private longer; 
+  - They’ve failed to meet expectations;
+  - they want to stay private longer;
   - they need a little more help before going public
 
 ### Valuation
@@ -103,10 +105,10 @@ How it works:
 
 Theoretical Value
 
-| Value Type | Formula | 
+| Value Type | Formula |
 |---|---|
 |GHRR (Grunt Hourly Resource Rate) | (Negotiated Base Salary - Cash Compensation) * 2 / 2000 |
 | Time | GHRR * hours |
-| Money | Dollar Amount * 4 (2 if crowd-funding)| 
+| Money | Dollar Amount * 4 (2 if crowd-funding)|
 | Commission | Unpaid commission * 2 |
 | Idea/patent | Unpaid royalty or Development hours + Cost |
