@@ -6,7 +6,21 @@ title: Go
 
 [good article about http service](https://medium.com/statuscode/how-i-write-go-http-services-after-seven-years-37c208122831)
 
-pprof
+### SETUP
+
+```sh
+brew install go
+mkdir $HOME/go && cd $HOME/go && mkdir bin pkg src && cd -
+echo "export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+" >> ~/.zshrc
+source ~/.zshrc
+```
+
+### PROFILING
+
+- `runtime/pprof`
+- `github.com/pkg/profile`: simple profiling library (for research/example)
 
 
 ### LDFLAG
@@ -68,7 +82,7 @@ Using [glide](https://glide.sh/)
 ```sh
 brew install glide
 
-glide create # create glide.yaml 
+glide create # create glide.yaml
 glide install # start pulling
 glide up # update version
 ```
@@ -134,11 +148,11 @@ BINARY_NAME=mybinary
 BINARY_UNIX=$(BINARY_NAME)_unix
 
 all: test build
-build: 
+build:
        $(GOBUILD) -o $(BINARY_NAME) -v
-test: 
+test:
        $(GOTEST) -v ./...
-clean: 
+clean:
        $(GOCLEAN)
        rm -f $(BINARY_NAME)
        rm -f $(BINARY_UNIX)

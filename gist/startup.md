@@ -97,18 +97,3 @@ Vesting Cliff
 [Excel Template](https://slicingpie.com/the-grunt-fund-calculator/)
 
 [Sample from y-productive](https://www.y-productive.com/blog/dynamic-equity-split-or-everyone-is-a-co-founder-in-y-productive)
-
-How it works:
-1. Assign a leader
-2. Set theoretical value
-3. Determine percentage
-
-Theoretical Value
-
-| Value Type | Formula |
-|---|---|
-|GHRR (Grunt Hourly Resource Rate) | (Negotiated Base Salary - Cash Compensation) * 2 / 2000 |
-| Time | GHRR * hours |
-| Money | Dollar Amount * 4 (2 if crowd-funding)|
-| Commission | Unpaid commission * 2 |
-| Idea/patent | Unpaid royalty or Development hours + Cost |
