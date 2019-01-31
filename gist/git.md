@@ -7,6 +7,8 @@ title: Git
 
 [How to not be afraid of git anymore](https://medium.freecodecamp.org/how-not-to-be-afraid-of-git-anymore-fe1da7415286)
 
+[Git gud](https://gist.github.com/carlmjohnson/9c3a4507b432c5a03acd1e8830a02a50)
+
 remote: remote location of repository
 origin: default name of the repository
 master: main branch of repository
@@ -17,10 +19,10 @@ git init
 git add README.md
 git commit -m "first commit"
 git remote add origin [git_url]
-git push -u origin master 
+git push -u origin master
 ```
 
-Remote 
+Remote
 ```sh
 git remote -v
 git remote set-url origin [git_url]

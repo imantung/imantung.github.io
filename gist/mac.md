@@ -20,6 +20,11 @@ ZSH_THEME="af-magic"
 
 [iTerm2](https://www.iterm2.com/)
 
+Show available update
+```sh
+softwareupdate -install -a
+```
+
 ### apache
 
 ```sh

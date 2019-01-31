@@ -1,7 +1,15 @@
 ---
 layout: gist
-title: DevOps
+title: Cloud & DevOps
 ---
+
+#### Service Model
+
+- `IASS` = Infrastructure as a Service
+- `PASS` = Platform as a Service
+- `SASS` = Software as a Service
+
+### DevOps
 
 [Is DevOps a Title?](https://devops.com/is-devops-a-title/)
 
@@ -9,14 +17,7 @@ title: DevOps
 
 [SRE Book by Google](https://landing.google.com/sre/sre-book/toc/)
 
-`Vertical Scaling` = add resource (CPU/RAM)
-
-`Horizontal Scaling` = add machine
-
-Cloud overview:
-- `IASS` = Infrastructure as a Service 
-- `PASS` = Platform as a Service 
-- `SASS` = Software as a Service
+[The devops transformation](https://www.slideshare.net/benrockwood/lisa-2011-keynote-the-devops-transformation)
 
 DevOps Overview:
 1. Code — code development and review, **source code management** tools, code merging
@@ -27,9 +28,18 @@ DevOps Overview:
 6. Configure — infrastructure configuration and management, **Infrastructure as Code** tools
 7. Monitor — **applications performance monitoring**, end–user experience
 
+DevOps Movement Core value --> CAMS:
+- Culture
+- Automation
+- Measurement
+- Sharing
 
-[rundeck](https://www.rundeck.com/open-source)
+Some tools:
+- [rundeck](https://www.rundeck.com/open-source)
 
+SecOps = DevOps + security
+
+### Deployment
 
 canary
 

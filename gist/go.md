@@ -3,6 +3,11 @@ layout: gist
 title: Go
 ---
 
+[project layout](https://github.com/golang-standards/project-layout/blob/master/README.md)
+
+[Go for Industrial Programming - Gopher EU 2018](https://peter.bourgon.org/go-for-industrial-programming/)
+
+[A Makefile/Dockerfile example for Go projects](https://github.com/thockin/go-build-template)
 
 [good article about http service](https://medium.com/statuscode/how-i-write-go-http-services-after-seven-years-37c208122831)
 
