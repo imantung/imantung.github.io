@@ -68,8 +68,19 @@ Overview:
 - The value is truncated at `2047` characters
 
 Directory-based/local environment tool:
+- [autoenv](https://github.com/kennethreitz/autoenv) (deprecated?)
 - [direnv](https://direnv.net/)
-- [autoenv](https://github.com/kennethreitz/autoenv)
+
+Direnv:
+```sh
+brew install direnv
+
+echo 'eval "$(direnv hook zsh)"' >> ~/.zshrc
+source ~/.zshrc
+
+direnv allow
+```
+
 
 
 ### Bash Script

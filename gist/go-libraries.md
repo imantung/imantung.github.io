@@ -13,7 +13,7 @@ title: Go Libraries
 - `github.com/codegangsta/negroni`: HTTP Middleware
 - `github.com/gorilla/mux`: http mux
 - `github.com/spf13/viper`: config
-- `github.com/stretchr/testify`: assertion 
+- `github.com/stretchr/testify`: assertion
 - `github.com/Shopify/sarama`: Kafka
 - `github.com/onsi/ginkgo`: BDD Framework
 - `github.com/gocraft/work`: background process using redis (similar with ruby sidekiq)
@@ -21,6 +21,7 @@ title: Go Libraries
 - `github.com/labstack/echo`: High performance, minimalist Go web framework  <-- TODO: look interesting
 - `github.com/nlopes/slack`: slack api
 - `github.com/jessevdk/go-flags`: parsing command line arguments
+- `github.com/kelseyhightower/envconfig`: config environment variable
 
 ### Sample Project
 
