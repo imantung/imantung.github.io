@@ -1,6 +1,6 @@
 ---
 layout: gist
-title: Web API
+title: Web Development
 ---
 
 `LAMP`: Linux Apache MySql Php
@@ -11,11 +11,11 @@ title: Web API
 
 ### Standard
 
-jsend
+[JSend Specification](https://github.com/omniti-labs/jsend)
 
 JSON API V1
 
-OpenAPI Specification
+OpenAPI Specification (Swagger)
 
 [GraphQL](https://graphql.org/): query language for API, get many request in single request
 

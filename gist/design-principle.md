@@ -29,7 +29,7 @@ title: Design Principle
 
 `SOLID Principle`
 1. Single Responsibility Principle
-  - A class should have only a single responsibility 
+  - A class should have only a single responsibility
 2. Open/closed Principle
   - Software entities … should be open for extension, but closed for modification.
 3. Liskov Substitution Principle
@@ -62,13 +62,15 @@ title: Design Principle
 ---
 
 `Common Closure Principle`
-- Classes within a released component should share common closure. 
-- That is, if one needs to be changed, they all are likely to need to be changed. 
-- What affects one, affects all. 
+- Classes within a released component should share common closure.
+- That is, if one needs to be changed, they all are likely to need to be changed.
+- What affects one, affects all.
 
---- 
+---
 
 [Fault-Tolerant Telecommunication System Patterns
 ](https://sites.google.com/a/gertrudandcope.com/info/Publications/Patterns/PLoP95-telecom)
 
 ---
+
+[Dependency Injection](https://stackoverflow.com/questions/130794/what-is-dependency-injection)

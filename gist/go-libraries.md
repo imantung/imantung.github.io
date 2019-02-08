@@ -3,6 +3,8 @@ layout: gist
 title: Go Libraries
 ---
 
+More list at [awesome-go](https://awesome-go.com/)
+
 ### Libraries
 
 - `github.com/urfave/cli`: Command Line Interface
@@ -22,6 +24,8 @@ title: Go Libraries
 - `github.com/nlopes/slack`: slack api
 - `github.com/jessevdk/go-flags`: parsing command line arguments
 - `github.com/kelseyhightower/envconfig`: config environment variable
+- `github.com/google/wire`: Compile-time Dependency Injection for Go
+- `github.com/uber-go/dig`: A reflection based dependency injection toolkit for Go
 
 ### Sample Project
 

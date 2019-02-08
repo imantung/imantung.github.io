@@ -13,39 +13,9 @@ Run multiple command:
 - `A && B`  – Run B only if A succeeded
 - `A || B`  – Run B only if A failed
 
-Append multiple-line to a file
-```sh
-# possibility 1:
-echo "line 1" >> greetings.txt
-echo "line 2" >> greetings.txt
-
-# possibility 2:
-echo "line 1
-line 2" >> greetings.txt
-
-# possibility 3:
-cat <<EOT >> greetings.txt
-line 1
-line 2
-EOT
-```
-
 Get PID
 ```sh
-ps ax | grep [NAME] | grep -v grep | awk '{print $1}'
-```
-
-Write file
-```sh
-#!/bin/sh
-FILE="/path/to/file"
-
-/bin/cat <<EOM >$FILE
-text1
-text2
-text3
-text4
-EOM
+ps ax | grep [NAME] | grep -v grep | awk '{print $1}' 
 ```
 
 Check IPs connecting to a machine
@@ -81,7 +51,24 @@ source ~/.zshrc
 direnv allow
 ```
 
+### Multiline
 
+Append multiple-line to a file
+```sh
+# possibility 1:
+echo "line 1" >> greetings.txt
+echo "line 2" >> greetings.txt
+
+# possibility 2:
+echo "line 1
+line 2" >> greetings.txt
+
+# possibility 3:
+cat <<EOT >> greetings.txt
+line 1
+line 2
+EOT
+```
 
 ### Bash Script
 

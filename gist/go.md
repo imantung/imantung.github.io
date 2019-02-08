@@ -7,9 +7,31 @@ title: Go
 
 [Go for Industrial Programming - Gopher EU 2018](https://peter.bourgon.org/go-for-industrial-programming/)
 
-[A Makefile/Dockerfile example for Go projects](https://github.com/thockin/go-build-template)
-
 [good article about http service](https://medium.com/statuscode/how-i-write-go-http-services-after-seven-years-37c208122831)
+
+[Style guideline for Go packages](https://rakyll.org/style-packages/)
+
+[when is the init function run](https://stackoverflow.com/questions/24790175/when-is-the-init-function-run)
+
+Test failed if test coverage below 80%
+```go
+func TestMain(m *testing.M) {
+    // call flag.Parse() here if TestMain uses flags
+    rc := m.Run()
+
+    // rc 0 means we've passed,
+    // and CoverMode will be non empty if run with -cover
+    if rc == 0 && testing.CoverMode() != "" {
+        c := testing.Coverage()
+        if c < 0.8 {
+            fmt.Println("Tests passed but coverage failed at", c)
+            rc = -1
+        }
+    }
+    os.Exit(rc)
+}
+```
+
 
 ### SETUP
 
@@ -139,6 +161,8 @@ dep ensure -add github.com/foo/bar github.com/baz/quux
 |windows|amd64|
 
 ### Makefile
+
+[A Makefile/Dockerfile example for Go projects](https://github.com/thockin/go-build-template)
 
 Some template ([source](https://sohlich.github.io/post/go_makefile/))
 
