@@ -38,6 +38,9 @@ LTF = Life Time Value = value that a customer will contribute to your company ov
 
 ### Funding
 
+[Startup Funding Explained: Everything You Need to Know](https://www.youtube.com/watch?v=677ZtSMr4-4&ab_channel=TheRestOfUs)
+
+Capital Raise:
 1. Seeding
   - From FFF (Fool, Friend, Family), Angle Investor, Incubator
   - Between $500,000 and $2 million
