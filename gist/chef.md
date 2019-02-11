@@ -132,12 +132,12 @@ knife client delete --yes NODENAME
 
 Structure
 - `Attributes` details of node
-- `Recipes` 
-- `metadata.rb` 
+- `Recipes`
+- `metadata.rb`
 
 Test your cookbook using [kitchen-test](https://docs.chef.io/kitchen.html)
- 
-Some knife command 
+
+Some knife command
 ```sh
 # new cookbook
 chef generate cookbook NAME
@@ -148,3 +148,8 @@ knife cookbook upload NAME
 # list of cookbook
 knife cookbook list
 ```
+
+### Misc
+
+Stacktrace for chef solo
+```~/chef-solo/local-mode-cache/cache/chef-stacktrace.out```
