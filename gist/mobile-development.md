@@ -19,7 +19,7 @@ title: Mobile Development
 
 [segment](https://segment.com/)
 
-firebase 
+firebase
 
 app signing
 

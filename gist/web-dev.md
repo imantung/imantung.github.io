@@ -1,6 +1,6 @@
 ---
 layout: gist
-title: Web Development
+title: Web Dev
 ---
 
 `LAMP`: Linux Apache MySql Php
@@ -10,6 +10,8 @@ title: Web Development
 [Ngrok](https://ngrok.com/): public urls for explosing local
 
 [WASP Top Ten Project](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project): powerful awareness document for web application security
+
+[public api list](https://github.com/toddmotto/public-apis)
 
 ### Standard
 

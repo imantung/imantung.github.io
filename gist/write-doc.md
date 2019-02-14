@@ -1,6 +1,6 @@
 ---
 layout: gist
-title: Write Documentation
+title: Write Doc
 ---
 
 [Django Doc Writing Principles](https://jacobian.org/writing/great-documentation/)

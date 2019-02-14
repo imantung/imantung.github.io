@@ -9,7 +9,7 @@ title: Microservices
 - `DataPlane`/`SideCar Proxy`: Service Discovery, Health checking, routing, authentication/authorization, Observability
 - `ControlPlane`: ui, scheduler, service discovery, sidecar proxy configuration
 
-
+[Flagr](https://github.com/checkr/flagr): a feature flagging, A/B testing and dynamic configuration microservice 
 
 API Gateway: Backend for front-end
 - Kong

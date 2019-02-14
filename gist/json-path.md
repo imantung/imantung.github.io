@@ -1,9 +1,7 @@
 ---
 layout: gist
-title: JSON 
+title: JSON Path
 ---
-
-### JSONPath
 
 Expressions to refer to specific json structure
 
