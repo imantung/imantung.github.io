@@ -6,14 +6,12 @@ title: Gist
 
 <div class="gist-list">
   <div>
-    <ul>
   {% assign tmp = "" %}
   {% assign sortedPages = site.pages | where_exp: "page", "page.layout == 'gist'" |  sort: 'title' %}
   {% for page in sortedPages %}
     {% assign firstLetter = page.title | slice: 0 | upcase %}
     {% if firstLetter != tmp %}
-    </ul>
-  </div>
+      </div>
   <div class="gist-group">
     <div class="gist-first-letter">
       {{ firstLetter }}
@@ -30,5 +28,5 @@ title: Gist
     </div>
     {% assign tmp = firstLetter %}
   {% endfor %}
-</div>
+
 </div>
