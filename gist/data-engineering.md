@@ -9,7 +9,7 @@ title: Data Engineering
 
 [Metabase](https://www.metabase.com/)
 
-[Airflow](https://airflow.apache.org/): 
+[Airflow](https://airflow.apache.org/):
 
 ## Stream Processing
 
