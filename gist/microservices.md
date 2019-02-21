@@ -9,7 +9,9 @@ title: Microservices
 - `DataPlane`/`SideCar Proxy`: Service Discovery, Health checking, routing, authentication/authorization, Observability
 - `ControlPlane`: ui, scheduler, service discovery, sidecar proxy configuration
 
-[Flagr](https://github.com/checkr/flagr): a feature flagging, A/B testing and dynamic configuration microservice 
+[Flagr](https://github.com/checkr/flagr): a feature flagging, A/B testing and dynamic configuration microservice
+
+[Jaeger](https://www.jaegertracing.io/): Monitor and troubleshoot transactions in complex distributed systems
 
 API Gateway: Backend for front-end
 - Kong
