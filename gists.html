@@ -4,29 +4,24 @@ title: Gist
 ---
 
 
-<div class="gist-list">
-  <div>
+
+
+
+<div class="">
+  <ul>
   {% assign tmp = "" %}
   {% assign sortedPages = site.pages | where_exp: "page", "page.layout == 'gist'" |  sort: 'title' %}
   {% for page in sortedPages %}
     {% assign firstLetter = page.title | slice: 0 | upcase %}
     {% if firstLetter != tmp %}
-      </div>
-  <div class="gist-group">
-    <div class="gist-first-letter">
+  </ul>
+  <ul class="gist-group" style="">
+    <h3>
       {{ firstLetter }}
-    </div>
+    </h3>
     {% endif %}
     {% assign tmp = "" %}
-    <div class="gist-item">
-      <div class="gist-item-icon">
-        <i class="far fa-sticky-note"></i>
-      </div>
-      <div class="gist-item-title">
-        <a href="{{page.url}}">{{page.title}}</a>
-      </div>
-    </div>
+    <li><a href="{{page.url}}">{{page.title}}</a></li>
     {% assign tmp = firstLetter %}
   {% endfor %}
-
 </div>

@@ -42,32 +42,21 @@
 }
 
 .gist-group{
-  border: thin solid #A4A4A4;
   display: inline-block;
-  margin-right: 10px;
+  vertical-align: top;
   margin-bottom: 12px;
-  padding-bottom: 0.75em;
-  height: 10em;
+  min-width: 230px;
+  padding-left: 1.2em;
+}
+
+.gist-group li{
+  width: 200px;
+  margin: 0;
+  word-wrap: break-word;
 }
 
 .gist-first-letter{
   font-size: 1.3em;
   font-weight: 500;
   text-align: center;
-}
-
-.gist-item{
-  display: inline-block;
-  max-width: 100px;
-  min-width: 100px;
-  text-align: center;
-  padding: 0;
-  vertical-align: top;
-}
-.gist-item-icon{
-  font-size: 3em;
-}
-.gist-item-title{
-  font-size: 0.85em;
-  padding: 0 0.25em;
 }
