@@ -26,6 +26,7 @@ More list at [awesome-go](https://awesome-go.com/)
 - `github.com/kelseyhightower/envconfig`: config environment variable
 - `github.com/google/wire`: Compile-time Dependency Injection for Go
 - `github.com/uber-go/dig`: A reflection based dependency injection toolkit for Go
+- `github.com/alecthomas/kingpin`: A Go (golang) command line and flag parser
 
 ### Sample Project
 
