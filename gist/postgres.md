@@ -9,6 +9,12 @@ stream replication
 
 [Gist](https://gist.github.com/rgreenjr/3637525)
 
+Postgres does not automatically return the last insert id, because it would be wrong to assume you're always using a sequence. You need to use the RETURNING keyword in your insert to get this information from postgres.
+```sql
+INSERT INTO user (name) VALUES ('John') RETURNING id
+```
+
+
 ### PSQL
 
 Connect
@@ -32,7 +38,7 @@ Psql command
 #### Configuration
 
 ```sql
-SHOW all; 
+SHOW all;
 SHOW config_file;
 
 SET configuration_parameter TO DEFAULT;
@@ -48,7 +54,7 @@ UPDATE pg_settings SET setting = reset_val WHERE name = 'configuration_parameter
 
 Create DB
 ```sql
-CREATE DATABASE [name] 
+CREATE DATABASE [name]
 ```
 
 Get columns through query
@@ -59,7 +65,7 @@ WHERE table_schema = 'your_schema'
   AND table_name   = 'your_table'
 ```
 
-Json 
+Json
 ```sql
 SELECT * FROM table_name
 WHERE json_field @> '[{"field":"value"}]'
@@ -67,9 +73,9 @@ WHERE json_field @> '[{"field":"value"}]'
 
 ### Replication
 
-Check replication status 
+Check replication status
 ```sql
-SELECT client_addr, state, sent_location, write_location, flush_location, replay_location 
+SELECT client_addr, state, sent_location, write_location, flush_location, replay_location
 FROM pg_stat_replication;
 ```
 
