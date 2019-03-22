@@ -13,6 +13,8 @@ title: Web Dev
 
 [public api list](https://github.com/toddmotto/public-apis)
 
+[RESTful Checklist](https://blog.mwaysolutions.com/2014/06/05/10-best-practices-for-better-restful-api/)
+
 ### Standard
 
 [JSend Specification](https://github.com/omniti-labs/jsend)

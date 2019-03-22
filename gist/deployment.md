@@ -3,11 +3,21 @@ layout: gist
 title: Deployment
 ---
 
-### Infastructure as Code/Automation
+canary
+
+green blue deployment
+
+### Infastructure as Code
 
 [Terraform](/terraform.md): create, combine and manage infrastructure across multiple providers
 
 [Chef](/chef.md)
+
+### CI/CD
+
+[octopus](https://octopus.com/)
+
+[gitops](https://www.weave.works/technologies/gitops/)
 
 ### Virtualization
 
@@ -28,7 +38,7 @@ SERVICES IMPACTED:
 Service Details:
 Service Rollback
   - Rollback strategy
-Service Component 
+Service Component
   - Database
   - Security
   - Monitoring

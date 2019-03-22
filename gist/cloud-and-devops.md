@@ -38,9 +38,3 @@ Some tools:
 - [rundeck](https://www.rundeck.com/open-source)
 
 SecOps = DevOps + security
-
-### Deployment
-
-canary
-
-green blue deployment
