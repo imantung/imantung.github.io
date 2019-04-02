@@ -2,10 +2,7 @@
 layout: gist
 title: Web Dev
 ---
-
-`LAMP`: Linux Apache MySql Php
-
-`LYME`/`LYCE`: Linux, Yaws, Mnesia/CouchDB, Erlang  
+  
 
 [Ngrok](https://ngrok.com/): public urls for explosing local
 
@@ -15,7 +12,17 @@ title: Web Dev
 
 [RESTful Checklist](https://blog.mwaysolutions.com/2014/06/05/10-best-practices-for-better-restful-api/)
 
-### Standard
+### Stack
+
+`LAMP Stack`: Linux Apache MySql Php
+
+`LEMP Stack`: Linux Nginx MySql Php
+
+`LYME Stack`: Linux, Yaws, Mnesia, Erlang  
+
+`LYCE Stack`:Linux, Yaws, CouchDB, Erlang
+
+### Standards
 
 [JSend Specification](https://github.com/omniti-labs/jsend)
 

@@ -25,15 +25,6 @@ Show available update
 softwareupdate -install -a
 ```
 
-### apache
-
-```sh
-sudo apachectl start
-sudo apachectl stop
-
-cd /Library/WebServer/Documents # root folder
-```
-
 
 ### High Sierra
 
