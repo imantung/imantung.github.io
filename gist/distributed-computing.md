@@ -29,3 +29,5 @@ title: Distributed Computing
 [Hystrix](https://github.com/Netflix/Hystrix): latency and fault tolerance library
 
 HAProxy
+
+[Sticky vs Non Sticky Session](https://stackoverflow.com/questions/10494431/sticky-and-non-sticky-sessions)
