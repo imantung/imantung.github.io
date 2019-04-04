@@ -38,29 +38,4 @@ Define who needs to be involved in your project and how they will be involved
 **I** - Informed  
 
 
-### Discussion Log template
-```
-Attendees:
-Note Taker:
-Action Items:
-  1. 
-  2.
-Agenda:
-  1.
-  2.
-Discussion Note
-  1.
-  2.
-```
 
-### Retrospective 
-```
-What worked Well?
-
-What could be improved?
-
-What will we commit to doing in the next iteration?
-
-Actionable commitment?
-
-```
