@@ -10,7 +10,7 @@ default port: `6379`
 
 ### Cheatsheet
 
-```sh
+```bash
 # install 
 brew install redis
 

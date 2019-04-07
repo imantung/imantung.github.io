@@ -21,27 +21,21 @@ Check heap of java process
 jmap -heap PID
 ```
 
+
+### Installation
+
 Change java version
 ```bash
 # List Java versions installed
 /usr/libexec/java_home -V
 
-# Java 11
-export JAVA_HOME=$(/usr/libexec/java_home -v 11)
-
-# Java 1.8
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
-
-# Java 1.7
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
-
-# Java 1.6
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.6)
+export JAVA_HOME=$(/usr/libexec/java_home -v 11) # Java 11
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8) # Java 1.8
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.7) # Java 1.7
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.6) # Java 1.6
 ```
 
-### Installation
-
-```sh
+```bash
 cd ~/Downloads
 curl -v -j -k -L -H "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u112-b15/jre-8u112-macosx-x64.dmg > jre-8u112-macosx-x64.dmg
 hdiutil attach jre-8u112-macosx-x64.dmg
@@ -51,14 +45,13 @@ rm jre-8u112-macosx-x64.dmg
 ```
 
 Install java (Ubuntu)
-```sh
+```
 sudo add-apt-repository -y ppa:webupd8team/java
 sudo apt-get update
 echo debconf shared/accepted-oracle-license-v1-1 select true | sudo debconf-set-selections
 echo debconf shared/accepted-oracle-license-v1-1 seen true | sudo debconf-set-selections
 sudo aptitude -y install oracle-java8-installer
 ```
-
 
 ### Gradle
 
@@ -101,3 +94,6 @@ test {
     }
 }
 ```
+
+
+### Maven

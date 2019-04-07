@@ -13,6 +13,21 @@ title: Go
 
 [when is the init function run](https://stackoverflow.com/questions/24790175/when-is-the-init-function-run)
 
+
+### SETUP
+
+```sh
+brew install go
+mkdir $HOME/go && cd $HOME/go && mkdir bin pkg src && cd -
+echo "export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+" >> ~/.zshrc
+source ~/.zshrc
+```
+
+
+### Test
+
 Test failed if test coverage below 80%
 ```go
 func TestMain(m *testing.M) {
@@ -31,6 +46,8 @@ func TestMain(m *testing.M) {
     os.Exit(rc)
 }
 ```
+
+### Reflect
 
 Print function of packages
 ```go
@@ -57,17 +74,6 @@ for _, pack := range packs {
 }
 ```
 
-
-### SETUP
-
-```sh
-brew install go
-mkdir $HOME/go && cd $HOME/go && mkdir bin pkg src && cd -
-echo "export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
-" >> ~/.zshrc
-source ~/.zshrc
-```
 
 ### PROFILING
 
@@ -149,6 +155,13 @@ dep ensure -add github.com/foo/bar github.com/baz/quux
 dep ensure -update
 ```
 
+### Makefile
+
+Makefile reference:
+- [thockin](https://github.com/thockin/go-build-template)
+- [Golang: Don’t afraid of makefiles](https://sohlich.github.io/post/go_makefile/)
+- [Azer makefile](https://github.com/azer/go-makefile-example)
+
 
 ### GOOS/GOARCH
 
@@ -186,9 +199,4 @@ dep ensure -update
 |windows|386|
 |windows|amd64|
 
-### Makefile
 
-Makefile reference:
-- [thockin](https://github.com/thockin/go-build-template)
-- [Golang: Don’t afraid of makefiles](https://sohlich.github.io/post/go_makefile/)
-- [Azer makefile](https://github.com/azer/go-makefile-example)
