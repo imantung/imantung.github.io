@@ -14,7 +14,7 @@ origin: default name of the repository
 master: main branch of repository
 
 project setup
-```sh
+```bash
 git init
 git add README.md
 git commit -m "first commit"
@@ -23,18 +23,18 @@ git push -u origin master
 ```
 
 Remote
-```sh
+```bash
 git remote -v
 git remote set-url origin [git_url]
 ```
 
 Get latest commit ID
-```sh
+```bash
 git log --format=%h -1
 ```
 
 Find who modified this line ([git blame](https://git-scm.com/docs/git-blame))
-```sh
+```bash
 # blame at line 40 of file foo
 git blame -L 40,+1 foo
 
@@ -44,21 +44,14 @@ git blame -L 40,60 foo
 ```
 
 Tagging:
-```sh
-# Annotated Tags
-git tag -a v2.1.0 -m "xyz feature is released in this tag."
+```bash
+git tag -a v2.1.0 -m "xyz feature is released in this tag." # Annotated Tags
+git tag v2.1.0 # Lightweight Tags
 
-# Lightweight Tags
-git tag v2.1.0
+git push origin --tags # Push tags
 
-# Push tags
-git push origin --tags
-
-# Delete the tag from the remote repository
-git push --delete origin TAGNAME
-
-# Delete the tag locally
-git tag -d TAGNAME
+git push --delete origin TAGNAME # Delete the tag from the remote repository
+git tag -d TAGNAME # Delete the tag locally
 
 # Delete all local tags and get the list of remote tags
 git tag -l | xargs git tag -d
@@ -71,6 +64,14 @@ git tag -l | xargs -n 1 git push --delete origin
 git tag -l | xargs git tag -d
 ```
 
+(Clone a specific git branch)[https://stackoverflow.com/questions/1911109/how-to-clone-a-specific-git-branch/4568323#4568323]
+```bash
+git clone -b <branch> <remote_repo>
+git clone -b my-branch git@github.com:user/myproject.git 
+
+# to prevent fetching of all branches at Git 1.7.10
+git clone -b opencv-2.4 --single-branch https://github.com/Itseez/opencv.git
+```
 
 
 ### Config

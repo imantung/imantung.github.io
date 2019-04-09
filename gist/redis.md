@@ -10,6 +10,7 @@ default port: `6379`
 
 ### Cheatsheet
 
+Command Line
 ```bash
 # install 
 brew install redis
@@ -24,3 +25,16 @@ redis-cli monitor
 # benchmarking
 src/redis-benchmark -c 10 -n 100000 -q
 ```
+
+# Redis-Cli
+
+```
+<!-- show all list -->
+LRANGE key 0 -1  
+
+<!-- show all keys -->
+KEYS *
+```
+
+
+
