@@ -3,7 +3,16 @@ layout: gist
 title: PHP
 ---
 
-(You don't have permission to access on this server)[https://stackoverflow.com/questions/10873295/error-message-forbidden-you-dont-have-permission-to-access-on-this-server]
+General:
+- [PHP The Right Way](https://phptherightway.com/)
+
+Troubleshoot: 
+- (You don't have permission to access on this server)[https://stackoverflow.com/questions/10873295/error-message-forbidden-you-dont-have-permission-to-access-on-this-server]
+
+
+PHP Session: 
+- (length of php session)[https://stackoverflow.com/questions/12240922/what-is-the-length-of-a-php-session-id-string]
+- (how php session-id generated)[https: //stackoverflow.com/questions/18937651/php-session-ids-how-are-they-generated]
 
 
 ### Composer
@@ -37,5 +46,4 @@ Change `php.ini`
 ```
 session.save_handler = redis
 session.save_path = "tcp://host1:6379?weight=1, tcp://host2:6379?weight=2&timeout=2.5, tcp://host3:6379?weight=2&read_timeout=2.5"
-
 ```

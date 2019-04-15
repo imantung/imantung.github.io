@@ -22,7 +22,7 @@ git remote add origin [git_url]
 git push -u origin master
 ```
 
-Remote
+change url
 ```bash
 git remote -v
 git remote set-url origin [git_url]

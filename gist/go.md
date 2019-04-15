@@ -47,6 +47,12 @@ func TestMain(m *testing.M) {
 }
 ```
 
+Gomock snippet
+```go
+ctrl := gomock.NewController(t)
+defer ctrl.Finish()
+```
+
 ### Reflect
 
 Print function of packages

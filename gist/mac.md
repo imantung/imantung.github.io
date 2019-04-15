@@ -3,8 +3,6 @@ layout: gist
 title: Mac
 ---
 
-
-
 [iTerm2](https://www.iterm2.com/)
 
 Show available update:

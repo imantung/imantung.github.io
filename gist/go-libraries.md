@@ -27,6 +27,7 @@ More list at [awesome-go](https://awesome-go.com/)
 - `github.com/google/wire`: Compile-time Dependency Injection for Go
 - `github.com/uber-go/dig`: A reflection based dependency injection toolkit for Go
 - `github.com/alecthomas/kingpin`: A Go (golang) command line and flag parser
+- `github.com/alicebob/miniredis`: Pure Go Redis server for Go unittests
 
 ### Sample Project
 
