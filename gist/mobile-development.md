@@ -19,6 +19,8 @@ title: Mobile Development
 
 [segment](https://segment.com/)
 
+[mitmproxy](https://medium.com/testvagrant/intercept-ios-android-network-calls-using-mitmproxy-4d3c94831f62)
+
 firebase
 
 app signing

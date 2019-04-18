@@ -7,12 +7,12 @@ General:
 - [PHP The Right Way](https://phptherightway.com/)
 
 Troubleshoot: 
-- (You don't have permission to access on this server)[https://stackoverflow.com/questions/10873295/error-message-forbidden-you-dont-have-permission-to-access-on-this-server]
+- [You don't have permission to access on this server](https://stackoverflow.com/questions/10873295/error-message-forbidden-you-dont-have-permission-to-access-on-this-server)
 
 
 PHP Session: 
-- (length of php session)[https://stackoverflow.com/questions/12240922/what-is-the-length-of-a-php-session-id-string]
-- (how php session-id generated)[https: //stackoverflow.com/questions/18937651/php-session-ids-how-are-they-generated]
+- [length of php session](https://stackoverflow.com/questions/12240922/what-is-the-length-of-a-php-session-id-string)
+- [how php session-id generated](https: //stackoverflow.com/questions/18937651/php-session-ids-how-are-they-generated)
 
 
 ### Composer
