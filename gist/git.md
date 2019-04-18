@@ -3,17 +3,17 @@ layout: gist
 title: Git
 ---
 
-[Start using git in command line](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html)
+Reference:
+- [Start using git in command line](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html)
+- [How to not be afraid of git anymore](https://medium.freecodecamp.org/how-not-to-be-afraid-of-git-anymore-fe1da7415286)
+- [Git standards](https://gist.github.com/carlmjohnson/9c3a4507b432c5a03acd1e8830a02a50)
 
-[How to not be afraid of git anymore](https://medium.freecodecamp.org/how-not-to-be-afraid-of-git-anymore-fe1da7415286)
+Terms:
+- `remote`: remote location of repository
+- `origin`: default name of the repository
+- `master`: main branch of repository
 
-[Git standards](https://gist.github.com/carlmjohnson/9c3a4507b432c5a03acd1e8830a02a50)
-
-remote: remote location of repository
-origin: default name of the repository
-master: main branch of repository
-
-project setup
+Project setup
 ```bash
 git init
 git add README.md
