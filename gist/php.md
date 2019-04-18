@@ -24,9 +24,9 @@ brew install composer
 
 ## PHP5 no macOS Mojave
 
-(OSX Binary package download source)[https://php-osx.liip.ch/]
+[OSX Binary package download source](https://php-osx.liip.ch/)
 
-(based on this)[https://github.com/Homebrew/homebrew-core/issues/32497]
+[based on this](https://github.com/Homebrew/homebrew-core/issues/32497)
 
 ```bash
 curl -s https://php-osx.liip.ch/install.sh | bash -s force 5.6
