@@ -7,6 +7,7 @@ title: Project Management
 
 [command center](https://en.wikipedia.org/wiki/Command_center)  a.k.a [war room](https://www.slideshare.net/rmurray/the-art-of-warroom)
 
+[Project management office (PMO)](https://en.wikipedia.org/wiki/Project_management_office): group/department that defines and maintains standards for project management within the organization
 
 ### INVEST Principle
 
