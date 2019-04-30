@@ -1,12 +1,36 @@
 ---
 layout: gist
-title: Security
+title: InfoSec
 ---
 
+[Wikipedia: Information Security](https://en.wikipedia.org/wiki/Information_security)
 
 [IDOR](https://www.bugcrowd.com/how-to-find-idor-insecure-direct-object-reference-vulnerabilities-for-large-bounty-rewards/)
 
+[InfoSec colour wheel](https://hackernoon.com/introducing-the-infosec-colour-wheel-blending-developers-with-red-and-blue-security-teams-6437c1a07700)
+- Red Team: Offensive security
+- Blue Team: Defensive security
+- Yellow Team: the builder
+- Purple Team (Red + Blue): Integrating defensive tactics with offensive result
+- Orange Team (Red + Yellow):
+- Green Team (Blue + Yellow)
+- White Team 
+
+[Type of InfoSec](https://www.cisco.com/c/en/us/products/security/what-is-information-security-infosec.html):
+- Application security
+- Cloud security
+- Cryptography
+- Infrastructure security
+- Incident response: monitors for and investigates potentially malicious behavior
+- Vulnerability management: scanning an environment for weak points (such as unpatched software) and prioritizing remediation based on risk
+
+Certificate:
+- CompTIA
+- CISSP (Certified Information Systems Security Professional)
+
+
 gitrob
+
 
 ### Web Security
 
