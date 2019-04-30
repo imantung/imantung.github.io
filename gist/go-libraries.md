@@ -28,6 +28,11 @@ More list at [awesome-go](https://awesome-go.com/)
 - `github.com/uber-go/dig`: A reflection based dependency injection toolkit for Go
 - `github.com/alecthomas/kingpin`: A Go (golang) command line and flag parser
 - `github.com/alicebob/miniredis`: Pure Go Redis server for Go unittests
+- `github.com/ory/dockertest`: integration test with docker
+- `github.com/jackc/pgx`: a better postgres driver
+- `github.com/ory/dockertest`: integration test with docker
+
+
 
 ### Sample Project
 

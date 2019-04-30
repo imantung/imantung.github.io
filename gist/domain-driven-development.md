@@ -1,6 +1,6 @@
 ---
 layout: gist
-title: Domain Driven Development
+title: Domain-Driven Development
 ---
 
 Reference:

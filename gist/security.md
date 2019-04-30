@@ -8,7 +8,9 @@ title: Security
 
 gitrob
 
-[CSRF](https://en.wikipedia.org/wiki/Cross-site_request_forgery)
+### Web Security
+
+[CSRF](https://en.wikipedia.org/wiki/Cross-site_request_forgery): Cross-site request forgery, also known as one-click attack or session riding and abbreviated as CSRF (sometimes pronounced sea-surf) or XSRF, is a type of malicious exploit of a website where unauthorized commands are transmitted from a user that the website trusts.
 
 ### Security Testing Process
 

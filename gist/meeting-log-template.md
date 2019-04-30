@@ -1,9 +1,9 @@
 ---
 layout: gist
-title: Document Template
+title: Meeting Log Template
 ---
 
-## Discussion Log
+
 
 ```
 Attendees:
@@ -18,16 +18,4 @@ Agenda/Previous Item:
 Discussion Note
   1.
   2.
-```
-
-### Retrospective 
-```
-What worked Well?
-
-What could be improved?
-
-What will we commit to doing in the next iteration?
-
-Actionable commitment?
-
 ```

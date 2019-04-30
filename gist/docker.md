@@ -11,6 +11,8 @@ title: Docker
 
 https://www.docker.com/
 
+[GoDoRP docker compose for development and production](https://medium.com/@McMenemy/godorp-docker-compose-for-development-and-production-e37fe0a58d61)
+
 ### Quotes
 
 > Develop, Ship and Run Any Application Anywhere
