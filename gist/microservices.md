@@ -19,3 +19,16 @@ API Gateway: Backend for front-end
 - Traefik
 - NGINX
 - HAProxy
+
+
+[microservices testing strategies](https://medium.freecodecamp.org/these-are-the-most-effective-microservice-testing-strategies-according-to-the-experts-6fb584f2edde)
+
+## Break down the monolithic
+
+Driving factors for decomposition:
+- Team Boundaries
+- Frequency of change
+- Different responsible
+- Different (cross-functional) requirements
+- Different technical stack
+- Prototyping/Experiments
