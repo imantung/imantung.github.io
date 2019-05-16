@@ -8,6 +8,11 @@ title: MySQL
 SET GLOBAL time_zone = '+3:00';
 ```
 
+[server-error-reference](https://dev.mysql.com/doc/refman/5.5/en/server-error-reference.html)
+
+[How max prepare stmt count bring down the production mysql system](https://medium.com/searce/how-max-prepared-stmt-count-bring-down-the-production-mysql-system-6ca28e577663)
+[Who's leaking prepared statements](http://mysqlblog.fivefarmers.com/2012/07/05/whos-leaking-prepared-statements/)
+
 ## Logs
 
 Log Type

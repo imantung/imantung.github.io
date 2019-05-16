@@ -1,23 +1,15 @@
 ---
 layout: gist
-title: Cloud & DevOps
+title: DevOps
 ---
 
-#### Service Model
+SecOps = DevOps + Security
 
-- `IASS` = Infrastructure as a Service
-- `PASS` = Platform as a Service
-- `SASS` = Software as a Service
-
-### DevOps
-
-[Is DevOps a Title?](https://devops.com/is-devops-a-title/)
-
-[What is ‘Site Reliability Engineering’?](https://landing.google.com/sre/interview/ben-treynor.html)
-
-[SRE Book by Google](https://landing.google.com/sre/sre-book/toc/)
-
-[The devops transformation](https://www.slideshare.net/benrockwood/lisa-2011-keynote-the-devops-transformation)
+Good Read:
+- [Is DevOps a Title?](https://devops.com/is-devops-a-title/)
+- [What is ‘Site Reliability Engineering’?](https://landing.google.com/sre/interview/ben-treynor.html)
+- [SRE Book by Google](https://landing.google.com/sre/sre-book/toc/)
+- [The devops transformation](https://www.slideshare.net/benrockwood/lisa-2011-keynote-the-devops-transformation)
 
 DevOps Overview:
 1. Code — code development and review, **source code management** tools, code merging
@@ -37,4 +29,8 @@ DevOps Movement Core value --> CAMS:
 Some tools:
 - [rundeck](https://www.rundeck.com/open-source)
 
-SecOps = DevOps + security
+
+## Log Journal
+
+[Logrotate](https://serversforhackers.com/c/managing-logs-with-logrotate)
+[Remove journal log and abrt log](https://unix.stackexchange.com/questions/130786/can-i-remove-files-in-var-log-journal-and-var-cache-abrt-di-usr)

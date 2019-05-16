@@ -14,60 +14,56 @@ Run multiple command:
 - `A || B`  – Run B only if A failed
 
 Get PID
-```sh
+```bash
 ps ax | grep [NAME] | grep -v grep | awk '{print $1}'
 ```
 
 Check IPs connecting to a machine
-```sh
+```bash
 sudo netstat -ant | sed '1d' | awk '{print $5}' | cut -f1 -d':' | sort | uniq
 ```
 
 Network Time Protocol (NTP) is a protocol used to synchronize computer system clock automatically over a networks.
-```sh
+```bash
 sudo apt-get remove ntp ntpdate
 sudo apt-get install ntp ntpdate
 ```
 
-### Environment Variable
+### Compress
+```bash
+tar -czvf name-of-archive.tar.gz /path/to/directory-or-file
 
-Overview:
-- Each process has its own separate set of environment variables
-- It inherits a duplicate environment of its parent process, except for explicit changes made by the parent when it creates the child
-- All environment variables must live together in a single environment block, which itself has a limit of `32767` characters. But that count is the sum over all environment variable names and values
-- The value is truncated at `2047` characters
+# multiple file/directory
+tar -czvf archive.tar.gz /home/ubuntu/Downloads /usr/local/stuff /home/ubuntu/Documents/notes.txt
 
-Directory-based/local environment tool:
-- [autoenv](https://github.com/kennethreitz/autoenv) (deprecated?)
-- [direnv](https://direnv.net/)
+# exclude file
+tar -czvf archive.tar.gz /home/ubuntu --exclude=/home/ubuntu/Downloads --exclude=/home/ubuntu/.cache
+tar -czvf archive.tar.gz /home/ubuntu --exclude=*.mp4
 
-Direnv:
-```sh
-brew install direnv
+# using bzip2
+tar -cjvf archive.tar.bz2 stuff
 
-echo 'eval "$(direnv hook zsh)"' >> ~/.zshrc
-source ~/.zshrc
+#extract
+tar -xzvf archive.tar.gz
+tar -xzvf archive.tar.gz -C /tmp
 
-direnv allow
 ```
+- -c: Create an archive.
+- -z: Compress the archive with gzip.
+- -v: Display progress in the terminal while creating the archive, also known as “verbose” mode. The v is always optional in these commands, but it’s helpful.
+- -f: Allows you to specify the filename of the archive.
 
 ### NOHUP
 
 "No Hang Up"
 
 Example:
-```sh
-nohup ./myprogram > myprogram.log 2>&1 &
+```bash
+nohup ./myprogram > myprogram.out 2>&1 &
 ```
 - `nohup` --> no hang up  
 - `2>&1`--> stderr also goes to the stdout  
 - `&` --> run on background  
-
-### Logs
-
-[Logrotate](https://serversforhackers.com/c/managing-logs-with-logrotate)
-
-[Remove journal log and abrt log](https://unix.stackexchange.com/questions/130786/can-i-remove-files-in-var-log-journal-and-var-cache-abrt-di-usr)
 
 
 ### Screen

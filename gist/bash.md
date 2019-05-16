@@ -5,9 +5,9 @@ title: Bash Script
 
 Bash = Bourne again shell
 
-[difference between sh and bash](https://stackoverflow.com/questions/5725296/difference-between-sh-and-bash)
-
-[string operator](https://www.linuxjournal.com/article/8919)
+Read:
+- [difference between sh and bash](https://stackoverflow.com/questions/5725296/difference-between-sh-and-bash)
+- [string operator](https://www.linuxjournal.com/article/8919)
 
 A script may specify `#!/bin/bash` on the first line, meaning that the script should always be run with bash
 ```sh
