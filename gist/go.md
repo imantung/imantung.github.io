@@ -3,16 +3,12 @@ layout: gist
 title: Go
 ---
 
-[project layout](https://github.com/golang-standards/project-layout/blob/master/README.md)
-
-[Go for Industrial Programming - Gopher EU 2018](https://peter.bourgon.org/go-for-industrial-programming/)
-
-[good article about http service](https://medium.com/statuscode/how-i-write-go-http-services-after-seven-years-37c208122831)
-
-[Style guideline for Go packages](https://rakyll.org/style-packages/)
-
-[when is the init function run](https://stackoverflow.com/questions/24790175/when-is-the-init-function-run)
-
+Good Read: 
+- [project layout](https://github.com/golang-standards/project-layout/blob/master/README.md)
+- [Go for Industrial Programming - Gopher EU 2018](https://peter.bourgon.org/go-for-industrial-programming/)
+- [good article about http service](https://medium.com/statuscode/how-i-write-go-http-services-after-seven-years-37c208122831)
+- [Style guideline for Go packages](https://rakyll.org/style-packages/)
+- [when is the init function run](https://stackoverflow.com/questions/24790175/when-is-the-init-function-run)
 
 ### SETUP
 
@@ -22,7 +18,18 @@ mkdir $HOME/go && cd $HOME/go && mkdir bin pkg src && cd -
 echo "export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 " >> ~/.zshrc
-source ~/.zshrc
+source ~/.zshrc  
+```
+
+### C Cross Compiler
+
+https://github.com/mattn/go-sqlite3/issues/384
+
+For linux: 
+```
+brew install FiloSottile/musl-cross/musl-cross
+
+CC=x86_64-linux-musl-gcc CXX=x86_64-linux-musl-g++ GOARCH=amd64 GOOS=linux CGO_ENABLED=1 go build -ldflags "-linkmode external -extldflags -static"
 ```
 
 

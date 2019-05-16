@@ -1,6 +1,6 @@
 ---
 layout: gist
-title: Regex - Ruby
+title: Ruby Regex
 ---
 
 [Rubular - Online parser](http://rubular.com/)

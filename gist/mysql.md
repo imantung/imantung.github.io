@@ -8,7 +8,12 @@ title: MySQL
 SET GLOBAL time_zone = '+3:00';
 ```
 
-[mysqlbinlog](https://www.thegeekstuff.com/2017/08/mysqlbinlog-examples/)
+## Logs
+
+Log Type
+- [mysqlbinlog](https://www.thegeekstuff.com/2017/08/mysqlbinlog-examples/)
+- auditlog
+- slowquerylog
 
 ## Cheatsheet
 
