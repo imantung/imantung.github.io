@@ -1,11 +1,27 @@
 ---
 layout: gist
-title: Root Cause Analysis
+title: RCA
 ---
+
+`RCA` = [Root Cause Analysis](https://des.wa.gov/services/risk-management/about-risk-management/enterprise-risk-management/root-cause-analysis)
 
 `post-mortem`: (literal: after death)
 
-Template #1
+## Investigation Method
+
+1. The “5-Whys” Analysis
+2. Barrier Analysis
+3. Change Analysis
+4. Causal Factor Tree Analysis
+5. Failure Mode and Effects Analysis
+6. Fish-Bone Diagram or Ishikawa Diagram
+7. Pareto Analysis
+8. Fault Tree Analysis
+
+
+## Template Report
+
+Template#1
 - Overview:
 - What happened:
 - Resolution:
@@ -18,7 +34,7 @@ Template #1
 - Customer Care Tickets created: 0
 
 
-Template #2
+Template#2
 - Occurance Time:
 - Detection Time:
 - Recovery Time:
@@ -35,7 +51,6 @@ Template #2
 
 
 Template#3
-
 - `PIC`: Incident PIC
 - `Incident Report`: Detail Chronology
 - `Data Back-up Processes`:	Data Back-up Processes (If needed)

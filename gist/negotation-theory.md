@@ -1,6 +1,6 @@
 ---
 layout: gist
-title: Negotation & Communication
+title: Negotation Theory
 ---
 
 
