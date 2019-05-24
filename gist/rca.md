@@ -3,9 +3,12 @@ layout: gist
 title: RCA
 ---
 
-`RCA` = [Root Cause Analysis](https://des.wa.gov/services/risk-management/about-risk-management/enterprise-risk-management/root-cause-analysis)
+`RCA` = Root Cause Analysis
 
 `post-mortem`: (literal: after death)
+
+Good Ref:
+- [RCA by des.wa.gov](https://des.wa.gov/services/risk-management/about-risk-management/enterprise-risk-management/root-cause-analysis)
 
 ## Investigation Method
 
@@ -35,7 +38,7 @@ Template#1
 
 
 Template#2
-- Occurance Time:
+- Occurrence Time:
 - Detection Time:
 - Recovery Time:
 - Recovery Duration:
@@ -51,13 +54,13 @@ Template#2
 
 
 Template#3
-- `PIC`: Incident PIC
-- `Incident Report`: Detail Chronology
-- `Data Back-up Processes`:	Data Back-up Processes (If needed)
-- `Legal Requirement from Regulator`:	Legal Requirement for Incident from Regulator 
-- `Coverage and Responses System Component`:	Incident Coverage and Critical System Component Responses
-- `Cause`: Incident Root Cause
-- `Downtime`: Downtime Duration
-- `Impact`:	Incident Impact
-- `Solution`:	Incident Solution
-- `Reference`:	Reference Description or URL
+- PIC: Incident PIC
+- Incident Report: Detail Chronology
+- Data Back-up Processes:	Data Back-up Processes (If needed)
+- Legal Requirement from Regulator:	Legal Requirement for Incident from Regulator 
+- Coverage and Responses System Component:	Incident Coverage and Critical System Component Responses
+- Cause: Incident Root Cause
+- Downtime: Downtime Duration
+- Impact:	Incident Impact
+- Solution:	Incident Solution
+- Reference:	Reference Description or URL
