@@ -22,4 +22,5 @@ Ref:
 Tool:
 - [Lokalise](https://lokalise.co/): Translation Management 
 - [poeditor](https://poeditor.com/): localization management platform
+- [onesky](https://www.oneskyapp.com/customers/)
 
