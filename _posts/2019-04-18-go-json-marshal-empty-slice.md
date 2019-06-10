@@ -22,7 +22,7 @@ b, _ := json.Marshal(slice)
 fmt.Println(string(b)) // print `[]`
 ```
 
-I thought `make()` will make fixed length slice and `append()` will trigger error, but it totally fine.
+I thought `make()` will make fixed length slice and `append()` will trigger error, but it totally fine. That's why in go they called it slice instead of array, the behavior is slightly different with fixed length array in another language.
 ```go
 var slice []string
 slice = make([]string, 0)
@@ -35,4 +35,4 @@ b, _ := json.Marshal(slice)
 fmt.Println(string(b)) // print `["some-string"]`
 ```
 
-Thanks [Dan Ott](https://danott.co/posts/json-marshalling-empty-slices-to-empty-arrays-in-go.html) for the insight
+Thanks [Dan Ott's article](https://danott.co/posts/json-marshalling-empty-slices-to-empty-arrays-in-go.html) for the insight
