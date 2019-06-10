@@ -4,7 +4,10 @@ title: Linux
 ---
 
 
-[Filesystem Hierarchy Standard](http://refspecs.linuxfoundation.org/FHS_2.3/fhs-2.3.html)
+Some reading:
+- [Filesystem Hierarchy Standard](http://refspecs.linuxfoundation.org/FHS_2.3/fhs-2.3.html)
+- [Unix VS Linux](https://www.guru99.com/difference-unix-vs-linux.html)
+
 
 `/dev/null` = null device =  device file that discards all data written to it but reports that the write operation succeeded
 
@@ -29,65 +32,6 @@ sudo apt-get remove ntp ntpdate
 sudo apt-get install ntp ntpdate
 ```
 
-### Compress
-```bash
-tar -czvf name-of-archive.tar.gz /path/to/directory-or-file
-
-# multiple file/directory
-tar -czvf archive.tar.gz /home/ubuntu/Downloads /usr/local/stuff /home/ubuntu/Documents/notes.txt
-
-# exclude file
-tar -czvf archive.tar.gz /home/ubuntu --exclude=/home/ubuntu/Downloads --exclude=/home/ubuntu/.cache
-tar -czvf archive.tar.gz /home/ubuntu --exclude=*.mp4
-
-# using bzip2
-tar -cjvf archive.tar.bz2 stuff
-
-#extract
-tar -xzvf archive.tar.gz
-tar -xzvf archive.tar.gz -C /tmp
-
-```
-- -c: Create an archive.
-- -z: Compress the archive with gzip.
-- -v: Display progress in the terminal while creating the archive, also known as “verbose” mode. The v is always optional in these commands, but it’s helpful.
-- -f: Allows you to specify the filename of the archive.
-
-### NOHUP
-
-"No Hang Up"
-
-Example:
-```bash
-nohup ./myprogram > myprogram.out 2>&1 &
-```
-- `nohup` --> no hang up  
-- `2>&1`--> stderr also goes to the stdout  
-- `&` --> run on background  
-
-
-### Screen
-
-```sh
-screen -R [name]
-screen -ls
-screen -x [name]
-```
-
-- `ctrl + a + d` to exit
-- `ctrl + a + k` to kill
-
-### Curl
-
-```sh
-curl [host]
-
-# send HEAD request
-curl -I [host]
-
-# verbose
-curl -v [host]
-```
 
 ### ULimit
 

@@ -7,7 +7,7 @@ tags: ["go"]
 comments: false
 ---
 
-Today I found out that `json.Marshal()` weirdly return `null` for empty slice
+Today I found out that `json.Marshal()` weirdly return `null` for empty slice but make sense.
 ```go
 var slice []string
 b, _ := json.Marshal(slice)
