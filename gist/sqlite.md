@@ -4,7 +4,7 @@ title: SQLite
 ---
 
 Ref:
-- https://www.sqlite.org/cli.html
+- <https://www.sqlite.org/cli.html>
 
 Installation
 ```bash
@@ -15,10 +15,6 @@ brew install sqlite
 sudo apt install sqlite3
 ```
 
-SQLite command
-```bash
-
-```
 
 Cheatsheet Interactive Command/Dot Command
 

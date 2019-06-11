@@ -3,29 +3,18 @@ layout: gist
 title: Mobile Development
 ---
 
-[zeplin](https://zeplin.io): collaboration/utility tool for developer and designer
-
-[invisionapp](https://www.invisionapp.com/): prototyping
-
-[appsflyer](https://www.appsflyer.com/)
-
-[fabric](https://fabric.io/) (previously crashlytics )
-
-[clevertap](https://clevertap.com/)
-
-[apptimize](https://apptimize.com/)
-
-[optimizely](https://www.optimizely.com/)
-
-[segment](https://segment.com/)
-
-[mitmproxy](https://medium.com/testvagrant/intercept-ios-android-network-calls-using-mitmproxy-4d3c94831f62)
-
-firebase
-
-app signing
-
-app indexing
+- [zeplin](https://zeplin.io): collaboration/utility tool for developer and designer
+- [invisionapp](https://www.invisionapp.com/): prototyping
+- [appsflyer](https://www.appsflyer.com/)
+- [fabric](https://fabric.io/) (previously crashlytics )
+- [clevertap](https://clevertap.com/)
+- [apptimize](https://apptimize.com/)
+- [optimizely](https://www.optimizely.com/)
+- [segment](https://segment.com/)
+- [mitmproxy](https://medium.com/testvagrant/intercept-ios-android-network-calls-using-mitmproxy-4d3c94831f62)
+- firebase
+- app signing
+- app indexing
 
 
 ### Android

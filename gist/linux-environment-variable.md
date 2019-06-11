@@ -1,6 +1,6 @@
 ---
 layout: gist
-title: Environment Variable
+title: Linux - Environment Variable
 ---
 
 Overview:

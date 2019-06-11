@@ -12,6 +12,7 @@ Some reading:
 - [Why a vc passed on your startup](https://entrepreneurshandbook.co/the-real-reasons-why-a-vc-passed-on-your-startup-917c30103ecb)
 - [what to expect from 3 type of early stage investors](https://entrepreneurshandbook.co/what-to-expect-from-3-types-of-early-stage-investors-214e970690e7)
 - [The golden circle by simon sinek](https://enviableworkplace.com/executive-summary-golden-circle-simon-sinek/)
+- [AARRR Startup Metrics](http://startitup.co/guides/374/aarrr-startup-metrics)
 
 Popular Jargon:
 - Startup of One

@@ -4,9 +4,12 @@ title: Open Source
 ---
 
 
-[Open Source Guide](https://opensource.guide/)
+Ref:
+- <https://opensource.guide/>
+- <https://medium.com/swlh/a-failed-effort-to-get-paid-for-an-open-source-project-bd7fa4658a1e>
 
-https://codecov.io/
+Tool:
+- <https://codecov.io/>
 
 ## License
 
