@@ -6,6 +6,11 @@ title: Human Resource
 Good Article:
 - [Applicant Tracking Systems (ATS)](https://resumegenius.com/blog/resume-help/applicant-tracking-systems-resume-keyword-help)
 - [What motivates us at work? More than money](https://ideas.ted.com/what-motivates-us-at-work-7-fascinating-studies-that-give-insights)
+- [Introducing Engineering Management to a Growing Organization](https://blog.gitprime.com/introducing-engineering-management-growing-organization/)
+
+3rd Party Vendor:
+- <https://www.gitprime.com/>: integrated with repo, ticketing, etc and give engineer productivity metrics
+- <https://recruiterbox.com/>: recruitment management
 
 
 ## My Engineering Recruitment Note
@@ -26,6 +31,7 @@ Ref:
 - <https://www.clearpointstrategy.com/25-important-project-management-kpis/>
 - <https://www.scoro.com/blog/16-essential-project-kpis/>
 - <https://engineering-management.space/post/productivity-index/>
+- <https://engineering-management.space/post/software-engineering-kpis/>
 
 
 [5 Developer metrics Every Software Manager should care about](https://blog.gitprime.com/5-developer-metrics-every-software-manager-should-care-about/):
