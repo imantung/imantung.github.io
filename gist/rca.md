@@ -1,13 +1,12 @@
 ---
 layout: gist
-title: RCA
+title: Root Cause Analysis (RCA)
 ---
 
-`RCA` = Root Cause Analysis
+Other names:
+- `post-mortem`: (literal: after death)
 
-`post-mortem`: (literal: after death)
-
-Good Ref:
+Ref:
 - [RCA by des.wa.gov](https://des.wa.gov/services/risk-management/about-risk-management/enterprise-risk-management/root-cause-analysis)
 
 ## Investigation Method

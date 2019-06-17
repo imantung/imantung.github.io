@@ -7,6 +7,9 @@ Reference:
 - [Start using git in command line](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html)
 - [How to not be afraid of git anymore](https://medium.freecodecamp.org/how-not-to-be-afraid-of-git-anymore-fe1da7415286)
 - [Git standards](https://gist.github.com/carlmjohnson/9c3a4507b432c5a03acd1e8830a02a50)
+- [gitattributes file](https://medium.com/@pablorsk/be-a-git-ninja-the-gitattributes-file-e58c07c9e915)
+- [Working multiple repo in one repo](https://medium.com/@patrickleet/mono-repo-or-multi-repo-why-choose-one-when-you-can-have-both-e9c77bd0c668)
+- [Continous Integration with mono repo](https://hackernoon.com/continuous-integration-in-projects-using-monorepo-9b828d7a8dfa)
 
 Terms:
 - `remote`: remote location of repository

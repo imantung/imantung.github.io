@@ -13,8 +13,12 @@ Good Article:
 - <https://recruiterbox.com/>: recruitment management
 
 
-## My Engineering Recruitment Note
+## Hiring
 
+Good reading:
+- <https://github.com/poteto/hiring-without-whiteboards>
+
+My note:
 1. Always process insider referral
   - "Give face" to insider
   - Motivate the insider to submit more referral
@@ -24,6 +28,8 @@ Good Article:
 3. Best assignment is a complete project
   - From the code, we see problem solving skill, logic, design and attitude of candidate
   - Reviewing the assignment also good exercise 
+  
+
 
 ## Performance Management
 

@@ -5,15 +5,18 @@ title: Open Source
 
 
 Ref:
-- <https://opensource.guide/>
-- <https://medium.com/swlh/a-failed-effort-to-get-paid-for-an-open-source-project-bd7fa4658a1e>
+- [Opensource Guide](https://opensource.guide/)
+- [Opensource Survey](https://opensourcesurvey.org/)
+- [Choose License](https://choosealicense.com/)
+- [A failed effort to get paid for an open source project](https://medium.com/swlh/a-failed-effort-to-get-paid-for-an-open-source-project-bd7fa4658a1e)
+- [Top ten reason why I won't use your open source](https://changelog.com/posts/top-ten-reasons-why-i-wont-use-your-open-source-project)
 
 Tool:
 - <https://codecov.io/>
 
 ## License
 
-[Choose License](https://choosealicense.com/)
+  
 
 - `MIT License` is short and to the point. It lets people do almost anything they want with your project, including to make and distribute closed source versions.
 - `GNU GPLv3` lso lets people do almost anything they want with your project, except to distribute closed source versions.

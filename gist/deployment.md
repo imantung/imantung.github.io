@@ -3,30 +3,26 @@ layout: gist
 title: Deployment
 ---
 
-canary
-
-green blue deployment
+- canary
+- green blue deployment
 
 ### Infastructure as Code
 
-[Terraform](/terraform.md): create, combine and manage infrastructure across multiple providers
-
-[Chef](/chef.md)
+- [Terraform](/terraform.md): create, combine and manage infrastructure across multiple providers
+- [Chef](/chef.md)
 
 ### CI/CD
 
-[octopus](https://octopus.com/)
-
-[gitops](https://www.weave.works/technologies/gitops/)
+- [octopus](https://octopus.com/)
+- [gitops](https://www.weave.works/technologies/gitops/)
+- [jenkins](https://jenkins.io/)
+- [drone](https://drone.io/)
 
 ### Virtualization
 
-
-[Dockers](/docker.md): containerization
-
-[VirtualBox](https://www.virtualbox.org/): virtualization/hypervisor
-
-[Vagrant](/vagrant.md): create and configure portable development environment
+- [Dockers](/docker.md): containerization
+- [VirtualBox](https://www.virtualbox.org/): virtualization/hypervisor
+- [Vagrant](/vagrant.md): create and configure portable development environment
 
 
 ### Deployment Document template
