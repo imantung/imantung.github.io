@@ -11,6 +11,8 @@ Good Read:
 - [when is the init function run](https://stackoverflow.com/questions/24790175/when-is-the-init-function-run)
 - [Go for Industrial Programming](https://peter.bourgon.org/go-for-industrial-programming/#the-component-graph)
 
+<https://curtisvermeeren.github.io/2017/09/14/Golang-Templates-Cheatsheet>
+
 ### SETUP
 
 ```sh

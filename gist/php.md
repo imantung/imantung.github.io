@@ -14,6 +14,8 @@ PHP Session:
 - [length of php session](https://stackoverflow.com/questions/12240922/what-is-the-length-of-a-php-session-id-string)
 - [how php session-id generated](https: //stackoverflow.com/questions/18937651/php-session-ids-how-are-they-generated)
 
+[Laravel Zero](https://github.com/laravel-zero/laravel-zero): php for console framework
+
 
 ### Composer
 

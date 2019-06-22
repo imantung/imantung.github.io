@@ -5,6 +5,10 @@ title: InfoSec
 
 [Wikipedia: Information Security](https://en.wikipedia.org/wiki/Information_security)
 
+[sshguard](https://www.sshguard.net/): protect brute-force by monitoring system logs, defecting attack, block attack using firewall
+
+[DNS Blocklists](https://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block)
+
 [IDOR](https://www.bugcrowd.com/how-to-find-idor-insecure-direct-object-reference-vulnerabilities-for-large-bounty-rewards/)
 
 [InfoSec colour wheel](https://hackernoon.com/introducing-the-infosec-colour-wheel-blending-developers-with-red-and-blue-security-teams-6437c1a07700)
