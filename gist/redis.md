@@ -5,7 +5,14 @@ title: Redis
 
 default port: `6379`
 
-[Twemproxy](https://github.com/twitter/twemproxy): proxy for memcached and redis
+Tool:
+- [Redis Sentinel](https://redis.io/topics/sentinel): monitoring, notification, automatic failover, configuration provider
+- [Redis Cluster](https://redis.io/topics/cluster-tutorial): distributed; data sharding
+- [Twemproxy](https://github.com/twitter/twemproxy): proxy for memcached and redis by twitter
+
+
+Ref: 
+- <https://blog.houzz.com/migration-to-redis-cluster/>
 
 
 ### Cheatsheet

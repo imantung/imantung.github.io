@@ -16,7 +16,7 @@ DevOps Overview:
 2. Build — **continuous integration** tools, build status
 3. Test — **continuous testing** tools that provide feedback on business risks
 4. Package — **artifact repository**, application pre-deployment staging
-5. Release — chang  e management, release approvals, **release automation**
+5. Release — change management, release approvals, **release automation**
 6. Configure — infrastructure configuration and management, **Infrastructure as Code** tools
 7. Monitor — **applications performance monitoring**, end–user experience
 
@@ -26,11 +26,18 @@ DevOps Movement Core value --> CAMS:
 - Measurement
 - Sharing
 
-Some tools:
-- [rundeck](https://www.rundeck.com/open-source)
+## Automation
+
+- [Rundeck](https://www.rundeck.com/): Self-Service Operations Console
+- [Sonarqube](https://www.sonarqube.org/): Continuous Code Quality
+- [SumoLogic](https://www.sumologic.com): machine data analytics platform
+- [Scalyr](https://www.scalyr.com/): log search and management
+- [Stackdriver](https://cloud.google.com/stackdriver/): Monitoring and management for services, containers, applications, and infrastructure
+- [prometheus](https://prometheus.io/docs/introduction/overview/)
+
 
 
 ## Log Journal
 
-[Logrotate](https://serversforhackers.com/c/managing-logs-with-logrotate)
-[Remove journal log and abrt log](https://unix.stackexchange.com/questions/130786/can-i-remove-files-in-var-log-journal-and-var-cache-abrt-di-usr)
+- [Logrotate](https://serversforhackers.com/c/managing-logs-with-logrotate)
+- [Remove journal log and abrt log](https://unix.stackexchange.com/questions/130786/can-i-remove-files-in-var-log-journal-and-var-cache-abrt-di-usr)

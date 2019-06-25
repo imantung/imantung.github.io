@@ -9,8 +9,8 @@ Good Article:
 - [Introducing Engineering Management to a Growing Organization](https://blog.gitprime.com/introducing-engineering-management-growing-organization/)
 
 3rd Party Vendor:
-- <https://www.gitprime.com/>: integrated with repo, ticketing, etc and give engineer productivity metrics
-- <https://recruiterbox.com/>: recruitment management
+- [gitprime](https://www.gitprime.com/): integrated with repo, ticketing, etc and give engineer productivity metrics
+- [recruiterbox](https://recruiterbox.com/): recruitment management
 
 
 ## Hiring
@@ -29,8 +29,6 @@ My note:
   - From the code, we see problem solving skill, logic, design and attitude of candidate
   - Reviewing the assignment also good exercise 
   
-
-
 ## Performance Management
 
 Ref:
@@ -47,7 +45,7 @@ Ref:
 4. Active Days: a day in which an engineer contributed code to the project
 5. Efficiency: the percentage of an engineer’s contributed code that’s productive, which generally involves balancing coding output against the code’s longevity. 
 
+## Culture
 
-
-  
+- [996](https://en.wikipedia.org/wiki/996_working_hour_system)
   
