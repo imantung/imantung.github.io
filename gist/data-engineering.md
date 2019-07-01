@@ -10,6 +10,8 @@ Good Reading:
 Tool:
 - [Metabase](https://www.metabase.com/)
 - [Airflow](https://airflow.apache.org/):
+- [Debezium])(https://debezium.io/): Stream changes from your database
+- [Apache Nifi](https://nifi.apache.org/)
 
 ## Stream Processing
 

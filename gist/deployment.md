@@ -27,6 +27,7 @@ title: Deployment
 
 ### Deployment Document template
 
+Template 1
 ```
 Change Summary:
 Committers:
@@ -42,4 +43,17 @@ Service Component
   - API Changes
   - Analytics Impact
   - App Impact
+```
+
+Template 2
+```
+- Description/Change Summary/Impact
+- Prerequisite/Configuration/Service component
+- Monolith session redis
+- Deploy Version
+- Additional Deploy Instruction
+- Rollback Version
+- Additional Rollback Instruction
+- Target Deployment Date
+- Approval 
 ```

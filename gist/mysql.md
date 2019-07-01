@@ -3,6 +3,8 @@ layout: gist
 title: MySQL
 ---
 
+[Timeseries database using MySQL](https://dba.stackexchange.com/questions/190756/what-is-the-optimal-solution-for-storing-real-time-time-series-in-mariadb-mysq)
+
 [JDBC Driver TimeZone issue](https://stackoverflow.com/questions/26515700/mysql-jdbc-driver-5-1-33-time-zone-issue)
 ```sql
 SET GLOBAL time_zone = '+3:00';
