@@ -15,13 +15,21 @@ Good Read:
 
 ### SETUP
 
-```sh
+```bash
 brew install go
 mkdir $HOME/go && cd $HOME/go && mkdir bin pkg src && cd -
 echo "export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 " >> ~/.zshrc
 source ~/.zshrc  
+```
+
+### GO Module
+
+```bash
+go init
+go init [package name]
+go mod download -json
 ```
 
 ### C Cross Compiler
