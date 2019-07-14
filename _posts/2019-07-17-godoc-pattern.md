@@ -2,7 +2,7 @@
 layout: post
 title: "GoDoc Pattern"
 description: "GoDoc Pattern"
-date: 2019-06-11 21:00:00 +0700
+date: 2019-07-17 22:43:00 +0700
 tags: ["godoc"]
 comments: false
 ---
