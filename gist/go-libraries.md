@@ -30,7 +30,7 @@ More list at [awesome-go](https://awesome-go.com/)
 - `github.com/alicebob/miniredis`: Pure Go Redis server for Go unittests
 - `github.com/ory/dockertest`: integration test with docker
 - `github.com/jackc/pgx`: a better postgres driver
-- `github.com/ory/dockertest`: integration test with docker
+- `https://github.com/cenkalti/backoff`: Exponential Backoff
 
 
 

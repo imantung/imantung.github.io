@@ -8,10 +8,8 @@ title: Docker
 - Developed in the Go language
 - Builds on LinuX Containers (LxC)  --> latest version not use LxC anymore
 - create Virtual Environments (VE)
+- <https://www.docker.com/>
 
-https://www.docker.com/
-
-[GoDoRP docker compose for development and production](https://medium.com/@McMenemy/godorp-docker-compose-for-development-and-production-e37fe0a58d61)
 
 ### Quotes
 
@@ -19,19 +17,13 @@ https://www.docker.com/
 
 ### Get Started
 
-[Install docker dmg (doesn’t need VM)](https://docs.docker.com/docker-for-mac/install/) --> recommended
-
-[Install docker toolbox (need VM)]( https://docs.docker.com/toolbox/toolbox_install_mac/) --> legacy desktop solution
-
-[Different between docker dmg and toolbox]( https://docs.docker.com/docker-for-mac/docker-toolbox/)
-
-[(Alternative) Install docker via homebrew (xhyve)]( https://pilsniak.com/how-to-install-docker-on-mac-os-using-brew/) --> never tried it
-
-[(Alternative) Install docker via homebrew (boot2docker)]( https://penandpants.com/2014/03/09/docker-via-homebrew/) --> never tried it
-
-[Quick start](https://docs.docker.com/docker-for-mac/)
-
-[Quick start on golang](https://blog.golang.org/docker)
+- [Install docker dmg (doesn’t need VM)](https://docs.docker.com/docker-for-mac/install/) --> recommended
+- [Install docker toolbox (need VM)](https://docs.docker.com/toolbox/toolbox_install_mac/) --> legacy desktop solution
+- [Different between docker dmg and toolbox](https://docs.docker.com/docker-for-mac/docker-toolbox/)
+- [(Alternative) Install docker via homebrew (xhyve)](https://pilsniak.com/how-to-install-docker-on-mac-os-using-brew/) --> never tried it
+- [(Alternative) Install docker via homebrew (boot2docker)](https://penandpants.com/2014/03/09/docker-via-homebrew/) --> never tried it
+- [Quick start](https://docs.docker.com/docker-for-mac/)
+- [Quick start on golang](https://blog.golang.org/docker)
 
 Quick start cheatsheet:
 ```sh
