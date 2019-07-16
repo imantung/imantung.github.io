@@ -7,6 +7,7 @@ Ref
 - [Distributed Unique ID Sequence Number Generator](https://www.callicoder.com/distributed-unique-id-sequence-number-generator/)
 - [Multi-Processing Module](https://httpd.apache.org/docs/2.4/mod/prefork.html)
 - [Sticky vs Non Sticky Session](https://stackoverflow.com/questions/10494431/sticky-and-non-sticky-sessions)
+- [You can't have exactly once delivery](https://bravenewgeek.com/you-cannot-have-exactly-once-delivery/)
 
 [`CAP theorem`](https://en.wikipedia.org/wiki/CAP_theorem): states that it is impossible for a distributed data store to simultaneously provide more than two out of the following three guarantees:
 - Consistency
@@ -33,6 +34,11 @@ Ref
 
 [Hystrix](https://github.com/Netflix/Hystrix): latency and fault tolerance library
 
-HAProxy
+[Data Deduplication](https://en.wikipedia.org/wiki/Data_deduplication): Technique for eliminating duplicate copies of repeating data
+
+ Types of delivery semantics:
+ - at-most-once
+ - at-least-once
+ - exactly-once
 
 
