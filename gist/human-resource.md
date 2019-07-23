@@ -8,9 +8,10 @@ Good Article:
 - [What motivates us at work? More than money](https://ideas.ted.com/what-motivates-us-at-work-7-fascinating-studies-that-give-insights)
 - [Introducing Engineering Management to a Growing Organization](https://blog.gitprime.com/introducing-engineering-management-growing-organization/)
 
-3rd Party Vendor:
+Tools:
 - [gitprime](https://www.gitprime.com/): integrated with repo, ticketing, etc and give engineer productivity metrics
 - [recruiterbox](https://recruiterbox.com/): recruitment management
+- [Team Playbook by Atlanssian](https://www.atlassian.com/team-playbook)
 
 
 ## Hiring

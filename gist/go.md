@@ -10,6 +10,7 @@ Good Read:
 - [Style guideline for Go packages](https://rakyll.org/style-packages/)
 - [when is the init function run](https://stackoverflow.com/questions/24790175/when-is-the-init-function-run)
 - [Go for Industrial Programming](https://peter.bourgon.org/go-for-industrial-programming/#the-component-graph)
+- [Shrink your go binaries with this one weird trick](https://blog.filippo.io/shrink-your-go-binaries-with-this-one-weird-trick/)
 
 <https://curtisvermeeren.github.io/2017/09/14/Golang-Templates-Cheatsheet>
 
