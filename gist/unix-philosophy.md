@@ -3,6 +3,8 @@ layout: gist
 title: Unix Philosophy
 ---
 
+<http://www.faqs.org/docs/artu/ch01s06.html>
+
 Unix Philosophy:
 1. Write programs that do one thing and do it well.
 2. Write programs to work together.
