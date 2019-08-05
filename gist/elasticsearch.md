@@ -3,11 +3,6 @@ layout: gist
 title: Elasticsearch
 ---
 
-References:
-- [Github Repo](https://github.com/elastic/elasticsearch)
-
-Tool:
-- [A web frontend for an elastic search cluster](https://github.com/mobz/elasticsearch-head) (chrome plugin is available)
 
 Settings References:
 - [A Heap of Trouble](https://www.elastic.co/blog/a-heap-of-trouble)
@@ -17,10 +12,14 @@ Settings References:
 - [Disabled Swapping](https://www.elastic.co/guide/en/elasticsearch/reference/6.2/setup-configuration-memory.html)
 - [Zen Discovery](https://www.elastic.co/guide/en/elasticsearch/reference/current/modules-discovery-zen.html#unicast)
 - [Important configuration change](https://www.elastic.co/guide/en/elasticsearch/guide/1.x/_important_configuration_changes.html)
+- [G1GC and Elaticsearch](https://medium.com/naukri-engineering/garbage-collection-in-elasticsearch-and-the-g1gc-16b79a447181)
 
 Monitoring References:
 - [Metrics to watch](https://www.oreilly.com/ideas/10-elasticsearch-metrics-to-watch)
 
+
+Tool:
+- [A web frontend for an elastic search cluster](https://github.com/mobz/elasticsearch-head) (chrome plugin is available)
 
 
 Split brain:
