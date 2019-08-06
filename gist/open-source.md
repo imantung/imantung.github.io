@@ -6,14 +6,12 @@ title: Open Source
 
 Ref:
 - [Opensource Guide](https://opensource.guide/)
+- [ Open Source Initiative](https://opensource.org/)
 - [Opensource Survey](https://opensourcesurvey.org/)
 - [Choose License](https://choosealicense.com/)
 - [A failed effort to get paid for an open source project](https://medium.com/swlh/a-failed-effort-to-get-paid-for-an-open-source-project-bd7fa4658a1e)
 - [Top ten reason why I won't use your open source](https://changelog.com/posts/top-ten-reasons-why-i-wont-use-your-open-source-project)
 - [List of Badges](https://github.com/Naereen/badges)
-
-Tool:
-- <https://codecov.io/>
 
 ## License
   
