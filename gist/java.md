@@ -5,6 +5,7 @@ title: Java
 
 - [JVM Options](https://www.oracle.com/technetwork/articles/java/vmoptions-jsp-140102.html)
 - [JVM Enhancements](https://docs.oracle.com/javase/7/docs/technotes/guides/vm/performance-enhancements-7.html)
+- <https://www.baeldung.com/jvm-parameters>
 
 Non standard option
 - Use `java -X` to display non standard option

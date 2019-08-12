@@ -24,6 +24,10 @@ psql -d postgres
 
 # template1 is a database created by postgres itself, and is present on all installations
 psql -d template1
+
+psql -h public-ip-server -p 5432 -U postgres
+
+PGPASSWORD=password psql -h 0.0.0.0 -p 5432 -U user
 ```
 
 Psql command

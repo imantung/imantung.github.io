@@ -13,3 +13,17 @@ Install
 brew install docker-compose
 ```
 
+Cheatsheet
+```bash
+
+docker-compose ps # list of process
+
+docker-compose start # start the service
+docker-compose stop # stop the service 
+docker-compose pause
+docker-compose unpause
+
+docker-compose up # Create and start containers
+docker-compose down # Stop and remove containers, networks, images, and volumes
+```
+
