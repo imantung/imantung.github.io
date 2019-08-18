@@ -7,7 +7,9 @@ title: InfoSec
 - [DNS Blocklists](https://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block)
 - [IDOR](https://www.bugcrowd.com/how-to-find-idor-insecure-direct-object-reference-vulnerabilities-for-large-bounty-rewards/)
 - [CIS Benchmark](https://www.advancedcyber.co.uk/it-security-blog/six-essential-things-to-know-cis-benchmark): Center for Internet Security 
+- [Security Hardening](https://www.keycdn.com/blog/http-security-headers)
 - gitrob
+
 
 [InfoSec colour wheel](https://hackernoon.com/introducing-the-infosec-colour-wheel-blending-developers-with-red-and-blue-security-teams-6437c1a07700)
 - Red Team: Offensive security

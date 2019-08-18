@@ -6,6 +6,10 @@ title: Performance Test
 Ref:
 - [Ultimate guide performace testing](https://stackify.com/ultimate-guide-performance-testing-and-software-testing/)
 
+Tool:
+- [Apache Benchmark](https://httpd.apache.org/docs/2.4/programs/ab.html)
+- [Vegeta](https://github.com/tsenart/vegeta)
+
 Type of performance test: 
 - Load Testing: increase workload 
 - Volume Testing/Flood Test: increate amounts of data 

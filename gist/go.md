@@ -159,7 +159,7 @@ Mocking
 mockgen -source=flow/kafka_admin.go -destination=flow/mock_kafka_admin.go -package=flow
 ```
 
-### Vendoring
+### Vendoring 
 
 Using [glide](https://glide.sh/)
 ```sh
@@ -180,6 +180,14 @@ dep ensure -add github.com/foo/bar github.com/baz/quux
 dep ensure -update
 ```
 
+### Module
+
+Cheatsheet
+```bash
+go mod init PATH
+go mod tidy
+```
+
 ### Makefile
 
 Makefile reference:
@@ -192,10 +200,19 @@ Makefile reference:
 
 [More detail list](https://gist.github.com/asukakenji/f15ba7e588ac42795f421b48b8aede63)
 
+Or run command 
+```bash
+go tool dist list
+```
+
 | $GOOS	| $GOARCH |
 |---|---|
 |darwin|amd64|
 |linux|amd64|
 |windows|amd64|
 
+### Profiling
+
+- <https://github.com/golang/go/wiki/Performance>
+- <https://artem.krylysov.com/blog/2017/03/13/profiling-and-optimizing-go-web-applications/>
 
