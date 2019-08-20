@@ -8,7 +8,11 @@ title: InfoSec
 - [IDOR](https://www.bugcrowd.com/how-to-find-idor-insecure-direct-object-reference-vulnerabilities-for-large-bounty-rewards/)
 - [CIS Benchmark](https://www.advancedcyber.co.uk/it-security-blog/six-essential-things-to-know-cis-benchmark): Center for Internet Security 
 - [Security Hardening](https://www.keycdn.com/blog/http-security-headers)
-- gitrob
+- [ISO/IEC 27001](https://www.iso.org/isoiec-27001-information-security.html)
+- [PCI DSS](https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard)
+
+
+gitrob
 
 
 [InfoSec colour wheel](https://hackernoon.com/introducing-the-infosec-colour-wheel-blending-developers-with-red-and-blue-security-teams-6437c1a07700)

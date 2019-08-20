@@ -9,7 +9,7 @@ Good Read:
 - [good article about http service](https://medium.com/statuscode/how-i-write-go-http-services-after-seven-years-37c208122831)
 - [Style guideline for Go packages](https://rakyll.org/style-packages/)
 - [when is the init function run](https://stackoverflow.com/questions/24790175/when-is-the-init-function-run)
-- [Go for Industrial Programming](https://peter.bourgon.org/go-for-industrial-programming/#the-component-graph)
+- [CodeReviewComment](https://github.com/golang/go/wiki/CodeReviewComments)
 - [Shrink your go binaries with this one weird trick](https://blog.filippo.io/shrink-your-go-binaries-with-this-one-weird-trick/)
 
 <https://curtisvermeeren.github.io/2017/09/14/Golang-Templates-Cheatsheet>
@@ -216,3 +216,9 @@ go tool dist list
 - <https://github.com/golang/go/wiki/Performance>
 - <https://artem.krylysov.com/blog/2017/03/13/profiling-and-optimizing-go-web-applications/>
 
+### Context
+
+- `WithValue`: the process may need this value
+- `WithCancel`: the process can be cancelled
+- `WithDeadline`: the process can be expired
+- `WithTimeout`: same with `WithDeadline`
