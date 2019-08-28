@@ -21,6 +21,11 @@ Monitoring References:
 Tool:
 - [A web frontend for an elastic search cluster](https://github.com/mobz/elasticsearch-head) (chrome plugin is available)
 
+For large number of response:
+<https://www.elastic.co/guide/en/elasticsearch/reference/6.4/search-request-scroll.html>
+
+Update the document without reindexing all: 
+<https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-update-by-query.html>
 
 Split brain:
 ```
