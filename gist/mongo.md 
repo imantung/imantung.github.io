@@ -1,0 +1,28 @@
+---
+layout: gist
+title: Mongo
+---
+
+- <https://dzone.com/articles/why-mongodb>
+
+[SQL Comparison](https://docs.mongodb.com/manual/reference/sql-comparison/)
+
+|SQL Term|MongoDB Term|
+|---|---|
+|Database|Dtabase|
+|Table|Collections|
+|Row|Document or BSON|
+|Column|Field|
+|index|index|
+|table joins|$lookup, embedded documents|
+|primary key|`_id` field|
+|aggregation|aggregation pipeline ([SQL Aggregation Mapping Char](https://docs.mongodb.com/manual/reference/sql-aggregation-comparison/))|
+|SELECT INTO NEW_TABLE|`$out`|
+|MERGE INTO TABLE|`$merge`|
+|transaction|transaction|
+
+Cheatsheet
+```
+use DATABASE_NAME
+show dbs
+```

@@ -9,6 +9,8 @@ Ref:
 Tool:
 - [Apache Benchmark](https://httpd.apache.org/docs/2.4/programs/ab.html)
 - [Vegeta](https://github.com/tsenart/vegeta)
+- [Artillery](https://artillery.io/)
+
 
 Type of performance test: 
 - Load Testing: increase workload 
