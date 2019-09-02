@@ -21,8 +21,22 @@ title: Mongo
 |MERGE INTO TABLE|`$merge`|
 |transaction|transaction|
 
-Cheatsheet
+
+[Shell Cheatsheet](https://docs.mongodb.com/manual/mongo/)
+```bash
+mongo --host mongodb0.example.com --port 28015
+```
+
+REPL Cheatsheet
 ```
 use DATABASE_NAME
 show dbs
+db.createUser({user:"mongouser",pwd:"mongopass",roles:[{role:"readWrite",db:"mongodb"}]})
+db.auth({user:"mongouser",pwd:"mongopass",digestPassword: true})
+```
+
+Query Cheatsheet
+```
+db.test.find().limit(10)
+db.test.find(ObjectId('4ecc05e55dd98a436ddcc47c'))
 ```

@@ -11,6 +11,7 @@ Good Read:
 - [when is the init function run](https://stackoverflow.com/questions/24790175/when-is-the-init-function-run)
 - [CodeReviewComment](https://github.com/golang/go/wiki/CodeReviewComments)
 - [Shrink your go binaries with this one weird trick](https://blog.filippo.io/shrink-your-go-binaries-with-this-one-weird-trick/)
+- [Production Ready Connection Pooling](https://making.pusher.com/production-ready-connection-pooling-in-go/)
 - <https://github.com/kjk/go-cookbook>
 - <https://curtisvermeeren.github.io/2017/09/14/Golang-Templates-Cheatsheet>
 
