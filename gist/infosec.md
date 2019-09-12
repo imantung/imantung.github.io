@@ -10,6 +10,7 @@ title: InfoSec
 - [Security Hardening](https://www.keycdn.com/blog/http-security-headers)
 - [ISO/IEC 27001](https://www.iso.org/isoiec-27001-information-security.html)
 - [PCI DSS](https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard)
+- <https://www.html5rocks.com/en/tutorials/security/content-security-policy/>
 
 
 gitrob

@@ -14,6 +14,7 @@ Good Read:
 - [Production Ready Connection Pooling](https://making.pusher.com/production-ready-connection-pooling-in-go/)
 - <https://github.com/kjk/go-cookbook>
 - <https://curtisvermeeren.github.io/2017/09/14/Golang-Templates-Cheatsheet>
+- <https://stackoverflow.com/questions/30612611/what-does-go-build-build/47109875#47109875>
 
 ### SETUP
 
@@ -223,3 +224,10 @@ go tool dist list
 - `WithCancel`: the process can be cancelled
 - `WithDeadline`: the process can be expired
 - `WithTimeout`: same with `WithDeadline`
+
+### Abstract Syntax Tree
+
+Print the ast
+```
+ast.Print(fset, v)
+```

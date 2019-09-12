@@ -30,8 +30,8 @@ More list at [awesome-go](https://awesome-go.com/)
 - `github.com/alicebob/miniredis`: Pure Go Redis server for Go unittests
 - `github.com/ory/dockertest`: integration test with docker
 - `github.com/jackc/pgx`: a better postgres driver
-- `https://github.com/cenkalti/backoff`: Exponential Backoff
-
+- `github.com/cenkalti/backoff`: Exponential Backoff
+- `github.com/Knetic/govaluate`: Arbitrary expression evaluation for golang
 
 
 ### Sample Project
