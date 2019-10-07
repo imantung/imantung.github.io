@@ -5,7 +5,8 @@ title: Scrum
 
 ### Scrum
 
-[Large Scale Scrum (LeSS)](https://less.works/)
+- [Large Scale Scrum (LeSS)](https://less.works/)
+- <http://www.nimeshsoni.com/improve-daily-standuptop-10-tips/>
 
 The ceremonies:
 1. Organize the backlog
@@ -25,14 +26,17 @@ The ceremonies:
 | Key metrics |	Velocity | Cycle time |
 | Change philosophy	| Teams should strive to not make changes to the sprint forecast during the sprint. Doing so compromises learnings around estimation. |	Change can happen at any time |
 
+### Daily Standup
+
+1. Dit it yesterday?
+2. Will do it today? 
+3. Any impediment?
+
+
+
 ### Retrospective 
-```
-What worked Well?
 
-What could be improved?
-
-What will we commit to doing in the next iteration?
-
-Actionable commitment?
-
-```
+1. What worked Well?
+2. What could be improved?
+3. What will we commit to doing in the next iteration?
+4. Actionable commitment?

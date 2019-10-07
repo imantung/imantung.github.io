@@ -11,6 +11,7 @@ Ref:
 - [Code of conduct by 18F](https://github.com/18F/code-of-conduct)
 - [Documenting API](https://idratherbewriting.com/learnapidoc/)
 - [Golumn - Git-based Wiki](https://github.com/gollum/gollum)
+- <https://blog.stephsmith.io/learning-to-write-with-confidence/>
 
 
 ### README

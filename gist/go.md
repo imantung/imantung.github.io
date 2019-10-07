@@ -15,6 +15,7 @@ Good Read:
 - <https://github.com/kjk/go-cookbook>
 - <https://curtisvermeeren.github.io/2017/09/14/Golang-Templates-Cheatsheet>
 - <https://stackoverflow.com/questions/30612611/what-does-go-build-build/47109875#47109875>
+- <https://github.com/cloudfoundry/go-diodes>
 
 ### SETUP
 

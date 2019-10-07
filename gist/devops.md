@@ -10,6 +10,7 @@ Good Read:
 - [What is ‘Site Reliability Engineering’?](https://landing.google.com/sre/interview/ben-treynor.html)
 - [SRE Book by Google](https://landing.google.com/sre/sre-book/toc/)
 - [The devops transformation](https://www.slideshare.net/benrockwood/lisa-2011-keynote-the-devops-transformation)
+- <https://medium.com/cracking-the-data-science-interview/how-operating-systems-work-10-concepts-you-should-know-as-a-developer-8d63bb38331f>
 
 DevOps Overview:
 1. Code — code development and review, **source code management** tools, code merging

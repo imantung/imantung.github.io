@@ -8,6 +8,7 @@ Bash = Bourne again shell
 Read:
 - [difference between sh and bash](https://stackoverflow.com/questions/5725296/difference-between-sh-and-bash)
 - [string operator](https://www.linuxjournal.com/article/8919)
+- <https://github.com/vishnubob/wait-for-it>
 
 A script may specify `#!/bin/bash` on the first line, meaning that the script should always be run with bash
 ```sh
