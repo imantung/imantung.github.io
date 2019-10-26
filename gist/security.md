@@ -1,6 +1,6 @@
 ---
 layout: gist
-title: InfoSec
+title: Security
 ---
 
 Ref:

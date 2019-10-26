@@ -3,6 +3,10 @@ layout: gist
 title: Lean Startup
 ---
 
+MVP
+
+Concierge MVP
+
 ### The Principles
 
 1. Entrepreneur are everywhere
