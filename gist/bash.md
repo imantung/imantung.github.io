@@ -96,6 +96,10 @@ ${foo  <-- from variable foo
 }
 ```
 
+### Operator
+
+<https://unix.stackexchange.com/questions/159513/what-are-the-shells-control-and-redirection-operators>
+
 
 ### Multiline
 

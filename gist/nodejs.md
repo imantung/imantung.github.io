@@ -8,7 +8,7 @@ Package manager:
 - [yarn](https://yarnpkg.com/en/)
 
 Manage node version using [n](https://github.com/tj/n)
-```sh
+```bash
 npm install -g n # setup
 
 n 0.10.33  # install/use v0.10.33
@@ -18,18 +18,25 @@ n stable # install/use the latest stable version
 
 
 Downgrade the npm (make sure your node is compatable with npm)
-```sh
+```bash
 npm install -g npm@3.10.10
+```
+
+Update the npm
+```bash
+npm install npm@latest -g
 ```
 
 Another alternative is using [NVM](https://github.com/creationix/nvm) --> never tried
 
 [setting up a minimal node with webpack and babel](https://dev.to/aurelkurtula/setting-up-a-minimal-node-environment-with-webpack-and-babel--1j04)
 
+<https://github.com/facebook/create-react-app>
+
 ### Where does npm install package?
 
 og: <https://stackoverflow.com/questions/5926672/where-does-npm-install-packages/5926706#5926706>
-```sh
+```bash
 npm list -g # global library
 npm list # local library
 
