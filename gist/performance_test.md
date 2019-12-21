@@ -10,6 +10,7 @@ Tool:
 - [Apache Benchmark](https://httpd.apache.org/docs/2.4/programs/ab.html)
 - [Vegeta](https://github.com/tsenart/vegeta)
 - [Artillery](https://artillery.io/)
+- [k6](https://k6.io/)
 
 
 Type of performance test: 
