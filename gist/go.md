@@ -28,52 +28,36 @@ export PATH=$PATH:$GOPATH/bin
 source ~/.zshrc  
 ```
 
-### GO Module
-
-```bash
-go init
-go init [package name]
-go mod download -json
-```
-
-### C Cross Compiler
-
-https://github.com/mattn/go-sqlite3/issues/384
-
-For linux: 
-```
-brew install FiloSottile/musl-cross/musl-cross
-
-CC=x86_64-linux-musl-gcc CXX=x86_64-linux-musl-g++ GOARCH=amd64 GOOS=linux CGO_ENABLED=1 go build -ldflags "-linkmode external -extldflags -static"
-```
 
 
-### Test
 
-Test failed if test coverage below 80%
+
+### Interfaces 
+
+Reference:
+- [Scanner-Values for custom database type](https://husobee.github.io/golang/database/2015/06/12/scanner-valuer.html)
+- [JsonMarshalling for custom type](http://choly.ca/post/go-json-marshalling/)
+
+Implements of `io.Reader`
 ```go
-func TestMain(m *testing.M) {
-    // call flag.Parse() here if TestMain uses flags
-    rc := m.Run()
-
-    // rc 0 means we've passed,
-    // and CoverMode will be non empty if run with -cover
-    if rc == 0 && testing.CoverMode() != "" {
-        c := testing.Coverage()
-        if c < 0.8 {
-            fmt.Println("Tests passed but coverage failed at", c)
-            rc = -1
-        }
-    }
-    os.Exit(rc)
-}
+strings.NewReader("some string\n")
+bytes.NewReader([]byte{})
 ```
 
-Gomock snippet
+Implements of `io.Writer`
 ```go
-ctrl := gomock.NewController(t)
-defer ctrl.Finish()
+buff := bytes.Buffer{}
+buff.WriteString("some string")
 ```
+
+Reader to ReaderClose
+```go
+ioutil.NopCloser(reader)
+```
+
+
+
+
 
 ### Reflect
 
@@ -109,59 +93,6 @@ for _, pack := range packs {
 - `github.com/pkg/profile`: simple profiling library (for research/example)
 
 
-### LDFLAG
-
-Use `-ldflag` to override main variable
-```go
-package main
-
-import "fmt"
-
-var (
-    version string
-    date    string
-)
-
-func main() {
-    fmt.Printf("version=%s, date=%s", version, date)
-}
-```
-```sh
-go build -ldflags "-X main.version=0.0.1 -X main.date=%date:~10,4%-%date:~4,2%-%date:~7,2%T%time:~0,2%:%time:~3,2%:%time:~6,2%"
-```
-
-### IO
-
-Implements of `io.Reader`
-```go
-strings.NewReader("some string\n")
-bytes.NewReader([]byte{})
-```
-
-Implements of `io.Writer`
-```go
-buff := bytes.Buffer{}
-buff.WriteString("some string")
-```
-
-Reader to ReaderClose
-```go
-ioutil.NopCloser(reader)
-```
-
-### Mocking
-
-Install [GoMock](https://github.com/golang/mock)
-```sh
-go get github.com/golang/mock/gomock
-go install github.com/golang/mock/mockgen
-```
-
-Mocking
-```sh
-mockgen -source=flow/kafka_admin.go -destination=flow/mock_kafka_admin.go -package=flow
-```
-
 ### Vendoring 
 
 Using [glide](https://glide.sh/)
@@ -183,20 +114,7 @@ dep ensure -add github.com/foo/bar github.com/baz/quux
 dep ensure -update
 ```
 
-### Module
 
-Cheatsheet
-```bash
-go mod init PATH
-go mod tidy
-```
-
-### Makefile
-
-Makefile reference:
-- [thockin](https://github.com/thockin/go-build-template)
-- [Golang: Don’t afraid of makefiles](https://sohlich.github.io/post/go_makefile/)
-- [Azer makefile](https://github.com/azer/go-makefile-example)
 
 
 ### GOOS/GOARCH
@@ -225,45 +143,3 @@ go tool dist list
 - `WithCancel`: the process can be cancelled
 - `WithDeadline`: the process can be expired
 - `WithTimeout`: same with `WithDeadline`
-
-### Abstract Syntax Tree
-
-ref:
-- <https://stackoverflow.com/questions/47088551/get-all-info-about-a-package-via-importer-and-reflect>
-
-Print the ast
-```go
-ast.Print(fset, v)
-```
-
-Inspect
-```go
-func inspect(n ast.Node) {
-	ast.Inspect(n, func(n ast.Node) bool {
-		var s string
-		switch x := n.(type) {
-		case *ast.BasicLit:
-			s = x.Value
-		case *ast.Ident:
-			s = x.Name
-		}
-		if s != "" {
-			fmt.Printf("%s:\t%s\n", fset.Position(n.Pos()), s)
-		}
-		return true
-	})
-}
-```
-
-To String
-```go
-func toString(v interface{}) string {
-	var buf bytes.Buffer
-	err := printer.Fprint(&buf, fset, v)
-	if err != nil {
-		log.Fatal(err)
-	}
-	return buf.String()
-}
-
-```
