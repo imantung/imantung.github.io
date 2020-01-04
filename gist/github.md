@@ -19,5 +19,9 @@ Tool:
 [![Build Status](https://travis-ci.org/sony/sonyflake.svg?branch=master)](https://travis-ci.org/sony/sonyflake)
 [![Coverage Status](https://coveralls.io/repos/sony/sonyflake/badge.svg?branch=master&service=github)](https://coveralls.io/github/sony/sonyflake?branch=master)
 [![Go Report Card](https://goreportcard.com/badge/github.com/sony/sonyflake)](https://goreportcard.com/report/github.com/sony/sonyflake)
-
 ```
+
+### Github Action
+
+Reference:
+- [Example golang CI](https://github.com/jandelgado/golang-ci-template-github-actions)

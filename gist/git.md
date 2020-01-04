@@ -76,11 +76,20 @@ git clone -b my-branch git@github.com:user/myproject.git
 git clone -b opencv-2.4 --single-branch https://github.com/Itseez/opencv.git
 ```
 
+Move repo1 to repo2 and keep the history
+```bash
+cd repo2
+git checkout master
+git remote add r1remote **url-of-repo1**
+git fetch r1remote
+git merge r1remote/master --allow-unrelated-histories
+git remote rm r1remote
+```
 
 ### Config
 
 InsteadOf
-```sh
+```bash
 # convert git: to http:
 git config --global url.https://github.com/.insteadOf git://github.com/
 

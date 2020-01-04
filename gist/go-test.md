@@ -3,6 +3,8 @@ layout: gist
 title: Go Test
 ---
 
+### Minimum test coverage
+
 Test failed if test coverage below 80%
 ```go
 func TestMain(m *testing.M) {
@@ -22,11 +24,7 @@ func TestMain(m *testing.M) {
 }
 ```
 
-Gomock snippet
-```go
-ctrl := gomock.NewController(t)
-defer ctrl.Finish()
-```
+### Mock
 
 Install [GoMock](https://github.com/golang/mock)
 ```sh
@@ -34,7 +32,17 @@ go get github.com/golang/mock/gomock
 go install github.com/golang/mock/mockgen
 ```
 
-Mocking
 ```sh
 mockgen -source=flow/kafka_admin.go -destination=flow/mock_kafka_admin.go -package=flow
+```
+
+### Covermode
+
+Reference:
+- <https://blog.golang.org/cover>
+
+```bash
+go test -covermode=set # did each statement run? 
+go test -covermode=count # how many times did each statement run?
+go test -covermode=atomic # like count, but counts precisely in parallel programs
 ```
