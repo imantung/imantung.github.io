@@ -9,6 +9,7 @@ Ref:
 - [ISO/IEC 27001](https://www.iso.org/isoiec-27001-information-security.html)
 - [PCI DSS](https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard)
 - [Security Testing Guide v4](https://www.owasp.org/images/1/19/OTGv4.pdf)
+- [SOC2](https://info.cgcompliance.com/blog/what-is-soc-2)
 
 ### Color Wheel 
 

@@ -8,12 +8,12 @@ PWA = [Progressive Web Application](https://en.wikipedia.org/wiki/Progressive_we
 3DS = [3 Domain Structure](https://securionpay.com/blog/3d-secure/)
 
 
-
 ### Tool
 - [ngrok](https://ngrok.com/): public urls for exposing local
 - [public api list](https://github.com/toddmotto/public-apis)
 - [RESTful Checklist](https://blog.mwaysolutions.com/2014/06/05/10-best-practices-for-better-restful-api/)
-- <https://developers.google.com/web/tools/lighthouse/  >
+- <https://developers.google.com/web/tools/lighthouse/>
+- [Best practives for A Pragmatic Restful API](https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api)
 
 ### Tech Stack
 - `LAMP Stack`: Linux Apache MySql Php
@@ -31,12 +31,14 @@ PWA = [Progressive Web Application](https://en.wikipedia.org/wiki/Progressive_we
 ### Generator
 - [WooCommerce](https://woocommerce.com/): e-commerce with wordpress
 - [GroceryCRUD](https://www.grocerycrud.com/): generate CRUD
+- [Strapi](https://strapi.io/): Headless CMS
 
 ### Communication
 - [Introduction to comet (reverse ajax)](https://www.ibm.com/developerworks/library/wa-reverseajax1/index.html)
 - [Realtime and Websocket](https://www.slideshare.net/peterlubbers/html5-real-time-and-websocket/88-Types_of_Proxy_Servers_httpwwwinfoqcomarticlesWebSocketsProxyServers)
 - [Websocket demo](https://www.websocket.org/index.html)
 - [socket.io](https://socket.io/): a web-socket library
+- <https://apifriends.com/api-streaming/push-sse-vs-websockets/>
 
 ### Webhooks
 

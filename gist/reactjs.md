@@ -3,10 +3,12 @@ layout: gist
 title: ReactJS
 ---
 
+- <https://codeburst.io/how-to-call-api-in-a-smart-way-2ca572c6fe86>
+
 ### Setup
 
 Node
-```sh
+```sh   
 npm install -g create-react-app
 npx create-react-app my-app
 cd my-app
