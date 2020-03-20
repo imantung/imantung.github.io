@@ -112,3 +112,8 @@ go tool dist list
 - `WithCancel`: the process can be cancelled
 - `WithDeadline`: the process can be expired
 - `WithTimeout`: same with `WithDeadline`
+
+
+### Module
+
+- <https://arslan.io/2019/08/02/why-you-should-use-a-go-module-proxy/>

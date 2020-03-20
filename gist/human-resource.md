@@ -50,4 +50,11 @@ Ref:
 ## Culture
 
 - [996](https://en.wikipedia.org/wiki/996_working_hour_system)
-  
+
+## Compotency Metric
+
+- [Medium](https://docs.google.com/spreadsheets/d/1EO-Dbsayn8Nz9Ii3MKcwRbt-EIJ2MjQdpoyhh0tBdZk/edit#gid=1441368371)
+- [SongKick](https://www.songkick.com/downloads/growth-framework/sk-growth-framework.pdf)
+- [Monzo](https://progression.monzo.com/engineering/data)
+- [Buffer](https://open.buffer.com/career-framework/)
+- [Spotify](https://labs.spotify.com/2016/02/15/spotify-technology-career-steps/#careerstepsfortechemployees)

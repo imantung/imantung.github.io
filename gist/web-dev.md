@@ -14,6 +14,7 @@ PWA = [Progressive Web Application](https://en.wikipedia.org/wiki/Progressive_we
 - [RESTful Checklist](https://blog.mwaysolutions.com/2014/06/05/10-best-practices-for-better-restful-api/)
 - <https://developers.google.com/web/tools/lighthouse/>
 - [Best practives for A Pragmatic Restful API](https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api)
+- <http://xip.io/>
 
 ### Tech Stack
 - `LAMP Stack`: Linux Apache MySql Php
