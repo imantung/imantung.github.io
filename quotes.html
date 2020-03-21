@@ -5,17 +5,20 @@ permalink: /quotes/
 ---
 
 <div class="container my-5">
-  {% for quote in site.data.quotes %}
-  <div class="quotes-item">
-    
-    <div class="quotes-item-text">
-      <!-- <img src="/public/quote512.png" alt="" style="width: 32px; height: 32px;" > -->
-      <i class="fas fa-quote-right"></i>
-      {{ quote.text }}
+  <div class="row">
+    {% for quote in site.data.quotes %}
+    <div class="col-md-3">
+      <div class="card p-3 mb-3">
+        <div class="">
+          <i class="fas fa-quote-right"></i>
+          {{ quote.text }}
+        </div>
+        <div class="quotes-item-author">
+          {{ quote.author}}
+        </div>
+      </div>
     </div>
-    <div class="quotes-item-author">
-      {{ quote.author}}
-    </div>
+
+    {% endfor %}
   </div>
-  {% endfor %}
 </div>
