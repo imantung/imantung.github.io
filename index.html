@@ -13,7 +13,7 @@ title: Blog
       <div class="post-item-col2">
         <h3 class="post-item-title"><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h3>
         <div class="post-item-preview">
-          {{ post.content | strip_html | truncatewords:40}}
+          {{ post.content | strip_html | truncatewords:80}}
           <a href="{{ post.url }}">read more</a>
         </div>
         <div class="post-tags">
