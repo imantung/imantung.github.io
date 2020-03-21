@@ -13,13 +13,6 @@ layout: default
       {{ content }}
     </div>
 
-    <div class="post-tags my-3">
-      Tags:
-      {% for tag in page.tags %}
-      <a href="#">{{tag}}</a>
-      {% endfor %}
-    </div>
-
     <div>
       {% include disqus.html %}
     </div>

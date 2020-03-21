@@ -3,7 +3,6 @@ layout: post
 title: "Pairing and Test Driven"
 description: "commentary on pair programming and test driver development"
 date: 2018-01-17 10:51:00 +0700
-tags: ["tdd", "unit testing", "pair programming", "philosophy"]
 comments: true
 ---
 

@@ -3,7 +3,6 @@ layout: post
 title: "Code for Living"
 description: "contemplation of code for living"
 date: 2018-09-14 23:50:38 +0700
-tags: ["coder", "programmer","engineer", "technology information", "startup"]
 comments: true
 ---
 

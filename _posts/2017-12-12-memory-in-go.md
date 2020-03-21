@@ -3,7 +3,6 @@ layout: post
 title: "Memory in Go"
 description: "introduction memory in go"
 date: 2017-12-12 20:14:18 +0700
-tags: ["go", "memory allocation", "garbage collector", "pointer"]
 comments: true
 ---
 

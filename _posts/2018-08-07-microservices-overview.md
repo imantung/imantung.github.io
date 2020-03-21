@@ -3,7 +3,6 @@ layout: post
 title: "Microservice Overview"
 description: "commentary on microservices"
 date: 2018-08-07 20:00:29 +0700
-tags: ["microservice"]
 comments: true
 ---
 

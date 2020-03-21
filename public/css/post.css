@@ -1,64 +1,55 @@
-
-
-.post-header{
+.post-header {
   margin-bottom: 1em;
 }
 
-.post-title{
+.post-title {
   margin-bottom: 0;
 }
 
-.post-list{
+.post-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.post-list li{
-  margin: 0;
-  padding-bottom: 40px;
+.post-list li {
+  margin: 2.2em 0;
 }
 
-
-.post-item h4, .post-item h3{
+.post-item h4,
+.post-item h3 {
   margin: 0;
 }
 
-.post-item-preview{
+.post-item-preview {
   font-size: 0.95em;
   margin: 0.5em 0;
 }
 
-.post-item-tags{
-}
-
-.post-tags{
-
-}
-
-.post-title{
+.post-title {
   margin-top: 0;
   margin-bottom: 1.5em;
 }
 
-.post-tags a{
+.post-tags a {
   font-size: 0.75em;
   padding: 0.1em 0.5em;
-  border: thin solid #6495ED;
+  border: thin solid #6495ed;
   border-radius: 0.4em;
 }
 
-.post-content>p{
+.post-content > p {
   line-height: 1.65;
   -webkit-margin-before: 1.8em;
   -webkit-margin-after: 0;
 }
 
-.post-content>ol, .post-content>ul{
+.post-content > ol,
+.post-content > ul {
   -webkit-margin-before: 0;
 }
 
-.post-content pre.highlight{
+.post-content pre.highlight {
   -webkit-margin-before: 0;
   padding: 0.75em 1.25em;
   background-color: #e6f2ff;

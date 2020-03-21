@@ -3,7 +3,6 @@ layout: post
 title: "to_json VS JSON.parse()"
 description: "different between tojson and json.parse on ruby on rails"
 date: 2017-08-24 06:32:20 +0700
-tags: ["ruby", "rails"]
 comments: true
 ---
 One thing about ruby that I love (or hate) that we can literally read it aloud on conversation language and programmatically still working.

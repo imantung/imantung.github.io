@@ -3,7 +3,6 @@ layout: post
 title: "Unit Testing using GIVEN-WHEN-THEN Template(Part 1: Introduction)"
 description: "Unit Testing using GIVEN-WHEN-THEN Template(Part 1: Introduction)"
 date: 2019-06-17 17:45:00 +0700
-tags: ["bdd", "tdd", "given-when-then"]
 comments: true
 ---
 

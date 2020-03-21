@@ -3,7 +3,6 @@ layout: post
 title: "Use 'Actions' as Table Name"
 date: 2017-08-25 12:14:16 +0700
 description: "mistake on using action as name on ruby on rails"
-tags: ["ruby"]
 comments: true
 ---
 [Naming is one of hard things in computer science](https://martinfowler.com/bliki/TwoHardThings.html) and I TOTALLY AGREE. Not only make a good, descriptive and cool name is hard, but wrong name bring you bad luck.

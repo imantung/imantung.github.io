@@ -3,7 +3,6 @@ layout: post
 title: "Tree Walk Interpreter"
 description: "introduction of Tree Walk Interpreter"
 date: 2017-12-20 16:19:28 +0700
-tags: ["interpreter"]
 comments: true
 ---
 

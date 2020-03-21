@@ -3,7 +3,6 @@ layout: post
 title: "Ruby or Java or Golang"
 description: "commentary between Ruby, Java and Golang for microservices"
 date: 2017-12-25 11:24:38 +0700
-tags: ["java", "golang", "ruby", "microservices"]
 comments: true
 ---
 

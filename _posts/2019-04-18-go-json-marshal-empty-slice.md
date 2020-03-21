@@ -3,7 +3,6 @@ layout: post
 title: "Golang Json.Marshal() return null for empty slice"
 description: "Golang Json.Marshal() return null for empty slice"
 date: 2019-04-18 21:39:00 +0700
-tags: ["go"]
 comments: false
 ---
 

@@ -3,7 +3,6 @@ layout: post
 title: "Mustache & ENOENT"
 date: 2017-08-24 05:34:20 +0700
 description: "error enoent on using ruby library mustache"
-tags: ["ruby"]
 comments: true
 ---
 
