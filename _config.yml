@@ -34,12 +34,6 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
-# addon
-nav_list:
-  - ['Blog', '/', 'fa-home']
-  - ['Gists', '/gists/', 'fa-sticky-note']
-  - ['Quotes', '/quotes/', 'fa-font']
-
 sass:
   style: compact
   sass_dir: _sass
