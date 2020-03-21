@@ -4,9 +4,6 @@ title: Gist
 ---
 
 
-
-
-
 <div class="">
   <ul>
   {% assign tmp = "" %}
@@ -15,7 +12,7 @@ title: Gist
     {% assign firstLetter = page.title | slice: 0 | upcase %}
     {% if firstLetter != tmp %}
   </ul>
-  <ul class="gist-group" style="">
+  <ul class="card">
     <h3>
       {{ firstLetter }}
     </h3>
