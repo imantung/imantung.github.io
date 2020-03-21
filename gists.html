@@ -12,10 +12,10 @@ title: Gist
     {% assign firstLetter = page.title | slice: 0 | upcase %}
     {% if firstLetter != tmp %}
   </ul>
-  <ul class="card">
-    <h3>
-      {{ firstLetter }}
-    </h3>
+  <ul>
+    
+    <div style="margin-left:-1em;">{{ firstLetter }}</div>
+    
     {% endif %}
     {% assign tmp = "" %}
     <li><a href="{{page.url}}">{{page.title}}</a></li>
