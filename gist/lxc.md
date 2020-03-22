@@ -3,6 +3,8 @@ layout: gist
 title: LxC
 ---
 
+# LXC
+
 ```sh
 sudo apt-get install lxd lxd-client 
 sudo lxd init

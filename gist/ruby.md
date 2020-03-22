@@ -3,6 +3,8 @@ layout: gist
 title: Ruby
 ---
 
+# Ruby
+
 [rack](https://rack.github.io/): webserver interface
 
 ### rbenv

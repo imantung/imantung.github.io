@@ -1,7 +1,9 @@
 ---
 layout: gist
-title: Data Archiving
+title: Database Archiving
 ---
+
+# Database Archiving
 
 Reference: 
 - <https://www.microfocus.com/media/flyer/top_four_data_retention_concerns_facing_records_managers_flyer.pdf>

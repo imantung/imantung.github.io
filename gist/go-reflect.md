@@ -1,7 +1,9 @@
 ---
 layout: gist
-title: Go Reflect
+title: Go (Reflect)
 ---
+
+# Go (Reflect)
 
 Print function of packages
 ```go

@@ -3,6 +3,8 @@ layout: gist
 title: SQLite
 ---
 
+# SQLite
+
 Ref:
 - <https://www.sqlite.org/cli.html>
 

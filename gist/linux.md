@@ -3,6 +3,8 @@ layout: gist
 title: Linux
 ---
 
+# Linux
+
 
 Some reading:
 - [Filesystem Hierarchy Standard](http://refspecs.linuxfoundation.org/FHS_2.3/fhs-2.3.html)

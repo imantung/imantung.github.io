@@ -3,6 +3,8 @@ layout: gist
 title: Git
 ---
 
+# Git
+
 Reference:
 - [Start using git in command line](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html)
 - [How to not be afraid of git anymore](https://medium.freecodecamp.org/how-not-to-be-afraid-of-git-anymore-fe1da7415286)

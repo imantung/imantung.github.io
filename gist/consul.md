@@ -3,6 +3,8 @@ layout: gist
 title: Consul
 ---
 
+# Consul
+
 - Service Discovery
 - Health Checking (for Failure Detection)
 - KV Store

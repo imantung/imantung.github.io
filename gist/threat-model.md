@@ -1,6 +1,6 @@
 ---
 layout: gist
-title: Security - Threat Model
+title: Threat Modeling
 ---
 
 - (Threat Modeling: uncover vulnerabilities without looking at code)[https://www.youtube.com/watch?v=Fmp9UFjPiJs]

@@ -5,27 +5,15 @@ title: Design Principle
 
 `KISS` = Keep it simple stupid
 
----
-
 `DRY` = Don't Repeat Yourself
-
----
 
 `Convention over Configuration`
 
----
-
 `Fat models, skinny controllers`
-
----
 
 `Tell, Don't Ask`
 
----
-
 `Idempotency`
-
----
 
 `SOLID Principle`
 1. Single Responsibility Principle
@@ -40,8 +28,6 @@ title: Design Principle
 5. Dependency Inversion Principle
   - One should depend upon abstractions, [not] concretions.
 
----
-
 `Separation of Concern`
 + Object Oriented Programming
   - separate concern into objects
@@ -52,25 +38,16 @@ title: Design Principle
   - advocates the organization of the classes that describe objects into “subjects”, which may be composed to form larger subjects
 + Aspected Oriented Programming / [cross-cutting concern](https://en.wikipedia.org/wiki/Cross-cutting_concern)
 
----  
-
 `Law of Demeter`
 - Each unit should have only limited knowledge about other units: only units "closely" related to the current unit.
 - Each unit should only talk to its friends; don't talk to strangers.
 - Only talk to your immediate friends.
-
----
 
 `Common Closure Principle`
 - Classes within a released component should share common closure.
 - That is, if one needs to be changed, they all are likely to need to be changed.
 - What affects one, affects all.
 
----
-
-[Fault-Tolerant Telecommunication System Patterns
-](https://sites.google.com/a/gertrudandcope.com/info/Publications/Patterns/PLoP95-telecom)
-
----
+[Fault-Tolerant Telecommunication System Patterns](https://sites.google.com/a/gertrudandcope.com/info/Publications/Patterns/PLoP95-telecom)
 
 [Dependency Injection](https://stackoverflow.com/questions/130794/what-is-dependency-injection)

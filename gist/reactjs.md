@@ -3,6 +3,8 @@ layout: gist
 title: ReactJS
 ---
 
+# ReactJS
+
 - <https://codeburst.io/how-to-call-api-in-a-smart-way-2ca572c6fe86>
 
 ### Setup

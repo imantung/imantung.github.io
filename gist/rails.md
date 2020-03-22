@@ -3,6 +3,8 @@ layout: gist
 title: Rails
 ---
 
+# Rails
+
 ### Application
 
 ```sh

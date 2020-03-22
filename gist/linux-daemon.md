@@ -1,7 +1,9 @@
 ---
 layout: gist
-title: Linux - Daemon
+title: Linux (Daemon)
 ---
+
+# Daemon
 
 Some reading:
 - <https://blog.frd.mn/how-to-set-up-proper-startstop-services-ubuntu-debian-mac-windows/>

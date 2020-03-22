@@ -3,10 +3,11 @@ layout: gist
 title: Open Source
 ---
 
+# Open Source
 
 Ref:
 - [Opensource Guide](https://opensource.guide/)
-- [ Open Source Initiative](https://opensource.org/)
+- [Open Source Initiative](https://opensource.org/)
 - [Opensource Survey](https://opensourcesurvey.org/)
 - [Choose License](https://choosealicense.com/)
 - [A failed effort to get paid for an open source project](https://medium.com/swlh/a-failed-effort-to-get-paid-for-an-open-source-project-bd7fa4658a1e)

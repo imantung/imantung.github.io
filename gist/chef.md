@@ -3,13 +3,14 @@ layout: gist
 title: Chef
 ---
 
+# Chef
+
 > Turn your infrastructure into code
 
-[Official Web](https://www.chef.io/)
-
-[Why Configuration Manager?](https://www.upguard.com/articles/the-7-configuration-management-tools-you-need-to-know)
-
-[Chef Server vs Chef Zero vs Chef Solo](http://blog.differentpla.net/blog/2014/11/13/which-chef)
+References:
+- [Official Web](https://www.chef.io/)
+- [Why Configuration Manager?](https://www.upguard.com/articles/the-7-configuration-management-tools-you-need-to-know)
+- [Chef Server vs Chef Zero vs Chef Solo](http://blog.differentpla.net/blog/2014/11/13/which-chef)
 
 
 ### Basic Concept

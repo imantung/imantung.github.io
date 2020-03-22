@@ -3,9 +3,10 @@ layout: gist
 title: Slim Template
 ---
 
-[Slim Lang](http://slim-lang.com/)
+# Slim Template
 
-[Docs](http://www.rubydoc.info/gems/slim/frames)
+- [Slim Lang](http://slim-lang.com/)
+- [Docs](http://www.rubydoc.info/gems/slim/frames)
 
 Line Indicator:
 - `|` Verbatim Text (support HTML)

@@ -3,6 +3,8 @@ layout: gist
 title: Wordpress
 ---
 
+# Wordpress
+
 
 [Famous 5-Minute Installation](https://codex.wordpress.org/Installing_WordPress#Famous_5-Minute_Installation)
 

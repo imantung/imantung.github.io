@@ -3,9 +3,11 @@ layout: gist
 title: Extreme Programming
 ---
 
-[extremeprogramming.org](http://www.extremeprogramming.org/)
+# Extreme Programming
 
-[When is XP not appropriate](http://wiki.c2.com/?WhenIsXpNotAppropriate)
+References:
+- [extremeprogramming.org](http://www.extremeprogramming.org/)
+- [When is XP not appropriate](http://wiki.c2.com/?WhenIsXpNotAppropriate)
 
 Rule:
 1. Planning

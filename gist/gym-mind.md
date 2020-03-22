@@ -3,6 +3,8 @@ layout: gist
 title: Gym Mind
 ---
 
+# Gym Mind
+
 My note on gym mind training
 
 

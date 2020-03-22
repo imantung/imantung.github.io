@@ -3,6 +3,8 @@ layout: gist
 title: Startup
 ---
 
+# Startup
+
 Some reading:
 - [TED Talk: The single biggest reason why startups succeed](https://www.youtube.com/watch?v=bNpx7gpSqbY)
 - [Don't waste time on  a startup business plan](https://www.forbes.com/sites/allbusiness/2018/09/17/dont-waste-time-on-a-startup-business-plan-do-these-5-things-instead/#7ae3cb6d37a6)

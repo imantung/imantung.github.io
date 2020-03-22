@@ -3,6 +3,8 @@ layout: gist
 title: Lean Management
 ---
 
+# Lean Management
+
 Ref:
 - <https://kanbanize.com/lean-management/>
 

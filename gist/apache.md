@@ -1,7 +1,9 @@
 ---
 layout: gist
-title: Apache
+title: Apache Server
 ---
+
+# Apache Server
 
 Apache default from Mac
 ```bash

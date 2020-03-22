@@ -1,7 +1,9 @@
 ---
 layout: gist
-title: Documentation
+title: Write Documentation
 ---
+
+# Write Documentation
 
 Ref:
 - [Django Doc Writing Principles](https://jacobian.org/writing/great-documentation/)

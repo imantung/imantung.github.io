@@ -3,6 +3,8 @@ layout: gist
 title: Unix Philosophy
 ---
 
+# Unix Philosophy
+
 <http://www.faqs.org/docs/artu/ch01s06.html>
 
 Unix Philosophy:

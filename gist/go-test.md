@@ -1,7 +1,9 @@
 ---
 layout: gist
-title: Go Test
+title: Go (Test)
 ---
+
+# Go (Test)
 
 ### Minimum test coverage
 

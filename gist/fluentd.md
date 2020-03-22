@@ -3,6 +3,8 @@ layout: gist
 title: FluentD
 ---
 
+# FluentD
+
 - Unified Logging with JSON
 - reliable forwarding
 - pluggable architecture

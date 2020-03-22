@@ -3,20 +3,18 @@ layout: gist
 title: Business Model Canvas
 ---
 
+# Business Model Canvas
+
 <img src="{{site.baseurl}}/gist/business-model-canvas/businesss_model_canvas.jpg" style="max-width: 100%;">
 
 
-[9 Steps to Creating a Successful Business Model - Startup Tips](https://www.youtube.com/watch?v=IP0cUBWTgpY)
-
-[Wiki](https://en.wikipedia.org/wiki/Business_Model_Canvas)
-
-[Premium Service Tutorial](https://strategyzer.com/)
-
-[Some Tutorial](https://www.alexandercowan.com/business-model-canvas-templates/)
-
-[WeWork Example](https://www.youtube.com/watch?v=vguI3rbb05o)
-
-[Business Model Map](https://medium.com/swlh/a-new-methodology-for-business-model-mapping-6a122f140579)
+References:
+- [9 Steps to Creating a Successful Business Model - Startup Tips](https://www.youtube.com/watch?v=IP0cUBWTgpY)
+- [Wiki](https://en.wikipedia.org/wiki/Business_Model_Canvas)
+- [Premium Service Tutorial](https://strategyzer.com/)
+- [Some Tutorial](https://www.alexandercowan.com/business-model-canvas-templates/)
+- [WeWork Example](https://www.youtube.com/watch?v=vguI3rbb05o)
+- [Business Model Map](https://medium.com/swlh/a-new-methodology-for-business-model-mapping-6a122f140579)
 
 ### 1. Value Proposition
 

@@ -3,6 +3,8 @@ layout: gist
 title: Ruby Gems
 ---
 
+# Ruby Gems
+
 - [puma](https://github.com/puma/puma): A Ruby/Rack web server built for concurrency 
 - [figaro](https://github.com/laserlemon/figaro): config
 - [paranoia](https://github.com/rubysherpas/paranoia): soft delete

@@ -1,7 +1,9 @@
 ---
 layout: gist
-title: Linux - File Permission
+title: Linux (File Permission)
 ---
+
+# File Permission
 
 Reference:
 - <https://www.maketecheasier.com/file-permissions-what-does-chmod-777-means/>

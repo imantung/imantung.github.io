@@ -3,6 +3,8 @@ layout: gist
 title: SemVer
 ---
 
+# SemVer
+
 [Specification](https://semver.org/)
 
 SemVer is a 3-component system in the format of `x.y.z` where:

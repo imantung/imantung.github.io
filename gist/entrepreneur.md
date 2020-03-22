@@ -3,6 +3,8 @@ layout: gist
 title: Entrepreneur
 ---
 
+# Entrepreneur
+
 Some reading:
 - [Building an intraprenuerial organization](https://www.imd.org/research-knowledge/articles/Building-an-intrapreneurial-organization/)
 

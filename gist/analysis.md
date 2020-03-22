@@ -3,6 +3,7 @@ layout: gist
 title: Analysis
 ---
 
-[Correlation vs Causation](https://www.youtube.com/watch?v=VMUQSMFGBDo)
+# Analysis
 
-[Data Dredging](https://en.wikipedia.org/wiki/Data_dredging)
+- [Correlation vs Causation](https://www.youtube.com/watch?v=VMUQSMFGBDo)
+- [Data Dredging](https://en.wikipedia.org/wiki/Data_dredging)

@@ -3,6 +3,8 @@ layout: gist
 title: Paradoxical Commandments
 ---
 
+# Paradoxical Commandments
+
 1. People are illogical, unreasonable, and self-centered.  
 Love them anyway.
 

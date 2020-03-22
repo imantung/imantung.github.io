@@ -1,7 +1,9 @@
 ---
 layout: gist
-title: MySQL - Check Connection
+title: MySQL (Check Connection)
 ---
+
+# MySQL (Check Connection)
 
 Ref
 - https://stackoverflow.com/questions/6502036/how-can-i-see-how-many-mysql-connections-are-open

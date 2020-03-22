@@ -3,6 +3,8 @@ layout: gist
 title: AWS
 ---
 
+# AWS
+
 `AWS` = Amazon Web Service
 
 `EC2` = Elastic Compute Cloud
@@ -37,9 +39,9 @@ title: AWS
 
 ### EC2 Type
 
-[Complete EC2 Type List](https://aws.amazon.com/ec2/instance-types/)
-
-[Userguide](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html)
+References:
+- [Complete EC2 Type List](https://aws.amazon.com/ec2/instance-types/)
+- [Userguide](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html)
 
 Categories by purpose:
 1. General Purpose (`t*`, `m*`)

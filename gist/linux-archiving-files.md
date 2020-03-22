@@ -1,7 +1,9 @@
 ---
 layout: gist
-title: Linux - Archiving Files
+title: Linux (Archiving Files)
 ---
+
+# Linux (Archiving Files)
 
 Reference:
 - <https://www.ostechnix.com/how-to-archive-files-and-directories-in-linux-part-1/>

@@ -1,7 +1,9 @@
 ---
 layout: gist
-title: MySQL - Max Prepared Statement 
+title: MySQL (Max Prepared Statement )
 ---
+
+# MySQL (Max Prepared Statement )
 
 Reference:
 - https://github.com/sysown/proxysql/issues/1251

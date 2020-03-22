@@ -3,6 +3,8 @@ layout: gist
 title: Game Design
 ---
 
+# Game Design
+
 [using design games](http://boxesandarrows.com/using-design-games/)
 - `Objectives`: There needs to be some kind of goal or outcome that people can work towards. The more concrete and defined these are, the easier it is for people to participate. However, fuzzy objectives can be more rewarding, since they model real situations better. Consider more ambiguous objectives for teams that are already gelled and accept the ideas for design games.
 - `Constraints`: There needs to be some limits on what players can or can’t do when achieving those objectives. Constraints should be relevant, related to each other, and present a coherent whole.

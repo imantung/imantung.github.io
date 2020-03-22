@@ -3,6 +3,8 @@ layout: gist
 title: Vim
 ---
 
+# Vim
+
 set syntax/define as shell script
 ```
 :sytanx on

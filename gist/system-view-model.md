@@ -1,7 +1,9 @@
 ---
 layout: gist
-title: System View Model
+title: System-View-Model
 ---
+
+# System-View-Model
 
 View is a representation of a whole system from the perspective of a related set of concerns.
 

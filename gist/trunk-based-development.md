@@ -3,14 +3,13 @@ layout: gist
 title: Trunk Based Development
 ---
 
-[trunkbaseddevelopment.com](https://trunkbaseddevelopment.com/)
+# Trunk Based Development
 
-[Paul Hammant - Branch by Abstraction](https://paulhammant.com/blog/branch_by_abstraction.html)
-
-[Gordon Oheim - Trunk Based Development](https://www.slideshare.net/go_oh/trunk-based-development-36406599)
-
-
-[Trunk Based Development vs Git Flow](https://trunkbaseddevelopment.com/)
+References:
+- [trunkbaseddevelopment.com](https://trunkbaseddevelopment.com/)
+- [Paul Hammant - Branch by Abstraction](https://paulhammant.com/blog/branch_by_abstraction.html)
+- [Gordon Oheim - Trunk Based Development](https://www.slideshare.net/go_oh/trunk-based-development-36406599)
+- [Trunk Based Development vs Git Flow](https://trunkbaseddevelopment.com/)
 
 ### Branch by Abstraction
 - modularity through design not through git/VCS

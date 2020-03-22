@@ -1,7 +1,10 @@
 ---
 layout: gist
-title: SQL Query Optimizing
+title: Query Optimizing
 ---
+
+# Query Optimizing
+
 
 ## Joins
 In order to avoid full table scan, make sure that the join columns are indexed in both tables. A join on a single column can benefit from composite indexes as well, but only if the join column is in the beginning of the list of the composite index definition.

@@ -3,6 +3,8 @@ layout: gist
 title: Bash Script
 ---
 
+# Bash
+
 Bash = Bourne again shell
 
 Read:

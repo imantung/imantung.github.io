@@ -3,6 +3,8 @@ layout: gist
 title: Lean Analytic
 ---
 
+# Lean Analytic
+
 
 Ref:
 - [Using Lean Analytics Principles to Build a Strong Company](https://neilpatel.com/blog/lean-analytics/)

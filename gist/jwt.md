@@ -3,6 +3,8 @@ layout: gist
 title: JWT Token
 ---
 
+# JWT
+
 [JWT](https://jwt.io) = JSON Web Token
 
 Reference: 

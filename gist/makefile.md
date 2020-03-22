@@ -3,7 +3,9 @@ layout: gist
 title: Makefile
 ---
 
-[tutorial](https://opensource.com/article/18/8/what-how-makefile)
+# Makefile
+
+- [tutorial](https://opensource.com/article/18/8/what-how-makefile)
 
 suppress echoing the actually command using `@`
 ```make

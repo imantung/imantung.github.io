@@ -3,7 +3,7 @@ layout: gist
 title: Meeting Log 
 ---
 
-
+# Meeting Logs
 
 ```
 Attendees:

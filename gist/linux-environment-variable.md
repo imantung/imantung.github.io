@@ -1,7 +1,9 @@
 ---
 layout: gist
-title: Linux - Environment Variable
+title: Linux (Environment Variable)
 ---
+
+# Environment Variable
 
 Overview:
 - Each process has its own separate set of environment variables

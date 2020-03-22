@@ -3,6 +3,8 @@ layout: gist
 title: Networking
 ---
 
+# Networking
+
 
 `TCP` = Transmission Control Protocol
   - Guarantees the recipient will receive the packets in order

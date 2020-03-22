@@ -1,7 +1,10 @@
 ---
 layout: gist
-title: Metrics & Log Monitoring
+title: Observability
 ---
+
+# Observability
+
 
 APM = Application Performance Monitoring
 

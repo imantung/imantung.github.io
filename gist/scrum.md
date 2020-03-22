@@ -3,7 +3,7 @@ layout: gist
 title: Scrum
 ---
 
-### Scrum
+# Scrum
 
 - [Large Scale Scrum (LeSS)](https://less.works/)
 - <http://www.nimeshsoni.com/improve-daily-standuptop-10-tips/>

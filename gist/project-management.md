@@ -3,6 +3,7 @@ layout: gist
 title: Project Management
 ---
 
+# Project Management
 
 Ref:
 - [Invest in good stories and smart task](https://xp123.com/articles/invest-in-good-stories-and-smart-tasks/)

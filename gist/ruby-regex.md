@@ -1,7 +1,9 @@
 ---
 layout: gist
-title: Ruby Regex
+title: Ruby (Regex)
 ---
+
+# Ruby (Regex)
 
 [Rubular - Online parser](http://rubular.com/)
 

@@ -3,17 +3,18 @@ layout: gist
 title: Kafka
 ---
 
-[How to choose partition number](https://www.confluent.io/blog/how-to-choose-the-number-of-topicspartitions-in-a-kafka-cluster/)
+# Kafka
 
-[Replication Tool](https://cwiki.apache.org/confluence/display/KAFKA/Replication+tools)
+- [How to choose partition number](https://www.confluent.io/blog/how-to-choose-the-number-of-topicspartitions-in-a-kafka-cluster/)
+- [Replication Tool](https://cwiki.apache.org/confluence/display/KAFKA/Replication+tools)
+- [Kafka Authorizer](https://cwiki.apache.org/confluence/display/KAFKA/Kafka+Authorization+Command+Line+Interface)
+- [Don't use consumer groups the wrong ways](https://dzone.com/articles/dont-use-apache-kafka-consumer-groups-the-wrong-wa)
 
-[Kafka Authorizer](https://cwiki.apache.org/confluence/display/KAFKA/Kafka+Authorization+Command+Line+Interface)
+PubSub VS Message Queue
+- Message Queue = Same consumer group = Competing Consumer pattern
+- PubSub = Different consumer group = Publish Subscribe pattern
 
-[Don't use consumer groups the wrong ways](https://dzone.com/articles/dont-use-apache-kafka-consumer-groups-the-wrong-wa)
-
-- Same consumer group = Competing Consumer pattern
-- Different consumer group = Publish Subscribe pattern
-
+### Lag
 
 `ISR` = In Sync Replication
 

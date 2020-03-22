@@ -3,6 +3,8 @@ layout: gist
 title: Distributed Computing
 ---
 
+# Distributed Computing
+
 Ref
 - [Distributed systems cheat sheet](http://dimafeng.com/2016/12/04/distributed-systems/)
 - [Distributed Unique ID Sequence Number Generator](https://www.callicoder.com/distributed-unique-id-sequence-number-generator/)

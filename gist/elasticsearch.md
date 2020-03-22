@@ -3,6 +3,8 @@ layout: gist
 title: Elasticsearch
 ---
 
+# Elasticsearch
+
 
 Settings References:
 - [A Heap of Trouble](https://www.elastic.co/blog/a-heap-of-trouble)

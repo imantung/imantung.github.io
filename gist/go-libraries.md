@@ -1,7 +1,9 @@
 ---
 layout: gist
-title: Go Libraries
+title: Go (Libraries)
 ---
+
+# Go (Libraries)
 
 More list at [awesome-go](https://awesome-go.com/)
 

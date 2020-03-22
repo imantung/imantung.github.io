@@ -3,6 +3,8 @@ layout: gist
 title: Go
 ---
 
+# Go
+
 Good Read: 
 - [project layout](https://github.com/golang-standards/project-layout/blob/master/README.md)
 - [Go for Industrial Programming - Gopher EU 2018](https://peter.bourgon.org/go-for-industrial-programming/)

@@ -3,6 +3,8 @@ layout: gist
 title: Zen of Python
 ---
 
+# Zen of Python
+
 1. Beautiful is better than ugly.
 2. Explicit is better than implicit.
 3. Simple is better than complex.
