@@ -3,6 +3,11 @@ layout: gist
 title: Web Dev
 ---
 
+- [Google Web Fundamentals](https://developers.google.com/web/fundamentals)
+- [RESTful Checklist](https://blog.mwaysolutions.com/2014/06/05/10-best-practices-for-better-restful-api/)
+- [Best practives for A Pragmatic Restful API](https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api)
+- [public api list](https://github.com/toddmotto/public-apis)
+
 # Web Dev
 
 PWA = [Progressive Web Application](https://en.wikipedia.org/wiki/Progressive_web_applications)
@@ -12,10 +17,7 @@ PWA = [Progressive Web Application](https://en.wikipedia.org/wiki/Progressive_we
 
 ### Tool
 - [ngrok](https://ngrok.com/): public urls for exposing local
-- [public api list](https://github.com/toddmotto/public-apis)
-- [RESTful Checklist](https://blog.mwaysolutions.com/2014/06/05/10-best-practices-for-better-restful-api/)
 - <https://developers.google.com/web/tools/lighthouse/>
-- [Best practives for A Pragmatic Restful API](https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api)
 - <http://xip.io/>
 
 ### Tech Stack

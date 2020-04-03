@@ -14,7 +14,8 @@ Good Read:
 - [CodeReviewComment](https://github.com/golang/go/wiki/CodeReviewComments)
 - [Shrink your go binaries with this one weird trick](https://blog.filippo.io/shrink-your-go-binaries-with-this-one-weird-trick/)
 - [Production Ready Connection Pooling](https://making.pusher.com/production-ready-connection-pooling-in-go/)
-- <https://github.com/kjk/go-cookbook>
+- [Uber Go Style](https://github.com/uber-go/guide)
+- <https://blog.kowalczyk.info/book/go-cookbook.html>
 - <https://curtisvermeeren.github.io/2017/09/14/Golang-Templates-Cheatsheet>
 - <https://stackoverflow.com/questions/30612611/what-does-go-build-build/47109875#47109875>
 - <https://github.com/cloudfoundry/go-diodes>
@@ -119,3 +120,15 @@ go tool dist list
 ### Module
 
 - <https://arslan.io/2019/08/02/why-you-should-use-a-go-module-proxy/>
+
+### Debug
+
+```go
+// ElapsedTimeFn to print elapsed time of function
+func ElapsedTimeFn(name string) func() {
+	start := time.Now()
+	return func() {
+		log.Debugf("%s took %v\n", name, time.Since(start))
+	}
+}
+```

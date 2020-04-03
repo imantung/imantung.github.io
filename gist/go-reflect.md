@@ -5,7 +5,7 @@ title: Go (Reflect)
 
 # Go (Reflect)
 
-Print function of packages
+### Print function of packages
 ```go
 subPackage := "app/controller"
 
@@ -30,7 +30,8 @@ for _, pack := range packs {
 }
 ```
 
-Assign pointer to other with reflection
+### Assign pointer to other with reflection
+
 ```go
 n := 42
 p := &n
@@ -44,4 +45,19 @@ var y *int
 // to set the value of y directly, requires y be addressable
 reflect.ValueOf(&y).Elem().Set(reflect.ValueOf(p))
 fmt.Println("*y:", *y)
+```
+
+### Get Package Name
+
+```go
+// If the type was predeclared (string, error) or not defined (*T, struct{},
+// []int, or A where A is an alias for a non-defined type), the package path
+// will be the empty string.
+func packageName(v interface{}) string {
+	val := reflect.ValueOf(v)
+	if val.Kind() == reflect.Ptr {
+		return val.Elem().Type().PkgPath()
+	}
+	return val.Type().PkgPath()
+}
 ```

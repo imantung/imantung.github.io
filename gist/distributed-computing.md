@@ -15,8 +15,10 @@ Ref
 - [Consistent Hashing](https://medium.com/@sent0hil/consistent-hashing-a-guide-go-implementation-fe3421ac3e8f)
 - [Chord Presentation](https://www.slideshare.net/GertThijs/chord-presentation)
 - [How sharding works](https://medium.com/@jeeyoungk/how-sharding-works-b4dec46b3f6)
+- [RFC7230 - Message Syntax & Routing](https://tools.ietf.org/html/rfc7230#section-2.3)
+- <https://github.com/donnemartin/system-design-primer>
 
-[Fallacies of Distributed Computing](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing): 
+[Fallacies of Distributed Computing](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing):
 1. The network is reliable
 2. Latency is zero
 3. Bandwidth is infinite
