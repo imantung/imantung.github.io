@@ -27,3 +27,5 @@ Tool:
 
 Reference:
 - [Example golang CI](https://github.com/jandelgado/golang-ci-template-github-actions)
+- <https://github.com/sdras/awesome-actions>: currated list
+- <https://github.com/nektos/act>: Run locally
