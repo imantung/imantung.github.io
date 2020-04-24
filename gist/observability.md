@@ -52,3 +52,9 @@ APM Vendor:
 [rsyslog](http://www.rsyslog.com/) to forwarding log messages in an IP network
 
 [prometheus](https://prometheus.io/)
+
+
+### Tracing
+
+- <https://www.jaegertracing.io/>
+- <https://opentracing.io/>
