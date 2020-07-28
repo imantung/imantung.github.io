@@ -6,6 +6,21 @@ title: ReactJS
 # ReactJS
 
 - <https://codeburst.io/how-to-call-api-in-a-smart-way-2ca572c6fe86>
+- <https://obedparla.com/code/a-visual-guide-to-react-mental-models/>
+- <https://obedparla.com/code/a-visual-guide-to-react-mental-models-part-2-use-state-use-effect-and-lifecycles/>
+
+
+From official first generated readme
+
+- [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [React documentation](https://reactjs.org/).
+- [Code Splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- [Analyzing the Bundle Size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- [Making a Progressive Web App](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- [Advanced Configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- [Deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- [`npm run build` fails to minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
 
 ### Setup
 
@@ -96,7 +111,13 @@ function renderSomething(){
 
 ## Hook
 
-Second argument of useEffect is condition
+Second argument of useEffect is dependency option
+- none: run on every render
+- `[]`: run once
+- `[a,b]`: run when a or b change
+
+
+Run once example
 ```js
 useEffect(() => {
   fetchSettings().then((settings) => {
@@ -105,13 +126,3 @@ useEffect(() => {
 }, []);
 ```
 
-## Learn More
-
-- [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-- [React documentation](https://reactjs.org/).
-- [Code Splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-- [Analyzing the Bundle Size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-- [Making a Progressive Web App](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-- [Advanced Configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-- [Deployment](https://facebook.github.io/create-react-app/docs/deployment)
-- [`npm run build` fails to minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

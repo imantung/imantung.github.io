@@ -17,6 +17,7 @@ Ref
 - [How sharding works](https://medium.com/@jeeyoungk/how-sharding-works-b4dec46b3f6)
 - [RFC7230 - Message Syntax & Routing](https://tools.ietf.org/html/rfc7230#section-2.3)
 - <https://github.com/donnemartin/system-design-primer>
+- <https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type>
 
 [Fallacies of Distributed Computing](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing):
 1. The network is reliable

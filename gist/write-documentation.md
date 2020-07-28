@@ -14,6 +14,7 @@ Ref:
 - [Documenting API](https://idratherbewriting.com/learnapidoc/)
 - [Golumn - Git-based Wiki](https://github.com/gollum/gollum)
 - <https://blog.stephsmith.io/learning-to-write-with-confidence/>
+- <https://nordicapis.com/5-examples-of-excellent-api-documentation/>
 
 
 ### README
