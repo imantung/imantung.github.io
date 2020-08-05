@@ -12,6 +12,8 @@ Reference:
 - [gitattributes file](https://medium.com/@pablorsk/be-a-git-ninja-the-gitattributes-file-e58c07c9e915)
 - [Working multiple repo in one repo](https://medium.com/@patrickleet/mono-repo-or-multi-repo-why-choose-one-when-you-can-have-both-e9c77bd0c668)
 - [Continous Integration with mono repo](https://hackernoon.com/continuous-integration-in-projects-using-monorepo-9b828d7a8dfa)
+- <https://github.com/korfuri/awesome-monorepo>
+- <https://www.atlassian.com/git/tutorials/big-repositories>
 
 Terms:
 - `remote`: remote location of repository

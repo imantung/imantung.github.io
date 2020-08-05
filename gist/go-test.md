@@ -5,7 +5,6 @@ title: Go (Test)
 
 # Go (Test)
 
-### Minimum test coverage
 
 Test failed if test coverage below 80%
 ```go
@@ -26,25 +25,23 @@ func TestMain(m *testing.M) {
 }
 ```
 
-### Mock
-
-Install [GoMock](https://github.com/golang/mock)
-```sh
+Mockinng using [GoMock](https://github.com/golang/mock)
+```bash
+# install gomock
 go get github.com/golang/mock/gomock
 go install github.com/golang/mock/mockgen
-```
 
-```sh
 mockgen -source=flow/kafka_admin.go -destination=flow/mock_kafka_admin.go -package=flow
 ```
 
-### Covermode
-
-Reference:
-- <https://blog.golang.org/cover>
-
+Cover mode <https://blog.golang.org/cover>
 ```bash
 go test -covermode=set # did each statement run? 
 go test -covermode=count # how many times did each statement run?
 go test -covermode=atomic # like count, but counts precisely in parallel programs
+```
+
+Get coverage rate ([source](https://github.com/vieux/gocover.io/blob/master/workers/gocover.sh))
+```bash
+go test -covermode=count -coverprofile=coverage.out ./internal/... | grep coverage | cut -d ' ' -f 2 | sed 's/%//g'
 ```
