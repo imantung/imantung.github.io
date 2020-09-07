@@ -46,3 +46,12 @@ Makefile reference:
 - [thockin](https://github.com/thockin/go-build-template)
 - [Golang: Don’t afraid of makefiles](https://sohlich.github.io/post/go_makefile/)
 - [Azer makefile](https://github.com/azer/go-makefile-example)
+
+### Go module 410 Gone 
+
+```bash
+$ export GO111MODULE=on
+$ export GOPROXY=direct
+$ export GOSUMDB=off
+$ go get -v -u github.com/alessiosavi/GoGPUtils@v0.0.9
+```

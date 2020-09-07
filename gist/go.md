@@ -19,6 +19,7 @@ Good Read:
 - <https://curtisvermeeren.github.io/2017/09/14/Golang-Templates-Cheatsheet>
 - <https://stackoverflow.com/questions/30612611/what-does-go-build-build/47109875#47109875>
 - <https://github.com/cloudfoundry/go-diodes>
+- <https://dave.cheney.net/2018/01/08/gos-hidden-pragmas>
 
 ### SETUP
 
@@ -30,10 +31,6 @@ export PATH=$PATH:$GOPATH/bin
 " >> ~/.zshrc
 source ~/.zshrc  
 ```
-
-
-
-
 
 ### Interfaces 
 
