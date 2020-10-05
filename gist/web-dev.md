@@ -7,6 +7,7 @@ title: Web Dev
 - [RESTful Checklist](https://blog.mwaysolutions.com/2014/06/05/10-best-practices-for-better-restful-api/)
 - [Best practives for A Pragmatic Restful API](https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api)
 - [public api list](https://github.com/toddmotto/public-apis)
+- <http://getbem.com/naming/>
 
 # Web Dev
 
