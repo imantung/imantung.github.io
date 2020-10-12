@@ -1,9 +1,13 @@
 ---
 layout: gist
-title: Query Optimizing
+title: SQL
 ---
 
-# Query Optimizing
+## Join Decomposition
+
+- <https://dba.stackexchange.com/questions/76973/what-is-faster-one-big-query-or-many-small-queries>
+
+## Query Optimizing
 
 
 ## Joins
