@@ -66,3 +66,11 @@ Types of integrity constraint:
 2. Referential integrity: inter table relationship (foreign key)
 3. Domain integrity
 4. User-defined integrity
+
+## Data Attribution (Tracker)
+
+- [appsflyer](https://www.appsflyer.com/)
+- [clevertap](https://clevertap.com/)
+- [apptimize](https://apptimize.com/)
+- [optimizely](https://www.optimizely.com/)
+- [segment](https://segment.com/)

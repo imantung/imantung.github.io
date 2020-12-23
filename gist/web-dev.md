@@ -7,8 +7,10 @@ Ref:
 - [Google Web Fundamentals](https://developers.google.com/web/fundamentals)
 - [RESTful Checklist](https://blog.mwaysolutions.com/2014/06/05/10-best-practices-for-better-restful-api/)
 - [Best practives for A Pragmatic Restful API](https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api)
+- [Sticky vs Non Sticky Session](https://stackoverflow.com/questions/10494431/sticky-and-non-sticky-sessions)
 - [public api list](https://github.com/toddmotto/public-apis)
 - <http://getbem.com/naming/>
+
 
 # Web Dev
 
@@ -20,15 +22,6 @@ Ref:
 - [ngrok](https://ngrok.com/): public urls for exposing local
 - <https://developers.google.com/web/tools/lighthouse/>
 - <http://xip.io/>
-
-# Web Design
-
-- [A more modern scale for web typography](http://typecast.com/blog/a-more-modern-scale-for-web-typography)
-- [Color in design systems](https://medium.com/eightshapes-llc/color-in-design-systems-a1c80f65fa3)
-- [Design Resources (Curator List)](https://github.com/skullface/design-resources)
-
-Template
-- https://semantic-ui.com/
 
 
 ## Tech Stack

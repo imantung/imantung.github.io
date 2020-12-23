@@ -1,9 +1,9 @@
 ---
 layout: gist
-title: Google Cloud Platform
+title: GCP
 ---
 
-# Google Cloud Platform
+# GCP
 
 ### Pub-Sub
 

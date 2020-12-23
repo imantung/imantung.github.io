@@ -3,7 +3,7 @@ layout: gist
 title: Design Principle
 ---
 
-# Design Principe
+# Design Principle
 
 ## Common
 
