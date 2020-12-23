@@ -1,9 +1,9 @@
 ---
 layout: gist
-title: Security
+title: Infosec
 ---
 
-# Security
+# Infosec (Information Security)
 
 Ref:
 - [CIS Benchmark](https://www.advancedcyber.co.uk/it-security-blog/six-essential-things-to-know-cis-benchmark): 140+ configuration guidelines for various technology
@@ -13,7 +13,7 @@ Ref:
 - [Security Testing Guide v4](https://www.owasp.org/images/1/19/OTGv4.pdf)
 - [SOC2](https://info.cgcompliance.com/blog/what-is-soc-2)
 
-### Color Wheel 
+### Color Wheel Team
 
 [InfoSec colour wheel](https://hackernoon.com/introducing-the-infosec-colour-wheel-blending-developers-with-red-and-blue-security-teams-6437c1a07700)
 - Red Team: Offensive security
@@ -88,3 +88,47 @@ Vulnerability assessments and penetration tests follow much of the same process,
 - `DirBuster`:	Tool for Brute-forcing directories in web applications
 - `nmap`:	Discovering services, open ports running on remote system
 - `arachni`:	Web based automated security scanner
+
+
+
+## STRIDE (Threat Modeling)
+
+- (Threat Modeling: uncover vulnerabilities without looking at code)[https://www.youtube.com/watch?v=Fmp9UFjPiJs]
+
+Reference:
+(Wiki)[https://en.wikipedia.org/wiki/STRIDE_(security)]
+
+Description:
+- **S**poofing: Pretending to be someone you are not
+- **T**ampering: Modifying Data
+- **R**epudiation: "I didn't do it, nobody saw me do it, can't prove anything"
+- **I**nformation Disclosure: Leakage of Information that should be private 
+- **D**enial of Service: Stopping something from working or responding
+- **E**levation of Privilage: Upgrading from user to administrator access
+
+Mitigation Perfective:
+- **S**poofing: Strong authentication
+- **T**ampering: Encryption
+- **R**epudiation: Strong authentication and authorization
+- **I**nformation Disclosure: Encryption
+- **D**enial of Service: Resilience 
+- **E**levation of Privilage: Authorization
+
+
+## Root Cause Analysis
+
+Other names:
+- `post-mortem`: (literal: after death)
+
+Ref:
+- [RCA by des.wa.gov](https://des.wa.gov/services/risk-management/about-risk-management/enterprise-risk-management/root-cause-analysis)
+
+Investigation Method:
+1. The “5-Whys” Analysis
+2. Barrier Analysis
+3. Change Analysis
+4. Causal Factor Tree Analysis
+5. Failure Mode and Effects Analysis
+6. Fish-Bone Diagram or Ishikawa Diagram
+7. Pareto Analysis
+8. Fault Tree Analysis

@@ -28,7 +28,7 @@ title: Docker
 - [Quick start on golang](https://blog.golang.org/docker)
 
 Quick start cheatsheet:
-```sh
+```bash
 docker version
 docker info
 docker run -d -p 80:80 --name webserver nginx
@@ -45,14 +45,14 @@ docker rmi nginx
 ### Image & Container
 
 Image is basis of container.
-```sh
+```bash
 # list of image
 docker images
 docker image ls
 ```
 
 Container is instance of image. The apps is running on top of container
-```sh
+```bash
 # run new container
 docker run -d -p 80:80 --name [container] [image]
 
@@ -83,7 +83,7 @@ docker ps -aq --no-trunc -f status=exited | xargs docker rm
 ```
 
 Dockerfile is source code of the images on.
-```sh
+```bash
 # build image
 docker build [directory contains Dockerfile]
 

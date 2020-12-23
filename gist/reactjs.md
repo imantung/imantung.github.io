@@ -25,7 +25,7 @@ From official first generated readme
 ### Setup
 
 Node
-```sh   
+```bash   
 npm install -g create-react-app
 npx create-react-app my-app
 cd my-app

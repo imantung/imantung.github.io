@@ -110,7 +110,7 @@ InsteadOf in configu
 
 ### Fork repository
 
-```sh
+```bash
 # Configuring a remote for a fork
 git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
 
@@ -126,7 +126,7 @@ git merge upstream/master
 ### Source Tree
 
 Install source tree command line (if failed installed from the ui)
-```sh
+```bash
 alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
 ```
 

@@ -29,18 +29,18 @@ References:
 ## kubectl
 
 Install
-```sh
+```bash
 brew install kubectl 
 ```
 
 Configuration
-```sh
+```bash
 kubectl cluster-info # check the cluster info
 kubectl config view # view config
 ```
 
 Pod
-```sh
+```bash
 kubectl get pod --all-namespaces
 kubectl get pod -n default
 kubectl get pod --all-namespaces --show-all -l "job-name=<job-name>" 
@@ -54,23 +54,23 @@ kubectl got pod POD_NAME -o json
 ```
 
 Deployment
-```sh
+```bash
 kubectl get deploy --all-namespaces
 kubectl get deploy -n <namespace> <deployment-name> -o yaml
 ```
 
 Services
-```sh
+```bash
 kubectl get svc --all-namespaces
 ```
 
 Jobs
-```sh
+```bash
 kubectl get job --all-namespaces
 ```
 
 Copy
-```sh
+```bash
 kubectl cp <file-spec-src> <file-spec-dest>
 kubectl cp <file-spec-src> <file-spec-dest> -c <specific-container>
 
@@ -82,19 +82,19 @@ kubectl cp <some-namespace>/<some-pod>:/tmp/foo /tmp/bar
 ```
 
 Check permission
-```sh
+```bash
 kubectl auth can-i create deployments --namespace prod
 ```
 
 ## Helm 
 
 The Package Manager for K8s
-```sh
+```bash
 brew install kubernetes-helm
 ```
 
 Cheatsheet
-```sh
+```bash
 #  initialize the local CLI and also install Tiller 
 helm init 
 

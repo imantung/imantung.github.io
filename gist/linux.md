@@ -39,7 +39,7 @@ sudo apt-get install ntp ntpdate
 
 [doc](https://ss64.com/bash/ulimit.html)
 
-```sh
+```bash
 ulimit -n # current
 ulimit -u unlimited # set to unlimited
 ulimit -a # show all

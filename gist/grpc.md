@@ -5,6 +5,7 @@ title: GRPC
 
 # GRPC
 
+- [bloomRPC](https://github.com/uw-labs/bloomrpc): GUI Client for GRPC Service
 
 ### Installation
 
@@ -17,5 +18,3 @@ go get -u github.com/golang/protobuf/protoc-gen-go
 
 
 ```
-
-- bloomRPC

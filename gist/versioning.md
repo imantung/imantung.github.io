@@ -1,9 +1,11 @@
 ---
 layout: gist
-title: SemVer
+title: Versioning
 ---
 
-# SemVer
+# Versionig
+
+## SemVer
 
 [Specification](https://semver.org/)
 

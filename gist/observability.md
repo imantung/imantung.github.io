@@ -6,7 +6,7 @@ title: Observability
 # Observability
 
 
-APM = Application Performance Monitoring
+`APM` = Application Performance Monitoring
 
 APM Vendor:
 - [Datadog](https://www.datadoghq.com/)

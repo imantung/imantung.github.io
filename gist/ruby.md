@@ -9,7 +9,7 @@ title: Ruby
 
 ### rbenv
 
-```sh
+```bash
 brew install rbenv
 echo 'eval "$(rbenv init -)"' >> ~/.zshrc
 rbenv install --list
@@ -25,13 +25,13 @@ gem env
 ```
 
 If `Bundle` is not using rbenv ruby
-```sh
+```bash
 gem install --no-ri --no-rdoc bundler
 rbenv rehash
 ```
 
 [Ruby vendoring](http://ryan.mcgeary.org/2011/02/09/vendor-everything-still-applies/)
-```sh
+```bash
 bundle install --path vendor
 echo 'vendor/ruby' >> .gitignore
 
@@ -39,12 +39,12 @@ bundle package
 ```
 
 If install is missing. [solution](https://stackoverflow.com/questions/17618113/the-command-rbenv-install-is-missing)
-```sh
+```bash
 git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-build
 ```
 
 Put gem executable at `/bin` folder
-```sh
+```bash
 bundle install --binstubs
 ```
 
@@ -57,7 +57,7 @@ Dependencies conflict
 
 ### Gem development
 
-```sh
+```bash
 gem build GEMNAME.gemspec
 gem install gemname-version.gem 
 gem push gemname-version.gem # update to https://rubygems.org/
@@ -108,7 +108,7 @@ arr_of_string_2 = %w(foo bar) # shortcut to write array without \"
 
 ### Tips and trick
 
-```sh
+```bash
 # make compile faster for jruby
 JRUBY_OPTS=--dev rspec
 

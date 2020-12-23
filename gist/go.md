@@ -65,7 +65,7 @@ ioutil.NopCloser(reader)
 ### Vendoring 
 
 Using [glide](https://glide.sh/)
-```sh
+```bash
 brew install glide
 
 glide create # create glide.yaml
@@ -74,7 +74,7 @@ glide up # update version
 ```
 
 Using [dep](https://golang.github.io/dep/)
-```sh
+```bash
 brew install dep
 
 dep init

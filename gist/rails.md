@@ -7,7 +7,7 @@ title: Rails
 
 ### Application
 
-```sh
+```bash
 rails new my_app --database=postgresql # create app
 rails s # start
 rails s -p 1234 # start with port 1234
@@ -16,14 +16,14 @@ rake -T # list task
 ```
 
 Scaffold
-```sh
+```bash
 rails g scaffold product name:string price:decimal{7,2}
 ```
 
 Check on [Heroku Reserved Words](http://reservedwords.herokuapp.com/) before naming
 
 ### Migration
-```sh
+```bash
 rake db:drop
 rake db:create
 rake db:migrate
@@ -32,12 +32,12 @@ RAILS_ENV=test rake db:drop
 ```
 
 Add column
-```sh
+```bash
 rails g migration add_email_to_users email:string
 ```
 
 Common Migration datatype
-```sh
+```bash
 :binary
 :boolean
 :date
@@ -57,7 +57,7 @@ Common Migration datatype
 
 ### Rspec
 
-```sh
+```bash
 rspec
 rspec spec/models/user.spec.rb
 rspec spec/models/user.spec.rb:43
@@ -79,7 +79,7 @@ expect(template).to_not be_valid
 ### Rake Task
 
 Create rake task with argument
-```sh
+```bash
 task :task1 => [:environment] do
   puts ENV['path']
 end
@@ -94,7 +94,7 @@ task :task3, [:message] => :environment do |t, args|
 end
 ```
 
-```sh
+```bash
 rake task1 path="your path"
 rake task2 "your_path"
 rake "task3[your_path]"

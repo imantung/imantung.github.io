@@ -22,7 +22,7 @@ title: Mobile Development
 ### Android
 
 [Automatically accept all sdk license](https://stackoverflow.com/questions/38096225/automatically-accept-all-sdk-licences)
-```sh
+```bash
 yes | sdkmanager --licenses
 
 # macOS

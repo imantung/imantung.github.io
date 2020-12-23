@@ -108,7 +108,7 @@ Sharding Size:
 ### Install
 
 Install Homebrew
-```sh
+```bash
 brew install elasticsearch
 
 # config location
@@ -118,7 +118,7 @@ brew services start elasticsearch
 ```
 
 Install with manual download
-```sh
+```bash
 # download
 curl https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.2.2.tar.gz
 tar xvzf elasticsearch-6.2.2.tar.gz

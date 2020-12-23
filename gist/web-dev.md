@@ -3,6 +3,7 @@ layout: gist
 title: Web Dev
 ---
 
+Ref:
 - [Google Web Fundamentals](https://developers.google.com/web/fundamentals)
 - [RESTful Checklist](https://blog.mwaysolutions.com/2014/06/05/10-best-practices-for-better-restful-api/)
 - [Best practives for A Pragmatic Restful API](https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api)
@@ -11,9 +12,9 @@ title: Web Dev
 
 # Web Dev
 
-PWA = [Progressive Web Application](https://en.wikipedia.org/wiki/Progressive_web_applications)
+`PWA` = [Progressive Web Application](https://en.wikipedia.org/wiki/Progressive_web_applications)
 
-3DS = [3 Domain Structure](https://securionpay.com/blog/3d-secure/)
+`3DS` = [3 Domain Structure](https://securionpay.com/blog/3d-secure/)
 
 
 ### Tool

@@ -23,3 +23,4 @@ Available Product:
 - [Apptimize](https://apptimize.com/)
 - [Out-experiment](https://www.optimizely.com/)
 - [Unleash](https://github.com/Unleash/unleash) - Open Source
+- [Flagr](https://github.com/checkr/flagr): a feature flagging, A/B testing and dynamic configuration microservice

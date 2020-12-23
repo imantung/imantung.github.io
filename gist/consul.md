@@ -10,7 +10,6 @@ title: Consul
 - KV Store
 - Multi Datacenter
 
-
 ### Agent
 
 - Register services
@@ -18,7 +17,7 @@ title: Consul
 - Forwards queries to servers
 
 Checks
-```sh
+```bash
 curl localhost:8500/v1/catalog/nodes
 ```
 

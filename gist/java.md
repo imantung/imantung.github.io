@@ -15,12 +15,12 @@ Non standard option
 - option specified with `-XX `are not stable and are subject to change without notice
 
 List of currently running java process
-```sh
+```bash
 jps -l
 ```
 
 Check heap of java process
-```sh
+```bash
 jmap -heap PID
 ```
 

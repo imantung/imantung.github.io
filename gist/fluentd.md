@@ -19,7 +19,7 @@ Two way to setup fluentd:
 
 
 Directories
-```sh
+```bash
 # for macOs
 /Library/LaunchDaemons/td-agent.plist
 
@@ -29,7 +29,7 @@ Directories
 ```
 
 Fluent-gem
-```sh
+```bash
 # install fluent-gem
 gem install fluentd --no-ri --no-rdoc
 fluentd --setup ./fluent
@@ -47,7 +47,7 @@ pkill -f fluentd
 [Official Document](https://docs.fluentd.org/v1.0/articles/config-file#(1)-%E2%80%9Csource%E2%80%9D:-where-all-the-data-come-from)
 
 Location 
-```sh
+```bash
 # td-agent
 sudo vi /etc/td-agent/td-agent.conf
 

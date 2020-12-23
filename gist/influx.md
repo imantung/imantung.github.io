@@ -1,9 +1,9 @@
 ---
 layout: gist
-title: Influx Data
+title: Influx
 ---
 
-# Influx Data
+# Influx
 
 [TICK Platform: Time-series platform](https://www.influxdata.com/time-series-platform/)
 - `Telegraf`: The agent for collecting and reporting metrics and event

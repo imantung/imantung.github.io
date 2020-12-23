@@ -21,7 +21,7 @@ nohup ./myprogram > myprogram.out 2>&1 &
 
 ### Screen
 
-```sh
+```bash
 screen -R [name]
 screen -ls
 screen -x [name]

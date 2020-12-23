@@ -14,12 +14,12 @@ Read:
 - <https://vaneyckt.io/posts/safer_bash_scripts_with_set_euxo_pipefail/>
 
 A script may specify `#!/bin/bash` on the first line, meaning that the script should always be run with bash
-```sh
+```bash
 #!/bin/bash
 ```
 
 Function
-```sh
+```bash
 #!/bin/bash
 
 some_function(){
@@ -30,13 +30,13 @@ echo $(some_function)
 ```
 
 Variable
-```sh
+```bash
 MY_VAR=123
 echo $MY_VAR
 ```
 
 Command Arguments
-```sh
+```bash
 #!/bin/bash
 
 echo $1 # first argument
@@ -45,7 +45,7 @@ echo $@ # rest arguments
 ```
 
 if-else
-```sh
+```bash
 #!/bin/bash
 
 if [ "$1" = "cool" ]; then
@@ -59,7 +59,7 @@ fi
 
 
 Test = `[`
-```sh
+```bash
 if [ "$foo" = "bar" ] ; then echo "test" fi
 
 # Equivalent with
@@ -67,14 +67,14 @@ if test "$foo" = "bar" ; then echo "test" fi
 ```
 
 Check if variable unset
-```sh
+```bash
 if [ -z ${var+x} ];
 then echo "var is unset";
 else echo "var is set to '$var'"; fi
 ```
 
 Iterate over files in a directory
-```sh
+```bash
 #!/bin/bash
 for filename in /Data/*.txt; do
     for ((i=0; i<=3; i++)); do
@@ -84,7 +84,7 @@ done
 ```
 
 Split string and get last element
-```sh
+```bash
 $ foo=1:2:3:4:5
 $ echo ${foo##*:}
 5
@@ -107,7 +107,7 @@ ${foo  <-- from variable foo
 ### Multiline
 
 Append multiple-line to a file
-```sh
+```bash
 # possibility 1:
 echo "line 1" >> greetings.txt
 echo "line 2" >> greetings.txt

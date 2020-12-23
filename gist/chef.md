@@ -63,15 +63,15 @@ Directory structure
 2. Create or Clone chef repo `git clone CHEF_REPO`
 3. ssh to chef server
 4. (If not exist) Create organization . This step will generate `ORG_NAME.pem`
-```sh
+```bash
 chef-server-ctl org-create ORG_NAME ORG_FULL_NAME -f FILE_NAME
 ```
 5. Create user. This step will generate `USERNAME.pem`
-```sh
+```bash
 chef-server-ctl user-create USER_NAME FIRST_NAME LAST_NAME EMAIL PASSWORD -f FILE_NAME
 ```
 6. Add user to organization
-```sh
+```bash
 sudo chef-server-ctl org-user-add ORG_NAME USER_NAME
 ```
 7. Exit from chef serve (back to your workstation)
@@ -99,7 +99,7 @@ cookbook_path            ["#{current_dir}/../cookbooks"]
 
 1. Change directory to chef repo.
 2. Install `chef-client` to target system by bootstrapping.
-    ```sh
+    ```bash
     # plain
     knife bootstrap FQDN_or_IP_ADDRESS
 
@@ -107,7 +107,7 @@ cookbook_path            ["#{current_dir}/../cookbooks"]
     knife bootstrap FQDN_or_IP_ADDRESS -i PEM_FILE  -E ENVIRONMENT -N NOTE -r RECIPE --bootstrap-version VERSION -x USER --sudo
     ```
 3. Run `chef-client` on each machine. Shortcut way to using `knife ssh`
-    ```sh
+    ```bash
     # run chef-client on NODE
     knife ssh 'name:NODE' 'sudo chef-client'
 
@@ -124,7 +124,7 @@ cookbook_path            ["#{current_dir}/../cookbooks"]
 [chef-client Document](https://docs.chef.io/ctl_chef_client.html)
 
 Undo bootstrapping
-```sh
+```bash
 knife node delete --yes NODENAME
 knife client delete --yes NODENAME
 ```
@@ -139,7 +139,7 @@ Structure
 Test your cookbook using [kitchen-test](https://docs.chef.io/kitchen.html)
 
 Some knife command
-```sh
+```bash
 # new cookbook
 chef generate cookbook NAME
 

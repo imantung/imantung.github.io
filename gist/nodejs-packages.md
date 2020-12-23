@@ -3,7 +3,7 @@ layout: gist
 title: NPM Packages
 ---
 
-# NPM Packages
+# NodeJS Packages
 
 
 - [flux](https://github.com/facebook/flux): Application Architecture for Building User Interfaces

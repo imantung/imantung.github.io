@@ -26,27 +26,27 @@ Kafka Consumer Lag = Latest Offset - Consumer Offset
 ### Commands
 
 Get kafka PID
-```sh
+```bash
 ps ax | grep -i 'kafka' | grep java | grep -v grep | grep -v zookeeper | awk '{print $1}'
 ```
 
 Remove all data on topics
-```sh
+```bash
 rm -rf /tmp/kafka-logs/newTopic-*
 ```
 
 Create topic
-```sh
+```bash
 bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test
 ```
 
 Delete topic
-```sh
+```bash
 bin/kafka-topics.sh --delete --zookeeper localhost:2181 --topic test
 ```
 
 List of topics
-```sh
+```bash
 bin/kafka-topics.sh --list --zookeeper localhost:2181
 ```
 
@@ -73,7 +73,7 @@ delete.topic.enable=true
 ### Kafka Manager
 
 Install 
-```sh
+```bash
 git clone https://github.com/yahoo/kafka-manager.git
 cd kafka-manager
 ./sbt clean dist

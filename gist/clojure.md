@@ -6,12 +6,12 @@ title: Clojure
 # Clojure
 
 Install
-```sh
+```bash
 brew install clojure
 ```
 
 Leiningen is a build automation and dependency management tool 
-```sh
+```bash
 # install 
 brew install leiningen
 

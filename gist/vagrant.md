@@ -17,7 +17,7 @@ https://www.vagrantup.com/
 
 ### Get Started
 
-```sh
+```bash
 # create some folder
 mkdir vagrant_getting_started
 cd vagrant_getting_started
@@ -31,50 +31,50 @@ vagrant up
 
 
 check version
-```sh
+```bash
 vagrant --version
 ```
 
 create empty vagrant file
-```sh
+```bash
 vagrant init
 ```
 
 create environment
-```sh
+```bash
 vagrant up
 vagrant up [id]
 ```
 
 check vagrant
-```sh
+```bash
 vagrant status
 ```
 
 log in to vm
-```sh
+```bash
 vagrant ssh
 ```
 
 check all vagrant environment
-```sh
+```bash
 vagrant global-status
 ```
 
 suspends the machine
-```sh
+```bash
 vagrant suspend
 vagrant suspend [id]
 ```
 
 stops and deletes all traces of the vagrant machine
-```sh
+```bash
 vagrant destroy
 vagrant destroy [id]
 ```
 
 boxes
-```sh
+```bash
 vagrant box list
 vagrant box add hashicorp/precise64
 ```

@@ -6,6 +6,9 @@ title: Go (Build)
 
 # Go (Build)
 
+Linter: 
+- <https://github.com/golangci/golangci-lint#install>
+
 
 ### C Cross Compiler
 
@@ -36,7 +39,7 @@ func main() {
 }
 ```
 
-```sh
+```bash
 go build -ldflags "-X main.version=0.0.1 -X main.date=%date:~10,4%-%date:~4,2%-%date:~7,2%T%time:~0,2%:%time:~3,2%:%time:~6,2%"
 ```
 

@@ -7,7 +7,7 @@ title: Postgres
 - [Entity–attribute–value model (EAV)](https://en.wikipedia.org/wiki/Entity%E2%80%93attribute%E2%80%93value_model)
 - [Postgres VS MySQL](https://www.2ndquadrant.com/en/postgresql/postgresql-vs-mysql/)
 - [Citus](https://www.citusdata.com/): scale out postgres
-
+- [Timescale](https://www.timescale.com/)
 
 # Postgres
 
@@ -26,7 +26,7 @@ INSERT INTO user (name) VALUES ('John') RETURNING id
 ### PSQL
 
 Connect
-```sh
+```bash
 psql -d DATABASE
 psql -d postgres
 
@@ -97,7 +97,7 @@ select now() - pg_last_xact_replay_timestamp() AS replication_delay;
 ```
 
 Replication script (run on slave)
-```sh
+```bash
 #!/bin/bash
 
 MASTER_DB_IP=$1

@@ -3,10 +3,11 @@ layout: gist
 title: Microservices
 ---
 
-
 # Microservices
 
-- [Flagr](https://github.com/checkr/flagr): a feature flagging, A/B testing and dynamic configuration microservice
+- [SlideShare: Legacy is Good](https://www.slideshare.net/ubertobarbini/legacy-is-good)
+
+
 - [Jaeger](https://www.jaegertracing.io/): Monitor and troubleshoot transactions in complex distributed systems
 - [microservices testing strategies](https://medium.freecodecamp.org/these-are-the-most-effective-microservice-testing-strategies-according-to-the-experts-6fb584f2edde)
 

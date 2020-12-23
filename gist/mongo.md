@@ -6,6 +6,7 @@ title: Mongo
 # Mongo
 
 - <https://dzone.com/articles/why-mongodb>
+- <https://www.sysleaf.com/command-mongodb/>
 
 [SQL Comparison](https://docs.mongodb.com/manual/reference/sql-comparison/)
 
@@ -42,3 +43,19 @@ Query Cheatsheet
 db.test.find().limit(10)
 db.test.find(ObjectId('4ecc05e55dd98a436ddcc47c'))
 ```
+
+## Export
+
+```bash
+mongoexport \
+    --username dev_iman_tunggono \
+    --password S8xmMu6RICJv7aQR \
+    --host 10.145.129.236 \
+    --db hotel_content_b2b \
+    --collection hotel \
+    --type=json \
+    --fields='column1,column2,column2' \
+    --query='{}' \
+    -o output.json
+```
+

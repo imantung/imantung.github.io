@@ -17,7 +17,7 @@ Ref
 - [How sharding works](https://medium.com/@jeeyoungk/how-sharding-works-b4dec46b3f6)
 - [RFC7230 - Message Syntax & Routing](https://tools.ietf.org/html/rfc7230#section-2.3)
 - <https://github.com/donnemartin/system-design-primer>
-- <https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type>
+- <https://www.cloudcomputingpatterns.org/>
 
 [Fallacies of Distributed Computing](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing):
 1. The network is reliable
@@ -28,7 +28,6 @@ Ref
 6. There is one administrator
 7. Transport cost is zero
 8. The network is homogeneous
-
 
 
 [`CAP theorem`](https://en.wikipedia.org/wiki/CAP_theorem): states that it is impossible for a distributed data store to simultaneously provide more than two out of the following three guarantees:
@@ -63,4 +62,4 @@ Types of delivery semantics:
 - at-least-once
 - exactly-once
 
-
+`CRDT` = [Conflit-free replicated data type](https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type)

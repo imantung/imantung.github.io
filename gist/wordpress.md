@@ -16,7 +16,7 @@ title: Wordpress
 [Installing](https://make.wordpress.org/cli/handbook/installing/)
 
 
-```sh
+```bash
 # setup
 curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
 php wp-cli.phar --info
