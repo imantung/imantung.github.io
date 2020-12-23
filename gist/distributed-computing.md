@@ -63,3 +63,17 @@ Types of delivery semantics:
 - exactly-once
 
 `CRDT` = [Conflit-free replicated data type](https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type)
+
+
+## IAM
+
+Ref:
+- <https://github.com/kdeldycke/awesome-iam>
+- <https://wso2.com/whitepapers/identity-architect-ground-rules-ten-iam-design-principles/>
+- <https://github.com/ory/oathkeeper>
+
+
+## Access Control Model
+
+- Attribute-Based Access Control
+- Role-Based Access Control

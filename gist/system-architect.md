@@ -3,7 +3,7 @@ layout: gist
 title: System Architect
 ---
 
-# Software Architect
+# System Architect
 
 - https://docs.microsoft.com/en-us/azure/architecture/guide/
 
