@@ -1,9 +1,9 @@
 ---
 layout: gist
-title: Javascript
+title: JS
 ---
 
-# Javascript
+# JS (Javascript)
 
 
 ```js
