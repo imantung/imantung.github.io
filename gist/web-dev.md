@@ -121,3 +121,8 @@ Structure: ```xxxxx.yyyyy.zzzzz```
 - Header --> Token Type and Signing Algo
 - Payload --> `Claims` = entity + additional data
 - Signature --> Make sure data wasn't changed
+
+# SOAP
+
+Ref:
+- [Open SOAP Service](http://www.dneonline.com/calculator.asmx)

@@ -11,6 +11,7 @@ Tool:
 - [Redis Sentinel](https://redis.io/topics/sentinel): monitoring, notification, automatic failover, configuration provider
 - [Redis Cluster](https://redis.io/topics/cluster-tutorial): distributed; data sharding
 - [Twemproxy](https://github.com/twitter/twemproxy): proxy for memcached and redis by twitter
+- [Crucial monitor metrics](https://scalegrid.io/blog/6-crucial-redis-monitoring-metrics/)
 
 
 Ref: 

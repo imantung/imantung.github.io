@@ -19,6 +19,20 @@ Ref
 - <https://www.cloudcomputingpatterns.org/>
 - <https://docs.microsoft.com/en-us/azure/architecture/guide/>
 
+Topics:
+- Key Characteristics of Distributed Systems
+- Load Balancing
+- Caching
+- Data Partitioning
+- Indexes
+- Proxies
+- Redundancy and Replication
+- SQL vs. NoSQL
+- CAP Theorem
+- Consistent Hashing
+- Long-Polling vs WebSockets vs Server-Sent Events
+
+
 ## Distributed Computing
 
 [Fallacies of Distributed Computing](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing):
