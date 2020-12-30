@@ -5,28 +5,42 @@ title: SQL Optimization
 
 # SQL Optimization
 
-### Joins
-In order to avoid full table scan, make sure that the join columns are indexed in both tables. A join on a single column can benefit from composite indexes as well, but only if the join column is in the beginning of the list of the composite index definition.
+`Rule-based Optimization`: by how to execute a query
 
-### Where conditions
-You use a lot of a IN (b, c, d) filter conditions on statuses. This will be translated to (a=b OR a=c OR a=d) before execution. If you can limit the number of the items in the list you can increase performance. Similarly, a NOT IN (b, c, d) translates to (a != b AND a != c AND a != d).
+`Cost-based Optimization`: by cheapest execution plan
 
-This means that if the complementary values makes a smaller list and you use that list with NOT IN you may improve the performance. Example:
+## Notes 
 
-If you have b, c, d, e, f, g statuses and you want to check if a is b, c, d or e, you want to use a NOT IN (f, g), which translates to (a != f AND a != g) instead of a IN (b, c, d, e), because the prior generates less filter condition, so it’s going to be faster.
+- Make sure that the `JOIN` columns are indexed in both tables
+- In most cases, many small query is faster than complex query 
+- In most cases, `LEFT JOIN`/`RIGHT JOIN` is slower than `INNER JOIN` ([source](https://stackoverflow.com/questions/2726657/inner-join-vs-left-join-performance-in-sql-server))
+- [Avoiding joins examples](https://medium.com/squad-engineering/blazingly-fast-querying-on-huge-tables-by-avoiding-joins-5be0fca2f523)
+- use `WHERE` statement to make smaller dataset before processing
+- `a IN (b,c,d)` translate to `(a=b OR a=c OR a=d)`
+- `a NOT IN (b, c, d)` translates to `(a != b AND a != c AND a != d)`
+- `EXISTS` is much faster than `IN`, when the sub-query results is very large ([source](https://stackoverflow.com/questions/24929/difference-between-exists-and-in-in-sql))
+- `IN` is faster than `EXISTS`, when the sub-query results is very small
+- `GROUP BY` on the smallest dataset you can (use where before grouping)
+- Avoid `ORDER BY` if ordering column not indexed (ordering in application instead)
+- Postgres can use an index when doing `some_string LIKE 'pattern%'` but not for `some_string LIKE '%pattern%'`
+- Use `BEGIN` and `ROLLBACK` for explain statement
 
-### Group by
-It’s a very important principal to execute the grouping on the smallest dataset you can. In our case, in the subquery you’re executing a group by, then from the outer query you filter the results. However, some filter conditions can be moved into the inner query (e.g. order_data.order_type_filter condition can be moved into the inner query).
 
-As the evaluation of the WHERE conditions happens before the grouping, this way you can reduce the dataset on which the MySQL needs to execute the grouping, so you might have some performance benefits.
 
-### Ordering
-Ordering a large result set has performance penalty as well. It’s worth to benchmark ordering with SQL and getting the result set without ordering and make the ordering in code. This way you can transport load from the MySQL server to the app server. You can gain performance with this technique if your DB server is fairly utilized, especially if the ordering column is not indexed. 
+## Postgres 
 
-### Benchmark HAVING vs subquery
-Instead of using subquery you can use HAVING filter clause which is evaluated after the grouping. This way you can help MySQL to avoid preparing the inner query’s dataset before continuing with the external query, yo this might also help in performance.
+- [Postgres tuning query plans](https://blog.gojekengineering.com/the-postgres-performance-tuning-manual-query-plans-52a023c2342d)
+- [Postgres Performance Consideration](https://thoughtbot.com/blog/postgresql-performance-considerations)
+- Visualize EXPLAIN: <https://tatiyants.com/pev/#/plans/new>
+- More readable EXPLAIN: <https://explain.depesz.com/>
 
-### Use EXPLAIN statement
-You can ask the execution plan of your queries with EXPLAIN (simply perpend EXPLAIN in the beginning of your query before SELECT). This will give you cool information about what is going to happen during execution and you can identify suboptimal filtering or missing indexes on joins.
+Cheatsheet:
+```sql
+EXPLAIN ANALYZE VERBOSE SELECT ...         -- more detail
+explain (FORMAT JSON) SELECT ...           -- in json format
+```
 
-<https://dev.mysql.com/doc/refman/5.7/en/using-explain.html>
+## MySQL
+
+Ref:
+- <https://dev.mysql.com/doc/refman/5.7/en/optimization.html>
