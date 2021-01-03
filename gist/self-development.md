@@ -1,11 +1,9 @@
 ---
 layout: gist
-title: Gym Mind
+title: Self Development
 ---
 
-# Gym Mind
-
-My note on gym mind training
+# Self Development
 
 
 ### Flexing
@@ -28,7 +26,7 @@ Preparing for the conversation
 
 How to fully aware to the conversation? Asking a question.
 
-Question Framing:   
+Question Framing:
 Outcome focused > Problem focused
 
 Give measurement to expected outcome. (Quote: "Something you can't measure, you can't manage")

@@ -14,7 +14,7 @@ Template:
 
 ## Code Review
 
-Good Reference: 
+Ref: 
 - [(Google Enginnering Practices)How to do a code review](https://google.github.io/eng-practices/review/reviewer/)
 
 Abbreviation:
@@ -22,6 +22,20 @@ Abbreviation:
 - `PTAL`: Please Take A Look (request for review)
 - `CL`: Change List
 
+## Git Commit
+ 
+- Clear commit message
+  - e.g. “Fix bug” (which bug?)
+- Tell what the changes and why. 
+  - e.g. “Modify some_file.go” (What changes? Why?)
+- Not too big (step by step as the thinking process)
+- Not too small (focus on important change)
+  - “Fix typo” (Too small)
+- Compile and test success
+- [Self-testing code](https://martinfowler.com/bliki/SelfTestingCode.html)
+- Include the required file e.g. migration file
+- No dead/commented code
+- Include pairing partner (using “Coauthored By”)
 
 ## TODO Comment Tag
 
