@@ -1,6 +1,6 @@
 ---
 layout: gist
-title: Database Archiving
+title: DB Design
 ---
 
 # Database Design

@@ -1,15 +1,15 @@
 ---
 layout: gist
-title: SQL Optimization
+title: DB Optimization
 ---
 
-# SQL Optimization
+# DB Optimization
 
 `Rule-based Optimization`: by how to execute a query
 
 `Cost-based Optimization`: by cheapest execution plan
 
-## Notes 
+## Query Optimization 
 
 - Make sure that the `JOIN` columns are indexed in both tables
 - In most cases, many small query is faster than complex query 
@@ -33,11 +33,15 @@ title: SQL Optimization
 - [Postgres Performance Consideration](https://thoughtbot.com/blog/postgresql-performance-considerations)
 - Visualize EXPLAIN: <https://tatiyants.com/pev/#/plans/new>
 - More readable EXPLAIN: <https://explain.depesz.com/>
+- [Autovacuum](https://www.2ndquadrant.com/en/blog/autovacuum-tuning-basics/)
 
 Cheatsheet:
 ```sql
-EXPLAIN ANALYZE VERBOSE SELECT ...         -- more detail
-explain (FORMAT JSON) SELECT ...           -- in json format
+EXPLAIN ANALYZE VERBOSE SELECT ...         --more detail
+EXPLAIN (FORMAT JSON) SELECT ...           --in json format
+
+VACUUM          --recovering space occupied by “dead tuples”
+ANALYZE         --ensures the statistics are up-to-date
 ```
 
 ## MySQL
