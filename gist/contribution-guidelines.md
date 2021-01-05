@@ -17,6 +17,7 @@ Template:
 Ref: 
 - [(Google Enginnering Practices)How to do a code review](https://google.github.io/eng-practices/review/reviewer/)
 
+
 Abbreviation:
 - `LGTM`: Look Good To Me (approve the request)
 - `PTAL`: Please Take A Look (request for review)
@@ -36,6 +37,11 @@ Abbreviation:
 - Include the required file e.g. migration file
 - No dead/commented code
 - Include pairing partner (using “Coauthored By”)
+
+## Database
+
+Ref: 
+- [SQL Style Guide](https://www.sqlstyle.guide/)
 
 ## TODO Comment Tag
 

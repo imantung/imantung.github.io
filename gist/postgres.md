@@ -3,19 +3,15 @@ layout: gist
 title: Postgres
 ---
 
-- [SQL Style Guide](https://www.sqlstyle.guide/)
-- [Entity–attribute–value model (EAV)](https://en.wikipedia.org/wiki/Entity%E2%80%93attribute%E2%80%93value_model)
-- [Postgres VS MySQL](https://www.2ndquadrant.com/en/postgresql/postgresql-vs-mysql/)
-- [Citus](https://www.citusdata.com/): scale out postgres
-- [Timescale](https://www.timescale.com/)
 
 # Postgres
 
-stolon
+Ref:
+- [Postgres VS MySQL](https://www.2ndquadrant.com/en/postgresql/postgresql-vs-mysql/)
+- [Citus](https://www.citusdata.com/): scale out postgres
+- [Timescale](https://www.timescale.com/)
+- [Stolon](https://github.com/sorintlab/stolon): cloud native PostgreSQL manager
 
-stream replication
-
-[Gist](https://gist.github.com/rgreenjr/3637525)
 
 Postgres does not automatically return the last insert id, because it would be wrong to assume you're always using a sequence. You need to use the RETURNING keyword in your insert to get this information from postgres.
 ```sql
@@ -27,14 +23,8 @@ INSERT INTO user (name) VALUES ('John') RETURNING id
 
 Connect
 ```bash
-psql -d DATABASE
-psql -d postgres
-
-# template1 is a database created by postgres itself, and is present on all installations
-psql -d template1
-
+psql -d template1         # template1 is a database created by postgres itself, and is present on all installations
 psql -h public-ip-server -p 5432 -U postgres
-
 PGPASSWORD=password psql -h 0.0.0.0 -p 5432 -U user
 ```
 
@@ -54,47 +44,31 @@ SHOW all;
 SHOW config_file;
 
 SET configuration_parameter TO DEFAULT;
-```
 
-```sql
 SELECT * FROM pg_settings;
 UPDATE pg_settings SET setting = reset_val WHERE name = 'configuration_parameter';
+
+
+SELECT pg_reload_conf();    -- Reload config
 ```
 
-
-### Query
-
-Create DB
+### Json
 ```sql
-CREATE DATABASE [name]
-```
-
-Get columns through query
-```sql
-SELECT *
-FROM information_schema.columns
-WHERE table_schema = 'your_schema'
-  AND table_name   = 'your_table'
-```
-
-Json
-```sql
-SELECT * FROM table_name
-WHERE json_field @> '[{"field":"value"}]'
+SELECT * FROM table_name WHERE json_field @> '[{"field":"value"}]'
 ```
 
 ### Replication
 
-Check replication status
+
 ```sql
+-- Check replication status
 SELECT client_addr, state, sent_location, write_location, flush_location, replay_location
 FROM pg_stat_replication;
-```
 
-Check replication delay
-```sql
+-- Check replication delay
 select now() - pg_last_xact_replay_timestamp() AS replication_delay;
 ```
+
 
 Replication script (run on slave)
 ```bash
@@ -121,42 +95,36 @@ sudo service postgresql start
 [find 3rd party extensions](https://pgxn.org/)
 
 ```sql
--- list of installed extension
-SELECT * FROM pg_extension
-
--- create
-CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
-
--- drop
-DELETE EXTENSION IF EXISTS "uuid-ossp";
+SELECT * FROM pg_extension                        -- list of installed extension
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";       -- create
+DELETE EXTENSION IF EXISTS "uuid-ossp";           -- drop
 ```
 
-### Docker Compose 
+### Performance/Tuning
 
-```yaml
-version: '3.5'
+- Visualize EXPLAIN: <https://tatiyants.com/pev/#/plans/new>
+- More readable EXPLAIN: <https://explain.depesz.com/>
+- PGTune: <https://pgtune.leopard.in.ua/#/>
+- [Postgres tuning query plans](https://blog.gojekengineering.com/the-postgres-performance-tuning-manual-query-plans-52a023c2342d)
+- [Postgres Performance Consideration](https://thoughtbot.com/blog/postgresql-performance-considerations)
+- [Autovacuum](https://www.2ndquadrant.com/en/blog/autovacuum-tuning-basics/)
+- [Removing postgresql bottlenext caused by high traffic](https://www.percona.com/blog/2020/05/29/removing-postgresql-bottlenecks-caused-by-high-traffic/)
+- [PostgreSQL Running Slow? Tips & Tricks to Get to the Source](https://severalnines.com/database-blog/postgresql-running-slow-tips-tricks-get-source)
+- [Tune database parameter and configuration](https://www.enterprisedb.com/postgres-tutorials/comprehensive-guide-how-tune-database-parameters-and-configuration-postgresql)
 
-services:
-  postgres:
-    container_name: postgres_container
-    image: postgres
-    environment:
-      POSTGRES_USER: ${POSTGRES_USER:-postgres}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-changeme}
-      PGDATA: /data/postgres
-    volumes:
-       - postgres:/data/postgres
-    ports:
-      - "5432:5432"
-    networks:
-      - postgres
-    restart: unless-stopped
 
-networks:
-  postgres:
-    driver: bridge
 
-volumes:
-  postgres:
+```sql
+EXPLAIN ANALYZE VERBOSE SELECT ...         --more detail
+EXPLAIN (FORMAT JSON) SELECT ...           --in json format
+
+VACUUM          --recovering space occupied by “dead tuples”
+ANALYZE         --ensures the statistics are up-to-date
+
+-- Check bloated table
+SELECT relname,n_live_tup, n_dead_tup from pg_stat_user_tables where relname in ('TABLENAME');
+
+-- Check bottleneck (query waiting for another query to complete)(PostgresSQL 10)
+SELECT * FROM pg_stat_activity WHERE wait_event IS NOT NULL AND backend_type = 'client backend';
 ```
 

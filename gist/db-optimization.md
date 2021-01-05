@@ -5,9 +5,17 @@ title: DB Optimization
 
 # DB Optimization
 
-`Rule-based Optimization`: by how to execute a query
+Optimization Strategy:
+- `Rule-based Optimization`: by how to execute a query
+- `Cost-based Optimization`: by cheapest execution plan
 
-`Cost-based Optimization`: by cheapest execution plan
+Performance Issue root cause:
+- Impropriated Settings
+- Query Bottleneck
+    - Bloated Database
+    - Data Hotspot (a lot of access requests at certain point of time in same disk sector)
+    - Cache
+- Connection/Session Management (Database pooling)
 
 ## Query Optimization 
 
@@ -26,25 +34,3 @@ title: DB Optimization
 - Use `BEGIN` and `ROLLBACK` for explain statement
 
 
-
-## Postgres 
-
-- [Postgres tuning query plans](https://blog.gojekengineering.com/the-postgres-performance-tuning-manual-query-plans-52a023c2342d)
-- [Postgres Performance Consideration](https://thoughtbot.com/blog/postgresql-performance-considerations)
-- Visualize EXPLAIN: <https://tatiyants.com/pev/#/plans/new>
-- More readable EXPLAIN: <https://explain.depesz.com/>
-- [Autovacuum](https://www.2ndquadrant.com/en/blog/autovacuum-tuning-basics/)
-
-Cheatsheet:
-```sql
-EXPLAIN ANALYZE VERBOSE SELECT ...         --more detail
-EXPLAIN (FORMAT JSON) SELECT ...           --in json format
-
-VACUUM          --recovering space occupied by “dead tuples”
-ANALYZE         --ensures the statistics are up-to-date
-```
-
-## MySQL
-
-Ref:
-- <https://dev.mysql.com/doc/refman/5.7/en/optimization.html>
