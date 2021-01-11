@@ -42,12 +42,13 @@ SELECT * FROM stats_mysql_global WHERE variable_name LIKE '%stmt%';
   
 ### Check SQLProxy
 
-3. Check SQL Proxy (if anly)
+1. Check SQL Proxy (if any)
   - check `mysql-max_stmts_per_connection`
   - check `mysql-max_stmts_cache`
   - check `stats_mysql_commands_counters`
+  
   ```sql
-select * from stats_mysql_commands_counters where Command in ('PREPARE', 'EXECUTE', 'SELECT');
+  select * from stats_mysql_commands_counters where Command in ('PREPARE', 'EXECUTE', 'SELECT');
   ```
 
 ### Check Process List 

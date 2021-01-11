@@ -25,7 +25,6 @@ Database Problem Patterns:
 - `Inefficient Pool Access`: Excessive access to connection pool (calling getConnection > 50% of executeStatement count)
 - `Overloaded Database Server`: Database server is simply overloaded with too many requests from different apps
 
-
 Query Optimizer:
 - `Rule-based Optimization`: by how to execute a query
 - `Cost-based Optimization`: by cheapest execution plan

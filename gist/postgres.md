@@ -3,42 +3,28 @@ layout: gist
 title: Postgres
 ---
 
-
 # Postgres
 
 Ref:
 - [Postgres VS MySQL](https://www.2ndquadrant.com/en/postgresql/postgresql-vs-mysql/)
+- [PGBadger](https://github.com/darold/pgbadger): Log analysis
+- [Postgres Performance Consideration](https://thoughtbot.com/blog/postgresql-performance-considerations)
+- [Removing postgresql bottlenext caused by high traffic](https://www.percona.com/blog/2020/05/29/removing-postgresql-bottlenecks-caused-by-high-traffic/)
+- [PostgreSQL Running Slow? Tips & Tricks to Get to the Source](https://severalnines.com/database-blog/postgresql-running-slow-tips-tricks-get-source)
+
+
+At Scale:
 - [Citus](https://www.citusdata.com/): scale out postgres
-- [Timescale](https://www.timescale.com/)
-- [Stolon](https://github.com/sorintlab/stolon): cloud native PostgreSQL manager
+- [Timescale](https://www.timescale.com/): timeseries database
+- [Stolon](https://github.com/sorintlab/stolon): cloud native PostgreSQL manager for HA
 
+### Configuration
 
-Postgres does not automatically return the last insert id, because it would be wrong to assume you're always using a sequence. You need to use the RETURNING keyword in your insert to get this information from postgres.
-```sql
-INSERT INTO user (name) VALUES ('John') RETURNING id
-```
+Ref:
+- [PGTune](https://pgtune.leopard.in.ua/#/): postgres configuration generator
+- [Tune database parameter and configuration](https://www.enterprisedb.com/postgres-tutorials/comprehensive-guide-how-tune-database-parameters-and-configuration-postgresql)
 
-
-### PSQL
-
-Connect
-```bash
-psql -d template1         # template1 is a database created by postgres itself, and is present on all installations
-psql -h public-ip-server -p 5432 -U postgres
-PGPASSWORD=password psql -h 0.0.0.0 -p 5432 -U user
-```
-
-Psql command
-```
-\l            #list
-\c DATABASE   # connect db
-\dt           # show table
-\d+           # show table + indices
-```
-
-
-#### Configuration
-
+Cheatsheets
 ```sql
 SHOW all;
 SHOW config_file;
@@ -48,88 +34,61 @@ SET configuration_parameter TO DEFAULT;
 SELECT * FROM pg_settings;
 UPDATE pg_settings SET setting = reset_val WHERE name = 'configuration_parameter';
 
-
 SELECT pg_reload_conf();    -- Reload config
 ```
 
-### Json
+### Slow Query
+
+Ref:
+- [Visualize EXPLAIN](https://tatiyants.com/pev/#/plans/new)
+- [More readable EXPLAIN](https://explain.depesz.com/)
+- [Postgres tuning query plans](https://blog.gojekengineering.com/the-postgres-performance-tuning-manual-query-plans-52a023c2342d)
+- [Parallel Queries](https://www.percona.com/blog/2019/02/21/parallel-queries-in-postgresql/)
+
 ```sql
-SELECT * FROM table_name WHERE json_field @> '[{"field":"value"}]'
+EXPLAIN ANALYZE VERBOSE SELECT ...         --more detail
+EXPLAIN (FORMAT JSON) SELECT ...           --in json format
+
+-- Check bottleneck (query waiting for another query to complete)(PostgresSQL 10)
+SELECT * 
+FROM pg_stat_activity 
+WHERE wait_event IS NOT NULL AND backend_type = 'client backend';
 ```
 
-### Replication
-
-
-```sql
--- Check replication status
-SELECT client_addr, state, sent_location, write_location, flush_location, replay_location
-FROM pg_stat_replication;
-
--- Check replication delay
-select now() - pg_last_xact_replay_timestamp() AS replication_delay;
-```
-
-
-Replication script (run on slave)
-```bash
-#!/bin/bash
-
-MASTER_DB_IP=$1
-
-[[ -z "${MASTER_DB_IP}" ]] &&
-echo "[error] parameters are missing
-Eg: ./replication.sh <master_db_ip>" && exit 123
-
-sudo service postgresql stop
-sudo cp /var/lib/postgresql/9.5/main/recovery.conf /tmp
-sudo -u postgres rm -rf /var/lib/postgresql/9.5/main
-sudo -u postgres pg_basebackup -h $MASTER_DB_IP -D /var/lib/postgresql/9.5/main -U rep -v -P
-sudo mv /tmp/recovery.conf /var/lib/postgresql/9.5/main/
-sudo chown postgres:postgres /var/lib/postgresql/9.5/main/recovery.conf
-sudo service postgresql start
-```
 
 ### Extensions
 
+List:
+- [pg_stat_statements](https://www.citusdata.com/blog/2019/02/08/the-most-useful-postgres-extension-pg-stat-statements/): tracking execution statistics of all SQL statements executed by a server
+- [pg_repack](https://github.com/reorg/pg_repack): remove bloat from tables and indexes, and optionally restore the physical order of clustered indexes
+
+
+Cheatsheet
 ```sql
 SELECT * FROM pg_extension                        -- list of installed extension
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";       -- create
 DELETE EXTENSION IF EXISTS "uuid-ossp";           -- drop
 ```
 
-### Performance/Tuning
+### Bloated
 
-- Visualize EXPLAIN: <https://tatiyants.com/pev/#/plans/new>
-- More readable EXPLAIN: <https://explain.depesz.com/>
-- PGTune: <https://pgtune.leopard.in.ua/#/>
-- PGBadger: <https://github.com/darold/pgbadger>
-- [Postgres tuning query plans](https://blog.gojekengineering.com/the-postgres-performance-tuning-manual-query-plans-52a023c2342d)
-- [Postgres Performance Consideration](https://thoughtbot.com/blog/postgresql-performance-considerations)
-- [Autovacuum](https://www.2ndquadrant.com/en/blog/autovacuum-tuning-basics/)
-- [Removing postgresql bottlenext caused by high traffic](https://www.percona.com/blog/2020/05/29/removing-postgresql-bottlenecks-caused-by-high-traffic/)
-- [PostgreSQL Running Slow? Tips & Tricks to Get to the Source](https://severalnines.com/database-blog/postgresql-running-slow-tips-tricks-get-source)
-- [Tune database parameter and configuration](https://www.enterprisedb.com/postgres-tutorials/comprehensive-guide-how-tune-database-parameters-and-configuration-postgresql)
+Bloated due to:
+- To many dead tupple
+- WAL (Write-Ahead-Log)
+- Unused Index
+
+Ref:
 - [Get rid of your unused indexes](https://www.cybertec-postgresql.com/en/get-rid-of-your-unused-indexes/)
 - [Postgresql Vacuum Monitoring](https://www.datadoghq.com/blog/postgresql-vacuum-monitoring/)
+- [Why and How WAL Bloats](https://dzone.com/articles/postgresql-why-and-how-wal-bloats)
 - [WAL: checkpoint_completion_target benchmark](https://www.depesz.com/2010/11/03/checkpoint_completion_target/)
-
+- [Autovacuum](https://www.2ndquadrant.com/en/blog/autovacuum-tuning-basics/)
 
 ```sql
-EXPLAIN ANALYZE VERBOSE SELECT ...         --more detail
-EXPLAIN (FORMAT JSON) SELECT ...           --in json format
-
-VACUUM          --recovering space occupied by “dead tuples”
-ANALYZE         --ensures the statistics are up-to-date
-
--- Check bloated table
+-- Check dead tupples
 SELECT relname, n_live_tup, n_dead_tup, last_vacuum, last_autovacuum, last_analyze, last_autoanalyze 
 FROM pg_stat_user_tables 
 WHERE relname = 'TABLENAME';
-
--- Check bottleneck (query waiting for another query to complete)(PostgresSQL 10)
-SELECT * 
-FROM pg_stat_activity 
-WHERE wait_event IS NOT NULL AND backend_type = 'client backend';
 
 -- Check unused index
 SELECT s.schemaname,
@@ -147,3 +106,19 @@ WHERE s.idx_scan = 0      -- has never been scanned
 ORDER BY pg_relation_size(s.indexrelid) DESC;
 ```
 
+## Saving Space
+
+- [Measure postgres size](https://dba.stackexchange.com/questions/23879/measure-the-size-of-a-postgresql-table-row/23933#23933)
+- [Calculating and saving space](https://stackoverflow.com/questions/2966524/calculating-and-saving-space-in-postgresql/7431468#7431468)
+
+
+### Replication
+
+```sql
+-- Check replication status
+SELECT client_addr, state, sent_location, write_location, flush_location, replay_location
+FROM pg_stat_replication;
+
+-- Check replication delay
+select now() - pg_last_xact_replay_timestamp() AS replication_delay;
+```
