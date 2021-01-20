@@ -64,9 +64,10 @@ Ref:
 4. Active Days: a day in which an engineer contributed code to the project
 5. Efficiency: the percentage of an engineer’s contributed code that’s productive, which generally involves balancing coding output against the code’s longevity. 
 
-## Culture
+## Culture Trend
 
 - [996](https://en.wikipedia.org/wiki/996_working_hour_system)
+- [Touching fish](https://www.scmp.com/lifestyle/article/3116109/young-employees-rebel-against-chinese-work-ethic-being-lazy-refusing)
 
 ## Competency Metric
 
@@ -129,3 +130,11 @@ Six Sigma
 - Kaizen
 - [Poka Yoke](https://kanbanize.com/lean-management/improvement/what-is-poka-yoke/): any mechanism in a Lean manufacturing process that helps to avoid mistakes. (Zero Quality Control)
 - 5 Whys Method
+
+## Safe To Fail
+
+- Do we encourage this "safe to fail" environment in our team?
+- Do we as a leader regularly giving and receiving feedback?
+- Do I create an environment where my team can give any feedback to me?
+- If someone in my team makes mistakes, as a leader what do I do?
+- As a leader, if I made mistakes, what did I do?
