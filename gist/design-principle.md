@@ -27,7 +27,7 @@ title: Design Principle
 
 - `Convention over Configuration`
 - `Fat models, skinny controllers`
-- 
+
 ## Zen of Python
 
 1. Beautiful is better than ugly.
