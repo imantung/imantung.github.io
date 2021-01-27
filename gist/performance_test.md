@@ -30,14 +30,13 @@ Observation:
 - Insufficient hardware resource
 
 Metrics:
-- Response Time
-- Wait Time/Average Latency
-- Average Load Time
-- Peak response time
-- Error Rate
-- Concurrent User
-- Request per second
-- Transaction passed/failed
-- Throughput (kilobyte per second)
-- CPU Utilization: high cpu usage mean machine working more its capacity 
-- Memory utilization
+- `Response Time`
+- `Wait Time` (latency)
+- `Average Load Time`
+- `Throughput`: usually kilobyte per second
+- `Concurrent User`
+- `Request per second`
+- `Transaction passed/failed`
+- `Error Rate`
+- `CPU Utilization`: high cpu usage mean machine working more its capacity 
+- `Memory utilization`

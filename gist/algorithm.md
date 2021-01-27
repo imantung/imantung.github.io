@@ -8,10 +8,30 @@ title: Algorithm
 - Snikolov-algorithm
 - [Exponential backoff](https://en.wikipedia.org/wiki/Exponential_backoff)
 
-## Time and Space analysis
+## Complexity analysis (Time & Space)
 
 Ref:
-- <https://www.hackerearth.com/practice/basic-programming/complexity-analysis/time-and-space-complexity/tutorial/#:~:text=Time%20complexity%20of%20an%20algorithm,the%20length%20of%20the%20input.>
+- [Big-O Cheatsheet](https://www.bigocheatsheet.com/)
+
+[Asymptopic Notation](https://www.khanacademy.org/computing/computer-science/algorithms/asymptotic-notation/a/asymptotic-notation):
+- Big-O/Big-Oh/Big-Omicron: no more than
+- Big-Omega: at least
+- Big-Theta: as much as (both Big-O and Big-Omega)
+
+`rate of growth` = how fast a function grows with the input size
+
+[Complexity Table](https://en.wikipedia.org/wiki/Big_O_notation#Orders_of_common_functions) (best to worst):
+- constant (`O(1)`)
+- logarithmic (`O(log n)`)
+- polylogarithmic (`O(log n ^ c)`)
+- linear (`O(n)`)
+- n log-star n (`O(n log * n)`)
+- linearthmic (`O(n log n)` `O(log n!)`)
+- quadratic (`O(n^2)`)
+- polynomial (`O(n^c)`)
+- exponential (`2^O(n)`)
+- factorial (`O(n!)`)
+
 
 ## Graph
 
