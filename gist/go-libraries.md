@@ -5,9 +5,7 @@ title: Go (Libraries)
 
 # Go (Libraries)
 
-More list at [awesome-go](https://awesome-go.com/)
 
-### Libraries
 
 - `github.com/urfave/cli`: Command Line Interface
 - `github.com/Sirupsen/logrus`: Logging
@@ -35,7 +33,4 @@ More list at [awesome-go](https://awesome-go.com/)
 - `github.com/cenkalti/backoff`: Exponential Backoff
 - `github.com/Knetic/govaluate`: Arbitrary expression evaluation for golang
 
-
-### Sample Project
-
-[Slack Interactive (with button)](https://github.com/tcnksm/go-slack-interactive)
+More list at [awesome-go](https://awesome-go.com/)

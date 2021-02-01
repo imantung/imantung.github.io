@@ -5,8 +5,22 @@ title: Algorithm
 
 # Algorithm
 
-- Snikolov-algorithm
-- [Exponential backoff](https://en.wikipedia.org/wiki/Exponential_backoff)
+Snikolov-algorithm
+
+[Exponential backoff](https://en.wikipedia.org/wiki/Exponential_backoff)
+
+
+Graph
+- Breadth-First Search (BFS)
+  - Sortest Path
+- Depth-First Search (DFS)
+  - all posible result
+  - search on graph
+
+String searching algorithms
+- Rabin-Karp
+- Boyer–Moore
+- Knuth–Morris–Pratt (KMP)
 
 ## Complexity analysis (Time & Space)
 
@@ -31,13 +45,3 @@ Ref:
 - polynomial (`O(n^c)`)
 - exponential (`2^O(n)`)
 - factorial (`O(n!)`)
-
-
-## Graph
-
-Breadth-First Search (BFS)
-- Sortest Path
-
-Depth-First Search (DFS)
-- all posible result
-- search on graph

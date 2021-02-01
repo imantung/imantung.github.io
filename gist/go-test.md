@@ -25,7 +25,7 @@ func TestMain(m *testing.M) {
 }
 ```
 
-Mockinng using [GoMock](https://github.com/golang/mock)
+Mocking using [GoMock](https://github.com/golang/mock)
 ```bash
 # install gomock
 go get github.com/golang/mock/gomock
@@ -45,3 +45,14 @@ Get coverage rate ([source](https://github.com/vieux/gocover.io/blob/master/work
 ```bash
 go test -covermode=count -coverprofile=coverage.out ./internal/... | grep coverage | cut -d ' ' -f 2 | sed 's/%//g'
 ```
+
+## Benchmarking
+
+Interpreting result
+```
+BenchmarkCountParallel-2   	   10000	    163742 ns/op	       0 B/op	       0 allocs/op
+```
+- `2`: num procs
+- `1000`: number of interation run
+- `163742 ns/op`: average time each function call takes to complete
+- `0 B/op`: memory block (present because of the -benchmem flag)

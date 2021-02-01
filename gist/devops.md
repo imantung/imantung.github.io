@@ -135,10 +135,6 @@ Tracing:
 - <https://www.jaegertracing.io/>
 - <https://opentracing.io/>
 
-
-
-
-
 ## Twelve Factor App
 
 [12factor.net](https://12factor.net/)

@@ -62,30 +62,6 @@ ioutil.NopCloser(reader)
 - `github.com/pkg/profile`: simple profiling library (for research/example)
 
 
-### Vendoring 
-
-Using [glide](https://glide.sh/)
-```bash
-brew install glide
-
-glide create # create glide.yaml
-glide install # start pulling
-glide up # update version
-```
-
-Using [dep](https://golang.github.io/dep/)
-```bash
-brew install dep
-
-dep init
-dep ensure
-dep ensure -add github.com/foo/bar github.com/baz/quux
-dep ensure -update
-```
-
-
-
-
 ### GOOS/GOARCH
 
 [More detail list](https://gist.github.com/asukakenji/f15ba7e588ac42795f421b48b8aede63)
@@ -113,19 +89,3 @@ go tool dist list
 - `WithDeadline`: the process can be expired
 - `WithTimeout`: same with `WithDeadline`
 
-
-### Module
-
-- <https://arslan.io/2019/08/02/why-you-should-use-a-go-module-proxy/>
-
-### Debug
-
-```go
-// ElapsedTimeFn to print elapsed time of function
-func ElapsedTimeFn(name string) func() {
-	start := time.Now()
-	return func() {
-		log.Debugf("%s took %v\n", name, time.Since(start))
-	}
-}
-```
