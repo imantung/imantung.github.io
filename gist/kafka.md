@@ -79,7 +79,6 @@ cd kafka-manager
 ./sbt clean dist
 ```
 
-
 [ActorModel.scala](https://github.com/yahoo/kafka-manager/blob/5edd5e96ac4a8a3701b8e01922e256c052ce3f29/app/kafka/manager/model/ActorModel.scala#L416-L420)
 
 `Brokers Skewed` = number of partitions > avg partitions per broker (on the given topic).
@@ -87,3 +86,32 @@ cd kafka-manager
 
 `Brokers Spread` = percentage of brokers in the cluster that has partitions for the given topic.
 e.g. 3 brokers share a topic that has 2 partitions, so 66% of the brokers have partitions for this topic
+
+
+## Consumer
+
+[Consume without group id](https://github.com/confluentinc/confluent-kafka-python/issues/250)
+- set `enable.auto.commit` to False
+- set the `TopicPartition .offset` to `OFFSET_BEGINNING`, `OFFSET_END` or an absolute offset to start consuming from - the default is to used the committed offset.
+
+## Spring Kafka
+
+The class of your @KafkaListener must implement a ConsumerSeekAware class, which will permit to the listener to control the offset seeking when partitions are attributed. (source : https://docs.spring.io/spring-kafka/reference/htmlsingle/#seek )
+```java
+public class KafkaMessageListener extends AbstractConsumerSeekAware  {
+    @KafkaListener(topics = "your.topic")
+    public void listen(byte[] payload) {
+        // ...
+    }
+
+   
+
+    @Override
+    public void onPartitionsAssigned(Map<TopicPartition, Long> assignments, ConsumerSeekCallback callback) {
+        assignments.forEach((t, o) -> callback.seekToEnd(t.topic(), t.partition()));
+
+        // from beginning
+        // assignments.forEach((t, o) -> callback.seekToBeginning(t.topic(), t.partition())); 
+    }
+}
+```
