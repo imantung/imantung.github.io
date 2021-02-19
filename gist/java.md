@@ -5,6 +5,7 @@ title: Java
 
 # Java
 
+JVM:
 - [JVM Options](https://www.oracle.com/technetwork/articles/java/vmoptions-jsp-140102.html)
 - [JVM Enhancements](https://docs.oracle.com/javase/7/docs/technotes/guides/vm/performance-enhancements-7.html)
 - <https://www.baeldung.com/jvm-parameters>
@@ -13,6 +14,9 @@ Non standard option
 - Use `java -X` to display non standard option
 - option begin with `-X` are non-standard (not guaranteed to be supported on all VM implementations), and are subject to change without notice
 - option specified with `-XX `are not stable and are subject to change without notice
+
+Interesting:
+- <https://www.jooq.org/>: generates Java code from your database and lets you build type safe SQL queries through its fluent API
 
 List of currently running java process
 ```bash

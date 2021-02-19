@@ -97,3 +97,9 @@ Types of delivery semantics:
 ### C4 Model
 
 <https://c4model.com/>
+
+
+## Clean architecture
+
+- https://javadevguy.wordpress.com/2017/07/27/a-detailed-analysis-of-the-clean-architecture-from-an-object-oriented-perspective/
+- https://blog.ploeh.dk/2013/12/03/layers-onions-ports-adapters-its-all-the-same/

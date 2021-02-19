@@ -6,36 +6,31 @@ title: Tech Lead
 # Leadership
 
 Read:
-- [Please stop susing the feedback sandwich](https://www.forbes.com/sites/alisacohn/2017/06/20/please-stop-using-the-feedback-sandwich/#3fc8d5977945)
 - [Situational Leadership Theory](https://en.wikipedia.org/wiki/Situational_leadership_theory)
-- [E3 Development](https://cardinalatwork.stanford.edu/learning-stanford/performance-management/process/3e-development)
 - [Effective-Technical-Leadership](https://medium.com/always-be-coding/effective-technical-leadership-b193a544e771)
-- [Applicant Tracking Systems (ATS)](https://resumegenius.com/blog/resume-help/applicant-tracking-systems-resume-keyword-help)
-- [What motivates us at work? More than money](https://ideas.ted.com/what-motivates-us-at-work-7-fascinating-studies-that-give-insights)
 - [Introducing Engineering Management to a Growing Organization](https://blog.gitprime.com/introducing-engineering-management-growing-organization/)
 - <https://labs.spotify.com/2014/09/16/squad-health-check-model/>
-- <https://theadaptivemarketer.com/2016/05/16/extreme-ownership-leadership-lessons-seal-team/>
-
-Tools:
-- [gitprime](https://www.gitprime.com/): integrated with repo, ticketing, etc and give engineer productivity metrics
-- [recruiterbox](https://recruiterbox.com/): recruitment management
 - [Team Playbook by Atlanssian](https://www.atlassian.com/team-playbook)
 
-"Benefit of the doubt"
+Culture Trend
+- [996](https://en.wikipedia.org/wiki/996_working_hour_system)
+- [Touching fish](https://www.scmp.com/lifestyle/article/3116109/young-employees-rebel-against-chinese-work-ethic-being-lazy-refusing)
+
 
 ## Negotation
+
+"Benefit of the doubt"
 
 - [BATNA](https://en.wikipedia.org/wiki/Best_alternative_to_a_negotiated_agreement): Best Alternative to a Negotiated Agreement
 
 Bad faith negotiation = pretend to reason to reach settlement, but have no intention to do so
 
 
-
-
 ## Hiring
 
 Good reading:
 - <https://github.com/poteto/hiring-without-whiteboards>
+- [Applicant Tracking Systems (ATS)](https://resumegenius.com/blog/resume-help/applicant-tracking-systems-resume-keyword-help)
 
 My note:
 1. Always process insider referral
@@ -55,6 +50,7 @@ Ref:
 - <https://www.scoro.com/blog/16-essential-project-kpis/>
 - <https://engineering-management.space/post/productivity-index/>
 - <https://engineering-management.space/post/software-engineering-kpis/>
+- <https://cardinalatwork.stanford.edu/learning-stanford/grow-perform/our-approach>
 
 
 [5 Developer metrics Every Software Manager should care about](https://blog.gitprime.com/5-developer-metrics-every-software-manager-should-care-about/):
@@ -64,24 +60,18 @@ Ref:
 4. Active Days: a day in which an engineer contributed code to the project
 5. Efficiency: the percentage of an engineer’s contributed code that’s productive, which generally involves balancing coding output against the code’s longevity. 
 
-## Culture Trend
 
-- [996](https://en.wikipedia.org/wiki/996_working_hour_system)
-- [Touching fish](https://www.scmp.com/lifestyle/article/3116109/young-employees-rebel-against-chinese-work-ethic-being-lazy-refusing)
-
-## Competency Metric
-
+Engineer Competency Metric
 - [Medium](https://docs.google.com/spreadsheets/d/1EO-Dbsayn8Nz9Ii3MKcwRbt-EIJ2MjQdpoyhh0tBdZk/edit#gid=1441368371)
 - [SongKick](https://www.songkick.com/downloads/growth-framework/sk-growth-framework.pdf)
 - [Monzo](https://progression.monzo.com/engineering/data)
 - [Buffer](https://open.buffer.com/career-framework/)
 - [Spotify](https://labs.spotify.com/2016/02/15/spotify-technology-career-steps/#careerstepsfortechemployees)
 
-
-
 ## Extreme Ownership
 
-<http://scaling4growth.com/wp-content/uploads/2016/09/Extreme-Ownership.pdf>
+- <http://scaling4growth.com/wp-content/uploads/2016/09/Extreme-Ownership.pdf>
+- <https://theadaptivemarketer.com/2016/05/16/extreme-ownership-leadership-lessons-seal-team/>
 
 
 - Part I: Winning the War Within
@@ -131,10 +121,27 @@ Six Sigma
 - [Poka Yoke](https://kanbanize.com/lean-management/improvement/what-is-poka-yoke/): any mechanism in a Lean manufacturing process that helps to avoid mistakes. (Zero Quality Control)
 - 5 Whys Method
 
-## Safe To Fail
+## Safe To Fail Environment
 
 - Do we encourage this "safe to fail" environment in our team?
 - Do we as a leader regularly giving and receiving feedback?
 - Do I create an environment where my team can give any feedback to me?
 - If someone in my team makes mistakes, as a leader what do I do?
 - As a leader, if I made mistakes, what did I do?
+
+## Giving Feedback
+
+- [Please stop susing the feedback sandwich](https://www.forbes.com/sites/alisacohn/2017/06/20/please-stop-using-the-feedback-sandwich/#3fc8d5977945)
+
+## Motivation
+
+- [What motivates us at work? More than money](https://ideas.ted.com/what-motivates-us-at-work-7-fascinating-studies-that-give-insights)
+
+## Conflict Management
+
+Styles:
+1. Accommodating
+2. Avoiding
+3. Compromising
+4. Competing
+5. Collaboration
