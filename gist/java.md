@@ -5,18 +5,6 @@ title: Java
 
 # Java
 
-JVM:
-- [JVM Options](https://www.oracle.com/technetwork/articles/java/vmoptions-jsp-140102.html)
-- [JVM Enhancements](https://docs.oracle.com/javase/7/docs/technotes/guides/vm/performance-enhancements-7.html)
-- <https://www.baeldung.com/jvm-parameters>
-
-Non standard option
-- Use `java -X` to display non standard option
-- option begin with `-X` are non-standard (not guaranteed to be supported on all VM implementations), and are subject to change without notice
-- option specified with `-XX `are not stable and are subject to change without notice
-
-Interesting:
-- <https://www.jooq.org/>: generates Java code from your database and lets you build type safe SQL queries through its fluent API
 
 List of currently running java process
 ```bash
@@ -28,8 +16,7 @@ Check heap of java process
 jmap -heap PID
 ```
 
-
-### Installation
+## Installation
 
 Change java version
 ```bash
@@ -60,89 +47,38 @@ echo debconf shared/accepted-oracle-license-v1-1 seen true | sudo debconf-set-se
 sudo aptitude -y install oracle-java8-installer
 ```
 
-### Gradle
+## JVM Tuning
 
-`groupId`: unique identification across all projects.
-eg. org.apache.maven, org.apache.commons
+Ref:
+- [JVM Options](https://www.oracle.com/technetwork/articles/java/vmoptions-jsp-140102.html)
+- [JVM Enhancements](https://docs.oracle.com/javase/7/docs/technotes/guides/vm/performance-enhancements-7.html)
+- <https://www.baeldung.com/jvm-parameters>
 
-`artifactId`: name of the jar without version.
-eg. maven, commons-math
+Note on non standard option
+- Use `java -X` to display non standard option
+- option begin with `-X` are non-standard (not guaranteed to be supported on all VM implementations), and are subject to change without notice
+- option specified with `-XX `are not stable and are subject to change without notice
 
-`version`: project version
+## Double Curly Brace
 
-Fat Jar
-```
-task fatJar(type: Jar) {
-    group 'build'
-    description 'crate  a single Jar with all dependecies'
-    manifest {
-        attributes 'Implementation-Title': 'Gradle Jar File Example',
-                'Implementation-Version': version,
-                'Main-Class': 'com.mkyong.DateUtils'
-    }
-    baseName = project.name + '-all'
-    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
-    with jar
-}
-```
+Use in test only since the practice can lead memory leak ([src](https://blog.jooq.org/2014/12/08/dont-be-clever-the-double-curly-braces-anti-pattern/))
 
-Set environment variable
-```
-test {
-    environment "SOURCE_SERVERS", "servers"
-    environment "SOURCE_TOPICS", "topic1,topic2,topic3"
-    environment "SOURCE_GROUP", "group"
-    environment "SOURCE_POLL_TIMEOUT", "1"
-    environment "DESTINATION_SERVERS", "servers"
-    environment "DESTINATION_TOPICS", "topic1,topic2"
+```java
+Map map = new HashMap(){{
+    put("firstName", "John");
+    put("lastName", "Smith");
+    put("organizations", new HashMap(){{
+        put("0", new HashMap(){{
+            put("id", "1234");
+        }});
+        put("abc", new HashMap(){{
+            put("id", "5678");
+        }});
+    }});
+}};
 
-    testLogging {
-        events "passed", "skipped", "failed", "standardOut", "standardError"
-    }
-}
-```
-
-
-### Test Coveratge using Java Maven
-
-<https://stackoverflow.com/questions/36199422/how-to-make-maven-unit-test-code-coverage-work>
-
-```xml
-<project>
-...
-
-    <dependencies>
-        ...
-    </dependencies>
-
-    <build>
-        <plugins>
-            ...
-            <!-- Code Coverage report generation -->
-            <plugin>
-                <groupId>org.jacoco</groupId>
-                <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.7.9</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>prepare-agent</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>generate-code-coverage-report</id>
-                        <phase>test</phase>
-                        <goals>
-                            <goal>report</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
-</project>
-```
-
-```bash
-mvn test
+List<Integer> list = new ArrayList<Integer>() {{
+   add(1);
+   add(2);
+}};
 ```

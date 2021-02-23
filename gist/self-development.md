@@ -92,3 +92,20 @@ How to being inspired
   - Build a vision
   - Have an opinion
 5. Have a purpose
+
+## Positive Thinking
+
+What is NOT
+- NOT about suppressing negative emotions
+- NOT about pretending or faking
+- NOT a ‘cure all’
+
+## 7 Habits
+
+1. BE PROACTIVE 
+2. BEGIN WITH THE END IN MIND
+3. PUT FIRST THINGS FIRST (We don’t manage time. We can only I manage ourselves)
+4. SEEK TO UNDERSTAND, THEN BE UNDERSTOOD
+5. THINK "WIN/WIN" (If a deal hurts them, it will hurt you. )
+6. SYNERGIZE 
+7. SHARPEN THE SAW
