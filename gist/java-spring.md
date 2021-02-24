@@ -5,8 +5,7 @@ title: Java Spring
 
 # Java Spring
 
-
-## Spring Kafka
+## Kafka
 
 Listen from specific offset regardless offset reset policy. Combine with `enable.auto.commit=false` for consumer without group
 ```java
@@ -75,5 +74,39 @@ public class somebusinessmockannotationstest {
 
 ## Cacheable
 
-Ref:
-- https://grizzlysoftware.pl/spring-boot-cache-with-redis/
+Note:
+- [cache with redis](https://grizzlysoftware.pl/spring-boot-cache-with-redis/)
+- `@Cacheable` not working in same class invocation
+
+
+## Spring Data
+
+Upsert (Insert or update) with RX
+```java
+Mono<Currency> mono = currencyRepo.findByCode(code).
+    flatMap(found -> {
+        found.setRate(rate);
+        return currencyRepo.save(found);
+    }).
+    switchIfEmpty(Mono.defer(() ->
+        currencyRepo.save(new Currency(code, rate))
+    ));
+```
+
+## Log4j
+
+Check logs in unit testing
+```java
+Logger logger = (Logger) LoggerFactory.getLogger(CurrencyKafkaService.class);
+ListAppender<ILoggingEvent> listAppender = new ListAppender<>();
+listAppender.start();
+logger.addAppender(listAppender);
+List<ILoggingEvent> logs = listAppender.list;
+
+// call the method...
+
+assertEquals(Level.INFO, logs.get(0).getLevel());
+assertEquals("some-info", logs.get(0).getFormattedMessage());
+```
+
+
