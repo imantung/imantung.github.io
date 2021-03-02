@@ -5,6 +5,25 @@ title: Self Development
 
 # Self Development
 
+Books:
+- 80/20 principle
+- 7 habis of highly effective people
+- power of habit
+- getting things done
+- deep work
+- eat that frog
+- first thing first
+- the one thing
+- 5 second rule
+- smarter, faster, better
+- focus
+- the coaching habit
+- 168 hour
+- make time
+- To-Do List Formula
+- Hot to Stop Procrastinating
+- Effective Decision-Making
+
 
 ### Flexing
 
@@ -100,7 +119,7 @@ What is NOT
 - NOT about pretending or faking
 - NOT a ‘cure all’
 
-## 7 Habits
+## 7 habis of highly effective people
 
 1. BE PROACTIVE 
 2. BEGIN WITH THE END IN MIND
@@ -109,3 +128,26 @@ What is NOT
 5. THINK "WIN/WIN" (If a deal hurts them, it will hurt you. )
 6. SYNERGIZE 
 7. SHARPEN THE SAW
+
+## 168 hours You have more time than you think
+
+- 168 — that’s the number of hours in a week.
+- Not 24, discover yourself under 168 hours lens.
+- Sleep-56, Work-60, that’s 52 left, over 7 hours per day!
+- Part one — Your 168 hours: Maintain a weekly time log and a “list of 100 dreams”.
+- Part two — At work: Match it with your competency and interest.
+- Part three — At home: Reduce television time (or loose 20–30 hours!) and outsource household chores.
+- The book has ample statistics, exciting questions, and retellings.
+- 168 hours — consider a blank slate, how would you fill it?
+- Fill bits of time with bits of joy.
+- My168Hours.com
+
+## 5 seconds rule
+
+<https://melrobbins.com/five-elements-5-second-rule/>
+
+- You are one decision away from a completely different life
+- You can’t control how you feel. But you can always choose how you act.
+- I was the problem and in five seconds, I could push myself and become the solution.
+- If you have an instinct to act on a goal, you must physically move within 5 seconds or your brain will kill it.
+
