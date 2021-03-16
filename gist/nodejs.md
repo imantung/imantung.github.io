@@ -65,3 +65,17 @@ Try one of below:
 1. Remove `package-lock.json`
 2. Clear cache `npm cache clean --force`
 3. NPM Rebuild `npm rebuild`
+
+
+## Code snippet
+
+[Read file line by line](https://stackoverflow.com/questions/6156501/read-a-file-one-line-at-a-time-in-node-js)
+```js
+var lineReader = require('readline').createInterface({
+  input: require('fs').createReadStream('file.in')
+});
+
+lineReader.on('line', function (line) {
+  console.log('Line from file:', line);
+});
+```

@@ -7,31 +7,9 @@ title: Distributed Computing
 
 Ref
 - [Distributed systems cheat sheet](http://dimafeng.com/2016/12/04/distributed-systems/)
-- [Distributed Unique ID Sequence Number Generator](https://www.callicoder.com/distributed-unique-id-sequence-number-generator/)
-- [Multi-Processing Module](https://httpd.apache.org/docs/2.4/mod/prefork.html)
-- [You can't have exactly-once delivery](https://bravenewgeek.com/you-cannot-have-exactly-once-delivery/)
-- [Distributed Hash Tables: Architecture and Implementation](https://www.usenix.org/legacy/publications/library/proceedings/osdi2000/full_papers/gribble/gribble_html/node4.html)
-- [Consistent Hashing](https://medium.com/@sent0hil/consistent-hashing-a-guide-go-implementation-fe3421ac3e8f)
-- [Chord Presentation](https://www.slideshare.net/GertThijs/chord-presentation)
-- [How sharding works](https://medium.com/@jeeyoungk/how-sharding-works-b4dec46b3f6)
-- [RFC7230 - Message Syntax & Routing](https://tools.ietf.org/html/rfc7230#section-2.3)
 - <https://github.com/donnemartin/system-design-primer>
 - <https://www.cloudcomputingpatterns.org/>
 - <https://docs.microsoft.com/en-us/azure/architecture/guide/>
-
-Topics:
-- Key Characteristics of Distributed Systems
-- Load Balancing
-- Caching
-- Data Partitioning
-- Indexes
-- Proxies
-- Redundancy and Replication
-- SQL vs. NoSQL
-- CAP Theorem
-- Consistent Hashing
-- Long-Polling vs WebSockets vs Server-Sent Events
-
 
 ## Distributed Computing
 
@@ -59,47 +37,80 @@ Topics:
 
 `BASE`: Basically Available, Soft state, [Eventually consistency](https://en.wikipedia.org/wiki/Eventual_consistency)
 
-`HA` = High Availability = No Downtime, Always available
+## Availability & Reliability 
 
-`SPOF` = Single Point of Failure = If it fails, will stop the entire system from working
 
-[Defining failure](https://blog.fosketts.net/2011/07/06/defining-failure-mttr-mttf-mtbf/)
-- `RPO` = Recovery Point Objective = How much data can we loose
-- `RTO` = Recovery Time Objective = How long it take to Recovery
+`Availability` = system can serve the request
+- load balancing
 
-`MTBF` = Mean-Time-Between-Failures = Time between failures
+High availability (HA) mean no downtime always available
 
-[Hystrix](https://github.com/Netflix/Hystrix): latency and fault tolerance library
+`Reliability` = availability + working properly
+- automated test
+
+`Single point of failure` = if it fails, will stop the entire system from working
+
+Metrics:
+- Uptime
+- Downtime
+- [Failures](https://blog.fosketts.net/2011/07/06/defining-failure-mttr-mttf-mtbf/)
+  - `RPO` = Recovery Point Objective = How much data can we loose
+  - `RTO` = Recovery Time Objective = How long it take to Recovery
+  - `MTBF` = Mean-Time-Between-Failures = Time between failures
+
+## Durability & Resiliency
+
+`Durability` refers to the on-going existence of the object or resource. Note that it does not mean you can access it, only that it continues to exist.
+- By taking regular backups
+- Storing resources in different geographical locations to sustain disasters.
+- Performing checksums on data and repairing the corrupted data from backups.
+
+`Resiliency` = self-heal
+- Desing to identify faulty software or hardware and automate the repair/restart features or in case of beyond repair, just take it out of the working system.
+- Active failover sites for applications and active replication to restore corrupted data.
+
+## Redundancy and Replication
 
 [Data Deduplication](https://en.wikipedia.org/wiki/Data_deduplication): Technique for eliminating duplicate copies of repeating data
+
+`CRDT` = [Conflit-free replicated data type](https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type)
+
+## Consistent Hashing
+- [Distributed Hash Tables: Architecture and Implementation](https://www.usenix.org/legacy/publications/library/proceedings/osdi2000/full_papers/gribble/gribble_html/node4.html)
+- [Consistent Hashing](https://medium.com/@sent0hil/consistent-hashing-a-guide-go-implementation-fe3421ac3e8f)
+- [Chord Presentation](https://www.slideshare.net/GertThijs/chord-presentation)
+
+
+## Message Queue / Pub-Sub
+
+Ref:
+- [You can't have exactly-once delivery](https://bravenewgeek.com/you-cannot-have-exactly-once-delivery/)
 
 Types of delivery semantics:
 - at-most-once
 - at-least-once
 - exactly-once
+<!-- 
+## Rate Limiter
 
-`CRDT` = [Conflit-free replicated data type](https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type)
+On progress
 
+## SQL vs. NoSQL
 
-## System Architect
+On progress
+## Long-Polling vs WebSockets vs Server-Sent Events
 
-- [System-View-Model](https://en.wikipedia.org/wiki/View_model): View is a representation of a whole system from the perspective of a related set of concerns
-- [Entity–attribute–value model (EAV)](https://en.wikipedia.org/wiki/Entity%E2%80%93attribute%E2%80%93value_model)
+On progress -->
 
-### 4+1 Architectural View
+## Partition & Sharding
 
-- Logical view: is concerned with the functionality that the system provides to end-users.
-- Development view: illustrates a system from a programmers perspective and is concerned with software management.
-- Process view: deals with the dynamic aspect of the system, explains the system processes and how they communicate, and focuses on the runtime behavior of the system.
-- Physical view: depicts the system from a system engineer's point of view. It is concerned with the topology of software components on the physical layer, as well as communication between these components.
-- Use cases or scenarios are utilized to illustrate the architecture
+- [How sharding works](https://medium.com/@jeeyoungk/how-sharding-works-b4dec46b3f6)
 
-### C4 Model
+## API Gateway
 
-<https://c4model.com/>
-
-
+- [RFC7230 - Message Syntax & Routing](https://tools.ietf.org/html/rfc7230#section-2.3)
+  
 ## Clean architecture
 
-- https://javadevguy.wordpress.com/2017/07/27/a-detailed-analysis-of-the-clean-architecture-from-an-object-oriented-perspective/
-- https://blog.ploeh.dk/2013/12/03/layers-onions-ports-adapters-its-all-the-same/
+- [The Clean Architecture from an Object-Oriented perspective](https://javadevguy.wordpress.com/2017/07/27/a-detailed-analysis-of-the-clean-architecture-from-an-object-oriented-perspective/)
+- [Layers, Onions, Ports, Adapters: it's all the same](https://blog.ploeh.dk/2013/12/03/layers-onions-ports-adapters-its-all-the-same/)
