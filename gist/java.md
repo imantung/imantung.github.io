@@ -63,6 +63,7 @@ Note on non standard option
 
 Use in test only since the practice can lead memory leak ([src](https://blog.jooq.org/2014/12/08/dont-be-clever-the-double-curly-braces-anti-pattern/))
 
+{% raw %}
 ```java
 Map map = new HashMap(){{
     put("firstName", "John");
@@ -82,3 +83,4 @@ List<Integer> list = new ArrayList<Integer>() {{
    add(2);
 }};
 ```
+{% endraw %}

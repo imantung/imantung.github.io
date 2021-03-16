@@ -13,7 +13,7 @@ Ref:
 - [Security Testing Guide v4](https://www.owasp.org/images/1/19/OTGv4.pdf)
 - [SOC2](https://info.cgcompliance.com/blog/what-is-soc-2)
 
-### Color Wheel Team
+## Color Wheel Team
 
 [InfoSec colour wheel](https://hackernoon.com/introducing-the-infosec-colour-wheel-blending-developers-with-red-and-blue-security-teams-6437c1a07700)
 - Red Team: Offensive security
