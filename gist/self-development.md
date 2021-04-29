@@ -7,7 +7,7 @@ title: Self Development
 
 Books:
 - 80/20 principle
-- 7 habis of highly effective people
+- 7 habits of highly effective people
 - power of habit
 - getting things done
 - deep work

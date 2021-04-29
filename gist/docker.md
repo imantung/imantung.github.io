@@ -5,18 +5,6 @@ title: Docker
 
 # Docker
 
-- Automates the deployment as container
-- Linux-only tool
-- Developed in the Go language
-- Builds on LinuX Containers (LxC)  --> latest version not use LxC anymore
-- create Virtual Environments (VE)
-- <https://www.docker.com/>
-
-
-### Quotes
-
-> Develop, Ship and Run Any Application Anywhere
-
 ### Get Started
 
 - [Install docker dmg (doesn’t need VM)](https://docs.docker.com/docker-for-mac/install/) --> recommended
@@ -27,69 +15,33 @@ title: Docker
 - [Quick start](https://docs.docker.com/docker-for-mac/)
 - [Quick start on golang](https://blog.golang.org/docker)
 
-Quick start cheatsheet:
+
+### Cheatsheet
+
+clear containers
 ```bash
-docker version
-docker info
-docker run -d -p 80:80 --name webserver nginx
-docker ps
-docker stop webserver
-docker ps -a
-docker help ps
-docker start webserver
-docker rm -f webserver
-docker images
-docker rmi nginx
+docker rm -f $(docker ps -a -q)
+```
+clear images
+```bash
+docker rmi -f $(docker images -a -q)
 ```
 
-### Image & Container
-
-Image is basis of container.
+clear volumes
 ```bash
-# list of image
-docker images
-docker image ls
+docker volume rm $(docker volume ls -q) 
 ```
 
-Container is instance of image. The apps is running on top of container
+clean networks
 ```bash
-# run new container
-docker run -d -p 80:80 --name [container] [image]
+docker network rm $(docker network ls | tail -n+2 | awk '{if($2 !~ /bridge|none|host/){ print $1 }}')
+```
 
-# list of container
-docker container ls
-docker ps
-
-# show all including stop container
-docker ps -a
-
-# list with filter
-docker ps -aq -f status=exited
-
-# remove Container
-docker rm [container]
-
-# remove stopped containers
-docker ps -aq --no-trunc | xargs docker rm
-
-# remove containers after
-docker ps --since a1bz3768ez7g -q | xargs docker rm
-
-# remove container before
-docker ps --before a1bz3768ez7g -q | xargs docker rm
-
-# remove dangling/untagged images
+remove dangling/untagged images
+```bash
 docker ps -aq --no-trunc -f status=exited | xargs docker rm  
 ```
 
-Dockerfile is source code of the images on.
-```bash
-# build image
-docker build [directory contains Dockerfile]
-
-# remove image
-docker rmi [image name]
-```
 
 ## Docker Compose
 
@@ -97,21 +49,3 @@ Reference:
 - [GoDoRP docker compose for development and production](https://medium.com/@McMenemy/godorp-docker-compose-for-development-and-production-e37fe0a58d61)
 - [DataDog Example](https://github.com/DataDog/docker-compose-example)
 
-
-Install 
-```bash
-brew install docker-compose
-```
-
-Cheatsheet
-```bash
-docker-compose ps # list of process
-
-docker-compose start # start the service
-docker-compose stop # stop the service 
-docker-compose pause
-docker-compose unpause
-
-docker-compose up # Create and start containers
-docker-compose down # Stop and remove containers, networks, images, and volumes
-```

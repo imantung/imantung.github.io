@@ -5,13 +5,13 @@ title: DB Optimization
 
 # DB Optimization
 
-Optimization Option (from easy - hard):
-- Optimize server setting
-- Database archiving/purging
-- Optimize database connection
-- Optimize database query
-- Optimize database application
-- Optimize database structure
+The framework:
+- Optimize server setting 
+- Archiving/purging (for huge database)
+- Optimize connection (connection pool)
+- Optimize query 
+- Optimize application 
+- Optimize data structure
 
 
 Database Problem Patterns:

@@ -12,7 +12,8 @@ Read:
 - <https://labs.spotify.com/2014/09/16/squad-health-check-model/>
 - [Team Playbook by Atlanssian](https://www.atlassian.com/team-playbook)
 
-Culture Trend
+## Work Culture Phenomena
+
 - [996](https://en.wikipedia.org/wiki/996_working_hour_system)
 - [Touching fish](https://www.scmp.com/lifestyle/article/3116109/young-employees-rebel-against-chinese-work-ethic-being-lazy-refusing)
 
@@ -32,26 +33,8 @@ Good reading:
 - <https://github.com/poteto/hiring-without-whiteboards>
 - [Applicant Tracking Systems (ATS)](https://resumegenius.com/blog/resume-help/applicant-tracking-systems-resume-keyword-help)
 
-My note:
-1. Always process insider referral
-  - "Give face" to insider
-  - Motivate the insider to submit more referral
-2. Always send rejection notice with manner and feedback at positive framing
-  - Open the opportunity to the candidate to reapply in the future
-  - Good exercise for interviewer/recruiter to make objective reason for rejection
-3. Best assignment is a complete the project
-  - From the code, we see problem solving skill, logic, design and attitude of candidate
-  - Reviewing the assignment also good exercise 
   
 ## Performance Management
-
-Ref:
-- <https://www.clearpointstrategy.com/25-important-project-management-kpis/>
-- <https://www.scoro.com/blog/16-essential-project-kpis/>
-- <https://engineering-management.space/post/productivity-index/>
-- <https://engineering-management.space/post/software-engineering-kpis/>
-- <https://cardinalatwork.stanford.edu/learning-stanford/grow-perform/our-approach>
-
 
 [5 Developer metrics Every Software Manager should care about](https://blog.gitprime.com/5-developer-metrics-every-software-manager-should-care-about/):
 1. Lead Time: time period between the beginning of a project’s development and its delivery to the customer. 
@@ -112,8 +95,7 @@ A good leader has nothing to prove, but everything to prove.
 
 Ref:
 - <https://kanbanize.com/lean-management/>
-
-https://en.wikipedia.org/wiki/5S_(methodology)
+- <https://en.wikipedia.org/wiki/5S_(methodology)>
 
 Six Sigma
 
@@ -131,6 +113,7 @@ Six Sigma
 
 ## Giving Feedback
 
+Ref:
 - [Please stop susing the feedback sandwich](https://www.forbes.com/sites/alisacohn/2017/06/20/please-stop-using-the-feedback-sandwich/#3fc8d5977945)
 
 ## Motivation
