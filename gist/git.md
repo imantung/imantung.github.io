@@ -132,3 +132,21 @@ alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
 
 Enable force push
 - Version 2.7.6: setting > advance
+
+
+## Good Git Commit
+
+Good Git Commit
+- Not too much (step by step as the thinking process)
+- Not too short (focus on important change)
+- Tell what the changes and why
+- Compile or test success
+- Don’t forget to put required file e.g. migration file
+- Contain unit test 
+- No dead/commented code
+- Include pairing partner (using “Coauthored By”)
+
+Bad examples of a commit message: 
+- “Fix bug” (which bug?)
+- “Modify some_file.go” (What changes? Why?)
+- “Fix typo” (Too small) 
