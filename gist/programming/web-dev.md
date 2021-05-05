@@ -4,17 +4,17 @@ title: Web Dev
 category: Programming & Coding
 ---
 
+# Web Dev
+
+
 Ref:
 - [Google Web Fundamentals](https://developers.google.com/web/fundamentals)
 - [RESTful Checklist](https://blog.mwaysolutions.com/2014/06/05/10-best-practices-for-better-restful-api/)
 - [Best practives for A Pragmatic Restful API](https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api)
 - [Sticky vs Non Sticky Session](https://stackoverflow.com/questions/10494431/sticky-and-non-sticky-sessions)
 - [public api list](https://github.com/toddmotto/public-apis)
+
 - <http://getbem.com/naming/>
-
-
-# Web Dev
-
 - `PWA` = [Progressive Web Application](https://en.wikipedia.org/wiki/Progressive_web_applications)
 - `3DS` = [3 Domain Structure](https://securionpay.com/blog/3d-secure/)
 

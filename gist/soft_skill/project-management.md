@@ -10,7 +10,7 @@ Ref:
 - [Invest in good stories and smart task](https://xp123.com/articles/invest-in-good-stories-and-smart-tasks/)
 
 The commitee
-- [command center](https://en.wikipedia.org/wiki/Command_center)  a.k.a [war room](https://www.slideshare.net/rmurray/the-art-of-warroom)
+- [command center](https://en.wikipedia.org/wiki/Command_center) a.k.a [war room](https://www.slideshare.net/rmurray/the-art-of-warroom)
 - [Project management office (PMO)](https://en.wikipedia.org/wiki/Project_management_office): group/department that defines and maintains standards for project management within the organization
 
 ## Prioritization
