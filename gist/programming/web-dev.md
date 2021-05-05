@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Web Dev
-category: programming
+category: Programming & Coding
 ---
 
 Ref:

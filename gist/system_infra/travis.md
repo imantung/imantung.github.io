@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Travis CI
-category: system_infra
+category: System Infra
 ---
 
 # Travis CI

@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Project Management
-category: soft_skill
+category: Soft Skill
 ---
 
 # Project Management

@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Rails
-category: programming
+category: Programming & Coding
 ---
 
 # Rails

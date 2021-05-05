@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Jekyll
-category: stacks
+category: Tech Stack & Tool
 ---
 
 # Jekyll

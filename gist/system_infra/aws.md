@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: AWS
-category: system_infra
+category: System Infra
 ---
 
 # AWS

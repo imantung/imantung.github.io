@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Vagrant
-category: stacks
+category: Tech Stack & Tool
 ---
 
 # Vagrant

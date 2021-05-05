@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: UI/UX
-category: concept
+category: System Design & Architecture
 ---
 
 # UI/UX

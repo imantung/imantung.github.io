@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Networking
-category: concept
+category: System Design & Architecture
 ---
 
 # Networking

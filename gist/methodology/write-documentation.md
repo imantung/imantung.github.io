@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Write Documentation
-category: methodology
+category: Testing & Agile methodology
 ---
 
 # Write Documentation

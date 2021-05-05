@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Influx
-category: stacks
+category: Tech Stack & Tool
 ---
 
 # Influx

@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: JS
-category: stacks
+category: Tech Stack & Tool
 ---
 
 # JS (Javascript)

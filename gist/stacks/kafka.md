@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Kafka
-category: stacks
+category: Tech Stack & Tool
 ---
 
 # Kafka

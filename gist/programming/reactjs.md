@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: ReactJS
-category: programming
+category: Programming & Coding
 ---
 
 # ReactJS

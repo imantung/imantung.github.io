@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: NodeJS
-category: stacks
+category: Tech Stack & Tool
 ---
 
 # NodeJS

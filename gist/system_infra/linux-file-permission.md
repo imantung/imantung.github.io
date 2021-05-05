@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Linux (File Permission)
-category: system_infra
+category: System Infra
 ---
 
 # File Permission

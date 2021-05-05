@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: PHP
-category: programming
+category: Programming & Coding
 ---
 
 # PHP

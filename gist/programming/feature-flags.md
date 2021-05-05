@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Feature Flags
-category: programming
+category: Programming & Coding
 ---
 
 # Feature Flags

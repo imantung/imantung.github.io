@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Linux (Environment Variable)
-category: system_infra
+category: System Infra
 ---
 
 # Environment Variable

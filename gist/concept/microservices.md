@@ -1,14 +1,13 @@
 ---
 layout: gist
 title: Microservices
-category: concept
+category: System Design & Architecture
 ---
 
 # Microservices
 
 Ref:
 - [SlideShare: Legacy is Good](https://www.slideshare.net/ubertobarbini/legacy-is-good)
-- [Jaeger](https://www.jaegertracing.io/): Monitor and troubleshoot transactions in complex distributed systems
 - [microservices testing strategies](https://medium.freecodecamp.org/these-are-the-most-effective-microservice-testing-strategies-according-to-the-experts-6fb584f2edde)
 
 API Gateway: Backend for front-end

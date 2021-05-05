@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Self Development
-category: soft_skill
+category: Soft Skill
 ---
 
 # Self Development

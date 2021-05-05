@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Ruby
-category: programming
+category: Programming & Coding
 ---
 
 # Ruby

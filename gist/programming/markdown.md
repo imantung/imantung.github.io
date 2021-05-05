@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Markdown
-category: programming
+category: Programming & Coding
 ---
 
 # Markdown

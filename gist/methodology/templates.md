@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Templates
-category: methodology
+category: Testing & Agile methodology
 ---
 
 # Templates 

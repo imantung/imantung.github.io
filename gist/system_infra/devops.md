@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: DevOps
-category: system_infra
+category: System Infra
 ---
 
 # DevOps

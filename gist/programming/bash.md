@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Bash
-category: programming
+category: Programming & Coding
 ---
 
 # Bash

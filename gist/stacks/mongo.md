@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Mongo
-category: stacks
+category: Tech Stack & Tool
 ---
 
 # Mongo

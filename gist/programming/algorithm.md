@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Algorithm
-category: programming
+category: Programming & Coding
 ---
 
 # Algorithm

@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: GCP
-category: system_infra
+category: System Infra
 ---
 
 # GCP

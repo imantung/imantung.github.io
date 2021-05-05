@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Design Principle
-category: concept
+category: System Design & Architecture
 ---
 
 # Design Principle
@@ -96,7 +96,7 @@ Note:
 
 ## Rule of Optimization
 
-[Rule of optimazation](https://wiki.c2.com/?RulesOfOptimization:
+[Rule of optimazation](https://wiki.c2.com/?RulesOfOptimization):
 1. Don't do it!
 2. Don't do it, yet (for expert only)
 3. Profile before optimizing

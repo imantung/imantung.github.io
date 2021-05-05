@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Performance Test
-category: methodology
+category: Testing & Agile methodology
 ---
 
 # Performance Test

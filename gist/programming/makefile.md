@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Makefile
-category: programming
+category: Programming & Coding
 ---
 
 # Makefile

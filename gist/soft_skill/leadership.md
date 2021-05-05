@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Leadership
-category: soft_skill
+category: Soft Skill
 ---
 
 # Leadership

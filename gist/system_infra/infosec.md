@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Infosec
-category: system_infra
+category: System Infra
 ---
 
 # Infosec

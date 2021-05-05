@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Linux (Daemon)
-category: system_infra
+category: System Infra
 ---
 
 # Daemon

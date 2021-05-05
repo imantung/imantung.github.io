@@ -1,13 +1,14 @@
 ---
 layout: gist
 title: Agile
-category: methodology
+category: Testing & Agile methodology
 ---
 
 # Agile
 
+Ref:
 - [The agile coach by Atlassian](https://www.atlassian.com/agile)
-- [Feature Driven Development](https://en.wikipedia.org/wiki/Feature-driven_development)
+
 
 ## The Manifesto
 

@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Startup
-category: soft_skill
+category: Soft Skill
 ---
 
 # Startup

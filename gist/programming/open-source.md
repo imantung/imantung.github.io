@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Open Source
-category: programming
+category: Programming & Coding
 ---
 
 # Open Source

@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Postgres
-category: stacks
+category: Tech Stack & Tool
 ---
 
 # Postgres

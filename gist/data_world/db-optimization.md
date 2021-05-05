@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: DB Optimization
-category: data_world
+category: Data World
 ---
 
 # DB Optimization

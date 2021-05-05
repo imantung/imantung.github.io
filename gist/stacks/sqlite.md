@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: SQLite
-category: stacks
+category: Tech Stack & Tool
 ---
 
 # SQLite

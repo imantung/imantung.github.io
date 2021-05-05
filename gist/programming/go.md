@@ -1,12 +1,12 @@
 ---
 layout: gist
 title: Go
-category: programming
+category: Programming & Coding
 ---
 
 # Go
 
-Good Read: 
+Ref: 
 - [project layout](https://github.com/golang-standards/project-layout/blob/master/README.md)
 - [Go for Industrial Programming - Gopher EU 2018](https://peter.bourgon.org/go-for-industrial-programming/)
 - [Style guideline for Go packages](https://rakyll.org/style-packages/)
@@ -15,16 +15,7 @@ Good Read:
 - [when is the init function run](https://stackoverflow.com/questions/24790175/when-is-the-init-function-run)
 - <https://blog.kowalczyk.info/book/go-cookbook.html>
 
-### SETUP
 
-```bash
-brew install go
-mkdir $HOME/go && cd $HOME/go && mkdir bin pkg src && cd -
-echo "export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin
-" >> ~/.zshrc
-source ~/.zshrc  
-```
 
 ## Build
 

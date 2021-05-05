@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Ruby (Regex)
-category: programming
+category: Programming & Coding
 ---
 
 # Ruby (Regex)

@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Git
-category: programming
+category: Programming & Coding
 ---
 
 # Git

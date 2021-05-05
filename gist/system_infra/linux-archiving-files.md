@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Linux (Archiving Files)
-category: system_infra
+category: System Infra
 ---
 
 # Linux (Archiving Files)

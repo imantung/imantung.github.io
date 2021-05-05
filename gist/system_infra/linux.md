@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Linux
-category: system_infra
+category: System Infra
 ---
 
 # Linux

@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Testing
-category: methodology
+category: Testing & Agile methodology
 ---
 
 # Testing

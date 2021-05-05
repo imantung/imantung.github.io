@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: System Design
-category: concept
+category: System Design & Architecture
 ---
 
 # System Design

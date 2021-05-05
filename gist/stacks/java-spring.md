@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Java Spring
-category: stacks
+category: Tech Stack & Tool
 ---
 
 # Java Spring
