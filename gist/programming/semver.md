@@ -1,12 +1,11 @@
 ---
 layout: gist
-title: Versioning
-category: programming
+title: SemVer
+category: Programming & Coding
 ---
 
-# Versionig
 
-## SemVer
+# SemVer
 
 [Specification](https://semver.org/)
 

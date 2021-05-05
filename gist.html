@@ -8,16 +8,15 @@ title: Gist
   {% assign tmp = "" %}
   {% assign sortedPages = site.pages | where_exp: "page", "page.layout == 'gist'" | sort: 'category' %}
   {% for page in sortedPages %}
-    {% assign firstLetter = page.category %}
-    {% if firstLetter != tmp %}
+    {% assign category = page.category %}
+    {% if category != tmp %}
   </ul>
-  <ul>
-    
-    <div style="margin-left:-1em;">{{ firstLetter }}</div>
-    
+
+  <div>{{ category }}</div>
+  <ul>  
     {% endif %}
     {% assign tmp = "" %}
     <li><a href="{{page.url}}">{{page.title}}</a></li>
-    {% assign tmp = firstLetter %}
+    {% assign tmp = category %}
   {% endfor %}
 </div>
