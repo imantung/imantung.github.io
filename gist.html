@@ -6,9 +6,9 @@ title: Gist
 <div class="container">
   <ul>
   {% assign tmp = "" %}
-  {% assign sortedPages = site.pages | where_exp: "page", "page.layout == 'gist'" |  sort: 'title' %}
+  {% assign sortedPages = site.pages | where_exp: "page", "page.layout == 'gist'" | sort: 'category' %}
   {% for page in sortedPages %}
-    {% assign firstLetter = page.title | slice: 0 | upcase %}
+    {% assign firstLetter = page.category %}
     {% if firstLetter != tmp %}
   </ul>
   <ul>
