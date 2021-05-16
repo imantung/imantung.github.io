@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Tech Gists
+title: Other Notes
 ---
 
 <div class="container">
   <ul>
   {% assign tmp = "" %}
-  {% assign sortedPages = site.pages | where_exp: "page", "page.layout == 'tech_gist'" | sort: 'category' %}
+  {% assign sortedPages = site.pages | where_exp: "page", "page.layout == 'other_note'" | sort: 'category' %}
   {% for page in sortedPages %}
     {% assign category = page.category %}
     {% if category != tmp %}
