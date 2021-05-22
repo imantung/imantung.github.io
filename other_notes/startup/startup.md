@@ -1,7 +1,7 @@
 ---
 layout: other_note
 title: Startup
-category: Soft Skill
+category: Startup
 ---
 
 # Startup
