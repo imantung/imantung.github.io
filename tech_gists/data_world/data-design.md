@@ -1,18 +1,22 @@
 ---
 layout: tech_gist
-title: Normalization
+title: Data Design
 category: Data World
 ---
 
-# Normalization
+# Data Design
+
+`EAV`: Entity-Attribute-Value 
+
+`OTLT`: One True Lookup Table
+
+
+## Normalization
 
 > Normalize until it hurts; denormalize until it works
 
 Ref:
 - <https://www.slideshare.net/citus_data/data-modeling-normalization-and-denormalisation-postgresql-conference-europe-2018-dimitri-fontaine>
-
-
-
 
 Data Anomaly:
 - Update Anomalies
@@ -31,4 +35,3 @@ Data Anomaly:
 
 3NF: 
 - no partial transitive dependency (A -> B, B -> C, C is transitive depend to A)
-
