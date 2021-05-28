@@ -174,6 +174,22 @@ import _ "net/http/pprof"
 // /debug/pprof/block
 ```
 
+## Graceful Shutdown
+
+```go
+exitCh := make(chan os.Signal)
+signal.Notify(exitCh, syscall.SIGTERM, syscall.SIGINT)
+
+var errs errkit.Errors
+go func() {
+    defer func() { exitCh <- syscall.SIGTERM }()
+    // start
+}()
+<-exitCh
+
+// shutdown
+```
+
 ## Context
 
 - `WithValue`: the process may need this value

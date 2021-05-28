@@ -7,6 +7,7 @@ category: Soft Skill
 # Work Culture
 
 Ref:
+- [Airmason Culture Books](https://blog.airmason.com/category/culture-books/)
 - [996](https://en.wikipedia.org/wiki/996_working_hour_system)
 - [Touching fish](https://www.scmp.com/lifestyle/article/3116109/young-employees-rebel-against-chinese-work-ethic-being-lazy-refusing)
 
