@@ -20,7 +20,13 @@ Tools:
 
 ### Term
 
-- [Shakedown](https://en.wikipedia.org/wiki/Shakedown_(testing)):  period of testing
+[Shakedown](https://en.wikipedia.org/wiki/Shakedown_(testing)):  period of testing
+
+Equivalence Partitioning = Equivalence Class Partitioning = ECP
+
+Boundary value analysis = BVA
+
+Functional Specification Docuemnt
 
 ### Testing Type 
 
