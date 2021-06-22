@@ -3,8 +3,6 @@ layout: tech_gist
 title: SemVer
 category: Programming & Coding
 ---
-
-
 # SemVer
 
 [Specification](https://semver.org/)

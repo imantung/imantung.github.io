@@ -46,7 +46,7 @@ SELECT pg_reload_conf();    -- Reload config
 Ref:
 - [Visualize EXPLAIN](https://tatiyants.com/pev/#/plans/new)
 - [More readable EXPLAIN](https://explain.depesz.com/)
-- [Postgres tuning query plans](https://blog.gojekengineering.com/the-postgres-performance-tuning-manual-query-plans-52a023c2342d)
+- [Postgres tuning query plans](https://www.gojek.io/blog/the-postgres-performance-tuning-manual-query-plans)
 - [Parallel Queries](https://www.percona.com/blog/2019/02/21/parallel-queries-in-postgresql/)
 - [random_page_cost configuration](https://amplitude.engineering/how-a-single-postgresql-config-change-improved-slow-query-performance-by-50x-85593b8991b0)
 

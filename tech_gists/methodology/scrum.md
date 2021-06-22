@@ -15,6 +15,9 @@ The ceremonies:
 2. Sprint planning
 3. Sprint
 4. Daily Scrum or Stand Up
+    1. Dit it yesterday?
+    2. Will do it today? 
+    3. Any impediment?
 5. Sprint review
 6. Sprint retrospective
 
@@ -30,9 +33,6 @@ The ceremonies:
 
 ### Daily Standup
 
-1. Dit it yesterday?
-2. Will do it today? 
-3. Any impediment?
 
 ### Retrospective 
 
