@@ -6,7 +6,7 @@ title: Tech Gists
 <div class="container">
   <ul>
   {% assign tmp = "" %}
-  {% assign sortedPages = site.pages | where_exp: "page", "page.layout == 'tech_gist'" | sort: 'category' %}
+  {% assign sortedPages = site.pages | where_exp: "page", "page.layout == 'gist'" | sort: 'category' %}
   {% for page in sortedPages %}
     {% assign category = page.category %}
     {% if category != tmp %}
