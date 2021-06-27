@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Kubernetes
-category: Tech Stacks
+category: Infra/Clouds
 ---
 
 # Kubernetes

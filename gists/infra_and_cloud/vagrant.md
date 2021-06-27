@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Vagrant
-category: Tech Stacks
+category: Infra/Clouds
 ---
 
 # Vagrant

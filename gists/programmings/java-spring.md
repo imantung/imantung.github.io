@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Java Spring
-category: Tech Stacks
+category: Programmings
 ---
 
 # Java Spring
@@ -9,7 +9,7 @@ category: Tech Stacks
 ## Kafka
 
 Listen from specific offset regardless offset reset policy. Combine with `enable.auto.commit=false` for consumer without group
-```java
+```java 
 public class KafkaMessageListener extends AbstractConsumerSeekAware  {
     @KafkaListener(topics = "your.topic")
     public void listen(byte[] payload) {

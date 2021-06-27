@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Consul
-category: Tech Stacks
+category: Infra/Clouds
 ---
 
 # Consul

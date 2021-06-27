@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: UI/UX
-category: System Designs
+category: Software Development
 ---
 
 # UI/UX
