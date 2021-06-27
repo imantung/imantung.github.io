@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Maven
-category: Tech Stack & Tool
+category: Tech Stacks
 ---
 
 # Maven

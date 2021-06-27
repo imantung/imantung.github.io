@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Chef
-category: Tech Stack & Tool
+category: Tech Stacks
 ---
 
 # Chef

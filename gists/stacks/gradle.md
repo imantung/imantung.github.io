@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Gradle
-category: Tech Stack & Tool
+category: Tech Stacks
 ---
 
 #    Gradle

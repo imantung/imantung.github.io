@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Vim
-category: Tech Stack & Tool
+category: Tech Stacks
 ---
 
 # Vim

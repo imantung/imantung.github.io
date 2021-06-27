@@ -1,10 +1,10 @@
-<nav class="container mt-3">
-    <ul class="nav nav-tabs">
-        <li class="nav-item">
-            <a href="/" class="nav-link {% if page.url == '/' or page.layout == 'gist' %}active{% endif %}">Gists</a>
+<nav>
+    <ul class="hbar">
+        <li>
+            <a href="/" class="{% if page.url == '/' or page.layout == 'gist' %}active{% endif %}">Gists</a>
         </li>
-        <li class="nav-item">
-            <a href="/quotes/" class="nav-link {% if page.url == '/quotes/' %}active{% endif %}">Quotes</a>
+        <li>
+            <a href="/quotes/" class="{% if page.url == '/quotes/' %}active{% endif %}">Quotes</a>
         </li>
     </ul>
 </nav>

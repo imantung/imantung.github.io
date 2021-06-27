@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: MySQL
-category: Tech Stack & Tool
+category: Tech Stacks
 ---
 
 # MySQL

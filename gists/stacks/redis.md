@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Redis
-category: Tech Stack & Tool
+category: Tech Stacks
 ---
 
 # Redis

@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Java
-category: Tech Stack & Tool
+category: Tech Stacks
 ---
 
 # Java

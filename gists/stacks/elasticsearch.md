@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Elasticsearch
-category: Tech Stack & Tool
+category: Tech Stacks
 ---
 
 # Elasticsearch

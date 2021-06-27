@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: FluentD
-category: Tech Stack & Tool
+category: Tech Stacks
 ---
 
 # FluentD

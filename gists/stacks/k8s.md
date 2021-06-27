@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: Kubernetes
-category: Tech Stack & Tool
+category: Tech Stacks
 ---
 
 # Kubernetes

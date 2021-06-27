@@ -1,7 +1,7 @@
 ---
 layout: gist
 title: GRPC
-category: Tech Stack & Tool
+category: Tech Stacks
 ---
 
 # GRPC

@@ -4,19 +4,18 @@ title: Tech Gists
 ---
 
 <div class="container">
-  <ul>
-  {% assign tmp = "" %}
-  {% assign sortedPages = site.pages | where_exp: "page", "page.layout == 'gist'" | sort: 'category' %}
-  {% for page in sortedPages %}
-    {% assign category = page.category %}
-    {% if category != tmp %}
-  </ul>
+  
+  {% for category in site.data.categories %}
+    <h2>{{ category.title }}</h2>
 
-  <div>{{ category }}</div>
-  <ul>  
-    {% endif %}
-    {% assign tmp = "" %}
-    <li><a href="{{page.url}}">{{page.title}}</a></li>
-    {% assign tmp = category %}
+    <ul>
+    {% for page in site.pages %} 
+      {% if page.layout == 'gist' and page.category == category.title%}
+      <li><a href="{{page.url}}">{{page.title}}</a></li>
+      {% endif %}
+    {% endfor %}  
+    </ul>
+  <br />
   {% endfor %}
+  
 </div>
