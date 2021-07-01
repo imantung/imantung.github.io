@@ -1,6 +1,6 @@
 ---
 layout: gist
-title: Recruitment
+title: Staffing
 category: Soft Skills
 ---
 
