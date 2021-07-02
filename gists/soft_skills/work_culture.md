@@ -13,6 +13,7 @@ Ref:
 
 Office Politic:
 - https://medium.com/the-post-grad-survival-guide/9-rules-you-need-to-know-to-survive-in-the-corporate-world-4793ca946451
+- https://medium.com/management-matters/managing-up-even-when-your-boss-is-delusional-f923dbe74cd7
 
 
 ## Safe To Fail Environment

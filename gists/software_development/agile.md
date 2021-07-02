@@ -8,7 +8,7 @@ category: Software Development
 
 Ref:
 - [The agile coach by Atlassian](https://www.atlassian.com/agile)
-
+- https://medium.com/the-value-maximizers/product-owner-vs-project-manager-356413dc431
 
 The Manifesto:
 1. Our highest priority is to satisfy the customer through **early and continuous delivery** of valuable software.
