@@ -1,10 +1,10 @@
 ---
 layout: gist
-title: Testing
+title: QA
 category: Software Development
 ---
 
-# Testing
+# QA
 
 <img src="{{site.baseurl}}/gist/qa/convention-microservices-testing.png" style="max-width: 100%;">
 
@@ -34,29 +34,3 @@ Functional Specification Docuemnt
 - [Performance Testing](http://softwaretestingfundamentals.com/performance-testing/): determine how a system performs in terms of responsiveness and stability under a certain load
 - [Smoke Test](http://softwaretestingfundamentals.com/smoke-testing/): ensuring that the most important functions work (Build Verification Testing)
 - [Sanity Test](https://www.guru99.com/smoke-sanity-testing.html): Determine that the proposed functionality works roughly as expected
-
-### Unit Testing
-
-[F.I.R.S.T Principle](https://github.com/ghsukumar/SFDC_Best_Practices/wiki/F.I.R.S.T-Principles-of-Unit-Testing)
-- Fast
-- Isolated/Independent
-- Repeatable
-- Self-Validating
-- Thorough/Timely
-
-
-### Testivus
-
-[The Way of Testivus](http://www.agitar.com/downloads/TheWayOfTestivus.pdf)
-- If you write code, write tests.
-- Don’t get stuck on unit testing dogma.
-- Embrace unit testing karma.
-- Think of code and test as one.
-- The test is more important than the unit.
-- The best time to test is when the code is fresh.
-- Tests not run waste away.
-- An imperfect test today is better than a perfect test someday.
-- An ugly test is better than no test.
-- Sometimes, the test justifies the means.
-- Only fools use no tools.
-- Good tests fail.

@@ -6,10 +6,9 @@ category: Programmings
 
 # Algorithm
 
-Snikolov-algorithm
-
-[Exponential backoff](https://en.wikipedia.org/wiki/Exponential_backoff)
-
+Algorthm list
+- Snikolov-algorithm
+- [Exponential backoff](https://en.wikipedia.org/wiki/Exponential_backoff)
 
 Graph
 - Breadth-First Search (BFS)
