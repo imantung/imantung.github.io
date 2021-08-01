@@ -74,6 +74,3 @@ Activity:
 - What could be improved?
 - What will we commit to doing in the next iteration?
 - Actionable commitment?
-
-
-

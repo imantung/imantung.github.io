@@ -6,6 +6,9 @@ category: Soft Skills
 
 # Do It
 
+Ref:
+- http://thecontextofthings.com/2015/08/17/you-cant-skip-the-second-act-in-life/
+
 ## 5 seconds rule
 
 <https://melrobbins.com/five-elements-5-second-rule/>
