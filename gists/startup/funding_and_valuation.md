@@ -4,7 +4,7 @@ title: Funding & Valuation
 category: Startup
 ---
 
-# Funding & Valuatino
+# Funding & Valuation
 
 
 Ref:
