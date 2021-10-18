@@ -11,6 +11,11 @@ category: Tech Stacks
 - [Kafka Authorizer](https://cwiki.apache.org/confluence/display/KAFKA/Kafka+Authorization+Command+Line+Interface)
 - [Don't use consumer groups the wrong ways](https://dzone.com/articles/dont-use-apache-kafka-consumer-groups-the-wrong-wa)
 
+UI Tool:
+- https://github.com/obsidiandynamics/kafdrop
+- https://github.com/yahoo/CMAK
+- https://dzone.com/articles/kafka-administration-and-monitoring-ui-tools
+
 PubSub VS Message Queue
 - Message Queue = Same consumer group = Competing Consumer pattern
 - PubSub = Different consumer group = Publish Subscribe pattern

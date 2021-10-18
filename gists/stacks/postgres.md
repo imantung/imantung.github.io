@@ -49,6 +49,7 @@ Ref:
 - [Postgres tuning query plans](https://www.gojek.io/blog/the-postgres-performance-tuning-manual-query-plans)
 - [Parallel Queries](https://www.percona.com/blog/2019/02/21/parallel-queries-in-postgresql/)
 - [random_page_cost configuration](https://amplitude.engineering/how-a-single-postgresql-config-change-improved-slow-query-performance-by-50x-85593b8991b0)
+- https://stackoverflow.com/questions/34246403/performance-of-max-vs-order-by-desc-limit-1
 
 Check if query are waiting for another query to complete. Need to tuning up the query.
 ```sql
@@ -193,3 +194,11 @@ Percentage of max connections in use
 ```sql
 SELECT (SELECT SUM(numbackends) FROM pg_stat_database) / (SELECT setting::float FROM pg_settings WHERE name = 'max_connections')
 ```
+
+### Locking
+
+- https://postgreshelp.com/postgresql-locks/#PostgreSQL_Locks_Table_Level_Locks
+- http://shiroyasha.io/understanding-postgresql-locks.html
+- http://big-elephants.com/2013-09/exploring-query-locks-in-postgres/
+- https://stackoverflow.com/questions/26489244/how-to-detect-query-which-holds-the-lock-in-postgres
+- https://www.cybertec-postgresql.com/en/lock-table-can-harm-your-database/
