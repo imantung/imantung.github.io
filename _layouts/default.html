@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+<head>
+  <title>
+    {%if page.title %}
+        {{ page.title }}
+    {% else %}
+        {{ site.title }}
+    {% endif %}
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ '/public/css/main.css' | relative_url }}">
+
+
 {% include head.html %}
+{% if jekyll.environment == 'production' and site.google_analytics %}
+  {% include google-analytics.html %}
+{% endif %}
+
+</head>
+
 
 <body>
+  {{ content }}
 
-  {% include nav.html %}  
-
-  <div class="pt-4 pb-4">
-    {{ content }}
-  </div>
-  
-  {% include footer.html %}  
-
-  
+  <footer>
+    {% include footer.html %}  
+  </footer>
 </body>
+
+
 
 </html>
