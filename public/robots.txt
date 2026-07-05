@@ -13,4 +13,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://imantung.github.io/sitemap-index.xml
+Sitemap: https://imantung.com/sitemap-index.xml

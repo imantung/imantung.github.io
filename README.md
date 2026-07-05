@@ -61,7 +61,22 @@ repo is ever recreated): in **GitHub → Settings → Pages**, set **Source**
 to **GitHub Actions**. Without this, the workflow's deploy step has
 nothing to publish to.
 
-This repo is a GitHub *user* page (`imantung/imantung.github.io`), so it
-serves directly from `https://imantung.github.io` — no custom domain or
-`CNAME` file is needed unless you want to point a different domain at it.
+This repo is a GitHub *user* page (`imantung/imantung.github.io`), but it
+serves from the custom domain **imantung.com** instead of the default
+`imantung.github.io`. That requires two pieces, both already in place:
+
+- [`public/CNAME`](public/CNAME) containing `imantung.com` — Astro copies
+  this into `dist/` on every build, which is what tells GitHub Pages which
+  custom domain to serve.
+- DNS at the domain registrar pointing `imantung.com` at GitHub Pages (an
+  `ALIAS`/`ANAME`/flattened `A` record set to GitHub's Pages IPs, or an
+  `A` record set pointing at GitHub's Pages IPs, per
+  [GitHub's custom domain docs](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site)).
+
+One-time repo setup (already done, but needed again if the repo/domain is
+ever recreated): in **GitHub → Settings → Pages**, set **Custom domain**
+to `imantung.com` and save — this is what makes GitHub keep re-verifying
+and enforcing HTTPS for the domain. It should already reflect the
+`public/CNAME` file after the first successful deploy, but if the DNS
+changes, verify it here again.
 
