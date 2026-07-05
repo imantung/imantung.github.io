@@ -1,0 +1,28 @@
+Iman Tunggono — Technology Leader
+
+Iman Tunggono is a technology leader based in Jakarta, Indonesia, focused on
+scaling engineering organizations through growth and change. He has over 15
+years of experience designing scalable systems, leading high-performing
+teams, and aligning technology execution with strategic business goals,
+with an emphasis on pragmatic, cost-effective technology strategy.
+
+Career history:
+- VP of Engineering at Bobobox (2025-2026): led an organization of 30+
+  people across Engineering, IoT, DevOps, and Data.
+- Entrepreneur in Residence at Antler (2024): validated early-stage
+  technology concepts.
+- Head of Engineering at Koinworks (2021-2024): led 50+ engineers across
+  5 product streams.
+- Senior Principal Engineer at Tiket.com (2019-2021): drove a monolith to
+  microservices migration.
+- Senior Product Engineer at Gojek (2015-2019): built fraud systems and
+  open-sourced BaritoLog.
+- Earlier roles (2007-2015) at Entercrews, Phasedev, Citibank, and Bina
+  Nusantara University.
+
+Education: Master of Information Systems Management, Bina Nusantara
+University (2024).
+
+This page (https://imantung.github.io/) is a single-page professional
+profile containing a short bio, career history, selected writing, and
+links to LinkedIn, Medium, and GitHub profiles. Contact: iman.tung@gmail.com.

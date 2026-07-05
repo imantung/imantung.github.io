@@ -1,0 +1,48 @@
+---
+import { profile, socials } from "../data/content";
+import Icon from "./Icon.astro";
+
+interface Props {
+  class?: string;
+  iconSize?: number;
+}
+
+const { class: className = "", iconSize = 20 } = Astro.props;
+---
+
+<div class={`flex items-center gap-4 ${className}`}>
+  <a
+    href={socials.linkedin}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="LinkedIn"
+    class="text-muted transition-colors hover:text-accent"
+  >
+    <Icon name="linkedin" size={iconSize} aria-hidden={true} />
+  </a>
+  <a
+    href={socials.medium}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Medium"
+    class="text-muted transition-colors hover:text-accent"
+  >
+    <Icon name="medium" size={iconSize} aria-hidden={true} />
+  </a>
+  <a
+    href={socials.github}
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="GitHub"
+    class="text-muted transition-colors hover:text-accent"
+  >
+    <Icon name="github" size={iconSize} aria-hidden={true} />
+  </a>
+  <a
+    href={`mailto:${profile.email}`}
+    aria-label="Email"
+    class="text-muted transition-colors hover:text-accent"
+  >
+    <Icon name="mail" size={iconSize} aria-hidden={true} />
+  </a>
+</div>

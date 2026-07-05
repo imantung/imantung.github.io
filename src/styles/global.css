@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Palette sampled from the profile photo (public/profiles.png): warm cream
+ * background, warm brown/charcoal neutrals from the hair and skin tones,
+ * and a navy-blue accent lifted straight from the shirt color.
+ */
+:root {
+  --color-bg: 250 247 241;
+  --color-surface: 243 238 229;
+  --color-text: 38 32 28;
+  --color-text-secondary: 91 79 71;
+  --color-text-muted: 150 136 124;
+  --color-border: 224 214 200;
+  --color-accent: 29 78 117;
+}
+
+.dark {
+  --color-bg: 20 18 17;
+  --color-surface: 32 28 26;
+  --color-text: 236 230 222;
+  --color-text-secondary: 190 176 164;
+  --color-text-muted: 132 118 106;
+  --color-border: 50 43 38;
+  --color-accent: 110 165 205;
+}
+
+html {
+  color-scheme: light;
+  scroll-behavior: smooth;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+/* Offsets anchor-jump targets so the sticky navbar doesn't cover them */
+section[id] {
+  scroll-margin-top: 3.5rem;
+}
+
+body {
+  background-color: rgb(var(--color-bg));
+  color: rgb(var(--color-text));
+}
+
+/*
+ * Single source of truth for typography on the site. Every component uses
+ * these semantic classes instead of one-off Tailwind size utilities, so the
+ * whole site's type scale can be tuned by editing this file alone.
+ * Nothing on the site should go smaller than the `text-base` (16px) floor.
+ */
+@layer components {
+  /* Page title (your name) — bold monospace */
+  .name-title {
+    @apply font-script text-4xl font-bold leading-tight text-text sm:text-5xl;
+  }
+
+  /* Everything else — calm, formal sans */
+  .headline-text {
+    @apply text-lg text-secondary;
+  }
+
+  .meta-text {
+    @apply text-base text-muted;
+  }
+
+  .section-title {
+    @apply text-2xl font-semibold text-text;
+  }
+
+  .body-text {
+    @apply text-base leading-[1.7] text-secondary;
+  }
+
+  .card-title {
+    @apply text-base font-bold text-text;
+  }
+
+  .card-subtitle {
+    @apply text-base text-secondary;
+  }
+
+  .label-text {
+    @apply text-base text-muted;
+  }
+
+  .btn {
+    @apply rounded-lg border border-border px-4 py-2 text-base text-text transition-colors hover:border-accent hover:text-accent;
+  }
+
+  .quote-text {
+    @apply font-quote text-xl italic leading-relaxed text-text sm:text-2xl;
+  }
+
+  .quote-author {
+    @apply text-base text-muted;
+  }
+}

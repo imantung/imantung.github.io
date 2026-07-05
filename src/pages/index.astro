@@ -1,0 +1,32 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Navbar from "../components/Navbar.astro";
+import Hero from "../components/Hero.astro";
+import About from "../components/About.astro";
+import Experience from "../components/Experience.astro";
+import Writing from "../components/Writing.astro";
+import LinkedInPosts from "../components/LinkedInPosts.astro";
+import Quote from "../components/Quote.astro";
+import Divider from "../components/Divider.astro";
+import { profile, about as aboutText } from "../data/content";
+
+const title = `${profile.name} — Technology Leader`;
+const description = aboutText.slice(0, 150).trim() + "...";
+---
+
+<BaseLayout title={title} description={description}>
+  <Navbar />
+  <main class="mx-auto max-w-[800px] px-4 sm:px-10">
+    <Hero />
+    <Divider />
+    <About />
+    <Divider />
+    <Experience />
+    <Divider />
+    <Writing />
+    <Divider />
+    <LinkedInPosts />
+    <Divider />
+    <Quote />
+  </main>
+</BaseLayout>
