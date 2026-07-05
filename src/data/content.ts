@@ -72,13 +72,13 @@ export const experience: ExperienceEntry[] = [
   {
     role: "Senior Principal Engineer",
     company: "Tiket.com",
-    description: "Drove monolith to microservices migration",
+    description: "Microservices SME and R&D",
     period: "2019 - 2021",
   },
   {
     role: "Senior Product Engineer",
     company: "Gojek",
-    description: "Built fraud systems, open-sourced BaritoLog",
+    description: "Built fraud systems, logging Platform, i18n",
     period: "2015 - 2019",
   },
   {
