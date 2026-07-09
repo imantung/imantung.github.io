@@ -12,7 +12,8 @@
   --color-surface: 243 238 229;
   --color-text: 38 32 28;
   --color-text-secondary: 91 79 71;
-  --color-text-muted: 150 136 124;
+  /* darkened from 150 136 124 to clear WCAG AA 4.5:1 contrast on --color-bg */
+  --color-text-muted: 119 106 95;
   --color-border: 224 214 200;
   --color-accent: 29 78 117;
 }
@@ -22,7 +23,8 @@
   --color-surface: 32 28 26;
   --color-text: 236 230 222;
   --color-text-secondary: 190 176 164;
-  --color-text-muted: 132 118 106;
+  /* lightened from 132 118 106 to clear WCAG AA 4.5:1 contrast on --color-bg */
+  --color-text-muted: 144 129 116;
   --color-border: 50 43 38;
   --color-accent: 110 165 205;
 }
