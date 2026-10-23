@@ -467,7 +467,7 @@ a:focus-visible .icon-mail .fx-mail-flap {
 
 /*
  * Profile photo: the picture itself stays still, but the card and its accent
- * shadow play together. While idle, Hero.astro hops between five poses by
+ * shadow play together. While idle, Hero.astro cycles through five poses by
  * setting data-pose: rest (shadow bottom-right), lean (card tips over while
  * the shadow swings to the bottom-left), lift (card floats up while the
  * shadow drops away and shrinks), peek (card dips while the shadow pops out
