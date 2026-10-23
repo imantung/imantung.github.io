@@ -1,0 +1,46 @@
+---
+import { interests, nowBuilding } from "../data/content";
+import Icon from "./Icon.astro";
+import SectionHeader from "./SectionHeader.astro";
+---
+
+<section id="now" class="py-12 sm:py-16">
+  <SectionHeader eyebrow="now building" title="What I'm working on" />
+
+  <a
+    href={nowBuilding.url}
+    target="_blank"
+    rel="noopener noreferrer"
+    class="card group flex gap-4"
+    data-reveal
+  >
+    <span class="icon-tile icon-playful">
+      <Icon name={nowBuilding.icon} size={20} class={`icon-${nowBuilding.icon}`} aria-hidden={true} />
+    </span>
+    <div class="flex flex-1 flex-col gap-1">
+      <p class="card-title transition-colors group-hover:text-accent">{nowBuilding.title}</p>
+      <p class="card-subtitle">{nowBuilding.text}</p>
+      <span class="link mt-2">
+        <Icon name="github" size={14} aria-hidden={true} />
+        Follow along on GitHub
+      </span>
+    </div>
+  </a>
+
+  <h3 class="subsection-title mb-4 mt-12" data-reveal>Also thinking about</h3>
+  <ul class="grid gap-4 sm:grid-cols-2" data-reveal-stagger>
+    {
+      interests.map((item) => (
+        <li class="card flex gap-4">
+          <span class="icon-tile icon-playful">
+            <Icon name={item.icon} size={20} class={`icon-${item.icon}`} aria-hidden={true} />
+          </span>
+          <div class="flex flex-col gap-1">
+            <p class="card-title">{item.title}</p>
+            <p class="card-subtitle">{item.text}</p>
+          </div>
+        </li>
+      ))
+    }
+  </ul>
+</section>

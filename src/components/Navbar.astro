@@ -1,5 +1,13 @@
 ---
 import SocialLinks from "./SocialLinks.astro";
+
+const sections = [
+  { href: "#about", label: "About" },
+  { href: "#help", label: "Help" },
+  { href: "#now", label: "Now" },
+  { href: "#writing", label: "Writing" },
+  { href: "#contact", label: "Contact" },
+];
 ---
 
 <header class="sticky top-0 z-50 border-b border-border/70 bg-background/85 backdrop-blur">
@@ -11,6 +19,16 @@ import SocialLinks from "./SocialLinks.astro";
     >
       IT
     </a>
+
+    <nav aria-label="Sections" class="hidden items-center gap-5 sm:flex">
+      {
+        sections.map((section) => (
+          <a href={section.href} class="text-base text-secondary transition-colors hover:text-accent">
+            {section.label}
+          </a>
+        ))
+      }
+    </nav>
 
     <SocialLinks iconSize={16} />
   </div>

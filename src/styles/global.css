@@ -73,7 +73,7 @@ body {
     @apply text-base text-muted;
   }
 
-  /* Numbered mono label above each section title, e.g. "01 / about" */
+  /* Short mono eyebrow above each section title, e.g. "how I help" */
   .section-label {
     @apply font-mono text-base font-medium text-accent;
   }

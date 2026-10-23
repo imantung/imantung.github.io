@@ -1,45 +1,12 @@
 ---
 import { about } from "../data/content";
-import Icon from "./Icon.astro";
 import SectionHeader from "./SectionHeader.astro";
 ---
 
 <section id="about" class="py-16 sm:py-20">
-  <SectionHeader index="01" label="about" title="About" />
+  <SectionHeader eyebrow="background" title="15+ years in software, from backend engineer to engineering leader" />
 
   <div class="flex max-w-[65ch] flex-col gap-4" data-reveal>
     {about.intro.map((paragraph) => <p class="body-text">{paragraph}</p>)}
   </div>
-
-  <h3 class="subsection-title mb-4 mt-12" data-reveal>What I'm interested in</h3>
-  <ul class="flex flex-col gap-4" data-reveal-stagger>
-    {
-      about.interests.map((item) => (
-        <li class="card flex gap-4">
-          <span class="icon-tile icon-playful">
-            <Icon name={item.icon} size={20} class={`icon-${item.icon}`} aria-hidden={true} />
-          </span>
-          <div class="flex flex-col gap-1">
-            <p class="card-title">{item.title}</p>
-            <p class="card-subtitle">{item.text}</p>
-          </div>
-        </li>
-      ))
-    }
-  </ul>
-
-  <h3 class="subsection-title mb-4 mt-12" data-reveal>Where I can help</h3>
-  <ul class="grid gap-4 sm:grid-cols-2" data-reveal-stagger>
-    {
-      about.helpAreas.map((item) => (
-        <li class="card flex flex-col gap-3">
-          <span class="icon-tile icon-playful">
-            <Icon name={item.icon} size={20} class={`icon-${item.icon}`} aria-hidden={true} />
-          </span>
-          <p class="card-title">{item.title}</p>
-          <p class="card-subtitle">{item.text}</p>
-        </li>
-      ))
-    }
-  </ul>
 </section>

@@ -1,0 +1,23 @@
+---
+import { services } from "../data/content";
+import Icon from "./Icon.astro";
+import SectionHeader from "./SectionHeader.astro";
+---
+
+<section id="help" class="py-12 sm:py-16">
+  <SectionHeader eyebrow="how I help" title="Fractional engineering leadership" />
+
+  <ul class="grid gap-4 sm:grid-cols-2" data-reveal-stagger>
+    {
+      services.map((item) => (
+        <li class="card flex flex-col gap-3">
+          <span class="icon-tile icon-playful">
+            <Icon name={item.icon} size={20} class={`icon-${item.icon}`} aria-hidden={true} />
+          </span>
+          <p class="card-title">{item.title}</p>
+          <p class="card-subtitle">{item.text}</p>
+        </li>
+      ))
+    }
+  </ul>
+</section>
