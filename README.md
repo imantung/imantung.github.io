@@ -43,8 +43,8 @@ npm run preview  # serve the production build locally
 
 ## Editing content
 
-All page content (profile, about, experience, education, writing, LinkedIn
-posts, socials) lives in one file: `src/data/content.ts`. Edit the values
+All page content (profile, about, writing, LinkedIn posts,
+socials) lives in one file: `src/data/content.ts`. Edit the values
 there and push to `master` — the GitHub Actions workflow rebuilds and
 redeploys automatically.
 

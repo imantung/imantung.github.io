@@ -22,7 +22,6 @@ export default {
           "sans-serif",
         ],
         script: ['"Courier New"', "Courier", "monospace"],
-        quote: ["Alegreya", "Georgia", "serif"],
       },
     },
   },

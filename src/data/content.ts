@@ -5,17 +5,15 @@ export interface Profile {
   email: string;
 }
 
-export interface ExperienceEntry {
-  role: string;
-  company: string;
-  description: string;
-  period: string;
+export interface AboutItem {
+  title: string;
+  text: string;
 }
 
-export interface Education {
-  degree: string;
-  school: string;
-  year: string;
+export interface About {
+  intro: string[];
+  helpAreas: AboutItem[];
+  interests: AboutItem[];
 }
 
 export interface WritingEntry {
@@ -35,64 +33,50 @@ export interface Socials {
   github: string;
 }
 
-export interface Quote {
-  text: string;
-  author: string;
-}
-
 export const profile: Profile = {
   name: "Iman Tunggono",
-  headline: "Technology leader | Scaling engineering orgs through growth and change",
+  headline: "Engineering Leader | Fractional engineering leadership and system architecture",
   location: "Jakarta, Indonesia",
   email: "iman.tung@gmail.com",
 };
 
-export const about: string =
-  "15+ years designing scalable systems, leading high-performing teams, and aligning technology execution with strategic business goals. Focused on building resilient, user-centric solutions through pragmatic, cost-effective technology strategy.";
-
-export const experience: ExperienceEntry[] = [
-  {
-    role: "VP of Engineering",
-    company: "Bobobox",
-    description: "Led org of 30+ across Eng, IoT, DevOps, Data",
-    period: "2025 - 2026",
-  },
-  {
-    role: "Entrepreneur in Residence",
-    company: "Antler",
-    description: "Validated early-stage tech concepts",
-    period: "2024",
-  },
-  {
-    role: "Head of Engineering",
-    company: "Koinworks",
-    description: "Led 50+ engineers across 5 product streams",
-    period: "2021 - 2024",
-  },
-  {
-    role: "Senior Principal Engineer",
-    company: "Tiket.com",
-    description: "Microservices SME and R&D",
-    period: "2019 - 2021",
-  },
-  {
-    role: "Senior Product Engineer",
-    company: "Gojek",
-    description: "Built fraud systems, logging Platform, i18n",
-    period: "2015 - 2019",
-  },
-  {
-    role: "Early career",
-    company: "Entercrews, Phasedev, Citibank, BINUS University",
-    description: "",
-    period: "2007 - 2015",
-  },
-];
-
-export const education: Education = {
-  degree: "Master of Information Systems Management",
-  school: "Bina Nusantara University",
-  year: "2024",
+export const about: About = {
+  intro: [
+    "I started as a backend engineer and grew into leading engineering organizations, most recently in hospitality technology and regulated fintech. Before that, I held senior engineering roles in travel marketplaces and on-demand mobility.",
+    "I'm open to conversations with founders, business owners, and companies that need a fractional engineering leader or advisor, whether you're building a new product or improving an existing one. I'm also open to full-time engineering leadership roles.",
+  ],
+  helpAreas: [
+    {
+      title: "Team productivity and culture",
+      text: "Set clear team boundaries, roles, and ownership. Introduce agile practices and SDLC standards (planning, QA, deployment) the team can keep. Coach new engineering managers as they move from building to leading.",
+    },
+    {
+      title: "Tech stack review",
+      text: "Review your backend systems and infrastructure, find what slows you down or costs too much, and suggest practical improvements, from service design to cloud right-sizing.",
+    },
+    {
+      title: "Open-source adoption",
+      text: "Find where open-source tools can replace paid software, and plan a safe migration.",
+    },
+    {
+      title: "Applied AI adoption",
+      text: "Find practical uses of AI in your workflows and products, with guardrails like human confirmation and role-based access.",
+    },
+  ],
+  interests: [
+    {
+      title: "Applied AI in business systems",
+      text: "I'm building an AI assistant for ERPNext as an independent project (in progress). It focuses on safe LLM workflows: human confirmation, role-based access, and strict tool schemas.",
+    },
+    {
+      title: "System design and software fundamentals",
+      text: "How systems stay simple as they grow.",
+    },
+    {
+      title: "Engineering leadership",
+      text: "How teams scale without losing ownership.",
+    },
+  ],
 };
 
 export const writing: WritingEntry[] = [
@@ -107,11 +91,6 @@ export const socials: Socials = {
   linkedin: "https://www.linkedin.com/in/iman-tunggono/",
   medium: "https://medium.com/@imantung",
   github: "https://github.com/imantung",
-};
-
-export const quote: Quote = {
-  text: "If you are not willing to learn, no one can help you. If you are determined to learn, no one can stop you.",
-  author: "Zig Ziglar",
 };
 
 // Google Analytics 4 Measurement ID (Admin → Data Streams → your stream → "G-XXXXXXXXXX").

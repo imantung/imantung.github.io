@@ -1,28 +1,29 @@
-Iman Tunggono — Technology Leader
+Iman Tunggono — Engineering Leader
 
-Iman Tunggono is a technology leader based in Jakarta, Indonesia, focused on
-scaling engineering organizations through growth and change. He has over 15
-years of experience designing scalable systems, leading high-performing
-teams, and aligning technology execution with strategic business goals,
-with an emphasis on pragmatic, cost-effective technology strategy.
+Iman Tunggono is an engineering leader based in Jakarta, Indonesia, offering
+fractional engineering leadership and system architecture. He started as a
+backend engineer and grew into leading engineering organizations, most
+recently in hospitality technology and regulated fintech, after senior
+engineering roles in travel marketplaces and on-demand mobility.
 
-Career history:
-- VP of Engineering at Bobobox (2025-2026): led an organization of 30+
-  people across Engineering, IoT, DevOps, and Data.
-- Entrepreneur in Residence at Antler (2024): validated early-stage
-  technology concepts.
-- Head of Engineering at Koinworks (2021-2024): led 50+ engineers across
-  5 product streams.
-- Senior Principal Engineer at Tiket.com (2019-2021): drove a monolith to
-  microservices migration.
-- Senior Product Engineer at Gojek (2015-2019): built fraud systems and
-  open-sourced BaritoLog.
-- Earlier roles (2007-2015) at Entercrews, Phasedev, Citibank, and Bina
-  Nusantara University.
+He is open to working with founders, business owners, and companies that
+need a fractional engineering leader or advisor, and to full-time
+engineering leadership roles.
 
-Education: Master of Information Systems Management, Bina Nusantara
-University (2024).
+Where he can help:
+- Team productivity and culture: team boundaries, roles, and ownership;
+  agile practices and SDLC standards; coaching new engineering managers.
+- Tech stack review: backend systems and infrastructure, from service
+  design to cloud right-sizing.
+- Open-source adoption: replacing paid software with open-source tools and
+  planning a safe migration.
+- Applied AI adoption: practical uses of AI in workflows and products, with
+  guardrails like human confirmation and role-based access.
 
-This page (https://imantung.com/) is a single-page professional
-profile containing a short bio, career history, selected writing, and
-links to LinkedIn, Medium, and GitHub profiles. Contact: iman.tung@gmail.com.
+Interests: applied AI in business systems (building an AI assistant for
+ERPNext as an independent project), system design and software
+fundamentals, and engineering leadership.
+
+This page (https://imantung.com/) is a single-page professional profile
+with an about section, selected writing, and links to LinkedIn, Medium, and
+GitHub profiles. Contact: iman.tung@gmail.com.

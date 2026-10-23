@@ -1,8 +1,37 @@
 ---
-import { about } from "../data/content";
+import { about, profile } from "../data/content";
+
+const groups = [
+  { heading: "Where I can help", items: about.helpAreas },
+  { heading: "What I'm interested in", items: about.interests },
+];
 ---
 
 <section id="about" class="py-10">
   <h2 class="section-title mb-3">About</h2>
-  <p class="body-text">{about}</p>
+  <div class="flex flex-col gap-4">
+    {about.intro.map((paragraph) => <p class="body-text">{paragraph}</p>)}
+  </div>
+
+  {
+    groups.map((group) => (
+      <div class="mt-8">
+        <h3 class="subsection-title mb-3">{group.heading}</h3>
+        <ul class="flex flex-col gap-3">
+          {group.items.map((item) => (
+            <li class="body-text">
+              <span class="font-bold text-text">{item.title}:</span> {item.text}
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))
+  }
+
+  <p class="body-text mt-8">
+    If any of this fits what you need,{" "}
+    <a href={`mailto:${profile.email}`} class="text-accent underline-offset-4 hover:underline">
+      email me
+    </a>.
+  </p>
 </section>
