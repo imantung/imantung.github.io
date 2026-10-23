@@ -467,11 +467,15 @@ a:focus-visible .icon-mail .fx-mail-flap {
 
 /*
  * Profile photo: the picture itself stays still, but the card and its accent
- * shadow play together. Idle loop: a hop (shadow drifts away and shrinks,
- * then squashes back on landing), a rest, then a lean while the shadow swings
- * to the other side. On hover the card tilts toward the cursor and the shadow
- * slides away from it (--px/--py come from Hero.astro); pressing it pushes
- * the card down onto its shadow.
+ * shadow play together. While idle, Hero.astro hops between five poses by
+ * setting data-pose: rest (shadow bottom-right), lean (card tips over while
+ * the shadow swings to the bottom-left), lift (card floats up while the
+ * shadow drops away and shrinks), peek (card dips while the shadow pops out
+ * at the top-right) and stretch (card leans back while the shadow slips to
+ * the top-left). Each switch is a single springy
+ * transition, then the pose holds until the next one. On hover the card
+ * tilts toward the cursor and the shadow slides away from it (--px/--py come
+ * from Hero.astro); pressing it pushes the card down onto its shadow.
  */
 .profile-photo {
   --px: 0;
@@ -481,23 +485,52 @@ a:focus-visible .icon-mail .fx-mail-flap {
 
 .profile-shadow {
   transform: translate(12px, 12px);
-  animation: shadow-dance 10s ease-in-out infinite;
 }
 
 .profile-card {
   transform-origin: bottom center;
-  animation: photo-dance 10s ease-in-out infinite;
 }
 
 .profile-shadow,
 .profile-card {
-  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition: transform 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.profile-photo[data-pose="lean"] .profile-shadow {
+  transform: translate(-12px, 12px);
+}
+
+.profile-photo[data-pose="lean"] .profile-card {
+  transform: translateX(-3px) rotate(2deg);
+}
+
+.profile-photo[data-pose="lift"] .profile-shadow {
+  transform: translate(16px, 22px) scale(0.92);
+}
+
+.profile-photo[data-pose="lift"] .profile-card {
+  transform: translateY(-12px) rotate(-3deg);
+}
+
+.profile-photo[data-pose="peek"] .profile-shadow {
+  transform: translate(12px, -12px);
+}
+
+.profile-photo[data-pose="peek"] .profile-card {
+  transform: translate(-2px, 3px) rotate(-1.5deg);
+}
+
+.profile-photo[data-pose="stretch"] .profile-shadow {
+  transform: translate(-12px, -12px);
+}
+
+.profile-photo[data-pose="stretch"] .profile-card {
+  transform: translate(3px, 3px) rotate(1.5deg);
 }
 
 @media (hover: hover) {
   .profile-photo:hover .profile-shadow,
   .profile-photo:hover .profile-card {
-    animation: none;
     transition-duration: 0.15s;
     transition-timing-function: ease-out;
   }
@@ -512,32 +545,12 @@ a:focus-visible .icon-mail .fx-mail-flap {
 }
 
 .profile-photo:active .profile-shadow {
-  animation: none;
   transform: translate(12px, 12px) scale(0.97);
 }
 
 .profile-photo:active .profile-card {
-  animation: none;
   transform: translate(10px, 10px);
   transition-duration: 0.1s;
-}
-
-@keyframes photo-dance {
-  0%, 30%, 80%, 100% { transform: none; }
-  34% { transform: translateY(-16px) rotate(-4deg); }
-  38% { transform: scale(1.04, 0.95); }
-  41% { transform: translateY(-4px) rotate(1deg); }
-  44% { transform: none; }
-  58%, 70% { transform: translateX(-3px) rotate(2deg); }
-}
-
-@keyframes shadow-dance {
-  0%, 30%, 80%, 100% { transform: translate(12px, 12px); }
-  34% { transform: translate(16px, 24px) scale(0.92); }
-  38% { transform: translate(6px, 6px); }
-  41% { transform: translate(13px, 15px); }
-  44% { transform: translate(12px, 12px); }
-  58%, 70% { transform: translate(-12px, 12px); }
 }
 
 /*

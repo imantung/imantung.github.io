@@ -83,5 +83,18 @@ import Icon from "./Icon.astro";
       photo.style.removeProperty("--px");
       photo.style.removeProperty("--py");
     });
+
+    // Every few seconds, hop to a random pose other than the current one.
+    const poses = ["rest", "lean", "lift", "peek", "stretch"];
+    let pose = "rest";
+
+    const nextPose = () => {
+      const others = poses.filter((p) => p !== pose);
+      pose = others[Math.floor(Math.random() * others.length)];
+      photo.dataset.pose = pose;
+      setTimeout(nextPose, 3000 + Math.random() * 2000);
+    };
+
+    setTimeout(nextPose, 3000);
   }
 </script>
