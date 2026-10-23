@@ -40,11 +40,6 @@ html.dark {
   color-scheme: dark;
 }
 
-/* Offsets anchor-jump targets so the sticky navbar doesn't cover them */
-section[id] {
-  scroll-margin-top: 4rem;
-}
-
 body {
   background-color: rgb(var(--color-bg));
   color: rgb(var(--color-text));
@@ -126,11 +121,77 @@ body {
   }
 }
 
-/* Faint blueprint dot grid behind the hero, fading out toward the edges */
-.dot-grid {
+/*
+ * Faint blueprint patterns behind the hero, fading out toward the edges.
+ * The layers cross-fade in turn: each gets a 5s slot in a 25s loop.
+ * Under reduced motion only the first (dots) stays visible.
+ */
+.bg-patterns {
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, #000 30%, transparent 100%);
+}
+
+.bg-patterns > span {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  animation: pattern-cycle 25s ease-in-out infinite both;
+}
+
+.bg-patterns > span:first-child {
+  opacity: 1;
+}
+
+.bg-patterns > span:nth-child(2) { animation-delay: 5s; }
+.bg-patterns > span:nth-child(3) { animation-delay: 10s; }
+.bg-patterns > span:nth-child(4) { animation-delay: 15s; }
+.bg-patterns > span:nth-child(5) { animation-delay: 20s; }
+
+@keyframes pattern-cycle {
+  0% { opacity: 0; }
+  6% { opacity: 1; }
+  20% { opacity: 1; }
+  26% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.pattern-dots {
   background-image: radial-gradient(rgb(var(--color-text) / 0.12) 1px, transparent 1px);
   background-size: 22px 22px;
-  mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, #000 30%, transparent 100%);
+}
+
+/* Graph paper: fine lines with an accent major line every 4 cells */
+.pattern-graph {
+  background-image:
+    linear-gradient(rgb(var(--color-accent) / 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(var(--color-accent) / 0.12) 1px, transparent 1px),
+    linear-gradient(rgb(var(--color-text) / 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(var(--color-text) / 0.06) 1px, transparent 1px);
+  background-size: 88px 88px, 88px 88px, 22px 22px, 22px 22px;
+}
+
+/* Registration marks: small plus signs, drawn by masking a solid fill */
+.pattern-plus {
+  background-color: rgb(var(--color-text) / 0.16);
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28'%3E%3Cpath d='M14 10v8M10 14h8' stroke='%23000' stroke-width='1'/%3E%3C/svg%3E");
+  mask-size: 28px 28px;
+}
+
+/* Diagonal hatching */
+.pattern-hatch {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgb(var(--color-text) / 0.07) 0 1px,
+    transparent 1px 14px
+  );
+}
+
+/* Radar rings centered behind the name */
+.pattern-rings {
+  background-image: repeating-radial-gradient(
+    circle at 30% 40%,
+    rgb(var(--color-accent) / 0.14) 0 1px,
+    transparent 1px 28px
+  );
 }
 
 /* Blinking caret after the name */

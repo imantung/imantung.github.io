@@ -11,6 +11,23 @@ import SectionHeader from "./SectionHeader.astro";
     {about.intro.map((paragraph) => <p class="body-text">{paragraph}</p>)}
   </div>
 
+  <h3 class="subsection-title mb-4 mt-12" data-reveal>What I'm interested in</h3>
+  <ul class="flex flex-col gap-4" data-reveal-stagger>
+    {
+      about.interests.map((item) => (
+        <li class="card flex gap-4">
+          <span class="icon-tile">
+            <Icon name={item.icon} size={20} aria-hidden={true} />
+          </span>
+          <div class="flex flex-col gap-1">
+            <p class="card-title">{item.title}</p>
+            <p class="card-subtitle">{item.text}</p>
+          </div>
+        </li>
+      ))
+    }
+  </ul>
+
   <h3 class="subsection-title mb-4 mt-12" data-reveal>Where I can help</h3>
   <ul class="grid gap-4 sm:grid-cols-2" data-reveal-stagger>
     {
@@ -21,22 +38,6 @@ import SectionHeader from "./SectionHeader.astro";
           </span>
           <p class="card-title">{item.title}</p>
           <p class="card-subtitle">{item.text}</p>
-        </li>
-      ))
-    }
-  </ul>
-
-  <h3 class="subsection-title mb-4 mt-12" data-reveal>What I'm interested in</h3>
-  <ul class="flex flex-col gap-5" data-reveal-stagger>
-    {
-      about.interests.map((item) => (
-        <li class="flex gap-4">
-          <span class="icon-tile">
-            <Icon name={item.icon} size={20} aria-hidden={true} />
-          </span>
-          <p class="body-text">
-            <span class="font-semibold text-text">{item.title}.</span> {item.text}
-          </p>
         </li>
       ))
     }

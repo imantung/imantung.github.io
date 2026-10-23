@@ -56,7 +56,7 @@ export const about: About = {
   ],
   helpAreas: [
     {
-      icon: "users",
+      icon: "rocket",
       title: "Team productivity and culture",
       text: "Set clear team boundaries, roles, and ownership. Introduce agile practices and SDLC standards (planning, QA, deployment) the team can keep. Coach new engineering managers as they move from building to leading.",
     },
