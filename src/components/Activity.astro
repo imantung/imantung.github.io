@@ -1,0 +1,80 @@
+---
+import { linkedinPosts, socials, writing } from "../data/content";
+import Icon from "./Icon.astro";
+import SectionHeader from "./SectionHeader.astro";
+
+const formatDate = (iso: string) =>
+  new Date(iso).toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+    timeZone: "UTC",
+  });
+
+// Compact, supporting signal that I'm still active: date + title only.
+const columns = [
+  {
+    label: "LinkedIn",
+    icon: "linkedin" as const,
+    items: linkedinPosts.slice(0, 4),
+    moreHref: socials.linkedin,
+    moreLabel: "Follow on LinkedIn",
+  },
+  {
+    label: "Writing",
+    icon: "medium" as const,
+    items: writing.slice(0, 4),
+    moreHref: socials.medium,
+    moreLabel: "All articles on Medium",
+  },
+];
+---
+
+<section id="activity" class="py-12 sm:py-16">
+  <SectionHeader index="02" label="activity" title="Recent activity" />
+
+  <div class="grid gap-10 md:grid-cols-2 md:gap-12">
+    {
+      columns.map((column) => (
+        <div data-reveal>
+          <h3 class="label-text mb-2 inline-flex items-center gap-2">
+            <Icon name={column.icon} size={14} aria-hidden={true} />
+            {column.label}
+          </h3>
+          <ul class="divide-y divide-border border-y border-border">
+            {column.items.map((item) => (
+              <li>
+                <a
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="group flex items-start gap-3 py-3 transition-colors hover:text-accent"
+                >
+                  <time
+                    datetime={item.published}
+                    class="label-text w-[7.5rem] shrink-0 text-accent"
+                  >
+                    {formatDate(item.published)}
+                  </time>
+                  <span class="card-title flex-1 font-medium transition-colors group-hover:text-accent">
+                    {item.title}
+                  </span>
+                  <Icon
+                    name="arrowUpRight"
+                    size={16}
+                    class="mt-0.5 shrink-0 text-muted opacity-0 transition-all duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-accent group-hover:opacity-100"
+                    aria-hidden={true}
+                  />
+                </a>
+              </li>
+            ))}
+          </ul>
+          <a href={column.moreHref} target="_blank" rel="noopener noreferrer" class="link group mt-4">
+            {column.moreLabel}
+            <Icon name="arrowRight" size={14} class="transition-transform group-hover:translate-x-1" aria-hidden={true} />
+          </a>
+        </div>
+      ))
+    }
+  </div>
+</section>

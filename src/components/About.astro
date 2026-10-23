@@ -1,5 +1,5 @@
 ---
-import { about, profile } from "../data/content";
+import { about } from "../data/content";
 import Icon from "./Icon.astro";
 import SectionHeader from "./SectionHeader.astro";
 ---
@@ -41,18 +41,4 @@ import SectionHeader from "./SectionHeader.astro";
       ))
     }
   </ul>
-
-  <div
-    class="mt-12 flex flex-col items-start gap-4 rounded-xl border border-border bg-surface p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8"
-    data-reveal
-  >
-    <div>
-      <p class="subsection-title">Have a problem that fits?</p>
-      <p class="body-text mt-1">Tell me what you're working on. I usually reply within a few days.</p>
-    </div>
-    <a href={`mailto:${profile.email}`} class="btn btn-primary shrink-0">
-      <Icon name="mail" size={18} aria-hidden={true} />
-      Email me
-    </a>
-  </div>
 </section>
