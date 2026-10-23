@@ -1,9 +1,14 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="630" fill="#ffffff" />
-  <rect x="1" y="1" width="1198" height="628" fill="none" stroke="#e2e2e2" stroke-width="2" />
-  <circle cx="150" cy="315" r="56" fill="none" stroke="#171717" stroke-width="2" />
-  <text x="150" y="326" font-family="Inter, -apple-system, sans-serif" font-size="34" font-weight="500" fill="#171717" text-anchor="middle">IT</text>
-  <text x="240" y="295" font-family="Inter, -apple-system, sans-serif" font-size="48" font-weight="500" fill="#171717">Iman Tunggono</text>
-  <text x="240" y="340" font-family="Inter, -apple-system, sans-serif" font-size="24" fill="#525252">Engineering Leader | Fractional engineering</text>
-  <text x="240" y="372" font-family="Inter, -apple-system, sans-serif" font-size="24" fill="#525252">leadership and system architecture</text>
+  <defs>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#14181C" fill-opacity="0.12" />
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="#F8F8F5" />
+  <rect width="1200" height="630" fill="url(#dots)" />
+  <rect x="94" y="259" width="112" height="112" rx="24" fill="#0F766E" />
+  <text x="150" y="328" font-family="'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="40" font-weight="700" fill="#ffffff" text-anchor="middle">IT</text>
+  <text x="250" y="300" font-family="'JetBrains Mono', ui-monospace, Menlo, monospace" font-size="52" font-weight="700" fill="#14181C">Iman Tunggono<tspan fill="#0F766E">_</tspan></text>
+  <text x="250" y="346" font-family="'DM Sans', -apple-system, sans-serif" font-size="26" fill="#475059">Engineering Leader | Fractional engineering</text>
+  <text x="250" y="380" font-family="'DM Sans', -apple-system, sans-serif" font-size="26" fill="#475059">leadership and system architecture</text>
 </svg>

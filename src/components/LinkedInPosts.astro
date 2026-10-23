@@ -1,6 +1,7 @@
 ---
 import { linkedinPosts, socials } from "../data/content";
 import Icon from "./Icon.astro";
+import SectionHeader from "./SectionHeader.astro";
 
 const latest = linkedinPosts.slice(0, 4);
 
@@ -13,23 +14,28 @@ const formatDate = (iso: string) =>
   });
 ---
 
-<section id="posts" class="py-10">
-  <h2 class="section-title mb-3">Latest on LinkedIn</h2>
+<section id="posts" class="py-16 sm:py-20">
+  <SectionHeader index="03" label="posts" title="Latest on LinkedIn" />
+
   {
     latest.length > 0 && (
-      <ol class="flex flex-col border-l border-border">
+      <ol class="relative ml-1.5 flex max-w-[70ch] flex-col border-l border-border" data-reveal-stagger>
         {latest.map((post) => (
-          <li>
+          <li class="group relative">
+            <span
+              class="absolute -left-[5px] top-7 h-[9px] w-[9px] rounded-full border-2 border-background bg-border transition-colors group-hover:bg-accent"
+              aria-hidden="true"
+            />
             <a
               href={post.url}
               target="_blank"
               rel="noopener noreferrer"
-              class="-ml-px block border-l-2 border-transparent py-3 pl-4 transition-colors hover:border-accent"
+              class="block rounded-r-lg py-5 pl-6 pr-4 transition-colors hover:bg-surface"
             >
               <p class="label-text mb-1">
                 <time datetime={post.published}>{formatDate(post.published)}</time>
               </p>
-              <p class="card-title mb-1">{post.title}</p>
+              <p class="card-title mb-1 transition-colors group-hover:text-accent">{post.title}</p>
               <p class="card-subtitle">{post.excerpt}</p>
             </a>
           </li>
@@ -37,13 +43,10 @@ const formatDate = (iso: string) =>
       </ol>
     )
   }
-  <a
-    href={socials.linkedin}
-    target="_blank"
-    rel="noopener noreferrer"
-    class="mt-4 inline-flex items-center gap-1 text-base text-accent underline-offset-4 hover:underline"
-  >
+
+  <a href={socials.linkedin} target="_blank" rel="noopener noreferrer" class="link group mt-6" data-reveal>
     <Icon name="linkedin" size={14} aria-hidden={true} />
-    Follow on LinkedIn →
+    Follow on LinkedIn
+    <Icon name="arrowRight" size={16} class="transition-transform group-hover:translate-x-1" aria-hidden={true} />
   </a>
 </section>

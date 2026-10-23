@@ -1,11 +1,15 @@
+import type { IconName } from "../icons/icons";
+
 export interface Profile {
   name: string;
+  availability: string;
   headline: string;
   location: string;
   email: string;
 }
 
 export interface AboutItem {
+  icon: IconName;
   title: string;
   text: string;
 }
@@ -39,6 +43,7 @@ export interface Socials {
 
 export const profile: Profile = {
   name: "Iman Tunggono",
+  availability: "Open to fractional engagements",
   headline: "Engineering Leader | Fractional engineering leadership and system architecture",
   location: "Jakarta, Indonesia",
   email: "iman.tung@gmail.com",
@@ -51,32 +56,39 @@ export const about: About = {
   ],
   helpAreas: [
     {
+      icon: "users",
       title: "Team productivity and culture",
       text: "Set clear team boundaries, roles, and ownership. Introduce agile practices and SDLC standards (planning, QA, deployment) the team can keep. Coach new engineering managers as they move from building to leading.",
     },
     {
+      icon: "layers",
       title: "Tech stack review",
       text: "Review your backend systems and infrastructure, find what slows you down or costs too much, and suggest practical improvements, from service design to cloud right-sizing.",
     },
     {
+      icon: "gitBranch",
       title: "Open-source adoption",
       text: "Find where open-source tools can replace paid software, and plan a safe migration.",
     },
     {
+      icon: "sparkles",
       title: "Applied AI adoption",
       text: "Find practical uses of AI in your workflows and products, with guardrails like human confirmation and role-based access.",
     },
   ],
   interests: [
     {
+      icon: "cpu",
       title: "Applied AI in business systems",
       text: "I'm building an AI assistant for ERPNext as an independent project (in progress). It focuses on safe LLM workflows: human confirmation, role-based access, and strict tool schemas.",
     },
     {
+      icon: "compass",
       title: "System design and software fundamentals",
       text: "How systems stay simple as they grow.",
     },
     {
+      icon: "flag",
       title: "Engineering leadership",
       text: "How teams scale without losing ownership.",
     },

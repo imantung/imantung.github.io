@@ -5,7 +5,7 @@ import Icon from "./Icon.astro";
 <button
   type="button"
   aria-label="Toggle dark mode"
-  class="theme-toggle flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-border bg-surface text-text transition-colors"
+  class="theme-toggle flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-border bg-surface text-text transition-all duration-300 hover:rotate-12 hover:border-accent hover:text-accent"
 >
   <Icon name="sun" size={16} class="hidden dark:block" aria-hidden={true} />
   <Icon name="moon" size={16} class="block dark:hidden" aria-hidden={true} />

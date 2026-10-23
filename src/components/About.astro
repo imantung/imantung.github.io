@@ -1,37 +1,58 @@
 ---
 import { about, profile } from "../data/content";
-
-const groups = [
-  { heading: "Where I can help", items: about.helpAreas },
-  { heading: "What I'm interested in", items: about.interests },
-];
+import Icon from "./Icon.astro";
+import SectionHeader from "./SectionHeader.astro";
 ---
 
-<section id="about" class="py-10">
-  <h2 class="section-title mb-3">About</h2>
-  <div class="flex flex-col gap-4">
+<section id="about" class="py-16 sm:py-20">
+  <SectionHeader index="01" label="about" title="About" />
+
+  <div class="flex max-w-[65ch] flex-col gap-4" data-reveal>
     {about.intro.map((paragraph) => <p class="body-text">{paragraph}</p>)}
   </div>
 
-  {
-    groups.map((group) => (
-      <div class="mt-8">
-        <h3 class="subsection-title mb-3">{group.heading}</h3>
-        <ul class="flex flex-col gap-3">
-          {group.items.map((item) => (
-            <li class="body-text">
-              <span class="font-bold text-text">{item.title}:</span> {item.text}
-            </li>
-          ))}
-        </ul>
-      </div>
-    ))
-  }
+  <h3 class="subsection-title mb-4 mt-12" data-reveal>Where I can help</h3>
+  <ul class="grid gap-4 sm:grid-cols-2" data-reveal-stagger>
+    {
+      about.helpAreas.map((item) => (
+        <li class="card flex flex-col gap-3">
+          <span class="icon-tile">
+            <Icon name={item.icon} size={20} aria-hidden={true} />
+          </span>
+          <p class="card-title">{item.title}</p>
+          <p class="card-subtitle">{item.text}</p>
+        </li>
+      ))
+    }
+  </ul>
 
-  <p class="body-text mt-8">
-    If any of this fits what you need,{" "}
-    <a href={`mailto:${profile.email}`} class="text-accent underline-offset-4 hover:underline">
-      email me
-    </a>.
-  </p>
+  <h3 class="subsection-title mb-4 mt-12" data-reveal>What I'm interested in</h3>
+  <ul class="flex flex-col gap-5" data-reveal-stagger>
+    {
+      about.interests.map((item) => (
+        <li class="flex gap-4">
+          <span class="icon-tile">
+            <Icon name={item.icon} size={20} aria-hidden={true} />
+          </span>
+          <p class="body-text">
+            <span class="font-semibold text-text">{item.title}.</span> {item.text}
+          </p>
+        </li>
+      ))
+    }
+  </ul>
+
+  <div
+    class="mt-12 flex flex-col items-start gap-4 rounded-xl border border-border bg-surface p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8"
+    data-reveal
+  >
+    <div>
+      <p class="subsection-title">Have a problem that fits?</p>
+      <p class="body-text mt-1">Tell me what you're working on. I usually reply within a few days.</p>
+    </div>
+    <a href={`mailto:${profile.email}`} class="btn btn-primary shrink-0">
+      <Icon name="mail" size={18} aria-hidden={true} />
+      Email me
+    </a>
+  </div>
 </section>

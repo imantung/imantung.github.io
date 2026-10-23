@@ -1,40 +1,47 @@
 ---
 import { socials, writing } from "../data/content";
 import Icon from "./Icon.astro";
+import SectionHeader from "./SectionHeader.astro";
 
 const formatDate = (iso: string) =>
   new Date(iso).toLocaleDateString("en-US", { month: "short", year: "numeric", timeZone: "UTC" });
 ---
 
-<section id="writing" class="py-10">
-  <h2 class="section-title mb-3">Selected writing</h2>
+<section id="writing" class="py-16 sm:py-20">
+  <SectionHeader index="02" label="writing" title="Selected writing" />
+
   {
     writing.length > 0 && (
-      <div class="grid gap-[10px] sm:grid-cols-2">
+      <div class="grid gap-4 sm:grid-cols-2" data-reveal-stagger>
         {writing.map((entry) => (
           <a
             href={entry.url}
             target="_blank"
             rel="noopener noreferrer"
-            class="flex flex-col rounded-lg border border-border px-4 py-[14px] transition-colors hover:border-accent"
+            class="card group flex flex-col"
           >
-            <p class="label-text mb-1 flex items-center gap-1">
-              <Icon name="medium" size={14} aria-hidden={true} />
-              Medium · <time datetime={entry.published}>{formatDate(entry.published)}</time>
+            <p class="label-text mb-3 flex items-center justify-between gap-2">
+              <span class="inline-flex items-center gap-2">
+                <Icon name="medium" size={14} aria-hidden={true} />
+                <time datetime={entry.published}>{formatDate(entry.published)}</time>
+              </span>
+              <Icon
+                name="arrowUpRight"
+                size={18}
+                class="text-muted transition-all duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-accent"
+                aria-hidden={true}
+              />
             </p>
-            <p class="card-title mb-1">{entry.title}</p>
+            <p class="card-title mb-2">{entry.title}</p>
             <p class="card-subtitle line-clamp-3">{entry.excerpt}</p>
           </a>
         ))}
       </div>
     )
   }
-  <a
-    href={socials.medium}
-    target="_blank"
-    rel="noopener noreferrer"
-    class="mt-4 inline-block text-base text-accent underline-offset-4 hover:underline"
-  >
-    All articles on Medium →
+
+  <a href={socials.medium} target="_blank" rel="noopener noreferrer" class="link group mt-6" data-reveal>
+    All articles on Medium
+    <Icon name="arrowRight" size={16} class="transition-transform group-hover:translate-x-1" aria-hidden={true} />
   </a>
 </section>

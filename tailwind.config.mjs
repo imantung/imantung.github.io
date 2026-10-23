@@ -12,6 +12,8 @@ export default {
         muted: "rgb(var(--color-text-muted) / <alpha-value>)",
         border: "rgb(var(--color-border) / <alpha-value>)",
         accent: "rgb(var(--color-accent) / <alpha-value>)",
+        "on-accent": "rgb(var(--color-on-accent) / <alpha-value>)",
+        spark: "rgb(var(--color-spark) / <alpha-value>)",
       },
       fontFamily: {
         sans: [
@@ -21,7 +23,7 @@ export default {
           "-apple-system",
           "sans-serif",
         ],
-        script: ['"Courier New"', "Courier", "monospace"],
+        mono: ['"JetBrains Mono"', "ui-monospace", "SFMono-Regular", "Menlo", "monospace"],
       },
     },
   },

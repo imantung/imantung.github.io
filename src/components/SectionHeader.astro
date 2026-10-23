@@ -1,0 +1,14 @@
+---
+interface Props {
+  index: string;
+  label: string;
+  title: string;
+}
+
+const { index, label, title } = Astro.props;
+---
+
+<header class="mb-8" data-reveal>
+  <p class="section-label mb-2">{index} / {label}</p>
+  <h2 class="section-title">{title}</h2>
+</header>

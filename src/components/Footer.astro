@@ -1,0 +1,15 @@
+---
+import { profile } from "../data/content";
+import SocialLinks from "./SocialLinks.astro";
+
+const year = new Date().getFullYear();
+---
+
+<footer class="border-t border-border">
+  <div
+    class="mx-auto flex max-w-[960px] flex-col items-center justify-between gap-4 px-5 py-8 sm:flex-row sm:px-8"
+  >
+    <p class="meta-text">© {year} {profile.name}</p>
+    <SocialLinks iconSize={18} />
+  </div>
+</footer>
