@@ -78,7 +78,7 @@ export const about: About = {
   ],
   interests: [
     {
-      icon: "cpu",
+      icon: "bot",
       title: "Applied AI in business systems",
       text: "I'm building an AI assistant for ERPNext as an independent project (in progress). It focuses on safe LLM workflows: human confirmation, role-based access, and strict tool schemas.",
     },
