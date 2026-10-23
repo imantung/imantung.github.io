@@ -1,4 +1,4 @@
-Iman Tunggono — Engineering Leader
+# Iman Tunggono — Engineering Leader
 
 Iman Tunggono is an engineering leader based in Jakarta, Indonesia, offering
 fractional engineering leadership and system architecture. He started as a
@@ -27,3 +27,10 @@ fundamentals, and engineering leadership.
 This page (https://imantung.com/) is a single-page professional profile
 with an about section, selected writing, and links to LinkedIn, Medium, and
 GitHub profiles. Contact: iman.tung@gmail.com.
+
+## Links
+
+- [Website](https://imantung.com/): professional profile
+- [LinkedIn](https://www.linkedin.com/in/iman-tunggono/): work history
+- [Medium](https://medium.com/@imantung): writing on engineering and leadership
+- [GitHub](https://github.com/imantung): open-source projects

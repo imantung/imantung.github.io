@@ -80,7 +80,6 @@ const personJsonLd = {
     {
       analyticsId && import.meta.env.PROD && (
         <>
-          <script async src={`https://www.googletagmanager.com/gtag/js?id=${analyticsId}`} />
           <script is:inline define:vars={{ analyticsId }}>
             window.dataLayer = window.dataLayer || [];
             function gtag() {
@@ -88,6 +87,18 @@ const personJsonLd = {
             }
             gtag("js", new Date());
             gtag("config", analyticsId);
+
+            // Fetch gtag.js only once the page has loaded and gone idle, so
+            // analytics never competes with first paint.
+            window.addEventListener("load", () => {
+              const inject = () => {
+                const script = document.createElement("script");
+                script.async = true;
+                script.src = `https://www.googletagmanager.com/gtag/js?id=${analyticsId}`;
+                document.head.appendChild(script);
+              };
+              ("requestIdleCallback" in window ? requestIdleCallback : setTimeout)(inject);
+            });
           </script>
         </>
       )
