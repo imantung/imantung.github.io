@@ -27,10 +27,10 @@ const personJsonLd = {
   <head>
     <script is:inline>
       (function () {
-        const stored = localStorage.getItem("theme");
-        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-        const isDark = stored ? stored === "dark" : prefersDark;
-        document.documentElement.classList.toggle("dark", isDark);
+        const media = window.matchMedia("(prefers-color-scheme: dark)");
+        const apply = () => document.documentElement.classList.toggle("dark", media.matches);
+        apply();
+        media.addEventListener("change", apply);
         document.documentElement.classList.add("js");
       })();
     </script>
